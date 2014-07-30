@@ -1,0 +1,20 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Vagrantfile - This is the Vagrant file to setup an environment for Rockie.
+#
+# Bryant Pong
+# 7/29/14
+# Last Updated: 7/29/14 - 6:23 PM  
+
+# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+  # Rockie will be using Ubuntu 12.04 32-Bit as an OS (codenamed: Precise)
+  config.vm.box = "hashicorp/precise32"
+
+  # Install ROS, Rockie's software, and any additional software packages:
+  config.vm.provision :shell, path: "bootstrap.sh"
+end
