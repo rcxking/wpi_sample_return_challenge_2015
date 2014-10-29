@@ -1,0 +1,3259 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Creator: (LibreOffice 4.2.6.3)
+%%For: (bryant)
+%%CreationDate: (2014-10-10 21:20:18 )
+%%Title: (wpi_recruiting_poster)
+%%LanguageLevel: 2
+%%DocumentData: Clean7Bit
+%%Pages: (atend)
+%%Orientation: (atend)
+%%PageOrder: Ascend
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset PSPrint-Prolog 1.0 0
+/ISO1252Encoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quotesingle
+/parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+/zero /one /two /three /four /five /six /seven
+/eight /nine /colon /semicolon /less /equal /greater /question
+/at /A /B /C /D /E /F /G
+/H /I /J /K /L /M /N /O
+/P /Q /R /S /T /U /V /W
+/X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+/grave /a /b /c /d /e /f /g
+/h /i /j /k /l /m /n /o
+/p /q /r /s /t /u /v /w
+/x /y /z /braceleft /bar /braceright /asciitilde /unused
+/Euro /unused /quotesinglbase /florin /quotedblbase /ellipsis /dagger /daggerdbl
+/circumflex /perthousand /Scaron /guilsinglleft /OE /unused /Zcaron /unused
+/unused /quoteleft /quoteright /quotedblleft /quotedblright /bullet /endash /emdash
+/tilde /trademark /scaron /guilsinglright /oe /unused /zcaron /Ydieresis
+/space /exclamdown /cent /sterling /currency /yen /brokenbar /section
+/dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron
+/degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /periodcentered
+/cedilla /onesuperior /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondown
+/Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+/Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply
+/Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls
+/agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla
+/egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis
+/eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide
+/oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis] def
+
+/psp_definefont { exch dup findfont dup length dict begin { 1 index /FID ne
+{ def } { pop pop } ifelse } forall /Encoding 3 -1 roll def
+currentdict end exch pop definefont pop } def
+
+/pathdict dup 8 dict def load begin
+/rcmd { { currentfile 1 string readstring pop 0 get dup 32 gt { exit }
+{ pop } ifelse } loop dup 126 eq { pop exit } if 65 sub dup 16#3 and 1
+add exch dup 16#C and -2 bitshift 16#3 and 1 add exch 16#10 and 16#10
+eq 3 1 roll exch } def
+/rhex { dup 1 sub exch currentfile exch string readhexstring pop dup 0
+get dup 16#80 and 16#80 eq dup 3 1 roll { 16#7f and } if 2 index 0 3
+-1 roll put 3 1 roll 0 0 1 5 -1 roll { 2 index exch get add 256 mul }
+for 256 div exch pop exch { neg } if } def
+/xcmd { rcmd exch rhex exch rhex exch 5 -1 roll add exch 4 -1 roll add
+1 index 1 index 5 -1 roll { moveto } { lineto } ifelse } def end
+/readpath { 0 0 pathdict begin { xcmd } loop end pop pop } def
+
+systemdict /languagelevel known not {
+/xshow { exch dup length 0 1 3 -1 roll 1 sub { dup 3 index exch get
+exch 2 index exch get 1 string dup 0 4 -1 roll put currentpoint 3 -1
+roll show moveto 0 rmoveto } for pop pop } def
+/rectangle { 4 -2 roll moveto 1 index 0 rlineto 0 exch rlineto neg 0
+rlineto closepath } def
+/rectfill { rectangle fill } def
+/rectstroke { rectangle stroke } def } if
+/bshow { currentlinewidth 3 1 roll currentpoint 3 index show moveto
+setlinewidth false charpath stroke setlinewidth } def
+/bxshow { currentlinewidth 4 1 roll setlinewidth exch dup length 1 sub
+0 1 3 -1 roll { 1 string 2 index 2 index get 1 index exch 0 exch put dup
+currentpoint 3 -1 roll show moveto currentpoint 3 -1 roll false charpath
+stroke moveto 2 index exch get 0 rmoveto } for pop pop setlinewidth } def
+
+/psp_lzwfilter { currentfile /ASCII85Decode filter /LZWDecode filter } def
+/psp_ascii85filter { currentfile /ASCII85Decode filter } def
+/psp_lzwstring { psp_lzwfilter 1024 string readstring } def
+/psp_ascii85string { psp_ascii85filter 1024 string readstring } def
+/psp_imagedict {
+/psp_bitspercomponent { 3 eq { 1 }{ 8 } ifelse } def
+/psp_decodearray { [ [0 1 0 1 0 1] [0 255] [0 1] [0 255] ] exch get }
+def 7 dict dup
+/ImageType 1 put dup
+/Width 7 -1 roll put dup
+/Height 5 index put dup
+/BitsPerComponent 4 index psp_bitspercomponent put dup
+/Decode 5 -1 roll psp_decodearray put dup
+/ImageMatrix [1 0 0 1 0 0] dup 5 8 -1 roll put put dup
+/DataSource 4 -1 roll 1 eq { psp_lzwfilter } { psp_ascii85filter } ifelse put
+} def
+%%EndResource
+%%EndProlog
+%%BeginSetup
+%
+%%BeginResource: font LiberationSans-BoldFID182HGSet2
+%!PS-AdobeFont-1.0-1.4587
+% Creator: SunTypeTools-TT 1.0 gelf
+% Original font name: LiberationSans-Bold
+30 dict begin
+/PaintType 0 def
+/FontType 3 def
+/StrokeWidth 0 def
+/FontName (LiberationSans-BoldFID182HGSet2) cvn def
+/XUID [103 0 0 16#A7479A12 32 16#6C8330EA 16#91267E8A] def
+/FontMatrix [.001 0 0 .001 0 0] def
+/FontBBox [-184 -303 1062 1033] def
+/Encoding 256 array def
+    0 1 255 {Encoding exch /.notdef put} for
+    Encoding 0 /glyph0 put
+    Encoding 1 /glyph1 put
+    Encoding 2 /glyph2 put
+    Encoding 3 /glyph3 put
+    Encoding 4 /glyph4 put
+    Encoding 5 /glyph5 put
+    Encoding 6 /glyph6 put
+    Encoding 7 /glyph7 put
+    Encoding 8 /glyph8 put
+    Encoding 9 /glyph9 put
+    Encoding 10 /glyph10 put
+    Encoding 11 /glyph11 put
+    Encoding 12 /glyph12 put
+    Encoding 13 /glyph13 put
+    Encoding 14 /glyph14 put
+    Encoding 15 /glyph15 put
+    Encoding 16 /glyph16 put
+    Encoding 17 /glyph17 put
+    Encoding 18 /glyph18 put
+    Encoding 19 /glyph19 put
+    Encoding 20 /glyph20 put
+    Encoding 21 /glyph21 put
+    Encoding 22 /glyph22 put
+    Encoding 23 /glyph23 put
+    Encoding 24 /glyph24 put
+    Encoding 25 /glyph25 put
+    Encoding 26 /glyph26 put
+    Encoding 27 /glyph27 put
+    Encoding 28 /glyph28 put
+    Encoding 29 /glyph29 put
+    Encoding 30 /glyph30 put
+    Encoding 31 /glyph31 put
+/CharProcs 33 dict def
+  CharProcs begin
+    /.notdef {} def
+    /glyph0 {
+	365 0 33 0 298 666 setcachedevice
+	33 0 moveto
+	33 666 lineto
+	298 666 lineto
+	298 0 lineto
+	33 0 lineto
+	closepath
+	66 33 moveto
+	265 33 lineto
+	265 633 lineto
+	66 633 lineto
+	66 33 lineto
+	closepath
+	fill
+    } bind def
+    /glyph1 {
+	722 0 24 0 695 687 setcachedevice
+	553 0 moveto
+	492 175 lineto
+	229 175 lineto
+	168 0 lineto
+	24 0 lineto
+	275 687 lineto
+	445 687 lineto
+	695 0 lineto
+	553 0 lineto
+	closepath
+	392 481 moveto
+	388 493 384 504 380 516 curveto
+	377 527 374 538 371 548 curveto
+	368 557 366 565 364 571 curveto
+	362 578 361 581 360 582 curveto
+	360 581 359 577 357 571 curveto
+	356 565 354 557 351 547 curveto
+	349 538 345 528 341 516 curveto
+	338 505 334 493 330 481 curveto
+	262 284 lineto
+	459 284 lineto
+	392 481 lineto
+	closepath
+	fill
+    } bind def
+    /glyph2 {
+	722 0 66 0 701 687 setcachedevice
+	539 0 moveto
+	379 261 lineto
+	210 261 lineto
+	210 0 lineto
+	66 0 lineto
+	66 687 lineto
+	410 687 lineto
+	453 687 491 683 523 673 curveto
+	555 664 582 650 603 632 curveto
+	625 615 641 593 651 568 curveto
+	662 543 667 514 667 482 curveto
+	667 457 664 434 656 412 curveto
+	648 391 638 372 624 355 curveto
+	611 339 595 325 576 313 curveto
+	558 302 537 294 515 289 curveto
+	701 0 lineto
+	539 0 lineto
+	closepath
+	522 477 moveto
+	522 510 511 535 489 551 curveto
+	467 567 436 576 395 576 curveto
+	210 576 lineto
+	210 373 lineto
+	399 373 lineto
+	420 373 439 375 455 380 curveto
+	470 385 482 393 493 402 curveto
+	502 411 510 422 515 435 curveto
+	520 447 522 461 522 477 curveto
+	closepath
+	fill
+    } bind def
+    /glyph3 {
+	666 0 66 0 627 687 setcachedevice
+	66 0 moveto
+	66 687 lineto
+	607 687 lineto
+	607 576 lineto
+	210 576 lineto
+	210 403 lineto
+	578 403 lineto
+	578 292 lineto
+	210 292 lineto
+	210 111 lineto
+	627 111 lineto
+	627 0 lineto
+	66 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph4 {
+	277 0 0 0 0 0 setcachedevice
+    } bind def
+    /glyph5 {
+	666 0 17 0 650 687 setcachedevice
+	405 282 moveto
+	405 0 lineto
+	262 0 lineto
+	262 282 lineto
+	17 687 lineto
+	167 687 lineto
+	333 396 lineto
+	500 687 lineto
+	650 687 lineto
+	405 282 lineto
+	closepath
+	fill
+    } bind def
+    /glyph6 {
+	777 0 41 -9 735 698 setcachedevice
+	735 347 moveto
+	735 293 728 245 711 200 curveto
+	696 157 673 119 643 87 curveto
+	613 57 577 32 533 15 curveto
+	490 0 441 -9 387 -9 curveto
+	330 -9 279 0 236 17 curveto
+	193 34 157 59 127 91 curveto
+	99 123 77 160 62 204 curveto
+	48 247 41 295 41 347 curveto
+	41 400 48 449 63 492 curveto
+	79 536 101 572 130 603 curveto
+	160 633 196 657 239 673 curveto
+	282 689 332 698 388 698 curveto
+	444 698 493 690 537 673 curveto
+	580 657 616 633 645 602 curveto
+	675 572 697 535 712 492 curveto
+	728 449 735 400 735 347 curveto
+	closepath
+	588 347 moveto
+	588 383 584 416 576 445 curveto
+	567 474 554 499 537 520 curveto
+	520 541 500 557 475 568 curveto
+	450 579 421 584 388 584 curveto
+	354 584 325 579 300 568 curveto
+	275 557 253 541 236 520 curveto
+	220 499 207 474 198 445 curveto
+	190 416 186 383 186 347 curveto
+	186 311 190 278 199 249 curveto
+	207 219 220 193 237 171 curveto
+	254 150 275 133 300 121 curveto
+	325 109 354 103 387 103 curveto
+	422 103 452 109 478 122 curveto
+	503 134 524 150 541 172 curveto
+	557 194 569 220 577 250 curveto
+	584 279 588 312 588 347 curveto
+	closepath
+	fill
+    } bind def
+    /glyph7 {
+	722 0 60 -9 661 687 setcachedevice
+	353 -9 moveto
+	310 -9 270 -4 234 5 curveto
+	199 16 168 31 142 53 curveto
+	116 75 96 103 82 136 curveto
+	67 170 60 210 60 257 curveto
+	60 687 lineto
+	204 687 lineto
+	204 269 lineto
+	204 240 207 215 214 194 curveto
+	222 173 232 156 245 142 curveto
+	258 129 274 119 293 112 curveto
+	312 106 333 103 356 103 curveto
+	380 103 401 106 421 113 curveto
+	441 119 458 129 472 144 curveto
+	486 158 497 175 505 197 curveto
+	513 218 517 244 517 273 curveto
+	517 687 lineto
+	661 687 lineto
+	661 265 lineto
+	661 218 653 177 638 142 curveto
+	623 108 602 80 574 57 curveto
+	547 34 514 18 477 6 curveto
+	439 -3 398 -9 353 -9 curveto
+	closepath
+	fill
+    } bind def
+    /glyph8 {
+	666 0 66 0 632 687 setcachedevice
+	632 470 moveto
+	632 440 628 412 618 384 curveto
+	608 357 593 333 572 311 curveto
+	552 290 525 273 494 261 curveto
+	462 249 425 242 381 242 curveto
+	210 242 lineto
+	210 0 lineto
+	66 0 lineto
+	66 687 lineto
+	375 687 lineto
+	419 687 458 683 490 672 curveto
+	522 662 549 646 570 627 curveto
+	591 608 607 585 617 558 curveto
+	627 532 632 502 632 470 curveto
+	closepath
+	487 467 moveto
+	487 503 477 530 456 548 curveto
+	435 566 402 576 359 576 curveto
+	210 576 lineto
+	210 353 lineto
+	363 353 lineto
+	385 353 403 355 419 361 curveto
+	434 366 447 374 458 384 curveto
+	468 395 475 407 480 421 curveto
+	485 435 487 450 487 467 curveto
+	closepath
+	fill
+    } bind def
+    /glyph9 {
+	666 0 28 -9 627 698 setcachedevice
+	627 198 moveto
+	627 167 622 139 610 113 curveto
+	599 87 582 65 558 47 curveto
+	534 29 503 15 466 5 curveto
+	429 -4 384 -9 333 -9 curveto
+	287 -9 247 -5 212 2 curveto
+	177 10 147 22 123 38 curveto
+	98 54 78 74 62 98 curveto
+	47 121 36 148 28 179 curveto
+	167 202 lineto
+	171 187 177 173 185 160 curveto
+	192 147 203 136 216 127 curveto
+	229 118 245 111 265 105 curveto
+	285 101 309 98 336 98 curveto
+	385 98 423 105 449 120 curveto
+	475 135 487 158 487 189 curveto
+	487 208 482 224 472 236 curveto
+	461 248 448 258 430 266 curveto
+	413 273 394 280 371 285 curveto
+	349 291 325 295 300 300 curveto
+	281 305 262 310 242 314 curveto
+	223 319 204 325 186 332 curveto
+	168 339 152 347 136 356 curveto
+	121 366 108 377 97 392 curveto
+	85 405 77 421 70 440 curveto
+	64 458 61 480 61 505 curveto
+	61 540 67 569 81 593 curveto
+	95 618 114 638 138 653 curveto
+	162 668 191 680 225 687 curveto
+	258 694 295 698 334 698 curveto
+	379 698 418 695 450 687 curveto
+	482 681 509 670 531 655 curveto
+	552 641 569 624 582 602 curveto
+	594 580 604 555 609 525 curveto
+	470 506 lineto
+	463 536 448 558 426 573 curveto
+	404 588 373 596 332 596 curveto
+	307 596 286 594 269 589 curveto
+	252 585 239 579 229 571 curveto
+	219 564 211 556 207 545 curveto
+	203 536 201 525 201 514 curveto
+	201 497 205 483 213 472 curveto
+	221 461 232 452 247 445 curveto
+	262 437 279 432 300 426 curveto
+	320 421 342 416 367 411 curveto
+	388 406 410 402 431 396 curveto
+	452 392 472 386 491 378 curveto
+	510 372 528 364 545 354 curveto
+	562 344 576 332 588 318 curveto
+	601 304 610 287 617 267 curveto
+	624 248 627 225 627 198 curveto
+	closepath
+	fill
+    } bind def
+    /glyph10 {
+	722 0 66 0 654 687 setcachedevice
+	485 0 moveto
+	186 529 lineto
+	187 515 188 501 190 486 curveto
+	191 474 192 461 193 446 curveto
+	194 432 194 418 194 405 curveto
+	194 0 lineto
+	66 0 lineto
+	66 687 lineto
+	231 687 lineto
+	535 153 lineto
+	534 167 532 181 531 196 curveto
+	530 209 529 223 528 239 curveto
+	527 255 526 271 526 288 curveto
+	526 687 lineto
+	654 687 lineto
+	654 0 lineto
+	485 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph11 {
+	943 0 0 0 942 687 setcachedevice
+	765 0 moveto
+	594 0 lineto
+	500 397 lineto
+	498 410 495 424 491 440 curveto
+	488 457 485 473 481 489 curveto
+	478 507 475 525 472 544 curveto
+	468 525 465 507 461 488 curveto
+	459 481 458 473 456 464 curveto
+	455 456 453 448 451 440 curveto
+	450 432 448 424 446 417 curveto
+	445 410 443 404 441 397 curveto
+	349 0 lineto
+	178 0 lineto
+	0 687 lineto
+	146 687 lineto
+	232 305 lineto
+	237 284 242 264 246 243 curveto
+	250 223 254 205 258 189 curveto
+	262 171 265 153 269 136 curveto
+	273 160 278 183 283 206 curveto
+	285 216 287 226 289 236 curveto
+	291 247 293 257 296 267 curveto
+	298 277 300 287 302 296 curveto
+	304 306 306 314 308 321 curveto
+	393 687 lineto
+	554 687 lineto
+	641 321 lineto
+	643 314 645 305 646 295 curveto
+	648 286 650 276 652 266 curveto
+	654 255 656 245 658 235 curveto
+	660 225 662 215 664 205 curveto
+	667 182 671 159 675 136 curveto
+	679 154 683 173 687 192 curveto
+	691 209 695 227 700 247 curveto
+	704 267 709 286 713 305 curveto
+	796 687 lineto
+	942 687 lineto
+	765 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph12 {
+	722 0 66 0 654 687 setcachedevice
+	510 0 moveto
+	510 294 lineto
+	210 294 lineto
+	210 0 lineto
+	66 0 lineto
+	66 687 lineto
+	210 687 lineto
+	210 414 lineto
+	510 414 lineto
+	510 687 lineto
+	654 687 lineto
+	654 0 lineto
+	510 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph13 {
+	333 0 96 0 236 504 setcachedevice
+	96 367 moveto
+	96 504 lineto
+	236 504 lineto
+	236 367 lineto
+	96 367 lineto
+	closepath
+	96 0 moveto
+	96 137 lineto
+	236 137 lineto
+	236 0 lineto
+	96 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph14 {
+	389 0 65 0 374 538 setcachedevice
+	69 0 moveto
+	69 404 lineto
+	69 415 69 427 69 440 curveto
+	69 453 69 465 68 477 curveto
+	68 488 67 499 67 508 curveto
+	67 517 66 523 65 528 curveto
+	196 528 lineto
+	197 524 198 518 198 508 curveto
+	199 499 200 488 200 476 curveto
+	201 465 202 454 202 442 curveto
+	203 431 203 422 203 415 curveto
+	205 415 lineto
+	211 434 218 452 225 467 curveto
+	232 482 240 495 250 505 curveto
+	259 516 270 524 283 530 curveto
+	296 535 312 538 331 538 curveto
+	339 538 347 538 355 536 curveto
+	363 535 369 533 374 531 curveto
+	374 416 lineto
+	365 418 356 420 347 421 curveto
+	338 423 328 423 315 423 curveto
+	281 423 254 410 235 382 curveto
+	216 354 207 313 207 259 curveto
+	207 0 lineto
+	69 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph15 {
+	610 0 39 -9 571 538 setcachedevice
+	571 264 moveto
+	571 224 566 187 555 153 curveto
+	543 120 527 91 504 67 curveto
+	482 43 454 24 420 10 curveto
+	387 -2 348 -9 303 -9 curveto
+	260 -9 222 -2 189 10 curveto
+	156 23 129 42 106 66 curveto
+	84 90 67 119 56 153 curveto
+	44 187 39 224 39 264 curveto
+	39 304 44 340 55 374 curveto
+	66 407 83 436 104 460 curveto
+	126 484 154 503 188 517 curveto
+	222 531 261 538 306 538 curveto
+	353 538 394 531 427 517 curveto
+	461 504 488 485 510 460 curveto
+	531 437 546 408 557 374 curveto
+	566 341 571 304 571 264 curveto
+	closepath
+	428 264 moveto
+	428 327 418 373 397 401 curveto
+	377 429 347 443 308 443 curveto
+	268 443 237 429 215 400 curveto
+	194 372 183 327 183 264 curveto
+	183 233 186 206 191 183 curveto
+	197 160 205 142 215 126 curveto
+	226 112 238 102 253 94 curveto
+	268 87 284 83 301 83 curveto
+	321 83 339 87 355 94 curveto
+	371 101 384 112 395 126 curveto
+	406 141 414 160 419 183 curveto
+	425 206 428 232 428 264 curveto
+	closepath
+	fill
+    } bind def
+    /glyph16 {
+	610 0 65 -9 569 724 setcachedevice
+	569 266 moveto
+	569 226 566 189 558 155 curveto
+	550 122 538 93 520 68 curveto
+	504 43 483 24 458 10 curveto
+	432 -2 402 -9 367 -9 curveto
+	352 -9 336 -7 320 -4 curveto
+	305 -1 290 3 275 11 curveto
+	262 18 249 28 237 40 curveto
+	226 52 215 67 207 84 curveto
+	206 84 lineto
+	206 78 206 70 205 61 curveto
+	205 53 204 44 203 36 curveto
+	203 27 202 20 201 13 curveto
+	201 7 200 2 199 0 curveto
+	65 0 lineto
+	66 11 67 27 68 48 curveto
+	69 69 69 93 69 120 curveto
+	69 724 lineto
+	207 724 lineto
+	207 522 lineto
+	207 512 207 502 207 492 curveto
+	207 482 206 473 206 464 curveto
+	206 455 205 445 205 436 curveto
+	207 436 lineto
+	223 473 246 499 275 514 curveto
+	304 530 337 538 375 538 curveto
+	409 538 438 531 463 518 curveto
+	487 504 507 485 523 461 curveto
+	539 437 551 408 558 375 curveto
+	565 342 569 305 569 266 curveto
+	closepath
+	426 266 moveto
+	426 326 418 370 400 399 curveto
+	383 428 355 442 318 442 curveto
+	305 442 291 440 277 434 curveto
+	264 429 251 419 240 405 curveto
+	230 392 221 373 214 350 curveto
+	208 327 205 297 205 261 curveto
+	205 227 208 198 214 175 curveto
+	221 153 229 135 240 121 curveto
+	250 107 262 98 276 92 curveto
+	290 86 303 83 317 83 curveto
+	352 83 379 98 398 127 curveto
+	417 156 426 202 426 266 curveto
+	closepath
+	fill
+    } bind def
+    /glyph17 {
+	333 0 12 -8 320 652 setcachedevice
+	205 -8 moveto
+	165 -8 133 2 111 24 curveto
+	90 46 79 79 79 124 curveto
+	79 435 lineto
+	12 435 lineto
+	12 528 lineto
+	85 528 lineto
+	128 652 lineto
+	214 652 lineto
+	214 528 lineto
+	314 528 lineto
+	314 435 lineto
+	214 435 lineto
+	214 161 lineto
+	214 135 219 116 229 104 curveto
+	239 92 254 85 274 85 curveto
+	283 85 291 86 297 87 curveto
+	304 89 312 90 320 92 curveto
+	320 7 lineto
+	304 2 286 -1 267 -4 curveto
+	248 -6 228 -8 205 -8 curveto
+	closepath
+	fill
+    } bind def
+    /glyph18 {
+	556 0 35 -9 515 538 setcachedevice
+	515 154 moveto
+	515 129 510 106 499 85 curveto
+	489 65 473 48 453 34 curveto
+	433 20 408 9 378 1 curveto
+	350 -5 316 -9 278 -9 curveto
+	245 -9 215 -7 187 -1 curveto
+	161 2 137 10 117 21 curveto
+	97 33 80 47 65 65 curveto
+	52 83 42 105 35 131 curveto
+	155 149 lineto
+	159 135 165 123 171 114 curveto
+	178 105 187 98 197 93 curveto
+	207 88 219 85 232 83 curveto
+	246 82 261 81 278 81 curveto
+	294 81 309 82 322 83 curveto
+	335 85 347 88 357 93 curveto
+	367 97 375 103 380 111 curveto
+	386 119 389 129 389 141 curveto
+	389 155 385 166 377 174 curveto
+	369 182 358 188 344 193 curveto
+	331 198 314 203 295 207 curveto
+	277 210 257 214 235 219 curveto
+	213 224 192 230 170 237 curveto
+	149 244 129 253 112 265 curveto
+	96 276 82 291 71 310 curveto
+	61 328 56 350 56 378 curveto
+	56 403 61 425 70 445 curveto
+	80 465 94 481 113 496 curveto
+	132 509 156 520 184 527 curveto
+	211 535 243 538 279 538 curveto
+	308 538 334 536 359 530 curveto
+	384 525 406 517 426 505 curveto
+	445 494 462 479 475 460 curveto
+	488 443 497 421 502 395 curveto
+	381 383 lineto
+	379 395 375 406 369 415 curveto
+	363 423 356 429 347 434 curveto
+	339 439 329 442 317 444 curveto
+	306 446 293 447 279 447 curveto
+	247 447 223 443 206 435 curveto
+	190 426 182 413 182 393 curveto
+	182 381 185 371 192 364 curveto
+	198 357 208 351 220 346 curveto
+	232 342 247 337 264 334 curveto
+	280 331 298 327 318 321 curveto
+	343 316 367 311 391 303 curveto
+	414 296 435 287 454 274 curveto
+	472 262 487 247 498 227 curveto
+	509 208 515 184 515 154 curveto
+	closepath
+	fill
+    } bind def
+    /glyph19 {
+	610 0 65 -207 569 539 setcachedevice
+	569 266 moveto
+	569 227 566 189 558 155 curveto
+	550 122 538 93 520 68 curveto
+	504 44 483 25 458 11 curveto
+	432 -2 402 -9 367 -9 curveto
+	352 -9 336 -7 320 -4 curveto
+	305 -1 290 3 276 11 curveto
+	262 18 250 27 237 40 curveto
+	226 51 215 66 207 83 curveto
+	204 83 lineto
+	204 82 204 78 205 71 curveto
+	205 65 205 58 206 49 curveto
+	206 41 206 31 207 21 curveto
+	207 12 207 3 207 -4 curveto
+	207 -207 lineto
+	69 -207 lineto
+	69 406 lineto
+	69 433 69 458 68 479 curveto
+	68 500 67 516 65 528 curveto
+	199 528 lineto
+	199 526 200 521 201 515 curveto
+	202 508 203 501 203 492 curveto
+	204 484 204 475 204 466 curveto
+	205 457 205 449 205 442 curveto
+	207 442 lineto
+	223 477 246 501 275 517 curveto
+	304 532 337 539 375 539 curveto
+	409 539 438 533 462 519 curveto
+	487 505 507 486 523 462 curveto
+	539 438 550 410 558 376 curveto
+	565 343 569 306 569 266 curveto
+	closepath
+	426 266 moveto
+	426 326 417 371 399 400 curveto
+	381 429 354 444 317 444 curveto
+	304 444 291 441 277 436 curveto
+	264 430 251 420 241 406 curveto
+	230 393 222 374 215 351 curveto
+	208 328 205 298 205 262 curveto
+	205 228 208 199 214 176 curveto
+	221 153 229 135 240 121 curveto
+	250 108 263 98 276 92 curveto
+	289 87 303 83 316 83 curveto
+	334 83 350 87 363 94 curveto
+	377 101 389 112 398 127 curveto
+	407 142 414 161 419 184 curveto
+	424 207 426 234 426 266 curveto
+	closepath
+	fill
+    } bind def
+    /glyph20 {
+	556 0 29 -9 562 538 setcachedevice
+	191 -9 moveto
+	166 -9 144 -6 124 0 curveto
+	104 7 86 18 72 31 curveto
+	59 44 48 61 40 81 curveto
+	33 101 29 124 29 149 curveto
+	29 180 34 207 45 228 curveto
+	56 249 71 267 90 280 curveto
+	109 293 131 302 156 309 curveto
+	182 314 208 317 237 318 curveto
+	351 320 lineto
+	351 347 lineto
+	351 366 350 382 346 395 curveto
+	343 408 338 418 331 426 curveto
+	325 435 317 440 307 444 curveto
+	298 447 287 449 274 449 curveto
+	263 449 253 448 244 445 curveto
+	235 443 227 439 220 434 curveto
+	214 428 209 420 205 411 curveto
+	201 401 198 389 196 374 curveto
+	53 381 lineto
+	57 404 64 425 74 444 curveto
+	84 463 99 479 118 494 curveto
+	136 508 159 519 186 526 curveto
+	212 534 244 538 280 538 curveto
+	312 538 342 534 368 525 curveto
+	394 518 415 505 433 489 curveto
+	451 473 465 454 474 430 curveto
+	483 407 488 379 488 348 curveto
+	488 156 lineto
+	488 144 489 133 490 123 curveto
+	491 113 493 105 497 98 curveto
+	500 92 504 86 510 83 curveto
+	515 80 522 78 532 78 curveto
+	542 78 552 79 562 81 curveto
+	562 6 lineto
+	554 5 547 3 540 1 curveto
+	534 0 527 0 520 -1 curveto
+	514 -2 507 -3 500 -4 curveto
+	493 -4 484 -5 474 -5 curveto
+	440 -5 415 2 398 19 curveto
+	382 36 372 61 368 94 curveto
+	365 94 lineto
+	347 61 324 36 295 17 curveto
+	267 0 232 -9 191 -9 curveto
+	closepath
+	351 244 moveto
+	281 243 lineto
+	267 243 252 242 239 240 curveto
+	226 238 215 234 205 229 curveto
+	195 223 187 215 181 204 curveto
+	175 193 172 179 172 160 curveto
+	172 135 178 116 189 104 curveto
+	201 92 216 85 235 85 curveto
+	253 85 269 89 283 97 curveto
+	297 104 310 114 320 126 curveto
+	330 139 337 152 343 168 curveto
+	348 185 351 201 351 217 curveto
+	351 244 lineto
+	closepath
+	fill
+    } bind def
+    /glyph21 {
+	556 0 39 -9 526 538 setcachedevice
+	290 -9 moveto
+	248 -9 211 -3 180 9 curveto
+	148 22 122 41 101 64 curveto
+	81 88 65 117 54 150 curveto
+	44 184 39 220 39 261 curveto
+	39 305 44 344 56 378 curveto
+	67 413 83 441 105 465 curveto
+	126 489 153 507 185 519 curveto
+	216 531 251 538 291 538 curveto
+	326 538 356 533 383 524 curveto
+	409 515 432 503 451 487 curveto
+	470 471 486 453 498 431 curveto
+	510 410 518 386 522 361 curveto
+	384 354 lineto
+	381 381 371 403 355 419 curveto
+	340 436 317 443 289 443 curveto
+	252 443 225 429 208 398 curveto
+	191 368 183 324 183 266 curveto
+	183 145 219 83 291 83 curveto
+	316 83 338 92 356 108 curveto
+	374 125 384 149 389 182 curveto
+	526 175 lineto
+	523 151 516 128 504 105 curveto
+	493 83 478 63 458 46 curveto
+	438 29 414 16 386 5 curveto
+	358 -4 326 -9 290 -9 curveto
+	closepath
+	fill
+    } bind def
+    /glyph22 {
+	556 0 39 -9 521 538 setcachedevice
+	286 -9 moveto
+	248 -9 214 -3 183 7 curveto
+	153 18 127 35 105 58 curveto
+	84 81 67 110 56 145 curveto
+	44 179 39 220 39 266 curveto
+	39 316 45 359 59 394 curveto
+	72 428 91 456 114 478 curveto
+	137 499 163 514 193 523 curveto
+	223 533 254 538 288 538 curveto
+	329 538 365 531 395 516 curveto
+	424 502 448 481 467 455 curveto
+	486 429 500 398 508 362 curveto
+	517 326 521 286 521 241 curveto
+	521 237 lineto
+	183 237 lineto
+	183 215 185 195 188 176 curveto
+	192 157 199 141 208 126 curveto
+	216 113 228 102 242 94 curveto
+	256 86 272 82 292 82 curveto
+	316 82 336 87 352 97 curveto
+	367 107 378 123 384 145 curveto
+	514 133 lineto
+	508 119 500 103 489 85 curveto
+	479 69 465 53 447 39 curveto
+	430 25 408 13 381 4 curveto
+	355 -4 323 -9 286 -9 curveto
+	closepath
+	286 451 moveto
+	272 451 259 449 247 444 curveto
+	234 440 224 432 215 422 curveto
+	206 412 199 398 193 382 curveto
+	187 366 185 346 184 323 curveto
+	389 323 lineto
+	386 366 376 398 358 419 curveto
+	340 440 316 451 286 451 curveto
+	closepath
+	fill
+    } bind def
+    /glyph23 {
+	556 0 13 -74 541 742 setcachedevice
+	541 201 moveto
+	541 173 537 148 528 125 curveto
+	519 103 505 83 486 67 curveto
+	467 51 442 38 413 28 curveto
+	383 19 348 13 307 11 curveto
+	307 -74 lineto
+	253 -74 lineto
+	253 9 lineto
+	217 11 185 16 157 24 curveto
+	129 33 106 45 86 62 curveto
+	67 78 52 97 40 120 curveto
+	28 143 19 169 13 199 curveto
+	138 222 lineto
+	140 207 144 192 149 179 curveto
+	154 166 161 155 170 145 curveto
+	179 136 190 129 204 123 curveto
+	217 117 233 113 253 110 curveto
+	253 301 lineto
+	253 302 250 303 246 304 curveto
+	243 304 240 305 238 305 curveto
+	213 311 188 318 164 327 curveto
+	140 335 118 347 99 362 curveto
+	80 376 64 395 52 418 curveto
+	41 440 35 469 35 502 curveto
+	35 532 40 558 51 579 curveto
+	62 600 77 618 96 632 curveto
+	115 646 139 656 166 664 curveto
+	192 671 222 675 253 676 curveto
+	253 742 lineto
+	307 742 lineto
+	307 676 lineto
+	341 675 371 671 395 663 curveto
+	420 655 440 644 458 630 curveto
+	475 616 488 599 499 578 curveto
+	509 557 518 533 524 505 curveto
+	395 486 lineto
+	391 515 381 537 367 552 curveto
+	353 567 333 577 307 581 curveto
+	307 409 lineto
+	308 408 310 408 312 408 curveto
+	313 408 315 408 317 407 curveto
+	345 400 373 393 400 384 curveto
+	427 375 451 363 472 348 curveto
+	493 333 509 314 522 291 curveto
+	535 267 541 237 541 201 curveto
+	closepath
+	253 583 moveto
+	236 582 222 579 210 574 curveto
+	199 569 189 564 182 557 curveto
+	175 550 170 542 167 533 curveto
+	165 524 163 515 163 504 curveto
+	163 491 165 479 169 470 curveto
+	174 461 180 454 188 448 curveto
+	197 442 206 437 217 433 curveto
+	229 429 240 425 253 420 curveto
+	253 583 lineto
+	closepath
+	415 199 moveto
+	415 215 412 228 406 238 curveto
+	401 248 394 255 383 262 curveto
+	374 268 362 273 349 277 curveto
+	336 281 322 285 307 290 curveto
+	307 110 lineto
+	341 113 368 121 387 135 curveto
+	405 149 415 170 415 199 curveto
+	closepath
+	fill
+    } bind def
+    /glyph24 {
+	556 0 62 0 528 687 setcachedevice
+	62 0 moveto
+	62 102 lineto
+	233 102 lineto
+	233 571 lineto
+	68 468 lineto
+	68 576 lineto
+	240 687 lineto
+	370 687 lineto
+	370 102 lineto
+	528 102 lineto
+	528 0 lineto
+	62 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph25 {
+	277 0 67 0 208 148 setcachedevice
+	67 0 moveto
+	67 148 lineto
+	208 148 lineto
+	208 0 lineto
+	67 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph26 {
+	556 0 30 -9 528 687 setcachedevice
+	528 229 moveto
+	528 194 523 163 512 133 curveto
+	501 104 485 79 463 58 curveto
+	442 37 415 20 383 8 curveto
+	352 -3 315 -9 273 -9 curveto
+	235 -9 201 -4 172 4 curveto
+	144 13 120 26 100 42 curveto
+	81 59 65 78 54 100 curveto
+	42 122 35 146 30 171 curveto
+	167 183 lineto
+	170 172 174 162 179 151 curveto
+	183 142 190 133 198 125 curveto
+	207 117 217 111 229 106 curveto
+	242 102 257 99 274 99 curveto
+	309 99 336 109 356 131 curveto
+	376 153 387 185 387 226 curveto
+	387 244 385 260 379 275 curveto
+	375 290 367 302 358 312 curveto
+	349 323 337 331 324 336 curveto
+	311 342 295 345 277 345 curveto
+	255 345 236 341 221 332 curveto
+	207 324 194 313 184 300 curveto
+	50 300 lineto
+	74 687 lineto
+	488 687 lineto
+	488 585 lineto
+	199 585 lineto
+	187 412 lineto
+	201 424 218 434 239 443 curveto
+	260 451 284 456 312 456 curveto
+	346 456 376 450 403 439 curveto
+	430 428 452 413 471 393 curveto
+	489 373 503 349 513 321 curveto
+	523 293 528 263 528 229 curveto
+	closepath
+	fill
+    } bind def
+    /glyph27 {
+	889 0 65 0 827 538 setcachedevice
+	380 0 moveto
+	380 296 lineto
+	380 316 379 335 376 353 curveto
+	374 370 369 384 363 396 curveto
+	356 409 348 418 338 425 curveto
+	328 432 315 435 300 435 curveto
+	287 435 274 432 262 424 curveto
+	251 417 241 407 233 393 curveto
+	225 380 218 364 213 345 curveto
+	209 326 207 306 207 283 curveto
+	207 0 lineto
+	69 0 lineto
+	69 410 lineto
+	69 421 69 433 69 445 curveto
+	69 457 69 468 68 479 curveto
+	68 490 67 500 67 509 curveto
+	67 517 66 523 65 528 curveto
+	196 528 lineto
+	197 524 198 518 198 509 curveto
+	199 501 200 491 200 480 curveto
+	201 470 202 460 202 449 curveto
+	203 439 203 430 203 423 curveto
+	205 423 lineto
+	222 463 243 493 268 511 curveto
+	293 529 323 538 358 538 curveto
+	399 538 431 529 456 509 curveto
+	480 489 497 460 505 423 curveto
+	508 423 lineto
+	518 445 528 463 539 478 curveto
+	550 492 562 504 575 513 curveto
+	588 522 603 528 618 532 curveto
+	633 536 650 538 668 538 curveto
+	697 538 722 533 742 522 curveto
+	762 512 778 498 791 479 curveto
+	803 461 812 440 818 415 curveto
+	824 391 827 364 827 335 curveto
+	827 0 lineto
+	690 0 lineto
+	690 296 lineto
+	690 316 689 335 687 353 curveto
+	684 370 679 384 673 396 curveto
+	666 409 658 418 648 425 curveto
+	638 432 625 435 610 435 curveto
+	597 435 584 432 573 425 curveto
+	562 418 552 408 544 395 curveto
+	536 382 529 367 524 349 curveto
+	520 331 518 311 517 289 curveto
+	517 0 lineto
+	380 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph28 {
+	277 0 69 0 207 724 setcachedevice
+	69 623 moveto
+	69 724 lineto
+	207 724 lineto
+	207 623 lineto
+	69 623 lineto
+	closepath
+	69 0 moveto
+	69 528 lineto
+	207 528 lineto
+	207 0 lineto
+	69 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph29 {
+	277 0 69 0 207 724 setcachedevice
+	69 0 moveto
+	69 724 lineto
+	207 724 lineto
+	207 0 lineto
+	69 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph30 {
+	610 0 65 0 548 538 setcachedevice
+	412 0 moveto
+	412 296 lineto
+	412 316 410 335 407 353 curveto
+	404 370 398 384 391 396 curveto
+	383 409 374 418 361 425 curveto
+	350 432 335 435 317 435 curveto
+	301 435 286 432 272 424 curveto
+	259 417 248 407 237 393 curveto
+	228 380 220 364 215 345 curveto
+	209 326 207 306 207 283 curveto
+	207 0 lineto
+	69 0 lineto
+	69 410 lineto
+	69 421 69 433 69 445 curveto
+	69 457 69 468 68 479 curveto
+	68 490 67 500 67 509 curveto
+	67 517 66 523 65 528 curveto
+	196 528 lineto
+	197 524 198 518 198 509 curveto
+	199 501 200 491 200 480 curveto
+	201 470 202 460 202 449 curveto
+	203 439 203 430 203 423 curveto
+	205 423 lineto
+	223 463 247 493 274 511 curveto
+	302 529 336 538 375 538 curveto
+	406 538 434 533 456 522 curveto
+	478 512 495 498 509 479 curveto
+	523 461 533 440 539 415 curveto
+	545 391 548 364 548 335 curveto
+	548 0 lineto
+	412 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph31 {
+	500 0 33 0 472 528 setcachedevice
+	33 0 moveto
+	33 97 lineto
+	296 429 lineto
+	53 429 lineto
+	53 528 lineto
+	448 528 lineto
+	448 430 lineto
+	186 100 lineto
+	472 100 lineto
+	472 0 lineto
+	33 0 lineto
+	closepath
+	fill
+    } bind def
+  end
+/BuildGlyph {
+  exch /CharProcs get exch
+  2 copy known not
+    {pop /.notdef} if
+  get exec
+} bind def
+/BuildChar {
+  1 index /Encoding get exch get
+  1 index /BuildGlyph get exec
+} bind def
+currentdict end
+(LiberationSans-BoldFID182HGSet2) cvn exch definefont pop
+%%EndResource
+%%BeginResource: font LiberationSansFID183HGSet2
+%!PS-AdobeFont-1.0-1.4587
+% Creator: SunTypeTools-TT 1.0 gelf
+% Original font name: LiberationSans
+30 dict begin
+/PaintType 0 def
+/FontType 3 def
+/StrokeWidth 0 def
+/FontName (LiberationSansFID183HGSet2) cvn def
+/XUID [103 0 0 16#EE12CDB5 55 16#09E96EC1 16#FD4FDAD4] def
+/FontMatrix [.001 0 0 .001 0 0] def
+/FontBBox [-203 -303 1050 910] def
+/Encoding 256 array def
+    0 1 255 {Encoding exch /.notdef put} for
+    Encoding 0 /glyph0 put
+    Encoding 1 /glyph1 put
+    Encoding 2 /glyph2 put
+    Encoding 3 /glyph3 put
+    Encoding 4 /glyph4 put
+    Encoding 5 /glyph5 put
+    Encoding 6 /glyph6 put
+    Encoding 7 /glyph7 put
+    Encoding 8 /glyph8 put
+    Encoding 9 /glyph9 put
+    Encoding 10 /glyph10 put
+    Encoding 11 /glyph11 put
+    Encoding 12 /glyph12 put
+    Encoding 13 /glyph13 put
+    Encoding 14 /glyph14 put
+    Encoding 15 /glyph15 put
+    Encoding 16 /glyph16 put
+    Encoding 17 /glyph17 put
+    Encoding 18 /glyph18 put
+    Encoding 19 /glyph19 put
+    Encoding 20 /glyph20 put
+    Encoding 21 /glyph21 put
+    Encoding 22 /glyph22 put
+    Encoding 23 /glyph23 put
+    Encoding 24 /glyph24 put
+    Encoding 25 /glyph25 put
+    Encoding 26 /glyph26 put
+    Encoding 27 /glyph27 put
+    Encoding 28 /glyph28 put
+    Encoding 29 /glyph29 put
+    Encoding 30 /glyph30 put
+    Encoding 31 /glyph31 put
+    Encoding 32 /glyph32 put
+    Encoding 33 /glyph33 put
+    Encoding 34 /glyph34 put
+    Encoding 35 /glyph35 put
+    Encoding 36 /glyph36 put
+    Encoding 37 /glyph37 put
+    Encoding 38 /glyph38 put
+    Encoding 39 /glyph39 put
+    Encoding 40 /glyph40 put
+    Encoding 41 /glyph41 put
+    Encoding 42 /glyph42 put
+    Encoding 43 /glyph43 put
+    Encoding 44 /glyph44 put
+    Encoding 45 /glyph45 put
+    Encoding 46 /glyph46 put
+    Encoding 47 /glyph47 put
+    Encoding 48 /glyph48 put
+    Encoding 49 /glyph49 put
+    Encoding 50 /glyph50 put
+    Encoding 51 /glyph51 put
+    Encoding 52 /glyph52 put
+    Encoding 53 /glyph53 put
+    Encoding 54 /glyph54 put
+/CharProcs 56 dict def
+  CharProcs begin
+    /.notdef {} def
+    /glyph0 {
+	365 0 33 0 298 666 setcachedevice
+	33 0 moveto
+	33 666 lineto
+	298 666 lineto
+	298 0 lineto
+	33 0 lineto
+	closepath
+	66 33 moveto
+	265 33 lineto
+	265 633 lineto
+	66 633 lineto
+	66 33 lineto
+	closepath
+	fill
+    } bind def
+    /glyph1 {
+	666 0 1 0 665 687 setcachedevice
+	569 0 moveto
+	491 201 lineto
+	177 201 lineto
+	98 0 lineto
+	1 0 lineto
+	282 687 lineto
+	388 687 lineto
+	665 0 lineto
+	569 0 lineto
+	closepath
+	375 500 moveto
+	370 514 365 527 360 540 curveto
+	355 553 351 565 347 577 curveto
+	344 587 341 597 338 604 curveto
+	336 611 334 616 334 617 curveto
+	333 616 332 611 330 604 curveto
+	328 596 325 587 321 576 curveto
+	317 565 313 553 308 539 curveto
+	304 526 299 513 293 500 curveto
+	206 273 lineto
+	463 273 lineto
+	375 500 lineto
+	closepath
+	fill
+    } bind def
+    /glyph2 {
+	333 0 5 -207 270 724 setcachedevice
+	270 257 moveto
+	270 212 268 169 260 127 curveto
+	254 86 243 47 228 8 curveto
+	214 -28 195 -65 172 -101 curveto
+	149 -137 122 -172 90 -207 curveto
+	5 -207 lineto
+	36 -172 62 -137 85 -101 curveto
+	107 -65 125 -29 140 9 curveto
+	154 47 165 87 172 128 curveto
+	179 170 182 213 182 258 curveto
+	182 304 179 347 172 388 curveto
+	165 430 154 469 140 508 curveto
+	125 546 107 583 85 619 curveto
+	63 655 36 690 5 724 curveto
+	90 724 lineto
+	122 690 149 655 172 619 curveto
+	195 583 213 547 228 508 curveto
+	243 471 253 431 260 389 curveto
+	267 348 270 305 270 259 curveto
+	270 257 lineto
+	closepath
+	fill
+    } bind def
+    /glyph3 {
+	277 0 0 0 0 0 setcachedevice
+    } bind def
+    /glyph4 {
+	556 0 82 0 522 687 setcachedevice
+	82 0 moveto
+	82 687 lineto
+	175 687 lineto
+	175 76 lineto
+	522 76 lineto
+	522 0 lineto
+	82 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph5 {
+	222 0 66 0 154 724 setcachedevice
+	66 640 moveto
+	66 724 lineto
+	154 724 lineto
+	154 640 lineto
+	66 640 lineto
+	closepath
+	66 0 moveto
+	66 528 lineto
+	154 528 lineto
+	154 0 lineto
+	66 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph6 {
+	500 0 67 0 501 724 setcachedevice
+	398 0 moveto
+	219 241 lineto
+	155 187 lineto
+	155 0 lineto
+	67 0 lineto
+	67 724 lineto
+	155 724 lineto
+	155 271 lineto
+	387 528 lineto
+	490 528 lineto
+	275 301 lineto
+	501 0 lineto
+	398 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph7 {
+	556 0 42 -9 511 538 setcachedevice
+	134 245 moveto
+	134 218 137 192 143 169 curveto
+	148 146 157 126 169 109 curveto
+	181 92 196 79 215 70 curveto
+	233 61 256 56 282 56 curveto
+	320 56 351 63 374 79 curveto
+	396 94 412 113 420 137 curveto
+	497 115 lineto
+	492 101 484 86 474 71 curveto
+	464 56 451 43 434 31 curveto
+	418 19 397 9 372 1 curveto
+	347 -5 317 -9 282 -9 curveto
+	204 -9 145 13 104 60 curveto
+	63 106 42 175 42 267 curveto
+	42 316 48 358 61 393 curveto
+	73 427 90 455 111 477 curveto
+	133 498 158 514 187 523 curveto
+	215 533 246 538 278 538 curveto
+	323 538 360 531 390 516 curveto
+	419 502 443 482 461 457 curveto
+	479 432 492 402 500 368 curveto
+	507 334 511 297 511 257 curveto
+	511 245 lineto
+	134 245 lineto
+	closepath
+	420 312 moveto
+	416 368 402 409 378 435 curveto
+	355 460 321 473 277 473 curveto
+	263 473 247 471 231 466 curveto
+	215 461 200 453 186 440 curveto
+	173 429 161 413 151 392 curveto
+	142 371 137 345 135 312 curveto
+	420 312 lineto
+	closepath
+	fill
+    } bind def
+    /glyph8 {
+	500 0 27 -9 463 536 setcachedevice
+	463 145 moveto
+	463 121 459 99 449 80 curveto
+	440 61 426 44 407 31 curveto
+	389 18 367 8 340 0 curveto
+	314 -5 284 -9 249 -9 curveto
+	219 -9 191 -7 166 -2 curveto
+	142 1 121 9 102 20 curveto
+	83 30 68 44 55 61 curveto
+	43 78 34 99 27 124 curveto
+	105 139 lineto
+	112 111 128 90 151 77 curveto
+	175 63 208 57 249 57 curveto
+	268 57 285 58 301 61 curveto
+	317 63 331 68 342 74 curveto
+	353 81 362 89 369 100 curveto
+	375 110 378 123 378 139 curveto
+	378 155 375 168 367 178 curveto
+	359 188 349 197 335 204 curveto
+	322 210 306 216 287 222 curveto
+	268 227 247 232 224 238 curveto
+	203 244 182 250 161 257 curveto
+	141 264 122 273 105 284 curveto
+	88 295 75 309 64 326 curveto
+	54 342 48 363 48 388 curveto
+	48 437 65 473 100 499 curveto
+	134 523 184 536 250 536 curveto
+	308 536 354 526 389 505 curveto
+	423 485 445 452 454 407 curveto
+	375 397 lineto
+	373 411 367 422 359 432 curveto
+	352 441 342 448 331 454 curveto
+	320 459 308 464 293 466 curveto
+	280 469 265 470 250 470 curveto
+	210 470 181 464 162 452 curveto
+	144 440 134 422 134 397 curveto
+	134 383 137 371 145 362 curveto
+	151 353 161 345 174 338 curveto
+	186 332 201 327 219 322 curveto
+	236 317 256 312 277 307 curveto
+	291 303 305 300 320 295 curveto
+	334 291 349 287 363 281 curveto
+	376 275 390 269 402 261 curveto
+	414 253 424 244 434 233 curveto
+	443 223 450 210 456 195 curveto
+	461 181 463 165 463 145 curveto
+	closepath
+	fill
+    } bind def
+    /glyph9 {
+	556 0 41 0 519 698 setcachedevice
+	519 503 moveto
+	519 480 516 460 510 442 curveto
+	504 425 496 410 485 395 curveto
+	476 382 464 370 451 358 curveto
+	438 348 425 337 412 327 curveto
+	398 318 386 308 373 298 curveto
+	360 289 348 279 338 268 curveto
+	328 257 319 245 313 231 curveto
+	307 218 303 202 303 184 curveto
+	217 184 lineto
+	218 206 222 226 228 243 curveto
+	234 260 242 274 252 288 curveto
+	263 301 274 312 287 323 curveto
+	299 333 312 343 325 352 curveto
+	338 361 351 371 364 380 curveto
+	376 389 387 399 397 411 curveto
+	407 422 415 435 421 449 curveto
+	427 463 430 480 430 500 curveto
+	430 519 427 536 419 551 curveto
+	413 566 403 579 391 589 curveto
+	378 599 363 606 345 612 curveto
+	328 617 308 620 286 620 curveto
+	240 620 204 608 177 585 curveto
+	151 563 135 532 130 492 curveto
+	41 498 lineto
+	44 525 51 551 62 575 curveto
+	73 599 88 621 108 639 curveto
+	128 657 152 671 182 682 curveto
+	210 692 245 698 285 698 curveto
+	322 698 355 693 384 684 curveto
+	413 675 437 663 458 645 curveto
+	478 629 493 608 503 584 curveto
+	513 560 519 533 519 503 curveto
+	closepath
+	213 0 moveto
+	213 98 lineto
+	309 98 lineto
+	309 0 lineto
+	213 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph10 {
+	556 0 42 -9 556 538 setcachedevice
+	202 -9 moveto
+	149 -9 109 4 82 32 curveto
+	56 60 42 98 42 147 curveto
+	42 182 49 210 62 233 curveto
+	75 255 92 272 114 285 curveto
+	135 298 159 307 187 312 curveto
+	214 316 242 319 270 320 curveto
+	389 322 lineto
+	389 351 lineto
+	389 373 387 391 382 406 curveto
+	377 421 371 434 361 443 curveto
+	352 453 340 460 326 464 curveto
+	312 469 295 471 275 471 curveto
+	259 471 244 470 229 467 curveto
+	216 465 204 460 194 454 curveto
+	184 448 176 439 169 428 curveto
+	164 417 160 404 157 387 curveto
+	65 395 lineto
+	69 416 75 435 84 453 curveto
+	93 470 106 485 123 498 curveto
+	140 510 161 520 186 527 curveto
+	211 534 242 538 277 538 curveto
+	344 538 394 523 427 492 curveto
+	461 462 478 418 478 360 curveto
+	478 132 lineto
+	478 106 481 87 488 74 curveto
+	495 61 508 54 527 54 curveto
+	532 54 537 54 541 55 curveto
+	546 55 551 56 556 57 curveto
+	556 2 lineto
+	545 0 534 0 523 -2 curveto
+	512 -3 500 -4 488 -4 curveto
+	472 -4 458 -2 445 1 curveto
+	434 6 424 12 416 21 curveto
+	409 30 403 41 399 55 curveto
+	395 68 393 83 392 101 curveto
+	389 101 lineto
+	379 84 369 69 358 55 curveto
+	347 41 333 30 318 20 curveto
+	304 11 287 3 268 -1 curveto
+	249 -6 227 -9 202 -9 curveto
+	closepath
+	222 56 moveto
+	250 56 274 61 295 71 curveto
+	316 82 333 94 348 110 curveto
+	361 126 372 144 378 163 curveto
+	385 182 389 200 389 217 curveto
+	389 260 lineto
+	292 258 lineto
+	271 258 251 257 231 254 curveto
+	212 251 195 246 180 237 curveto
+	166 229 154 218 145 203 curveto
+	137 189 132 169 132 145 curveto
+	132 117 140 95 156 79 curveto
+	171 64 193 56 222 56 curveto
+	closepath
+	fill
+    } bind def
+    /glyph11 {
+	556 0 66 0 491 538 setcachedevice
+	402 0 moveto
+	402 334 lineto
+	402 360 401 382 397 399 curveto
+	394 416 387 430 378 441 curveto
+	370 451 359 459 345 463 curveto
+	332 468 314 470 293 470 curveto
+	273 470 254 466 237 459 curveto
+	221 452 207 441 194 427 curveto
+	183 414 173 396 166 376 curveto
+	160 356 157 333 157 306 curveto
+	157 0 lineto
+	69 0 lineto
+	69 415 lineto
+	69 426 69 438 69 450 curveto
+	69 462 68 474 68 485 curveto
+	68 496 67 505 67 513 curveto
+	67 520 66 525 66 528 curveto
+	149 528 lineto
+	149 526 149 522 150 515 curveto
+	150 508 151 500 151 490 curveto
+	152 481 152 472 152 462 curveto
+	153 453 153 444 153 437 curveto
+	154 437 lineto
+	163 453 172 467 182 479 curveto
+	192 491 204 502 217 511 curveto
+	230 519 246 526 263 531 curveto
+	280 535 300 538 323 538 curveto
+	353 538 378 534 399 527 curveto
+	420 520 437 509 451 494 curveto
+	465 479 475 460 481 436 curveto
+	488 413 491 384 491 352 curveto
+	491 0 lineto
+	402 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph12 {
+	556 0 41 -9 491 724 setcachedevice
+	400 84 moveto
+	384 51 363 27 336 12 curveto
+	309 -1 276 -9 236 -9 curveto
+	169 -9 121 12 89 57 curveto
+	58 102 41 170 41 261 curveto
+	41 445 106 538 236 538 curveto
+	276 538 309 531 336 516 curveto
+	363 501 384 478 400 446 curveto
+	401 446 lineto
+	401 449 401 454 401 461 curveto
+	401 468 401 476 401 483 curveto
+	401 491 400 498 400 505 curveto
+	400 512 400 517 400 520 curveto
+	400 724 lineto
+	488 724 lineto
+	488 108 lineto
+	488 96 488 84 489 72 curveto
+	489 61 489 50 489 40 curveto
+	490 30 490 22 490 15 curveto
+	491 8 491 3 491 0 curveto
+	407 0 lineto
+	407 3 406 7 406 14 curveto
+	405 20 405 26 404 34 curveto
+	404 42 403 50 403 59 curveto
+	403 67 402 76 402 84 curveto
+	400 84 lineto
+	closepath
+	134 264 moveto
+	134 228 136 197 141 170 curveto
+	145 145 152 124 163 106 curveto
+	173 90 186 78 201 69 curveto
+	217 62 236 58 258 58 curveto
+	281 58 302 62 320 69 curveto
+	337 76 352 88 364 105 curveto
+	376 122 385 144 391 171 curveto
+	397 198 400 231 400 270 curveto
+	400 308 397 339 391 365 curveto
+	385 391 376 412 364 428 curveto
+	352 444 337 455 320 462 curveto
+	303 469 282 473 259 473 curveto
+	238 473 220 469 204 461 curveto
+	188 454 175 442 165 425 curveto
+	154 409 147 388 142 361 curveto
+	137 334 134 302 134 264 curveto
+	closepath
+	fill
+    } bind def
+    /glyph13 {
+	666 0 82 0 614 687 setcachedevice
+	614 193 moveto
+	614 159 607 129 593 104 curveto
+	580 80 562 60 538 44 curveto
+	515 29 488 18 458 10 curveto
+	427 3 395 0 361 0 curveto
+	82 0 lineto
+	82 687 lineto
+	332 687 lineto
+	370 687 404 685 434 678 curveto
+	463 672 489 662 510 648 curveto
+	531 635 546 617 558 596 curveto
+	568 575 574 550 574 520 curveto
+	574 501 571 483 566 466 curveto
+	561 450 553 435 541 420 curveto
+	531 407 517 395 500 385 curveto
+	484 375 465 368 443 362 curveto
+	471 359 495 353 517 343 curveto
+	538 334 556 322 570 307 curveto
+	584 293 595 276 603 256 curveto
+	610 237 614 216 614 193 curveto
+	closepath
+	480 509 moveto
+	480 546 468 573 442 589 curveto
+	417 605 380 613 332 613 curveto
+	175 613 lineto
+	175 395 lineto
+	332 395 lineto
+	359 395 382 398 401 403 curveto
+	420 409 435 416 447 426 curveto
+	458 436 467 448 472 462 curveto
+	478 476 480 492 480 509 curveto
+	closepath
+	520 201 moveto
+	520 223 516 241 508 256 curveto
+	500 271 488 284 473 294 curveto
+	458 304 440 311 419 315 curveto
+	398 320 375 322 349 322 curveto
+	175 322 lineto
+	175 74 lineto
+	356 74 lineto
+	380 74 402 76 422 80 curveto
+	442 84 459 91 474 101 curveto
+	488 110 499 124 507 140 curveto
+	516 156 520 176 520 201 curveto
+	closepath
+	fill
+    } bind def
+    /glyph14 {
+	722 0 50 -9 684 698 setcachedevice
+	386 622 moveto
+	348 622 313 615 283 602 curveto
+	253 589 228 571 207 546 curveto
+	187 522 171 494 161 459 curveto
+	150 426 145 388 145 347 curveto
+	145 306 151 268 162 233 curveto
+	173 199 189 169 210 145 curveto
+	231 120 257 101 288 87 curveto
+	318 74 352 66 390 66 curveto
+	417 66 441 70 463 77 curveto
+	485 84 505 94 523 106 curveto
+	541 119 556 134 570 152 curveto
+	584 169 597 188 607 209 curveto
+	684 171 lineto
+	671 146 656 122 638 100 curveto
+	620 78 599 59 574 42 curveto
+	549 26 521 13 490 4 curveto
+	459 -4 424 -9 386 -9 curveto
+	331 -9 282 0 240 17 curveto
+	198 34 163 59 135 91 curveto
+	107 123 85 160 71 204 curveto
+	58 247 50 295 50 347 curveto
+	50 400 58 449 73 492 curveto
+	87 536 109 572 138 603 curveto
+	166 633 201 657 243 673 curveto
+	284 689 332 698 385 698 curveto
+	458 698 520 684 569 655 curveto
+	618 626 654 584 677 527 curveto
+	589 498 lineto
+	583 514 574 530 562 545 curveto
+	552 560 538 573 521 584 curveto
+	505 595 485 604 463 611 curveto
+	441 618 415 622 386 622 curveto
+	closepath
+	fill
+    } bind def
+    /glyph15 {
+	943 0 4 0 940 687 setcachedevice
+	737 0 moveto
+	626 0 lineto
+	507 437 lineto
+	503 449 500 463 496 480 curveto
+	492 498 488 514 484 529 curveto
+	481 547 477 565 473 583 curveto
+	469 565 465 546 460 528 curveto
+	457 513 454 497 449 480 curveto
+	446 464 442 449 438 437 curveto
+	318 0 lineto
+	207 0 lineto
+	4 687 lineto
+	101 687 lineto
+	225 250 lineto
+	230 230 235 210 241 189 curveto
+	246 169 250 151 253 135 curveto
+	258 117 262 99 265 82 curveto
+	270 104 275 126 280 148 curveto
+	283 157 285 166 287 177 curveto
+	290 187 292 197 294 207 curveto
+	297 216 299 226 302 235 curveto
+	304 244 306 252 308 259 curveto
+	428 687 lineto
+	517 687 lineto
+	637 259 lineto
+	639 252 641 244 644 235 curveto
+	646 226 648 217 651 207 curveto
+	653 198 655 187 658 177 curveto
+	660 167 662 158 665 148 curveto
+	670 127 675 104 680 82 curveto
+	680 82 682 87 684 99 curveto
+	687 110 690 124 694 141 curveto
+	698 158 702 176 707 196 curveto
+	711 215 716 233 721 250 curveto
+	843 687 lineto
+	940 687 lineto
+	737 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph16 {
+	277 0 15 -7 270 646 setcachedevice
+	270 3 moveto
+	257 0 244 -1 229 -4 curveto
+	216 -6 200 -7 181 -7 curveto
+	111 -7 76 32 76 111 curveto
+	76 464 lineto
+	15 464 lineto
+	15 528 lineto
+	79 528 lineto
+	105 646 lineto
+	164 646 lineto
+	164 528 lineto
+	261 528 lineto
+	261 464 lineto
+	164 464 lineto
+	164 130 lineto
+	164 105 168 87 176 77 curveto
+	185 67 199 62 219 62 curveto
+	228 62 236 62 244 63 curveto
+	252 65 261 66 270 68 curveto
+	270 3 lineto
+	closepath
+	fill
+    } bind def
+    /glyph17 {
+	500 0 42 -9 473 538 setcachedevice
+	134 266 moveto
+	134 236 136 208 141 183 curveto
+	145 158 152 136 163 117 curveto
+	173 99 187 84 204 74 curveto
+	221 64 242 59 267 59 curveto
+	298 59 325 67 346 84 curveto
+	367 102 379 127 384 163 curveto
+	473 157 lineto
+	471 135 464 114 454 94 curveto
+	445 74 432 56 415 41 curveto
+	398 25 377 13 353 4 curveto
+	329 -4 301 -9 270 -9 curveto
+	229 -9 193 -2 164 11 curveto
+	135 25 112 44 94 69 curveto
+	76 93 62 122 54 156 curveto
+	46 189 42 225 42 264 curveto
+	42 300 45 331 51 358 curveto
+	57 385 65 409 76 430 curveto
+	86 450 99 467 113 481 curveto
+	127 495 143 506 160 514 curveto
+	176 522 194 528 212 532 curveto
+	231 536 250 538 269 538 curveto
+	298 538 325 534 348 525 curveto
+	371 518 391 506 408 492 curveto
+	424 478 438 461 448 442 curveto
+	458 423 466 402 470 380 curveto
+	380 373 lineto
+	375 402 364 426 345 443 curveto
+	327 460 301 469 266 469 curveto
+	241 469 221 465 204 457 curveto
+	187 448 173 436 163 419 curveto
+	152 402 145 381 141 355 curveto
+	136 331 134 301 134 266 curveto
+	closepath
+	fill
+    } bind def
+    /glyph18 {
+	556 0 69 0 491 724 setcachedevice
+	154 437 moveto
+	164 456 175 471 186 483 curveto
+	197 496 210 506 224 514 curveto
+	237 522 252 528 269 532 curveto
+	285 536 303 538 323 538 curveto
+	357 538 385 533 407 524 curveto
+	428 515 445 502 458 486 curveto
+	470 470 479 450 484 427 curveto
+	488 404 491 379 491 352 curveto
+	491 0 lineto
+	402 0 lineto
+	402 334 lineto
+	402 357 401 376 398 394 curveto
+	396 411 391 425 382 436 curveto
+	375 447 364 456 349 461 curveto
+	335 467 316 470 293 470 curveto
+	273 470 254 466 237 458 curveto
+	221 451 207 441 194 427 curveto
+	183 414 173 397 166 377 curveto
+	160 358 157 336 157 311 curveto
+	157 0 lineto
+	69 0 lineto
+	69 724 lineto
+	157 724 lineto
+	157 536 lineto
+	157 525 157 515 156 503 curveto
+	156 493 156 483 155 474 curveto
+	155 465 154 457 154 451 curveto
+	154 444 153 440 153 437 curveto
+	154 437 lineto
+	closepath
+	fill
+    } bind def
+    /glyph19 {
+	722 0 82 0 675 687 setcachedevice
+	568 0 moveto
+	389 285 lineto
+	175 285 lineto
+	175 0 lineto
+	82 0 lineto
+	82 687 lineto
+	405 687 lineto
+	444 687 479 684 509 674 curveto
+	539 666 564 652 585 635 curveto
+	605 619 621 598 632 573 curveto
+	643 549 648 521 648 491 curveto
+	648 469 645 448 639 426 curveto
+	632 405 623 386 608 368 curveto
+	595 351 578 336 556 323 curveto
+	535 311 510 301 480 296 curveto
+	675 0 lineto
+	568 0 lineto
+	closepath
+	554 490 moveto
+	554 511 551 529 543 544 curveto
+	537 559 526 572 512 583 curveto
+	499 593 482 600 462 605 curveto
+	443 610 421 613 396 613 curveto
+	175 613 lineto
+	175 359 lineto
+	400 359 lineto
+	427 359 450 362 469 369 curveto
+	489 375 505 385 518 396 curveto
+	530 408 539 422 545 438 curveto
+	551 454 554 471 554 490 curveto
+	closepath
+	fill
+    } bind def
+    /glyph20 {
+	666 0 82 0 614 687 setcachedevice
+	614 480 moveto
+	614 451 609 423 599 397 curveto
+	589 371 575 349 555 330 curveto
+	535 311 510 295 480 284 curveto
+	451 273 416 268 377 268 curveto
+	175 268 lineto
+	175 0 lineto
+	82 0 lineto
+	82 687 lineto
+	371 687 lineto
+	412 687 447 683 478 673 curveto
+	508 663 533 649 553 631 curveto
+	573 613 588 591 599 565 curveto
+	609 540 614 512 614 480 curveto
+	closepath
+	520 479 moveto
+	520 523 507 556 480 579 curveto
+	454 602 414 613 360 613 curveto
+	175 613 lineto
+	175 341 lineto
+	364 341 lineto
+	417 341 457 353 482 377 curveto
+	507 401 520 435 520 479 curveto
+	closepath
+	fill
+    } bind def
+    /glyph21 {
+	277 0 92 0 185 687 setcachedevice
+	92 0 moveto
+	92 687 lineto
+	185 687 lineto
+	185 0 lineto
+	92 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph22 {
+	556 0 41 -9 514 538 setcachedevice
+	514 264 moveto
+	514 172 494 103 453 58 curveto
+	412 13 353 -9 275 -9 curveto
+	239 -9 206 -4 177 6 curveto
+	148 18 124 34 104 57 curveto
+	83 80 68 108 58 143 curveto
+	47 177 41 218 41 264 curveto
+	41 446 121 538 278 538 curveto
+	319 538 355 532 385 520 curveto
+	415 509 439 492 458 469 curveto
+	477 447 491 418 500 384 curveto
+	509 350 514 310 514 264 curveto
+	closepath
+	421 264 moveto
+	421 305 418 339 412 366 curveto
+	406 393 396 414 384 430 curveto
+	372 446 357 457 339 463 curveto
+	322 470 302 473 280 473 curveto
+	258 473 237 470 219 463 curveto
+	201 457 186 445 173 429 curveto
+	161 413 151 391 144 364 curveto
+	138 338 134 305 134 264 curveto
+	134 224 137 189 145 163 curveto
+	152 136 162 114 174 98 curveto
+	187 83 202 71 219 64 curveto
+	236 58 254 55 274 55 curveto
+	297 55 317 58 335 64 curveto
+	354 71 369 82 382 98 curveto
+	395 114 404 135 411 162 curveto
+	418 189 421 223 421 264 curveto
+	closepath
+	fill
+    } bind def
+    /glyph23 {
+	333 0 66 0 316 538 setcachedevice
+	69 0 moveto
+	69 405 lineto
+	69 416 69 427 69 439 curveto
+	69 450 68 461 68 472 curveto
+	68 483 67 493 67 502 curveto
+	67 512 66 520 66 528 curveto
+	149 528 lineto
+	149 520 150 512 150 502 curveto
+	151 493 151 483 152 473 curveto
+	152 463 152 453 153 444 curveto
+	153 435 153 427 153 420 curveto
+	155 420 lineto
+	161 440 167 458 175 473 curveto
+	182 487 190 500 199 509 curveto
+	208 519 220 526 233 531 curveto
+	246 535 262 538 280 538 curveto
+	288 538 294 538 301 536 curveto
+	307 535 312 534 316 533 curveto
+	316 452 lineto
+	311 454 304 455 295 456 curveto
+	288 457 279 457 269 457 curveto
+	249 457 232 453 218 443 curveto
+	204 435 192 422 183 406 curveto
+	174 390 167 371 163 348 curveto
+	159 326 157 302 157 275 curveto
+	157 0 lineto
+	69 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph24 {
+	833 0 66 0 767 538 setcachedevice
+	375 0 moveto
+	375 334 lineto
+	375 360 373 382 370 399 curveto
+	367 416 361 430 354 441 curveto
+	346 451 336 459 323 463 curveto
+	311 468 296 470 278 470 curveto
+	260 470 243 466 228 459 curveto
+	213 452 200 441 189 427 curveto
+	179 414 171 396 165 376 curveto
+	160 356 156 333 156 306 curveto
+	156 0 lineto
+	69 0 lineto
+	69 415 lineto
+	69 426 69 438 69 450 curveto
+	69 462 68 474 68 485 curveto
+	68 496 67 505 67 513 curveto
+	67 520 66 525 66 528 curveto
+	149 528 lineto
+	149 526 149 522 150 515 curveto
+	150 508 151 500 151 490 curveto
+	152 481 152 472 152 462 curveto
+	153 453 153 444 153 437 curveto
+	154 437 lineto
+	162 453 170 467 180 479 curveto
+	189 491 200 502 212 511 curveto
+	224 519 238 526 254 531 curveto
+	270 535 288 538 309 538 curveto
+	349 538 380 530 404 514 curveto
+	427 498 443 473 452 437 curveto
+	454 437 lineto
+	461 453 470 467 480 479 curveto
+	490 491 501 502 514 511 curveto
+	527 519 542 526 558 531 curveto
+	574 535 593 538 614 538 curveto
+	641 538 664 534 683 527 curveto
+	702 520 718 509 730 494 curveto
+	743 479 752 460 758 436 curveto
+	764 413 767 384 767 352 curveto
+	767 0 lineto
+	680 0 lineto
+	680 334 lineto
+	680 360 678 382 675 399 curveto
+	672 416 666 430 659 441 curveto
+	651 451 641 459 628 463 curveto
+	616 468 601 470 583 470 curveto
+	565 470 548 467 533 459 curveto
+	518 453 505 442 495 428 curveto
+	484 415 476 398 470 377 curveto
+	465 357 461 333 461 306 curveto
+	461 0 lineto
+	375 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph25 {
+	556 0 64 -207 514 537 setcachedevice
+	514 266 moveto
+	514 227 511 189 504 155 curveto
+	498 122 487 93 472 68 curveto
+	457 44 437 25 412 11 curveto
+	387 -2 356 -9 319 -9 curveto
+	282 -9 249 -2 220 11 curveto
+	192 25 170 49 155 82 curveto
+	153 82 lineto
+	153 81 153 78 154 73 curveto
+	154 68 154 62 154 53 curveto
+	154 46 154 37 155 27 curveto
+	155 18 155 8 155 0 curveto
+	155 -207 lineto
+	67 -207 lineto
+	67 420 lineto
+	67 433 67 445 67 457 curveto
+	67 468 66 479 66 489 curveto
+	66 498 65 506 65 513 curveto
+	65 520 64 525 64 528 curveto
+	149 528 lineto
+	149 527 150 524 150 518 curveto
+	151 512 151 505 152 497 curveto
+	152 488 153 479 153 470 curveto
+	154 460 154 452 154 443 curveto
+	156 443 lineto
+	164 460 173 474 184 486 curveto
+	194 498 206 508 219 516 curveto
+	232 523 248 529 264 532 curveto
+	280 536 299 537 319 537 curveto
+	356 537 387 531 412 518 curveto
+	437 505 457 487 472 463 curveto
+	487 439 498 411 504 377 curveto
+	510 344 514 307 514 266 curveto
+	closepath
+	421 264 moveto
+	421 297 420 326 416 351 curveto
+	412 376 405 398 395 416 curveto
+	386 433 373 446 357 456 curveto
+	341 465 321 469 297 469 curveto
+	278 469 259 467 242 461 curveto
+	225 456 210 445 197 429 curveto
+	184 414 174 393 166 365 curveto
+	159 337 155 302 155 257 curveto
+	155 220 158 188 164 163 curveto
+	170 137 179 116 191 100 curveto
+	203 84 218 73 235 65 curveto
+	253 59 273 55 296 55 curveto
+	320 55 341 60 357 69 curveto
+	373 78 386 92 395 110 curveto
+	405 128 412 150 416 176 curveto
+	419 202 421 231 421 264 curveto
+	closepath
+	fill
+    } bind def
+    /glyph26 {
+	556 0 41 -207 491 536 setcachedevice
+	267 -207 moveto
+	237 -207 210 -204 187 -197 curveto
+	164 -191 144 -183 126 -171 curveto
+	110 -160 97 -145 86 -129 curveto
+	76 -114 68 -96 63 -77 curveto
+	152 -64 lineto
+	158 -88 171 -107 191 -120 curveto
+	211 -133 237 -140 270 -140 curveto
+	290 -140 308 -137 324 -131 curveto
+	340 -126 354 -117 365 -105 curveto
+	376 -93 385 -77 392 -57 curveto
+	398 -38 401 -14 401 13 curveto
+	401 98 lineto
+	400 98 lineto
+	394 84 386 72 376 60 curveto
+	367 47 355 37 341 27 curveto
+	327 18 311 10 292 4 curveto
+	274 0 254 -3 230 -3 curveto
+	197 -3 168 1 144 13 curveto
+	120 24 101 41 85 63 curveto
+	70 85 60 113 52 147 curveto
+	45 180 41 219 41 263 curveto
+	41 305 45 343 52 377 curveto
+	59 411 70 439 86 463 curveto
+	102 487 123 505 148 518 curveto
+	173 530 204 536 240 536 curveto
+	277 536 310 528 337 511 curveto
+	365 494 386 469 401 437 curveto
+	402 437 lineto
+	402 446 402 455 403 465 curveto
+	403 475 404 484 404 494 curveto
+	405 502 405 510 406 517 curveto
+	406 523 407 527 408 528 curveto
+	491 528 lineto
+	491 525 491 520 490 513 curveto
+	490 506 490 498 489 488 curveto
+	489 479 489 468 489 456 curveto
+	489 444 488 432 488 418 curveto
+	488 15 lineto
+	488 -58 471 -113 434 -151 curveto
+	398 -188 342 -207 267 -207 curveto
+	closepath
+	401 264 moveto
+	401 300 397 332 389 358 curveto
+	381 384 371 406 357 422 curveto
+	345 439 330 451 313 459 curveto
+	296 467 279 471 261 471 curveto
+	239 471 220 467 204 459 curveto
+	187 452 174 439 164 422 curveto
+	153 406 145 384 140 358 curveto
+	135 332 132 300 132 264 curveto
+	132 226 135 194 140 168 curveto
+	145 142 153 121 163 105 curveto
+	173 89 187 78 203 71 curveto
+	219 64 238 61 260 61 curveto
+	277 61 294 64 312 72 curveto
+	328 79 343 91 356 107 curveto
+	370 124 380 145 389 170 curveto
+	397 196 401 227 401 264 curveto
+	closepath
+	fill
+    } bind def
+    /glyph27 {
+	722 0 82 0 640 687 setcachedevice
+	528 0 moveto
+	160 585 lineto
+	160 570 161 554 162 538 curveto
+	163 525 164 511 164 496 curveto
+	165 481 165 468 165 457 curveto
+	165 0 lineto
+	82 0 lineto
+	82 687 lineto
+	190 687 lineto
+	562 98 lineto
+	562 114 561 129 559 145 curveto
+	559 159 558 174 557 190 curveto
+	557 207 556 222 556 236 curveto
+	556 687 lineto
+	640 687 lineto
+	640 0 lineto
+	528 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph28 {
+	666 0 45 -9 621 698 setcachedevice
+	621 189 moveto
+	621 161 615 134 604 109 curveto
+	593 85 576 64 552 46 curveto
+	529 29 499 15 463 5 curveto
+	428 -4 386 -9 336 -9 curveto
+	251 -9 185 5 136 35 curveto
+	89 64 58 108 45 165 curveto
+	135 183 lineto
+	140 165 147 149 156 134 curveto
+	166 120 179 107 195 96 curveto
+	211 86 230 78 254 71 curveto
+	278 66 307 62 340 62 curveto
+	368 62 393 65 416 70 curveto
+	439 74 459 82 476 91 curveto
+	492 101 505 114 515 129 curveto
+	524 145 528 163 528 185 curveto
+	528 207 523 225 513 239 curveto
+	503 253 489 265 470 274 curveto
+	452 283 429 291 403 297 curveto
+	378 303 350 310 318 317 curveto
+	299 321 280 326 260 331 curveto
+	241 336 223 342 205 349 curveto
+	187 356 170 364 154 374 curveto
+	139 383 125 395 114 408 curveto
+	103 421 94 436 87 454 curveto
+	81 471 77 491 77 514 curveto
+	77 546 84 574 97 598 curveto
+	110 621 128 640 152 655 curveto
+	175 670 203 681 235 687 curveto
+	267 694 301 698 338 698 curveto
+	381 698 417 695 448 688 curveto
+	478 682 503 671 524 658 curveto
+	545 645 562 628 575 608 curveto
+	587 589 597 566 604 540 curveto
+	513 523 lineto
+	508 540 502 555 493 568 curveto
+	485 581 473 592 459 601 curveto
+	445 609 428 616 408 621 curveto
+	388 625 365 627 337 627 curveto
+	306 627 279 625 257 619 curveto
+	236 614 218 606 205 596 curveto
+	192 586 183 575 177 562 curveto
+	171 548 168 534 168 519 curveto
+	168 499 173 481 184 468 curveto
+	194 455 208 444 225 435 curveto
+	243 427 263 419 286 413 curveto
+	309 408 334 402 360 395 curveto
+	381 391 402 386 423 381 curveto
+	444 376 464 370 483 363 curveto
+	502 356 520 348 538 338 curveto
+	554 329 569 317 581 303 curveto
+	593 290 603 274 610 255 curveto
+	617 237 621 215 621 189 curveto
+	closepath
+	fill
+    } bind def
+    /glyph29 {
+	222 0 62 464 160 687 setcachedevice
+	160 617 moveto
+	160 600 159 584 158 570 curveto
+	156 556 154 543 150 531 curveto
+	147 519 144 507 139 496 curveto
+	134 486 128 475 122 464 curveto
+	62 464 lineto
+	76 485 87 507 96 528 curveto
+	104 550 107 571 107 591 curveto
+	64 591 lineto
+	64 687 lineto
+	160 687 lineto
+	160 617 lineto
+	closepath
+	fill
+    } bind def
+    /glyph30 {
+	222 0 67 0 155 724 setcachedevice
+	67 0 moveto
+	67 724 lineto
+	155 724 lineto
+	155 0 lineto
+	67 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph31 {
+	556 0 64 -9 489 528 setcachedevice
+	153 528 moveto
+	153 193 lineto
+	153 167 155 146 159 128 curveto
+	162 111 168 98 177 87 curveto
+	185 77 196 69 210 64 curveto
+	224 60 241 58 262 58 curveto
+	283 58 301 62 318 69 curveto
+	335 76 349 86 361 101 curveto
+	373 114 382 131 389 152 curveto
+	395 172 398 195 398 222 curveto
+	398 528 lineto
+	486 528 lineto
+	486 112 lineto
+	486 102 486 90 487 78 curveto
+	487 65 487 54 487 43 curveto
+	488 32 488 23 488 15 curveto
+	489 7 489 2 489 0 curveto
+	406 0 lineto
+	406 1 406 5 405 13 curveto
+	405 20 405 28 404 38 curveto
+	404 47 403 56 403 66 curveto
+	403 75 402 83 402 90 curveto
+	401 90 lineto
+	393 75 383 61 373 48 curveto
+	363 36 352 26 338 17 curveto
+	325 9 310 2 292 -2 curveto
+	275 -6 255 -9 232 -9 curveto
+	203 -9 178 -6 156 0 curveto
+	135 8 118 19 104 34 curveto
+	91 49 81 68 74 91 curveto
+	68 115 64 143 64 176 curveto
+	64 528 lineto
+	153 528 lineto
+	closepath
+	fill
+    } bind def
+    /glyph32 {
+	556 0 64 -9 514 724 setcachedevice
+	514 266 moveto
+	514 82 449 -9 319 -9 curveto
+	280 -9 247 -2 220 12 curveto
+	193 26 172 49 155 82 curveto
+	154 82 lineto
+	154 73 154 64 153 55 curveto
+	153 46 152 38 152 30 curveto
+	151 22 151 16 150 10 curveto
+	150 4 149 1 149 0 curveto
+	64 0 lineto
+	64 2 64 7 65 15 curveto
+	65 21 65 30 66 40 curveto
+	66 49 66 60 67 72 curveto
+	67 83 67 96 67 108 curveto
+	67 724 lineto
+	155 724 lineto
+	155 518 lineto
+	155 508 155 499 155 490 curveto
+	155 481 154 473 154 466 curveto
+	154 458 153 450 153 443 curveto
+	155 443 lineto
+	171 477 193 501 220 516 curveto
+	247 530 280 538 319 538 curveto
+	386 538 435 516 467 470 curveto
+	498 426 514 357 514 266 curveto
+	closepath
+	421 263 moveto
+	421 300 419 331 415 357 curveto
+	410 383 403 404 393 421 curveto
+	383 438 370 450 354 458 curveto
+	339 466 320 470 297 470 curveto
+	274 470 254 466 236 458 curveto
+	218 451 204 439 191 422 curveto
+	180 406 170 384 164 357 curveto
+	158 330 155 297 155 258 curveto
+	155 220 158 188 164 163 curveto
+	170 137 179 116 191 100 curveto
+	203 84 218 73 235 65 curveto
+	253 59 273 55 296 55 curveto
+	317 55 336 59 352 66 curveto
+	367 73 380 85 391 102 curveto
+	401 119 409 140 414 167 curveto
+	419 193 421 226 421 263 curveto
+	closepath
+	fill
+    } bind def
+    /glyph33 {
+	333 0 62 -207 327 724 setcachedevice
+	62 259 moveto
+	62 305 65 348 72 389 curveto
+	79 431 89 470 104 508 curveto
+	119 546 137 583 160 619 curveto
+	183 655 210 690 242 724 curveto
+	327 724 lineto
+	296 690 270 655 248 619 curveto
+	226 583 207 546 192 508 curveto
+	178 470 168 430 161 388 curveto
+	154 347 150 304 150 258 curveto
+	150 213 153 170 161 128 curveto
+	167 87 178 47 192 9 curveto
+	207 -28 225 -65 248 -101 curveto
+	270 -137 296 -172 327 -207 curveto
+	242 -207 lineto
+	210 -172 183 -137 160 -101 curveto
+	138 -65 119 -29 104 8 curveto
+	90 46 79 86 72 127 curveto
+	65 168 62 212 62 257 curveto
+	62 259 lineto
+	closepath
+	fill
+    } bind def
+    /glyph34 {
+	722 0 -1 0 724 528 setcachedevice
+	573 0 moveto
+	471 0 lineto
+	386 340 lineto
+	384 349 381 360 378 373 curveto
+	376 386 373 399 370 411 curveto
+	367 425 364 440 361 456 curveto
+	358 441 355 427 352 412 curveto
+	349 400 347 387 343 374 curveto
+	340 360 337 349 334 338 curveto
+	248 0 lineto
+	146 0 lineto
+	-1 528 lineto
+	85 528 lineto
+	174 169 lineto
+	177 162 179 153 181 142 curveto
+	184 131 186 120 188 109 curveto
+	190 98 193 85 195 72 curveto
+	198 84 201 97 204 108 curveto
+	206 119 209 129 211 139 curveto
+	214 149 216 158 218 165 curveto
+	314 528 lineto
+	408 528 lineto
+	500 165 lineto
+	503 157 505 147 508 136 curveto
+	510 126 513 116 515 106 curveto
+	518 95 520 84 523 72 curveto
+	525 84 528 97 531 108 curveto
+	533 119 536 129 538 140 curveto
+	541 151 542 161 545 169 curveto
+	638 528 lineto
+	724 528 lineto
+	573 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph35 {
+	277 0 91 0 186 106 setcachedevice
+	91 0 moveto
+	91 106 lineto
+	186 106 lineto
+	186 0 lineto
+	91 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph36 {
+	277 0 0 -9 277 724 setcachedevice
+	0 -9 moveto
+	200 724 lineto
+	277 724 lineto
+	79 -9 lineto
+	0 -9 lineto
+	closepath
+	fill
+    } bind def
+    /glyph37 {
+	666 0 21 0 645 687 setcachedevice
+	379 285 moveto
+	379 0 lineto
+	286 0 lineto
+	286 285 lineto
+	21 687 lineto
+	124 687 lineto
+	333 360 lineto
+	542 687 lineto
+	645 687 lineto
+	379 285 lineto
+	closepath
+	fill
+    } bind def
+    /glyph38 {
+	777 0 47 -9 729 698 setcachedevice
+	729 347 moveto
+	729 293 722 245 707 200 curveto
+	691 157 669 119 639 87 curveto
+	610 57 574 32 532 15 curveto
+	490 0 442 -9 388 -9 curveto
+	332 -9 282 0 239 17 curveto
+	196 34 161 59 132 91 curveto
+	104 123 83 160 68 204 curveto
+	54 247 47 295 47 347 curveto
+	47 400 54 449 69 492 curveto
+	84 536 106 572 135 603 curveto
+	164 633 200 657 243 673 curveto
+	285 689 333 698 389 698 curveto
+	443 698 492 690 535 673 curveto
+	577 657 613 633 642 602 curveto
+	670 572 692 535 707 491 curveto
+	722 448 729 400 729 347 curveto
+	closepath
+	634 347 moveto
+	634 388 629 426 619 459 curveto
+	608 493 593 522 572 546 curveto
+	551 570 525 589 495 602 curveto
+	464 615 429 622 389 622 curveto
+	348 622 312 615 281 602 curveto
+	250 589 225 571 204 546 curveto
+	183 522 167 494 157 459 curveto
+	147 426 142 388 142 347 curveto
+	142 306 147 268 158 233 curveto
+	168 199 184 169 205 145 curveto
+	225 120 251 101 282 86 curveto
+	312 73 348 65 388 65 curveto
+	431 65 468 72 499 86 curveto
+	530 101 556 120 576 145 curveto
+	596 170 610 199 620 234 curveto
+	629 269 634 306 634 347 curveto
+	closepath
+	fill
+    } bind def
+    /glyph39 {
+	722 0 77 -9 645 687 setcachedevice
+	356 -9 moveto
+	319 -9 283 -4 249 5 curveto
+	215 15 186 31 160 52 curveto
+	135 73 114 101 99 133 curveto
+	84 166 77 205 77 250 curveto
+	77 687 lineto
+	170 687 lineto
+	170 257 lineto
+	170 223 175 193 184 169 curveto
+	193 145 206 125 223 109 curveto
+	239 94 259 83 282 76 curveto
+	304 69 329 65 356 65 curveto
+	383 65 408 69 432 76 curveto
+	456 83 476 95 494 110 curveto
+	512 126 526 146 537 172 curveto
+	547 197 552 228 552 264 curveto
+	552 687 lineto
+	645 687 lineto
+	645 258 lineto
+	645 213 637 173 622 139 curveto
+	607 105 586 78 560 55 curveto
+	534 33 504 17 469 6 curveto
+	434 -3 396 -9 356 -9 curveto
+	closepath
+	fill
+    } bind def
+    /glyph40 {
+	222 0 -24 -207 154 724 setcachedevice
+	66 640 moveto
+	66 724 lineto
+	154 724 lineto
+	154 640 lineto
+	66 640 lineto
+	closepath
+	154 -65 moveto
+	154 -85 153 -104 149 -121 curveto
+	146 -138 140 -153 131 -166 curveto
+	123 -178 110 -188 95 -196 curveto
+	80 -203 61 -207 37 -207 curveto
+	26 -207 16 -207 5 -206 curveto
+	-4 -205 -15 -204 -24 -203 curveto
+	-24 -135 lineto
+	-20 -135 -15 -136 -8 -136 curveto
+	-3 -137 1 -138 5 -138 curveto
+	18 -138 28 -136 36 -132 curveto
+	44 -129 50 -125 55 -117 curveto
+	59 -110 62 -102 64 -90 curveto
+	65 -80 66 -67 66 -52 curveto
+	66 528 lineto
+	154 528 lineto
+	154 -65 lineto
+	closepath
+	fill
+    } bind def
+    /glyph41 {
+	556 0 41 -207 492 538 setcachedevice
+	236 -9 moveto
+	169 -9 120 12 88 58 curveto
+	58 103 41 171 41 261 curveto
+	41 353 58 422 90 468 curveto
+	122 515 170 538 236 538 curveto
+	258 538 277 536 294 532 curveto
+	311 528 326 522 339 515 curveto
+	352 507 363 498 374 486 curveto
+	383 475 392 461 400 446 curveto
+	401 446 lineto
+	401 454 402 463 402 473 curveto
+	403 483 403 492 404 501 curveto
+	404 510 405 518 405 524 curveto
+	406 530 407 534 407 535 curveto
+	492 535 lineto
+	491 529 491 515 490 491 curveto
+	489 468 488 435 488 391 curveto
+	488 -207 lineto
+	400 -207 lineto
+	400 6 lineto
+	400 15 400 23 401 33 curveto
+	401 42 401 50 401 59 curveto
+	402 68 402 77 402 86 curveto
+	401 86 lineto
+	393 70 384 56 374 43 curveto
+	363 31 352 21 338 13 curveto
+	325 5 310 0 293 -3 curveto
+	276 -7 257 -9 236 -9 curveto
+	closepath
+	400 270 moveto
+	400 309 397 341 391 367 curveto
+	384 393 375 414 362 429 curveto
+	350 445 335 456 318 463 curveto
+	301 469 281 473 259 473 curveto
+	237 473 218 469 202 460 curveto
+	186 452 173 439 163 422 curveto
+	153 405 146 384 141 357 curveto
+	137 332 134 300 134 264 curveto
+	134 229 136 199 141 172 curveto
+	145 146 152 125 162 108 curveto
+	172 91 185 79 201 70 curveto
+	216 62 235 58 258 58 curveto
+	278 58 296 61 313 67 curveto
+	331 73 346 83 359 100 curveto
+	372 115 382 137 389 165 curveto
+	396 192 400 227 400 270 curveto
+	closepath
+	fill
+    } bind def
+    /glyph42 {
+	277 0 90 0 187 687 setcachedevice
+	175 193 moveto
+	103 193 lineto
+	91 687 lineto
+	187 687 lineto
+	175 193 lineto
+	closepath
+	90 0 moveto
+	90 98 lineto
+	185 98 lineto
+	185 0 lineto
+	90 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph43 {
+	277 0 89 -127 187 106 setcachedevice
+	187 106 moveto
+	187 24 lineto
+	187 7 187 -7 186 -21 curveto
+	184 -36 182 -49 178 -61 curveto
+	175 -73 171 -84 166 -95 curveto
+	162 -106 156 -117 149 -127 curveto
+	89 -127 lineto
+	104 -106 115 -85 124 -63 curveto
+	131 -42 135 -20 135 0 curveto
+	92 0 lineto
+	92 106 lineto
+	187 106 lineto
+	closepath
+	fill
+    } bind def
+    /glyph44 {
+	277 0 14 0 279 723 setcachedevice
+	176 464 moveto
+	176 0 lineto
+	88 0 lineto
+	88 464 lineto
+	14 464 lineto
+	14 528 lineto
+	88 528 lineto
+	88 587 lineto
+	88 606 90 625 93 641 curveto
+	97 657 104 672 113 684 curveto
+	123 696 136 706 152 713 curveto
+	169 720 190 723 217 723 curveto
+	227 723 238 723 250 722 curveto
+	261 721 270 720 279 717 curveto
+	279 650 lineto
+	273 651 267 652 260 653 curveto
+	252 654 246 654 240 654 curveto
+	227 654 216 653 208 649 curveto
+	200 645 193 641 188 634 curveto
+	184 627 181 619 179 609 curveto
+	177 600 176 588 176 575 curveto
+	176 528 lineto
+	279 528 lineto
+	279 464 lineto
+	176 464 lineto
+	closepath
+	fill
+    } bind def
+    /glyph45 {
+	500 0 3 0 496 528 setcachedevice
+	299 0 moveto
+	195 0 lineto
+	3 528 lineto
+	97 528 lineto
+	213 184 lineto
+	215 177 218 168 221 158 curveto
+	224 148 227 137 230 126 curveto
+	234 115 237 104 240 94 curveto
+	242 84 245 76 247 68 curveto
+	249 75 251 84 254 94 curveto
+	257 104 260 115 264 125 curveto
+	267 136 270 147 274 157 curveto
+	277 167 280 176 283 183 curveto
+	403 528 lineto
+	496 528 lineto
+	299 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph46 {
+	500 0 2 -207 498 528 setcachedevice
+	294 0 moveto
+	282 -31 270 -60 257 -85 curveto
+	244 -111 229 -133 213 -151 curveto
+	198 -169 180 -183 160 -192 curveto
+	141 -202 119 -207 93 -207 curveto
+	82 -207 72 -207 62 -206 curveto
+	53 -205 43 -204 32 -202 curveto
+	32 -136 lineto
+	39 -136 45 -137 53 -138 curveto
+	61 -138 68 -139 73 -139 curveto
+	99 -139 123 -129 145 -109 curveto
+	167 -90 187 -60 203 -18 curveto
+	211 2 lineto
+	2 528 lineto
+	96 528 lineto
+	207 236 lineto
+	210 228 214 216 220 201 curveto
+	225 187 229 172 235 157 curveto
+	240 143 244 129 248 117 curveto
+	252 106 254 99 255 95 curveto
+	256 99 258 106 262 117 curveto
+	266 127 270 139 275 152 curveto
+	279 165 284 178 289 191 curveto
+	294 205 298 216 301 226 curveto
+	405 528 lineto
+	498 528 lineto
+	294 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph47 {
+	277 0 91 0 186 528 setcachedevice
+	91 427 moveto
+	91 528 lineto
+	186 528 lineto
+	186 427 lineto
+	91 427 lineto
+	closepath
+	91 0 moveto
+	91 101 lineto
+	186 101 lineto
+	186 0 lineto
+	91 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph48 {
+	833 0 82 0 750 687 setcachedevice
+	666 0 moveto
+	666 458 lineto
+	666 475 666 492 667 509 curveto
+	667 526 668 542 668 557 curveto
+	669 573 670 589 671 605 curveto
+	666 589 662 572 657 556 curveto
+	653 542 648 527 643 511 curveto
+	638 496 633 481 628 468 curveto
+	450 0 lineto
+	385 0 lineto
+	205 468 lineto
+	203 473 201 479 199 485 curveto
+	197 492 194 499 192 506 curveto
+	189 514 187 521 185 529 curveto
+	182 536 180 544 177 551 curveto
+	172 568 166 586 161 605 curveto
+	162 587 162 569 163 551 curveto
+	163 536 164 520 164 503 curveto
+	165 486 165 472 165 458 curveto
+	165 0 lineto
+	82 0 lineto
+	82 687 lineto
+	204 687 lineto
+	387 210 lineto
+	390 204 392 196 395 186 curveto
+	399 175 402 165 405 154 curveto
+	408 144 411 133 413 124 curveto
+	416 114 417 106 418 101 curveto
+	419 106 421 114 423 124 curveto
+	426 133 429 144 433 154 curveto
+	436 165 439 175 442 186 curveto
+	446 196 449 204 451 210 curveto
+	631 687 lineto
+	750 687 lineto
+	750 0 lineto
+	666 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph49 {
+	666 0 82 0 624 687 setcachedevice
+	82 0 moveto
+	82 687 lineto
+	604 687 lineto
+	604 611 lineto
+	175 611 lineto
+	175 391 lineto
+	574 391 lineto
+	574 315 lineto
+	175 315 lineto
+	175 76 lineto
+	624 76 lineto
+	624 0 lineto
+	82 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph50 {
+	722 0 82 0 640 687 setcachedevice
+	547 0 moveto
+	547 318 lineto
+	175 318 lineto
+	175 0 lineto
+	82 0 lineto
+	82 687 lineto
+	175 687 lineto
+	175 396 lineto
+	547 396 lineto
+	547 687 lineto
+	640 687 lineto
+	640 0 lineto
+	547 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph51 {
+	500 0 23 0 463 528 setcachedevice
+	23 0 moveto
+	23 66 lineto
+	346 460 lineto
+	43 460 lineto
+	43 528 lineto
+	445 528 lineto
+	445 461 lineto
+	122 67 lineto
+	463 67 lineto
+	463 0 lineto
+	23 0 lineto
+	closepath
+	fill
+    } bind def
+    /glyph52 {
+	722 0 82 0 674 687 setcachedevice
+	674 351 moveto
+	674 293 666 243 648 199 curveto
+	631 156 607 119 577 89 curveto
+	547 60 512 38 471 22 curveto
+	431 7 386 0 339 0 curveto
+	82 0 lineto
+	82 687 lineto
+	309 687 lineto
+	362 687 411 681 456 668 curveto
+	500 655 539 635 571 607 curveto
+	604 580 629 544 647 502 curveto
+	665 460 674 410 674 351 curveto
+	closepath
+	580 351 moveto
+	580 397 574 437 560 470 curveto
+	547 503 528 530 504 551 curveto
+	480 572 451 588 417 598 curveto
+	384 608 348 613 307 613 curveto
+	175 613 lineto
+	175 74 lineto
+	328 74 lineto
+	364 74 398 80 429 92 curveto
+	459 104 486 121 508 144 curveto
+	531 167 548 196 561 230 curveto
+	574 265 580 305 580 351 curveto
+	closepath
+	fill
+    } bind def
+    /glyph53 {
+	610 0 82 0 570 687 setcachedevice
+	175 611 moveto
+	175 355 lineto
+	559 355 lineto
+	559 278 lineto
+	175 278 lineto
+	175 0 lineto
+	82 0 lineto
+	82 687 lineto
+	570 687 lineto
+	570 611 lineto
+	175 611 lineto
+	closepath
+	fill
+    } bind def
+    /glyph54 {
+	1015 0 78 -138 928 724 setcachedevice
+	928 368 moveto
+	928 322 923 279 912 240 curveto
+	901 201 886 167 867 139 curveto
+	848 111 825 90 798 74 curveto
+	771 59 742 50 710 50 curveto
+	692 50 677 53 664 57 curveto
+	651 62 640 67 632 75 curveto
+	624 83 618 92 614 102 curveto
+	611 112 609 124 609 136 curveto
+	609 141 609 147 609 154 curveto
+	610 161 610 166 610 170 curveto
+	607 170 lineto
+	600 156 590 142 579 127 curveto
+	568 113 555 100 540 88 curveto
+	524 77 507 68 488 61 curveto
+	469 54 448 50 425 50 curveto
+	398 50 374 55 354 64 curveto
+	333 74 316 87 303 104 curveto
+	290 121 280 141 273 164 curveto
+	267 187 264 211 264 238 curveto
+	264 277 270 315 281 351 curveto
+	292 387 309 418 331 446 curveto
+	352 474 378 496 408 512 curveto
+	438 529 472 537 509 537 curveto
+	528 537 546 535 562 531 curveto
+	577 526 591 520 603 512 curveto
+	615 505 625 496 634 484 curveto
+	643 474 650 461 656 448 curveto
+	659 448 lineto
+	678 526 lineto
+	754 526 lineto
+	697 279 lineto
+	691 252 687 229 684 209 curveto
+	681 190 679 172 679 156 curveto
+	679 141 683 129 690 121 curveto
+	697 114 707 110 719 110 curveto
+	739 110 758 117 775 130 curveto
+	792 143 808 161 821 184 curveto
+	833 207 844 234 851 266 curveto
+	858 297 862 331 862 367 curveto
+	862 409 855 448 842 484 curveto
+	829 520 809 552 782 578 curveto
+	756 604 724 625 685 640 curveto
+	646 655 602 663 550 663 curveto
+	507 663 467 658 430 647 curveto
+	393 637 359 622 329 603 curveto
+	299 584 273 562 250 536 curveto
+	228 510 209 481 193 449 curveto
+	178 418 167 385 159 349 curveto
+	151 313 147 277 147 239 curveto
+	147 194 154 151 168 112 curveto
+	182 74 203 41 229 13 curveto
+	256 -14 290 -36 329 -51 curveto
+	369 -67 414 -75 465 -75 curveto
+	500 -75 531 -72 561 -67 curveto
+	591 -62 618 -55 643 -47 curveto
+	667 -40 689 -31 709 -21 curveto
+	729 -12 746 -4 760 3 curveto
+	787 -51 lineto
+	770 -60 751 -70 729 -81 curveto
+	708 -91 683 -100 656 -108 curveto
+	629 -117 600 -124 567 -129 curveto
+	536 -135 502 -138 465 -138 curveto
+	404 -138 349 -128 301 -109 curveto
+	253 -91 212 -64 179 -31 curveto
+	146 1 121 41 104 87 curveto
+	87 134 78 184 78 239 curveto
+	78 285 83 328 94 370 curveto
+	104 411 119 450 138 486 curveto
+	157 521 180 554 208 583 curveto
+	236 613 267 638 302 659 curveto
+	337 680 375 696 417 707 curveto
+	458 718 502 724 549 724 curveto
+	615 724 671 715 719 695 curveto
+	766 676 806 650 837 618 curveto
+	868 585 891 548 906 504 curveto
+	921 462 928 416 928 368 curveto
+	closepath
+	632 364 moveto
+	632 380 630 395 624 409 curveto
+	619 423 611 435 601 444 curveto
+	590 454 578 462 563 467 curveto
+	549 473 533 475 514 475 curveto
+	486 475 462 469 440 455 curveto
+	419 441 402 423 388 400 curveto
+	374 378 363 353 355 324 curveto
+	348 296 344 268 344 239 curveto
+	344 201 352 170 368 147 curveto
+	383 125 407 114 439 114 curveto
+	461 114 482 119 502 129 curveto
+	521 140 539 153 555 169 curveto
+	570 186 584 205 595 227 curveto
+	606 248 615 270 621 293 curveto
+	624 305 626 317 629 331 curveto
+	631 344 632 355 632 364 curveto
+	closepath
+	fill
+    } bind def
+  end
+/BuildGlyph {
+  exch /CharProcs get exch
+  2 copy known not
+    {pop /.notdef} if
+  get exec
+} bind def
+/BuildChar {
+  1 index /Encoding get exch get
+  1 index /BuildGlyph get exec
+} bind def
+currentdict end
+(LiberationSansFID183HGSet2) cvn exch definefont pop
+%%EndResource
+%%BeginResource: font LiberationSerifFID191HGSet2
+%!PS-AdobeFont-1.0-1.4587
+% Creator: SunTypeTools-TT 1.0 gelf
+% Original font name: LiberationSerif
+30 dict begin
+/PaintType 0 def
+/FontType 3 def
+/StrokeWidth 0 def
+/FontName (LiberationSerifFID191HGSet2) cvn def
+/XUID [103 0 0 16#9B800379 2 16#0A698CDF 16#36DE2269] def
+/FontMatrix [.001 0 0 .001 0 0] def
+/FontBBox [-176 -303 1006 981] def
+/Encoding 256 array def
+    0 1 255 {Encoding exch /.notdef put} for
+    Encoding 0 /glyph0 put
+    Encoding 1 /glyph1 put
+/CharProcs 3 dict def
+  CharProcs begin
+    /.notdef {} def
+    /glyph0 {
+	365 0 33 0 298 666 setcachedevice
+	33 0 moveto
+	33 666 lineto
+	298 666 lineto
+	298 0 lineto
+	33 0 lineto
+	closepath
+	66 33 moveto
+	265 33 lineto
+	265 633 lineto
+	66 633 lineto
+	66 33 lineto
+	closepath
+	fill
+    } bind def
+    /glyph1 {
+	250 0 0 0 0 0 setcachedevice
+    } bind def
+  end
+/BuildGlyph {
+  exch /CharProcs get exch
+  2 copy known not
+    {pop /.notdef} if
+  get exec
+} bind def
+/BuildChar {
+  1 index /Encoding get exch get
+  1 index /BuildGlyph get exec
+} bind def
+currentdict end
+(LiberationSerifFID191HGSet2) cvn exch definefont pop
+%%EndResource
+%%DocumentSuppliedResources: font LiberationSans-BoldFID182HGSet2
+%%+ font LiberationSansFID183HGSet2
+%%+ font LiberationSerifFID191HGSet2
+[{
+%%BeginFeature: *PageSize Letter
+<</PageSize [612 792] /ImagingBBox null>> setpagedevice
+%%EndFeature
+} stopped cleartomark
+%%EndSetup
+%%Page: 1 1
+%%PageOrientation: Portrait
+%%PageBoundingBox: 18 18 594 774
+%%BeginPageSetup
+%
+%%EndPageSetup
+gsave
+[0.24 0 0 -0.24 18 774] concat
+gsave
+713 232 moveto
+0 0 0 setrgbcolor
+(LiberationSans-BoldFID182HGSet2) cvn findfont 75 -75 matrix scale makefont setfont
+<0102030405060704010408030209060A040B0C060D>
+[54 54 51 19 51 58 54 18 51 21 50 50 54 50 58 55 21 71 54 58 0]
+xshow
+950 438 moveto
+(LiberationSansFID183HGSet2) cvn findfont 67 -67 matrix scale makefont setfont
+<0102030405060708>
+[44 22 19 37 14 34 37 0]
+xshow
+1191 438 moveto
+1 0 0 setrgbcolor
+(LiberationSerifFID191HGSet2) cvn findfont 67 -67 matrix scale makefont setfont
+<01>
+show
+1208 438 moveto
+(LiberationSans-BoldFID182HGSet2) cvn findfont 67 -67 matrix scale makefont setfont
+<0E0F100F1112>
+[26 41 40 41 22 0]
+xshow
+1415 438 moveto
+0 0 0 setrgbcolor
+(LiberationSansFID183HGSet2) cvn findfont 67 -67 matrix scale makefont setfont
+<09>
+show
+1145 526 moveto
+<0A0B0C>
+[37 37 0]
+xshow
+958 613 moveto
+<0D0203040506070803>
+[45 22 18 37 15 33 37 34 0]
+xshow
+1218 613 moveto
+1 0 0 setrgbcolor
+(LiberationSans-BoldFID182HGSet2) cvn findfont 67 -67 matrix scale makefont setfont
+<1213141516>
+[37 41 37 37 0]
+xshow
+1407 613 moveto
+0 0 0 setrgbcolor
+(LiberationSansFID183HGSet2) cvn findfont 67 -67 matrix scale makefont setfont
+<09>
+show
+1145 701 moveto
+<0A0B0C>
+[37 37 0]
+xshow
+558 788 moveto
+<0E02030F0A0B1008030A0311120A0B1107030A10030A03>
+[48 23 18 62 36 37 18 33 19 37 19 33 37 37 37 34 37 18 37 19 18 37 0]
+xshow
+1270 788 moveto
+1 0 0 setrgbcolor
+(LiberationSans-BoldFID182HGSet2) cvn findfont 67 -67 matrix scale makefont setfont
+<1718191A041B1C1D1D1C0F1E04130E1C1F16>
+[37 36 19 38 18 59 19 18 19 18 41 41 18 41 25 19 34 0]
+xshow
+1807 788 moveto
+0 0 0 setrgbcolor
+(LiberationSansFID183HGSet2) cvn findfont 67 -67 matrix scale makefont setfont
+<09>
+show
+575 973 moveto
+(LiberationSansFID183HGSet2) cvn findfont 47 -47 matrix scale makefont setfont
+<131415031316110603130A050C071708030508030A0310070A1803111618190710050B1A030A10
+031B011C011D08030A0B0C030F14151D08>
+[34 32 12 13 34 26 24 23 13 34 26 10 26 26 16 24 13 10 23 14 26 13 12 27 26 39 13
+ 24 26 38 26 26 14 10 26 26 13 26 13 13 34 32 31 27 9 24 14 26 25 27 13 45 31 12
+ 9 0]
+xshow
+535 1035 moveto
+<1C0A18191E07031307101F170B031316201610030E120A1E1E070B1A070321>
+[31 26 39 26 10 27 13 34 26 13 25 16 26 14 33 26 26 26 14 13 33 26 27 10 10 26 26
+ 26 27 13 0]
+xshow
+1239 1035 moveto
+0 0 0.50196 setrgbcolor
+<22192322190523070C1F2411120A1E1E070B1A07>
+[34 26 14 33 26 11 13 26 26 26 13 24 26 26 10 10 26 27 26 0]
+xshow
+1239 1040 449 3 rectfill
+1687 1035 moveto
+0 0 0 setrgbcolor
+<02030A0B0C032207>
+[15 14 26 26 26 13 33 0]
+xshow
+541 1096 moveto
+<220A0B1003252627031016032816050B031F0803050B03161F1703291F0708102A>
+[33 26 27 13 12 30 37 34 14 13 26 13 10 26 10 27 13 25 24 13 10 27 13 26 26 16 12
+ 26 27 25 24 13 0]
+xshow
+1226 1096 moveto
+<03>
+show
+1239 1096 moveto
+<030F07030B07070C030C070C05110A10070C03190716191E07031016>
+[13 45 25 13 26 26 26 26 13 26 26 27 9 24 26 13 26 27 12 26 27 26 26 10 26 13 13 0]
+xshow
+555 1158 moveto
+<12071E19030C0708051A0B2B03201F051E0C2B030A0B0C031917161A170A18030A0B030A1F1016
+0B1618161F080317162016100310120A1003110A0B>
+[26 26 11 26 13 26 25 25 10 26 26 13 13 26 26 11 10 26 13 13 26 26 26 13 26 16 26
+ 26 16 26 39 13 26 26 13 26 26 13 26 26 27 38 26 26 24 13 16 26 26 26 13 13 13 26
+ 26 13 13 24 26 0]
+xshow
+655 1219 moveto
+<2C050B0C030A0B0C031707101705072D0703162028071110080308110A10100717070C03101217
+161F1A12161F10030A032C05071E0C23>
+[13 10 26 26 13 26 26 26 13 16 26 13 16 10 25 25 26 13 26 26 10 26 24 12 24 13 24
+ 23 26 13 13 26 16 26 26 13 13 26 16 26 26 26 26 26 26 13 13 27 12 14 10 26 10 26 0]
+xshow
+572 1397 moveto
+<1C190711052C05110A1E1E2E032207030A1707031E161606050B1A032C161703190716191E0703
+1016032216170603160B03101207080703180A281617>
+[31 26 26 24 10 13 10 24 27 10 10 24 13 33 27 13 25 16 27 12 11 26 26 23 11 26 26
+ 13 13 26 16 13 26 26 26 26 10 27 13 12 27 13 33 26 16 24 13 26 26 13 13 26 26 24
+ 26 13 38 27 10 26 0]
+xshow
+1067 1458 moveto
+<11161819160B070B10082F>
+[24 27 38 26 26 26 26 26 13 24 0]
+xshow
+907 1520 moveto
+<301620051E07030D0A08070321303124313124310E1C3102>
+[39 26 26 11 10 26 13 31 26 24 26 13 16 39 31 13 31 31 14 31 34 31 31 0]
+xshow
+853 1581 moveto
+<1C0A18191E07031C1016170A1A07031C2E081007180321303124313102>
+[31 27 38 26 11 26 13 31 13 26 16 26 26 26 13 31 23 24 13 27 38 13 16 39 31 13 32
+ 30 0]
+xshow
+749 1643 moveto
+<1C0A18191E07031307101705072D0A1E03320A170C220A17070321303124313124310E1C3102>
+[31 26 39 26 10 27 13 34 26 12 17 10 25 25 26 10 13 34 25 16 27 33 26 16 26 13 16
+ 39 31 13 31 31 14 31 34 31 31 0]
+xshow
+739 1704 moveto
+<140A101203141E0A0B0B050B1A030A0B0C030416110A1E05330A1005160B03211C040130020321
+0E1C02>
+[31 26 13 27 12 32 10 26 26 26 11 26 26 13 26 26 26 13 26 26 24 26 10 11 23 26 13
+ 11 26 26 13 16 31 26 31 39 16 13 15 34 31 0]
+xshow
+789 1766 moveto
+<2620280711100334071007111005160B030A0B0C03150C070B10052C05110A1005160B03210E1C
+02>
+[37 26 10 25 24 13 13 34 26 13 26 24 13 10 26 27 12 27 26 26 13 12 26 27 26 13 10
+ 13 10 24 26 14 10 26 26 13 16 34 31 0]
+xshow
+869 1827 moveto
+<1C0A18191E07031307101705072D0A1E031C162C10220A170703210E1C02>
+[32 26 39 26 10 26 14 33 26 13 16 10 26 24 26 11 12 32 26 13 13 33 26 16 26 14 15
+ 34 31 0]
+xshow
+813 2005 moveto
+<351617031816170703050B2C1617180A1005160B2B03191E070A08070311160B100A11102F>
+[29 26 16 13 38 26 16 26 14 10 26 13 26 16 39 26 13 10 26 26 13 13 27 10 26 26 24
+ 26 13 23 26 26 13 26 24 13 0]
+xshow
+899 2124 moveto
+<0D172E0A0B100314160B1A2F03>
+[31 16 23 26 26 13 14 31 26 26 26 13 0]
+xshow
+1183 2124 moveto
+0 0 0.50196 setrgbcolor
+<19160B1A203617190523070C1F>
+[26 26 26 26 26 48 16 26 10 13 26 26 0]
+xshow
+1183 2129 321 3 rectfill
+grestore grestore
+showpage
+%%PageTrailer
+
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%Orientation: Portrait
+%%Pages: 1
+%%EOF
