@@ -20,3 +20,26 @@ Algorithm for pure 3D SLAM navigation.  Uses pose-chains as input.  MATLAB code 
 5) DP-SLAM
 ----------
 Featureless SLAM algorithm. Particle filtering used to create a joint probability distribution for maps/robot position.  Requires a LIDAR or Laser sensor.  Implementation provided in C++. 
+----------
+6) HOG-Man
+Graph based formulation:
+-Vertices: pose of the robot (Position + orientation)
+-Edges: observation/odometry.
+----------
+7) Two problems addressed:
+- Construct graph from sensors data. (front-end)
+- Compute most likely configuration of the poses (back-end) + uncertainty
+
+Seems to be lightweight
+----------
+8) ISam
+“iSAM has successfully been used online on a range of mobile robot platforms, including ground robots (DARPA LAGR platform, Willow Garage PR2)”
+Interesting: DARPA LAGR: http://en.wikipedia.org/wiki/DARPA_LAGR_Program (unfortunatelly it uses GPS)
+Seems to have a good documentation: http://people.csail.mit.edu/kaess/isam/doc/Example.html
+----------
+9) Max-Misture
+Not available.
+----------
+10) MTK:
+Not a SLAM…
+Toolkit to develop algorithms that work in manifolds.
