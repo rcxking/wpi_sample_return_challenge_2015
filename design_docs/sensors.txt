@@ -1,0 +1,9 @@
+Sensors
+-------
+- Cameras
+	- More cameras instead of mounting cameras on servos  
+		- Possibly Playstation Cameras 
+- IMU 
+	- 6 DOF
+- LIDARS
+	- not high priority  
