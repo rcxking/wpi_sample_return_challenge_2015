@@ -26,3 +26,5 @@ source ~/.bashrc
 
 # Acquire rosinstall:
 apt-get install python-rosinstall
+
+
