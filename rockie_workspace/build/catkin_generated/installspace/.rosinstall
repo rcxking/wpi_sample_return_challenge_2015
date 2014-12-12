@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/vagrant/wpi_sample_return_challenge_2015/rockie_workspace/install/setup.sh
