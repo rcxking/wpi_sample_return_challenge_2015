@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "opencv_tests")
+set(opencv_tests_MAINTAINER "bryant <bryant@todo.todo>")
+set(opencv_tests_DEPRECATED "")
+set(opencv_tests_VERSION "0.0.0")
+set(opencv_tests_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
+set(opencv_tests_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
+set(opencv_tests_BUILDTOOL_DEPENDS "catkin")
