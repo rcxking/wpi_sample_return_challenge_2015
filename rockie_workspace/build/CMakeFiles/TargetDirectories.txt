@@ -1,0 +1,6 @@
+/home/vagrant/wpi_sample_return_challenge_2015/rockie_workspace/build/CMakeFiles/clean_test_results.dir
+/home/vagrant/wpi_sample_return_challenge_2015/rockie_workspace/build/CMakeFiles/doxygen.dir
+/home/vagrant/wpi_sample_return_challenge_2015/rockie_workspace/build/gtest/CMakeFiles/gtest.dir
+/home/vagrant/wpi_sample_return_challenge_2015/rockie_workspace/build/gtest/CMakeFiles/gtest_main.dir
+/home/vagrant/wpi_sample_return_challenge_2015/rockie_workspace/build/CMakeFiles/run_tests.dir
+/home/vagrant/wpi_sample_return_challenge_2015/rockie_workspace/build/CMakeFiles/tests.dir
