@@ -294,6 +294,9 @@ localization_tests_SOURCE_DIR:STATIC=/home/bryant/wpi_sample_return_challenge_20
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/indigo/share/message_runtime/cmake
 
+//The directory containing a CMake configuration file for opencv2.
+opencv2_DIR:PATH=opencv2_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for opencv.
 opencv_DIR:PATH=opencv_DIR-NOTFOUND
 
