@@ -6,7 +6,7 @@
  * RPI Rock Raiders
  * 1/8/15
  *
- * Last Updated: Bryant Pong: 1/9/15 - 4:36 PM 
+ * Last Updated: Bryant Pong: 1/9/15 - 11:37 PM 
  */
 
 #include <stdio.h>
@@ -63,6 +63,7 @@ char *userInput = (char *) malloc(sizeof(int) * 100);
 void printWorld(void);
 void outputCurrentLocation(void);
 void getMove(void);
+void executeMove(void);
 /** END SECTION FUNCTION PROTOTYPES **/
 
 /*
@@ -90,10 +91,12 @@ void outputCurrentLocation(void) {
 	for(i = 0; i < worldHeight; i++) {
 		for(j = 0; j < worldLength; j++) {
 
-			// Output a "C" for the current location of the robot:
-			if(i ==    
-
-			printf("%c", world[i][j]);
+			// Output a "C" for the current location of the robot:   
+			if( ((worldHeight - 1 - i) == startY) && (j == startX)) {
+				printf("C");
+			} else {
+				printf("%c", world[i][j]);
+			} // End if-else
 		} // End for
 		printf("\n");
 	} // End for
@@ -116,6 +119,30 @@ void getMove(void) {
 	printf("DEBUG ONLY - You Entered: %s\n", userInput);
 #endif
 } // End function getMove()
+
+/*
+ * Given the user input, execute the move if valid.
+ *
+ * The valid moves are:
+ * 1) forward <squares to move>
+ * 2) backward <squares to move>
+ * 3) turn left (turns 90 degrees counterclockwise)
+ * 4) turn right (turns 90 degrees clockwise)      
+ */
+void executeMove(void) {
+	/*
+	 * First, we need to parse the command.  All commands are two part commands
+	 * and will be parsed using the strtok() function. 
+	 */
+	
+	// This array will hold the next part of the command:
+	char *token = (char *) malloc(sizeof(char) * 20);
+
+	
+
+	// Free any dynamically allocated memory:
+	free(token);
+} // End function executeMove()
 
 // Main function:
 int main(int argc, char **argv) {
@@ -250,6 +277,9 @@ int main(int argc, char **argv) {
 
 		// Next, get the next move from the user:
 		getMove();  
+
+		// Parse the next move and execute it if the move is valid:
+		executeMove();
 
 	} // End while
 
