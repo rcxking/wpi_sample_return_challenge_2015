@@ -6,7 +6,7 @@
  * RPI Rock Raiders
  * 1/8/15
  *
- * Last Updated: Bryant Pong: 1/9/15 - 11:37 PM 
+ * Last Updated: Bryant Pong: 1/21/15 - 7:20 PM 
  */
 
 #include <stdio.h>
@@ -56,6 +56,11 @@ int i, j;
 
 // This buffer holds the user input:
 char *userInput = (char *) malloc(sizeof(int) * 100); 
+
+// This array holds the command history:
+char **commandHistory;   
+const int commandHistorySize = 1024;
+int currentCommand = 0;
 
 /** END SECTION GLOBAL VARIABLES **/
 
@@ -135,13 +140,39 @@ void executeMove(void) {
 	 * and will be parsed using the strtok() function. 
 	 */
 	
-	// This array will hold the next part of the command:
-	char *token = (char *) malloc(sizeof(char) * 20);
+	// Commands are delimited by a space:
+	const char *delim = " ";
 
+	// These pointers store the next part of the command:	
+	char *nextPart;
+	char *save;
+
+	// This array temporarily holds the command tokens:
+	char **tempCmdArray = (char **) calloc(sizeof(char *), 5);
+	int nextTempCmd = 0;
+
+	for(nextPart = strtok_r(userInput, delim, &save); nextPart; nextPart = strtok_r(NULL, delim, &save)) {
+#ifdef DEBUG
+		printf("DEBUG ONLY - Next Token is: %s\n", nextPart);
+#endif
+		strcpy(tempCmdArray[nextTempCmd], nextPart);
+		//nextTempCmd++;
+	} // End for  
+
+	// DEBUG ONLY - Print out the temporary command array:
+#ifdef DEBUG
+	printf("DEBUG ONLY - Now printing out tempCmdArray:\n");
+	for(i = 0; i < nextTempCmd; i++) {
+		printf("%s", tempCmdArray[i]);
+	} // End for
+#endif
+
+	// Good policy to free memory:
+	for(i = 0; i < 5; i++) {
+		free(tempCmdArray[i]);
+	} // End for
+	free(tempCmdArray);
 	
-
-	// Free any dynamically allocated memory:
-	free(token);
 } // End function executeMove()
 
 // Main function:
@@ -263,6 +294,13 @@ int main(int argc, char **argv) {
 	strcpy(perDir, startingDirection);
 	perX = startX;
 	perY = startY;
+
+	// Allocate memory for the command history:
+	commandHistory = (char **) calloc(sizeof(char *), 1024);
+	for(i = 0; i < commandHistorySize; i++) {
+		commandHistory[i] = (char *) calloc(sizeof(char), 20);
+	} // End for
+
 	
 	// Have the user quit the REPL using "q" or "Q":
 	while(((strcmp(userInput, "q\n") != 0) && 
@@ -278,9 +316,24 @@ int main(int argc, char **argv) {
 		// Next, get the next move from the user:
 		getMove();  
 
-		// Parse the next move and execute it if the move is valid:
-		executeMove();
+		// If the user inputs "history", display the command history:
+		if(strcmp(userInput, "history\n") == 0) {
+			printf("Command History\n");
+			for(i = 0; i < currentCommand; i++) {
+				printf("%s", commandHistory[i]);
+			} // End for
+		} else {
+			// Otherwise:
 
+			// Add the command to the commandHistory:
+			strcpy(commandHistory[currentCommand], userInput);
+
+			// Parse the next move and execute it if the move is valid:
+			executeMove();
+
+			// Increment the currentCommand counter:
+			currentCommand++;
+		} // End if-else
 	} // End while
 
 	printf("Goodbye!\n");
@@ -292,6 +345,10 @@ int main(int argc, char **argv) {
 		free(world[i]);
 	} // End for
 	free(world);
+	for(i = 0; i < commandHistorySize; i++) {
+		free(commandHistory[i]);
+	} // End for
+	free(commandHistory);
 	free(userInput);
 
 	return 0;
