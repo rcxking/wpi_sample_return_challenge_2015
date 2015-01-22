@@ -6,7 +6,7 @@
  * RPI Rock Raiders
  * 1/8/15
  *
- * Last Updated: Bryant Pong: 1/21/15 - 7:20 PM 
+ * Last Updated: Bryant Pong: 1/21/15 - 8:48 PM 
  */
 
 #include <stdio.h>
@@ -68,6 +68,7 @@ int currentCommand = 0;
 void printWorld(void);
 void outputCurrentLocation(void);
 void getMove(void);
+bool isValidMove(char **command);
 void executeMove(void);
 /** END SECTION FUNCTION PROTOTYPES **/
 
@@ -149,23 +150,52 @@ void executeMove(void) {
 
 	// This array temporarily holds the command tokens:
 	char **tempCmdArray = (char **) calloc(sizeof(char *), 5);
+	for(i = 0; i < 5; i++) {
+		tempCmdArray[i] = (char *) calloc(sizeof(char), 20);
+	} // End for
 	int nextTempCmd = 0;
 
-	for(nextPart = strtok_r(userInput, delim, &save); nextPart; nextPart = strtok_r(NULL, delim, &save)) {
+	for(nextPart = strtok_r(userInput, delim, &save); nextPart; 
+	    nextPart = strtok_r(NULL, delim, &save)) {
 #ifdef DEBUG
 		printf("DEBUG ONLY - Next Token is: %s\n", nextPart);
 #endif
 		strcpy(tempCmdArray[nextTempCmd], nextPart);
-		//nextTempCmd++;
+		nextTempCmd++;
 	} // End for  
 
 	// DEBUG ONLY - Print out the temporary command array:
 #ifdef DEBUG
 	printf("DEBUG ONLY - Now printing out tempCmdArray:\n");
 	for(i = 0; i < nextTempCmd; i++) {
-		printf("%s", tempCmdArray[i]);
+		printf("%s\n", tempCmdArray[i]);
 	} // End for
 #endif
+
+	/*
+	 * Next, look at the first command and determine the appropriate action to
+	 * take.  The appropriate commands are:
+	 *
+	 * 1) forward <number of spaces to travel>
+	 * 2) backward <number of spaces to travel>
+	 * 3) left <increments of 45 degrees>
+	 * 4) right <increments of 45 degrees>  
+	 */
+
+	if(strcmp(tempCmdArray[0], "forward") == 0) {
+#ifdef DEBUG
+		printf("DEBUG ONLY - FORWARD COMMAND\n");
+#endif
+		
+	} else if(strcmp(tempCmdArray[0], "backward") == 0) {
+
+	} else if(strcmp(tempCmdArray[0], "left") == 0) {
+
+	} else if(strcmp(tempCmdArray[0], "right") == 0) {
+
+	} else {
+
+	} // End if-elseif-else
 
 	// Good policy to free memory:
 	for(i = 0; i < 5; i++) {
