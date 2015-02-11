@@ -1,0 +1,8 @@
+prefix=/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/install
+
+Name: rosgazebo
+Description: Description of rosgazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/install/lib 
+Requires: 

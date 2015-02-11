@@ -1,1 +1,2 @@
-localization_tests:opencv_tests
+gazebo_ros_demos/custom_plugin_tutorial:gazebo_ros_demos/rrbot_control:gazebo_ros_demos/rrbot_description:gazebo_ros_demos/rrbot_gazebo:localization_tests:rosgazebo
+-DCATKIN_DEVEL_PREFIX=/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel -DCMAKE_INSTALL_PREFIX=/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/install -G Unix Makefiles

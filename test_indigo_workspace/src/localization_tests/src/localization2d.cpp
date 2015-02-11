@@ -6,12 +6,16 @@
  * RPI Rock Raiders
  * 1/8/15
  *
- * Last Updated: Bryant Pong: 1/21/15 - 8:48 PM 
+ * Last Updated: Bryant Pong: 1/30/15 - 6:39 PM 
  */
 
+// C Headers
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+// C++ Headers
+#include <vector>
 
 #include "../include/kalmanfilter.h"
 
@@ -57,9 +61,13 @@ int i, j;
 // This buffer holds the user input:
 char *userInput = (char *) malloc(sizeof(int) * 100); 
 
+// This array holds the different directions the robot can face:
+const char* directions[8] = {"north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest"};
+const int numDirections = 8;
+
 // This array holds the command history:
 char **commandHistory;   
-const int commandHistorySize = 1024;
+const int commandHistorySize = 9001;
 int currentCommand = 0;
 
 /** END SECTION GLOBAL VARIABLES **/
@@ -126,6 +134,84 @@ void getMove(void) {
 #endif
 } // End function getMove()
 
+bool isValidMove(char **command) {
+
+	/*
+	 * Next, look at the first command and determine the appropriate action to
+	 * take.  The appropriate commands are:
+	 *
+	 * 1) forward <number of spaces to travel>
+	 * 2) backward <number of spaces to travel>
+	 * 3) left <increments of 45 degrees>
+	 * 4) right <increments of 45 degrees>  
+	 */
+
+
+	if(strcmp(command[0], "forward") == 0) {
+#ifdef DEBUG
+		printf("DEBUG ONLY - FORWARD COMMAND\n");
+#endif
+
+		// A forward command's 2nd argument contains the # of spaces to move forward:
+		const int forwardSpaces = atoi(command[1]);   
+
+	} else if(strcmp(command[0], "backward") == 0) {
+#ifdef DEBUG
+		printf("DEBUG ONLY - BACKWARD COMMAND\n");
+#endif
+
+	} else if(strcmp(command[0], "left") == 0) {
+#ifdef DEBUG
+		printf("DEBUG ONLY - TURN LEFT COMMAND\n");
+#endif
+
+		/*
+		 * There are 8 different directions for turning:
+		 *
+		 * 1) North:
+		 * 2) Northeast
+		 * 3) East
+		 * 4) Southeast
+		 * 5) South
+		 * 6) Southwest
+		 * 7) West
+		 * 8) Northwest
+		 *
+		 * This statement determines what direction the robot now faces after turning left:
+		 */
+		int curDirection = -1;
+
+		if(strcmp(perDir, "north") == 0) {
+			
+		} else if(strcmp(perDir, "northeast") == 0) {
+			
+		} else if(strcmp(perDir, "east") == 0) {
+		} else if(strcmp(perDir, "southeast") == 0) {
+		} else if(strcmp(perDir, "south") == 0) {
+		} else if(strcmp(perDir, "southwest") == 0) {
+		} else if(strcmp(perDir, "west") == 0) {
+		} else if(strcmp(perDir, "northwest") == 0) {
+		} else {
+			// We should never reach here; this indicates that the direction was corrupted:
+			return false;
+		} // End if-elseif-else
+	
+		// Turning left will always succeed:
+		return true;
+
+	} else if(strcmp(command[0], "right") == 0) {
+#ifdef DEBUG
+		printf("DEBUG ONLY - TURN RIGHT COMMAND\n");
+#endif
+
+		// Turning right will always succeed:
+		return true;
+
+	} else {
+		return false;
+	} // End if-elseif-else
+}
+
 /*
  * Given the user input, execute the move if valid.
  *
@@ -140,7 +226,7 @@ void executeMove(void) {
 	 * First, we need to parse the command.  All commands are two part commands
 	 * and will be parsed using the strtok() function. 
 	 */
-	
+
 	// Commands are delimited by a space:
 	const char *delim = " ";
 
@@ -156,7 +242,7 @@ void executeMove(void) {
 	int nextTempCmd = 0;
 
 	for(nextPart = strtok_r(userInput, delim, &save); nextPart; 
-	    nextPart = strtok_r(NULL, delim, &save)) {
+			nextPart = strtok_r(NULL, delim, &save)) {
 #ifdef DEBUG
 		printf("DEBUG ONLY - Next Token is: %s\n", nextPart);
 #endif
@@ -186,7 +272,7 @@ void executeMove(void) {
 #ifdef DEBUG
 		printf("DEBUG ONLY - FORWARD COMMAND\n");
 #endif
-		
+
 	} else if(strcmp(tempCmdArray[0], "backward") == 0) {
 
 	} else if(strcmp(tempCmdArray[0], "left") == 0) {
@@ -202,7 +288,7 @@ void executeMove(void) {
 		free(tempCmdArray[i]);
 	} // End for
 	free(tempCmdArray);
-	
+
 } // End function executeMove()
 
 // Main function:
@@ -331,10 +417,10 @@ int main(int argc, char **argv) {
 		commandHistory[i] = (char *) calloc(sizeof(char), 20);
 	} // End for
 
-	
+
 	// Have the user quit the REPL using "q" or "Q":
 	while(((strcmp(userInput, "q\n") != 0) && 
-		   (strcmp(userInput, "Q\n") != 0))) {
+				(strcmp(userInput, "Q\n") != 0))) {
 
 		// First output where the robot SHOULD be:
 		printf("I should be at the following pose:\n");

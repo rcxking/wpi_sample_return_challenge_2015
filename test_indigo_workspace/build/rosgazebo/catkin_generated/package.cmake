@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "rosgazebo")
+set(rosgazebo_MAINTAINER "bryant <bryant@todo.todo>")
+set(rosgazebo_DEPRECATED "")
+set(rosgazebo_VERSION "0.0.0")
+set(rosgazebo_BUILD_DEPENDS "gazebo_ros" "roscpp" "rospy" "std_msgs")
+set(rosgazebo_RUN_DEPENDS "gazebo_ros" "roscpp" "rospy" "std_msgs")
+set(rosgazebo_BUILDTOOL_DEPENDS "catkin")

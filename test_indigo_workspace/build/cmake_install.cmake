@@ -125,8 +125,12 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/gtest/cmake_install.cmake")
+  INCLUDE("/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/gazebo_ros_demos/rrbot_control/cmake_install.cmake")
+  INCLUDE("/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/gazebo_ros_demos/rrbot_description/cmake_install.cmake")
+  INCLUDE("/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/gazebo_ros_demos/rrbot_gazebo/cmake_install.cmake")
   INCLUDE("/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/localization_tests/cmake_install.cmake")
-  INCLUDE("/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/opencv_tests/cmake_install.cmake")
+  INCLUDE("/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/gazebo_ros_demos/custom_plugin_tutorial/cmake_install.cmake")
+  INCLUDE("/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/rosgazebo/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

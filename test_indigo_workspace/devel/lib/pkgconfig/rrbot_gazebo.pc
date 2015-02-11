@@ -1,0 +1,8 @@
+prefix=/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel
+
+Name: rrbot_gazebo
+Description: Description of rrbot_gazebo
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib 
+Requires: 
