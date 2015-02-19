@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "rockie-core")
+set(rockie-core_MAINTAINER "bryant <bryant@todo.todo>")
+set(rockie-core_DEPRECATED "")
+set(rockie-core_VERSION "0.0.0")
+set(rockie-core_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
+set(rockie-core_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
+set(rockie-core_BUILDTOOL_DEPENDS "catkin")
