@@ -39,8 +39,8 @@ def sendNewPositions(modelState):
 		print("Service call failed: %s" % e)
 
 if __name__ == '__main__':
-	print("Requesting for model name: hokuyo")		
-	modelState = getPositions("hokuyo_1", "")
+	print("Requesting for model name: pioneer2dx")		
+	modelState = getPositions("pioneer2dx", "")
 
 	print("Pose is: %s", modelState.pose.position)
 	x = modelState.pose.position.x
@@ -51,12 +51,12 @@ if __name__ == '__main__':
 	
 	# Construct the quaternion to be sent to the pioneer2dx:
 	quat = Quaternion(0.0, 0.0, 0.0, 1.0)
-	targetPoint = Point(-105.813, 185.574, 14.67)
+	targetPoint = Point(20, 150, 10)
 
 	p = Pose(targetPoint, quat)
 	t = Twist(Vector3(0.0, 0.0, 0.0), Vector3(0.0, 0.0, 0.0))
 
-	modelSt = ModelState("hokuyo_1", p, t, "")
+	modelSt = ModelState("pioneer2dx", p, t, "")
 
 	sendNewPositions(modelSt)
 	
