@@ -300,6 +300,12 @@ rockie_core_BINARY_DIR:STATIC=/home/bryant/wpi_sample_return_challenge_2015/rock
 //Value Computed by CMake
 rockie_core_SOURCE_DIR:STATIC=/home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/src/rockie_core
 
+//Value Computed by CMake
+rockie_time_BINARY_DIR:STATIC=/home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/build/rockie_time
+
+//Value Computed by CMake
+rockie_time_SOURCE_DIR:STATIC=/home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/src/rockie_time
+
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/indigo/share/rosconsole/cmake
 
@@ -431,7 +437,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=3
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

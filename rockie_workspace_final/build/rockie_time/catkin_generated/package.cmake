@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "rockie_time")
+set(rockie_time_MAINTAINER "bryant <bryant@todo.todo>")
+set(rockie_time_DEPRECATED "")
+set(rockie_time_VERSION "0.0.0")
+set(rockie_time_BUILD_DEPENDS "roscpp" "std_msgs")
+set(rockie_time_RUN_DEPENDS "roscpp" "std_msgs")
+set(rockie_time_BUILDTOOL_DEPENDS "catkin")

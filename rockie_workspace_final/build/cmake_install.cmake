@@ -126,6 +126,7 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/build/gtest/cmake_install.cmake")
   INCLUDE("/home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/build/rockie_core/cmake_install.cmake")
+  INCLUDE("/home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/build/rockie_time/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

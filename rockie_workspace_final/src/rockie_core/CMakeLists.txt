@@ -97,6 +97,9 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
+add_executable(rockie_core src/core-main.cpp)
+target_link_libraries(rockie_core ${catkin_LIBRARIES})
+
 ## Declare a cpp library
 # add_library(rockie_core
 #   src/${PROJECT_NAME}/rockie_core.cpp

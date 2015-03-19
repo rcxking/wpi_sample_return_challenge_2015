@@ -14,9 +14,13 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "catkin_generated/order_packages.cmake"
   "rockie_core/catkin_generated/ordered_paths.cmake"
   "rockie_core/catkin_generated/package.cmake"
+  "rockie_time/catkin_generated/ordered_paths.cmake"
+  "rockie_time/catkin_generated/package.cmake"
   "/home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/src/CMakeLists.txt"
   "/home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/src/rockie_core/CMakeLists.txt"
   "/home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/src/rockie_core/package.xml"
+  "/home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/src/rockie_time/CMakeLists.txt"
+  "/home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/src/rockie_time/package.xml"
   "/opt/ros/indigo/share/catkin/cmake/../package.xml"
   "/opt/ros/indigo/share/catkin/cmake/all.cmake"
   "/opt/ros/indigo/share/catkin/cmake/assert.cmake"
@@ -145,6 +149,7 @@ SET(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "rockie_core/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "rockie_time/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -155,6 +160,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/tests.dir/DependInfo.cmake"
   "gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
   "gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "rockie_core/CMakeFiles/rockie_core.dir/DependInfo.cmake"
   "rockie_core/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake"
   "rockie_core/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake"
   "rockie_core/CMakeFiles/roscpp_generate_messages_py.dir/DependInfo.cmake"
@@ -164,4 +170,5 @@ SET(CMAKE_DEPEND_INFO_FILES
   "rockie_core/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "rockie_core/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "rockie_core/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake"
+  "rockie_time/CMakeFiles/rockie_time.dir/DependInfo.cmake"
   )

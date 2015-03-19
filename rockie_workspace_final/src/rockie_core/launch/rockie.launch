@@ -1,0 +1,9 @@
+<launch>
+
+	<!-- Spawn the core-main node: -->
+	<node pkg="rockie_core" name="coremain" type="rockie_core" output="screen"/>
+
+	<!-- Spawn the core-time node: -->
+	<node pkg="rockie_time" name="coretime" type="rockie_time" output="screen"/>
+
+</launch>

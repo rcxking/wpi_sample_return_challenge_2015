@@ -231,6 +231,19 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
+# Target rules for targets named rockie_core
+
+# Build rule for target.
+rockie_core: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rockie_core
+.PHONY : rockie_core
+
+# fast build rule for target.
+rockie_core/fast:
+	$(MAKE) -f rockie_core/CMakeFiles/rockie_core.dir/build.make rockie_core/CMakeFiles/rockie_core.dir/build
+.PHONY : rockie_core/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
 
 # Build rule for target.
@@ -347,6 +360,19 @@ std_msgs_generate_messages_py/fast:
 	$(MAKE) -f rockie_core/CMakeFiles/std_msgs_generate_messages_py.dir/build.make rockie_core/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+#=============================================================================
+# Target rules for targets named rockie_time
+
+# Build rule for target.
+rockie_time: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rockie_time
+.PHONY : rockie_time
+
+# fast build rule for target.
+rockie_time/fast:
+	$(MAKE) -f rockie_time/CMakeFiles/rockie_time.dir/build.make rockie_time/CMakeFiles/rockie_time.dir/build
+.PHONY : rockie_time/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -366,6 +392,7 @@ help:
 	@echo "... tests"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... rockie_core"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
@@ -375,6 +402,7 @@ help:
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... rockie_time"
 .PHONY : help
 
 

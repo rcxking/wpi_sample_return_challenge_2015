@@ -2,6 +2,8 @@
 /home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/build/CMakeFiles/doxygen.dir
 /home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/build/gtest/CMakeFiles/gtest.dir
 /home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/build/gtest/CMakeFiles/gtest_main.dir
+/home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/build/rockie_core/CMakeFiles/rockie_core.dir
+/home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/build/rockie_time/CMakeFiles/rockie_time.dir
 /home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/build/rockie_core/CMakeFiles/roscpp_generate_messages_cpp.dir
 /home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/build/rockie_core/CMakeFiles/roscpp_generate_messages_lisp.dir
 /home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/build/rockie_core/CMakeFiles/roscpp_generate_messages_py.dir

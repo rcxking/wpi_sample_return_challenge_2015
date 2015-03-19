@@ -153,6 +153,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+rockie_core/CMakeFiles/rockie_core.dir/rule:
+	cd /home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/build && $(MAKE) -f CMakeFiles/Makefile2 rockie_core/CMakeFiles/rockie_core.dir/rule
+.PHONY : rockie_core/CMakeFiles/rockie_core.dir/rule
+
+# Convenience name for target.
+rockie_core: rockie_core/CMakeFiles/rockie_core.dir/rule
+.PHONY : rockie_core
+
+# fast build rule for target.
+rockie_core/fast:
+	cd /home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/build && $(MAKE) -f rockie_core/CMakeFiles/rockie_core.dir/build.make rockie_core/CMakeFiles/rockie_core.dir/build
+.PHONY : rockie_core/fast
+
+# Convenience name for target.
 rockie_core/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
 	cd /home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/build && $(MAKE) -f CMakeFiles/Makefile2 rockie_core/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : rockie_core/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
@@ -278,6 +292,30 @@ std_msgs_generate_messages_py/fast:
 	cd /home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/build && $(MAKE) -f rockie_core/CMakeFiles/std_msgs_generate_messages_py.dir/build.make rockie_core/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+src/core-main.o: src/core-main.cpp.o
+.PHONY : src/core-main.o
+
+# target to build an object file
+src/core-main.cpp.o:
+	cd /home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/build && $(MAKE) -f rockie_core/CMakeFiles/rockie_core.dir/build.make rockie_core/CMakeFiles/rockie_core.dir/src/core-main.cpp.o
+.PHONY : src/core-main.cpp.o
+
+src/core-main.i: src/core-main.cpp.i
+.PHONY : src/core-main.i
+
+# target to preprocess a source file
+src/core-main.cpp.i:
+	cd /home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/build && $(MAKE) -f rockie_core/CMakeFiles/rockie_core.dir/build.make rockie_core/CMakeFiles/rockie_core.dir/src/core-main.cpp.i
+.PHONY : src/core-main.cpp.i
+
+src/core-main.s: src/core-main.cpp.s
+.PHONY : src/core-main.s
+
+# target to generate assembly for a file
+src/core-main.cpp.s:
+	cd /home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/build && $(MAKE) -f rockie_core/CMakeFiles/rockie_core.dir/build.make rockie_core/CMakeFiles/rockie_core.dir/src/core-main.cpp.s
+.PHONY : src/core-main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -290,6 +328,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... rockie_core"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
@@ -300,6 +339,9 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
+	@echo "... src/core-main.o"
+	@echo "... src/core-main.i"
+	@echo "... src/core-main.s"
 .PHONY : help
 
 
