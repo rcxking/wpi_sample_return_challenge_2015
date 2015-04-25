@@ -1,2 +1,0 @@
-rockie_core:rockie_time
--DCATKIN_DEVEL_PREFIX=/home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/devel -DCMAKE_INSTALL_PREFIX=/home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/install -G Unix Makefiles

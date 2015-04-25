@@ -1,0 +1,10 @@
+build/
+devel/
+*~
+*.swp
+*.o
+*.lo
+*.slo
+*.so
+*.la
+*.a

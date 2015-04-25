@@ -1,8 +1,0 @@
-prefix=/home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/install
-
-Name: rockie_time
-Description: Description of rockie_time
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/install/lib 
-Requires: 

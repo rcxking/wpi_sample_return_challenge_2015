@@ -1,8 +1,0 @@
-prefix=/home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/devel
-
-Name: rockie-core
-Description: Description of rockie-core
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/bryant/wpi_sample_return_challenge_2015/rockie_workspace_final/devel/lib 
-Requires: 
