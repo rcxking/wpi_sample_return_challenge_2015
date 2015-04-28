@@ -290,11 +290,23 @@ actionlib_DIR:PATH=/opt/ros/indigo/share/actionlib/cmake
 //The directory containing a CMake configuration file for actionlib_msgs.
 actionlib_msgs_DIR:PATH=/opt/ros/indigo/share/actionlib_msgs/cmake
 
+//Value Computed by CMake
+camera_tests_BINARY_DIR:STATIC=/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/camera_tests
+
+//Value Computed by CMake
+camera_tests_SOURCE_DIR:STATIC=/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/camera_tests
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/indigo/share/catkin/cmake
 
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/indigo/share/class_loader/cmake
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/indigo/share/cpp_common/cmake
+
+//The directory containing a CMake configuration file for cv_bridge.
+cv_bridge_DIR:PATH=/opt/ros/indigo/share/cv_bridge/cmake
 
 //The directory containing a CMake configuration file for dynamic_reconfigure.
 dynamic_reconfigure_DIR:PATH=/opt/ros/indigo/share/dynamic_reconfigure/cmake
@@ -357,6 +369,15 @@ gtest_force_shared_crt:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
+//The directory containing a CMake configuration file for image_transport.
+image_transport_DIR:PATH=/opt/ros/indigo/share/image_transport/cmake
+
+//Value Computed by CMake
+imgconvert_BINARY_DIR:STATIC=/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/imgconvert
+
+//Value Computed by CMake
+imgconvert_SOURCE_DIR:STATIC=/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/imgconvert
+
 //Path to a library.
 lib:FILEPATH=/opt/ros/indigo/lib/libdynamic_reconfigure_config_init_mutex.so
 
@@ -375,6 +396,12 @@ message_generation_DIR:PATH=/opt/ros/indigo/share/message_generation/cmake
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/indigo/share/message_runtime/cmake
 
+//Value Computed by CMake
+object_recognition_BINARY_DIR:STATIC=/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition
+
+//Value Computed by CMake
+object_recognition_SOURCE_DIR:STATIC=/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition
+
 //Path to a library.
 onelib:FILEPATH=/usr/lib/x86_64-linux-gnu/libsdformat.so
 
@@ -389,6 +416,9 @@ opencv_tests_BINARY_DIR:STATIC=/home/bryant/wpi_sample_return_challenge_2015/tes
 
 //Value Computed by CMake
 opencv_tests_SOURCE_DIR:STATIC=/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/opencv_tests
+
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=/opt/ros/indigo/share/pluginlib/cmake
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/indigo/share/rosconsole/cmake
@@ -464,6 +494,12 @@ tf2_ros_DIR:PATH=/opt/ros/indigo/share/tf2_ros/cmake
 
 //The directory containing a CMake configuration file for tf.
 tf_DIR:PATH=/opt/ros/indigo/share/tf/cmake
+
+//Value Computed by CMake
+thresholding_BINARY_DIR:STATIC=/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/thresholding
+
+//Value Computed by CMake
+thresholding_SOURCE_DIR:STATIC=/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/thresholding
 
 //The directory containing a CMake configuration file for trajectory_msgs.
 trajectory_msgs_DIR:PATH=/opt/ros/indigo/share/trajectory_msgs/cmake
@@ -585,7 +621,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=8
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

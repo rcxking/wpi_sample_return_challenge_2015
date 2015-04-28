@@ -363,90 +363,6 @@ gazebo_tutorials/fast:
 .PHONY : gazebo_tutorials/fast
 
 # Convenience name for target.
-gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_cpp: gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_lisp: gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_py: gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : geometry_msgs_generate_messages_py
-
-# fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_cpp: gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_lisp: gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_py: gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-# Convenience name for target.
 gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
 	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
 .PHONY : gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
@@ -660,17 +576,11 @@ help:
 	@echo "... gazebo_msgs_generate_messages_py"
 	@echo "... gazebo_ros_gencfg"
 	@echo "... gazebo_tutorials"
-	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... geometry_msgs_generate_messages_lisp"
-	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... sensor_msgs_generate_messages_cpp"
-	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_py"

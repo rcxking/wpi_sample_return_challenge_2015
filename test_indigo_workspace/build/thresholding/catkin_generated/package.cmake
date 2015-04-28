@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "thresholding")
+set(thresholding_MAINTAINER "bryant <bryant@todo.todo>")
+set(thresholding_DEPRECATED "")
+set(thresholding_VERSION "0.0.0")
+set(thresholding_BUILD_DEPENDS "roscpp" "rospy" "std_msgs" "message_generation")
+set(thresholding_RUN_DEPENDS "roscpp" "rospy" "std_msgs" "message_generation")
+set(thresholding_BUILDTOOL_DEPENDS "catkin")
