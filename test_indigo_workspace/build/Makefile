@@ -244,6 +244,45 @@ _catkin_empty_exported_target/fast:
 .PHONY : _catkin_empty_exported_target/fast
 
 #=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_cpp
+
+# Build rule for target.
+geometry_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_cpp
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f imgconvert/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make imgconvert/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_lisp
+
+# Build rule for target.
+geometry_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f imgconvert/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make imgconvert/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_py
+
+# Build rule for target.
+geometry_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_py
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	$(MAKE) -f imgconvert/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make imgconvert/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
 
 # Build rule for target.
@@ -253,7 +292,7 @@ roscpp_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f localization_tests/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make localization_tests/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	$(MAKE) -f imgconvert/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make imgconvert/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
@@ -266,7 +305,7 @@ roscpp_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f localization_tests/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make localization_tests/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	$(MAKE) -f imgconvert/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make imgconvert/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 #=============================================================================
@@ -279,7 +318,7 @@ roscpp_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	$(MAKE) -f localization_tests/CMakeFiles/roscpp_generate_messages_py.dir/build.make localization_tests/CMakeFiles/roscpp_generate_messages_py.dir/build
+	$(MAKE) -f imgconvert/CMakeFiles/roscpp_generate_messages_py.dir/build.make imgconvert/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
@@ -292,7 +331,7 @@ rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f localization_tests/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make localization_tests/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -305,7 +344,7 @@ rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f localization_tests/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make localization_tests/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -318,8 +357,47 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f localization_tests/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make localization_tests/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	$(MAKE) -f imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_cpp
+
+# Build rule for target.
+sensor_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f imgconvert/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make imgconvert/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_lisp
+
+# Build rule for target.
+sensor_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f imgconvert/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make imgconvert/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_py
+
+# Build rule for target.
+sensor_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	$(MAKE) -f imgconvert/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make imgconvert/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_cpp
@@ -331,7 +409,7 @@ std_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f localization_tests/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make localization_tests/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f imgconvert/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make imgconvert/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -344,7 +422,7 @@ std_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f localization_tests/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make localization_tests/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f imgconvert/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make imgconvert/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -357,8 +435,242 @@ std_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	$(MAKE) -f localization_tests/CMakeFiles/std_msgs_generate_messages_py.dir/build.make localization_tests/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(MAKE) -f imgconvert/CMakeFiles/std_msgs_generate_messages_py.dir/build.make imgconvert/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named _object_recognition_generate_messages_check_deps_Image
+
+# Build rule for target.
+_object_recognition_generate_messages_check_deps_Image: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _object_recognition_generate_messages_check_deps_Image
+.PHONY : _object_recognition_generate_messages_check_deps_Image
+
+# fast build rule for target.
+_object_recognition_generate_messages_check_deps_Image/fast:
+	$(MAKE) -f object_recognition/CMakeFiles/_object_recognition_generate_messages_check_deps_Image.dir/build.make object_recognition/CMakeFiles/_object_recognition_generate_messages_check_deps_Image.dir/build
+.PHONY : _object_recognition_generate_messages_check_deps_Image/fast
+
+#=============================================================================
+# Target rules for targets named object_recognition_gencpp
+
+# Build rule for target.
+object_recognition_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 object_recognition_gencpp
+.PHONY : object_recognition_gencpp
+
+# fast build rule for target.
+object_recognition_gencpp/fast:
+	$(MAKE) -f object_recognition/CMakeFiles/object_recognition_gencpp.dir/build.make object_recognition/CMakeFiles/object_recognition_gencpp.dir/build
+.PHONY : object_recognition_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named object_recognition_generate_messages
+
+# Build rule for target.
+object_recognition_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 object_recognition_generate_messages
+.PHONY : object_recognition_generate_messages
+
+# fast build rule for target.
+object_recognition_generate_messages/fast:
+	$(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages.dir/build
+.PHONY : object_recognition_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named object_recognition_generate_messages_cpp
+
+# Build rule for target.
+object_recognition_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 object_recognition_generate_messages_cpp
+.PHONY : object_recognition_generate_messages_cpp
+
+# fast build rule for target.
+object_recognition_generate_messages_cpp/fast:
+	$(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.dir/build
+.PHONY : object_recognition_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named object_recognition_generate_messages_lisp
+
+# Build rule for target.
+object_recognition_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 object_recognition_generate_messages_lisp
+.PHONY : object_recognition_generate_messages_lisp
+
+# fast build rule for target.
+object_recognition_generate_messages_lisp/fast:
+	$(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages_lisp.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages_lisp.dir/build
+.PHONY : object_recognition_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named object_recognition_generate_messages_py
+
+# Build rule for target.
+object_recognition_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 object_recognition_generate_messages_py
+.PHONY : object_recognition_generate_messages_py
+
+# fast build rule for target.
+object_recognition_generate_messages_py/fast:
+	$(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages_py.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages_py.dir/build
+.PHONY : object_recognition_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named object_recognition_genlisp
+
+# Build rule for target.
+object_recognition_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 object_recognition_genlisp
+.PHONY : object_recognition_genlisp
+
+# fast build rule for target.
+object_recognition_genlisp/fast:
+	$(MAKE) -f object_recognition/CMakeFiles/object_recognition_genlisp.dir/build.make object_recognition/CMakeFiles/object_recognition_genlisp.dir/build
+.PHONY : object_recognition_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named object_recognition_genpy
+
+# Build rule for target.
+object_recognition_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 object_recognition_genpy
+.PHONY : object_recognition_genpy
+
+# fast build rule for target.
+object_recognition_genpy/fast:
+	$(MAKE) -f object_recognition/CMakeFiles/object_recognition_genpy.dir/build.make object_recognition/CMakeFiles/object_recognition_genpy.dir/build
+.PHONY : object_recognition_genpy/fast
+
+#=============================================================================
+# Target rules for targets named sift_node
+
+# Build rule for target.
+sift_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sift_node
+.PHONY : sift_node
+
+# fast build rule for target.
+sift_node/fast:
+	$(MAKE) -f object_recognition/CMakeFiles/sift_node.dir/build.make object_recognition/CMakeFiles/sift_node.dir/build
+.PHONY : sift_node/fast
+
+#=============================================================================
+# Target rules for targets named _thresholding_generate_messages_check_deps_ProcessImage
+
+# Build rule for target.
+_thresholding_generate_messages_check_deps_ProcessImage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _thresholding_generate_messages_check_deps_ProcessImage
+.PHONY : _thresholding_generate_messages_check_deps_ProcessImage
+
+# fast build rule for target.
+_thresholding_generate_messages_check_deps_ProcessImage/fast:
+	$(MAKE) -f thresholding/CMakeFiles/_thresholding_generate_messages_check_deps_ProcessImage.dir/build.make thresholding/CMakeFiles/_thresholding_generate_messages_check_deps_ProcessImage.dir/build
+.PHONY : _thresholding_generate_messages_check_deps_ProcessImage/fast
+
+#=============================================================================
+# Target rules for targets named thresholding
+
+# Build rule for target.
+thresholding: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 thresholding
+.PHONY : thresholding
+
+# fast build rule for target.
+thresholding/fast:
+	$(MAKE) -f thresholding/CMakeFiles/thresholding.dir/build.make thresholding/CMakeFiles/thresholding.dir/build
+.PHONY : thresholding/fast
+
+#=============================================================================
+# Target rules for targets named thresholding_gencpp
+
+# Build rule for target.
+thresholding_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 thresholding_gencpp
+.PHONY : thresholding_gencpp
+
+# fast build rule for target.
+thresholding_gencpp/fast:
+	$(MAKE) -f thresholding/CMakeFiles/thresholding_gencpp.dir/build.make thresholding/CMakeFiles/thresholding_gencpp.dir/build
+.PHONY : thresholding_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named thresholding_generate_messages
+
+# Build rule for target.
+thresholding_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 thresholding_generate_messages
+.PHONY : thresholding_generate_messages
+
+# fast build rule for target.
+thresholding_generate_messages/fast:
+	$(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages.dir/build
+.PHONY : thresholding_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named thresholding_generate_messages_cpp
+
+# Build rule for target.
+thresholding_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 thresholding_generate_messages_cpp
+.PHONY : thresholding_generate_messages_cpp
+
+# fast build rule for target.
+thresholding_generate_messages_cpp/fast:
+	$(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/build
+.PHONY : thresholding_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named thresholding_generate_messages_lisp
+
+# Build rule for target.
+thresholding_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 thresholding_generate_messages_lisp
+.PHONY : thresholding_generate_messages_lisp
+
+# fast build rule for target.
+thresholding_generate_messages_lisp/fast:
+	$(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/build
+.PHONY : thresholding_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named thresholding_generate_messages_py
+
+# Build rule for target.
+thresholding_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 thresholding_generate_messages_py
+.PHONY : thresholding_generate_messages_py
+
+# fast build rule for target.
+thresholding_generate_messages_py/fast:
+	$(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages_py.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages_py.dir/build
+.PHONY : thresholding_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named thresholding_genlisp
+
+# Build rule for target.
+thresholding_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 thresholding_genlisp
+.PHONY : thresholding_genlisp
+
+# fast build rule for target.
+thresholding_genlisp/fast:
+	$(MAKE) -f thresholding/CMakeFiles/thresholding_genlisp.dir/build.make thresholding/CMakeFiles/thresholding_genlisp.dir/build
+.PHONY : thresholding_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named thresholding_genpy
+
+# Build rule for target.
+thresholding_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 thresholding_genpy
+.PHONY : thresholding_genpy
+
+# fast build rule for target.
+thresholding_genpy/fast:
+	$(MAKE) -f thresholding/CMakeFiles/thresholding_genpy.dir/build.make thresholding/CMakeFiles/thresholding_genpy.dir/build
+.PHONY : thresholding_genpy/fast
 
 #=============================================================================
 # Target rules for targets named actionlib_generate_messages_cpp
@@ -556,84 +868,6 @@ gazebo_tutorials/fast:
 .PHONY : gazebo_tutorials/fast
 
 #=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_cpp
-
-# Build rule for target.
-geometry_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_cpp
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_lisp
-
-# Build rule for target.
-geometry_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_py
-
-# Build rule for target.
-geometry_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_py
-.PHONY : geometry_msgs_generate_messages_py
-
-# fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_cpp
-
-# Build rule for target.
-sensor_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_lisp
-
-# Build rule for target.
-sensor_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_py
-
-# Build rule for target.
-sensor_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-#=============================================================================
 # Target rules for targets named std_srvs_generate_messages_cpp
 
 # Build rule for target.
@@ -809,15 +1043,39 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... _catkin_empty_exported_target"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... _object_recognition_generate_messages_check_deps_Image"
+	@echo "... object_recognition_gencpp"
+	@echo "... object_recognition_generate_messages"
+	@echo "... object_recognition_generate_messages_cpp"
+	@echo "... object_recognition_generate_messages_lisp"
+	@echo "... object_recognition_generate_messages_py"
+	@echo "... object_recognition_genlisp"
+	@echo "... object_recognition_genpy"
+	@echo "... sift_node"
+	@echo "... _thresholding_generate_messages_check_deps_ProcessImage"
+	@echo "... thresholding"
+	@echo "... thresholding_gencpp"
+	@echo "... thresholding_generate_messages"
+	@echo "... thresholding_generate_messages_cpp"
+	@echo "... thresholding_generate_messages_lisp"
+	@echo "... thresholding_generate_messages_py"
+	@echo "... thresholding_genlisp"
+	@echo "... thresholding_genpy"
 	@echo "... actionlib_generate_messages_cpp"
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... actionlib_generate_messages_py"
@@ -833,12 +1091,6 @@ help:
 	@echo "... gazebo_msgs_generate_messages_py"
 	@echo "... gazebo_ros_gencfg"
 	@echo "... gazebo_tutorials"
-	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... geometry_msgs_generate_messages_lisp"
-	@echo "... geometry_msgs_generate_messages_py"
-	@echo "... sensor_msgs_generate_messages_cpp"
-	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_py"
