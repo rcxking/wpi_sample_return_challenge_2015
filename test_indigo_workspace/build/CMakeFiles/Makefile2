@@ -202,7 +202,7 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  6
 	@echo "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
@@ -233,7 +233,7 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  7
 	@echo "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
@@ -334,6 +334,378 @@ gazebo_ros_demos/rrbot_gazebo/preinstall:
 .PHONY : gazebo_ros_demos/rrbot_gazebo/preinstall
 
 #=============================================================================
+# Directory level rules for directory driving
+
+# Convenience name for "all" pass in the directory.
+driving/all: driving/CMakeFiles/driving_generate_messages.dir/all
+.PHONY : driving/all
+
+# Convenience name for "clean" pass in the directory.
+driving/clean: driving/CMakeFiles/_driving_generate_messages_check_deps_Drive.dir/clean
+driving/clean: driving/CMakeFiles/driving_gencpp.dir/clean
+driving/clean: driving/CMakeFiles/driving_generate_messages.dir/clean
+driving/clean: driving/CMakeFiles/driving_generate_messages_cpp.dir/clean
+driving/clean: driving/CMakeFiles/driving_generate_messages_lisp.dir/clean
+driving/clean: driving/CMakeFiles/driving_generate_messages_py.dir/clean
+driving/clean: driving/CMakeFiles/driving_genlisp.dir/clean
+driving/clean: driving/CMakeFiles/driving_genpy.dir/clean
+driving/clean: driving/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+driving/clean: driving/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+driving/clean: driving/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : driving/clean
+
+# Convenience name for "preinstall" pass in the directory.
+driving/preinstall:
+.PHONY : driving/preinstall
+
+#=============================================================================
+# Target rules for target driving/CMakeFiles/_driving_generate_messages_check_deps_Drive.dir
+
+# All Build rule for target.
+driving/CMakeFiles/_driving_generate_messages_check_deps_Drive.dir/all:
+	$(MAKE) -f driving/CMakeFiles/_driving_generate_messages_check_deps_Drive.dir/build.make driving/CMakeFiles/_driving_generate_messages_check_deps_Drive.dir/depend
+	$(MAKE) -f driving/CMakeFiles/_driving_generate_messages_check_deps_Drive.dir/build.make driving/CMakeFiles/_driving_generate_messages_check_deps_Drive.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 
+	@echo "Built target _driving_generate_messages_check_deps_Drive"
+.PHONY : driving/CMakeFiles/_driving_generate_messages_check_deps_Drive.dir/all
+
+# Build rule for subdir invocation for target.
+driving/CMakeFiles/_driving_generate_messages_check_deps_Drive.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 driving/CMakeFiles/_driving_generate_messages_check_deps_Drive.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
+.PHONY : driving/CMakeFiles/_driving_generate_messages_check_deps_Drive.dir/rule
+
+# Convenience name for target.
+_driving_generate_messages_check_deps_Drive: driving/CMakeFiles/_driving_generate_messages_check_deps_Drive.dir/rule
+.PHONY : _driving_generate_messages_check_deps_Drive
+
+# clean rule for target.
+driving/CMakeFiles/_driving_generate_messages_check_deps_Drive.dir/clean:
+	$(MAKE) -f driving/CMakeFiles/_driving_generate_messages_check_deps_Drive.dir/build.make driving/CMakeFiles/_driving_generate_messages_check_deps_Drive.dir/clean
+.PHONY : driving/CMakeFiles/_driving_generate_messages_check_deps_Drive.dir/clean
+
+# clean rule for target.
+clean: driving/CMakeFiles/_driving_generate_messages_check_deps_Drive.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target driving/CMakeFiles/driving_gencpp.dir
+
+# All Build rule for target.
+driving/CMakeFiles/driving_gencpp.dir/all: driving/CMakeFiles/driving_generate_messages_cpp.dir/all
+	$(MAKE) -f driving/CMakeFiles/driving_gencpp.dir/build.make driving/CMakeFiles/driving_gencpp.dir/depend
+	$(MAKE) -f driving/CMakeFiles/driving_gencpp.dir/build.make driving/CMakeFiles/driving_gencpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 
+	@echo "Built target driving_gencpp"
+.PHONY : driving/CMakeFiles/driving_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+driving/CMakeFiles/driving_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 driving/CMakeFiles/driving_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
+.PHONY : driving/CMakeFiles/driving_gencpp.dir/rule
+
+# Convenience name for target.
+driving_gencpp: driving/CMakeFiles/driving_gencpp.dir/rule
+.PHONY : driving_gencpp
+
+# clean rule for target.
+driving/CMakeFiles/driving_gencpp.dir/clean:
+	$(MAKE) -f driving/CMakeFiles/driving_gencpp.dir/build.make driving/CMakeFiles/driving_gencpp.dir/clean
+.PHONY : driving/CMakeFiles/driving_gencpp.dir/clean
+
+# clean rule for target.
+clean: driving/CMakeFiles/driving_gencpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target driving/CMakeFiles/driving_generate_messages.dir
+
+# All Build rule for target.
+driving/CMakeFiles/driving_generate_messages.dir/all: driving/CMakeFiles/driving_generate_messages_py.dir/all
+driving/CMakeFiles/driving_generate_messages.dir/all: driving/CMakeFiles/driving_generate_messages_cpp.dir/all
+driving/CMakeFiles/driving_generate_messages.dir/all: driving/CMakeFiles/driving_generate_messages_lisp.dir/all
+	$(MAKE) -f driving/CMakeFiles/driving_generate_messages.dir/build.make driving/CMakeFiles/driving_generate_messages.dir/depend
+	$(MAKE) -f driving/CMakeFiles/driving_generate_messages.dir/build.make driving/CMakeFiles/driving_generate_messages.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 
+	@echo "Built target driving_generate_messages"
+.PHONY : driving/CMakeFiles/driving_generate_messages.dir/all
+
+# Include target in all.
+all: driving/CMakeFiles/driving_generate_messages.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+driving/CMakeFiles/driving_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 driving/CMakeFiles/driving_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
+.PHONY : driving/CMakeFiles/driving_generate_messages.dir/rule
+
+# Convenience name for target.
+driving_generate_messages: driving/CMakeFiles/driving_generate_messages.dir/rule
+.PHONY : driving_generate_messages
+
+# clean rule for target.
+driving/CMakeFiles/driving_generate_messages.dir/clean:
+	$(MAKE) -f driving/CMakeFiles/driving_generate_messages.dir/build.make driving/CMakeFiles/driving_generate_messages.dir/clean
+.PHONY : driving/CMakeFiles/driving_generate_messages.dir/clean
+
+# clean rule for target.
+clean: driving/CMakeFiles/driving_generate_messages.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target driving/CMakeFiles/driving_generate_messages_cpp.dir
+
+# All Build rule for target.
+driving/CMakeFiles/driving_generate_messages_cpp.dir/all: driving/CMakeFiles/_driving_generate_messages_check_deps_Drive.dir/all
+	$(MAKE) -f driving/CMakeFiles/driving_generate_messages_cpp.dir/build.make driving/CMakeFiles/driving_generate_messages_cpp.dir/depend
+	$(MAKE) -f driving/CMakeFiles/driving_generate_messages_cpp.dir/build.make driving/CMakeFiles/driving_generate_messages_cpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  1
+	@echo "Built target driving_generate_messages_cpp"
+.PHONY : driving/CMakeFiles/driving_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+driving/CMakeFiles/driving_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 driving/CMakeFiles/driving_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
+.PHONY : driving/CMakeFiles/driving_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+driving_generate_messages_cpp: driving/CMakeFiles/driving_generate_messages_cpp.dir/rule
+.PHONY : driving_generate_messages_cpp
+
+# clean rule for target.
+driving/CMakeFiles/driving_generate_messages_cpp.dir/clean:
+	$(MAKE) -f driving/CMakeFiles/driving_generate_messages_cpp.dir/build.make driving/CMakeFiles/driving_generate_messages_cpp.dir/clean
+.PHONY : driving/CMakeFiles/driving_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: driving/CMakeFiles/driving_generate_messages_cpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target driving/CMakeFiles/driving_generate_messages_lisp.dir
+
+# All Build rule for target.
+driving/CMakeFiles/driving_generate_messages_lisp.dir/all: driving/CMakeFiles/_driving_generate_messages_check_deps_Drive.dir/all
+	$(MAKE) -f driving/CMakeFiles/driving_generate_messages_lisp.dir/build.make driving/CMakeFiles/driving_generate_messages_lisp.dir/depend
+	$(MAKE) -f driving/CMakeFiles/driving_generate_messages_lisp.dir/build.make driving/CMakeFiles/driving_generate_messages_lisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  2
+	@echo "Built target driving_generate_messages_lisp"
+.PHONY : driving/CMakeFiles/driving_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+driving/CMakeFiles/driving_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 driving/CMakeFiles/driving_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
+.PHONY : driving/CMakeFiles/driving_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+driving_generate_messages_lisp: driving/CMakeFiles/driving_generate_messages_lisp.dir/rule
+.PHONY : driving_generate_messages_lisp
+
+# clean rule for target.
+driving/CMakeFiles/driving_generate_messages_lisp.dir/clean:
+	$(MAKE) -f driving/CMakeFiles/driving_generate_messages_lisp.dir/build.make driving/CMakeFiles/driving_generate_messages_lisp.dir/clean
+.PHONY : driving/CMakeFiles/driving_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: driving/CMakeFiles/driving_generate_messages_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target driving/CMakeFiles/driving_generate_messages_py.dir
+
+# All Build rule for target.
+driving/CMakeFiles/driving_generate_messages_py.dir/all: driving/CMakeFiles/_driving_generate_messages_check_deps_Drive.dir/all
+	$(MAKE) -f driving/CMakeFiles/driving_generate_messages_py.dir/build.make driving/CMakeFiles/driving_generate_messages_py.dir/depend
+	$(MAKE) -f driving/CMakeFiles/driving_generate_messages_py.dir/build.make driving/CMakeFiles/driving_generate_messages_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  3 4
+	@echo "Built target driving_generate_messages_py"
+.PHONY : driving/CMakeFiles/driving_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+driving/CMakeFiles/driving_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 driving/CMakeFiles/driving_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
+.PHONY : driving/CMakeFiles/driving_generate_messages_py.dir/rule
+
+# Convenience name for target.
+driving_generate_messages_py: driving/CMakeFiles/driving_generate_messages_py.dir/rule
+.PHONY : driving_generate_messages_py
+
+# clean rule for target.
+driving/CMakeFiles/driving_generate_messages_py.dir/clean:
+	$(MAKE) -f driving/CMakeFiles/driving_generate_messages_py.dir/build.make driving/CMakeFiles/driving_generate_messages_py.dir/clean
+.PHONY : driving/CMakeFiles/driving_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: driving/CMakeFiles/driving_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target driving/CMakeFiles/driving_genlisp.dir
+
+# All Build rule for target.
+driving/CMakeFiles/driving_genlisp.dir/all: driving/CMakeFiles/driving_generate_messages_lisp.dir/all
+	$(MAKE) -f driving/CMakeFiles/driving_genlisp.dir/build.make driving/CMakeFiles/driving_genlisp.dir/depend
+	$(MAKE) -f driving/CMakeFiles/driving_genlisp.dir/build.make driving/CMakeFiles/driving_genlisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 
+	@echo "Built target driving_genlisp"
+.PHONY : driving/CMakeFiles/driving_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+driving/CMakeFiles/driving_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 driving/CMakeFiles/driving_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
+.PHONY : driving/CMakeFiles/driving_genlisp.dir/rule
+
+# Convenience name for target.
+driving_genlisp: driving/CMakeFiles/driving_genlisp.dir/rule
+.PHONY : driving_genlisp
+
+# clean rule for target.
+driving/CMakeFiles/driving_genlisp.dir/clean:
+	$(MAKE) -f driving/CMakeFiles/driving_genlisp.dir/build.make driving/CMakeFiles/driving_genlisp.dir/clean
+.PHONY : driving/CMakeFiles/driving_genlisp.dir/clean
+
+# clean rule for target.
+clean: driving/CMakeFiles/driving_genlisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target driving/CMakeFiles/driving_genpy.dir
+
+# All Build rule for target.
+driving/CMakeFiles/driving_genpy.dir/all: driving/CMakeFiles/driving_generate_messages_py.dir/all
+	$(MAKE) -f driving/CMakeFiles/driving_genpy.dir/build.make driving/CMakeFiles/driving_genpy.dir/depend
+	$(MAKE) -f driving/CMakeFiles/driving_genpy.dir/build.make driving/CMakeFiles/driving_genpy.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 
+	@echo "Built target driving_genpy"
+.PHONY : driving/CMakeFiles/driving_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+driving/CMakeFiles/driving_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 driving/CMakeFiles/driving_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
+.PHONY : driving/CMakeFiles/driving_genpy.dir/rule
+
+# Convenience name for target.
+driving_genpy: driving/CMakeFiles/driving_genpy.dir/rule
+.PHONY : driving_genpy
+
+# clean rule for target.
+driving/CMakeFiles/driving_genpy.dir/clean:
+	$(MAKE) -f driving/CMakeFiles/driving_genpy.dir/build.make driving/CMakeFiles/driving_genpy.dir/clean
+.PHONY : driving/CMakeFiles/driving_genpy.dir/clean
+
+# clean rule for target.
+clean: driving/CMakeFiles/driving_genpy.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target driving/CMakeFiles/std_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+driving/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f driving/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make driving/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f driving/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make driving/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 
+	@echo "Built target std_msgs_generate_messages_cpp"
+.PHONY : driving/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+driving/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 driving/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
+.PHONY : driving/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_cpp: driving/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : std_msgs_generate_messages_cpp
+
+# clean rule for target.
+driving/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f driving/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make driving/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : driving/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: driving/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target driving/CMakeFiles/std_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+driving/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f driving/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make driving/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f driving/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make driving/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 
+	@echo "Built target std_msgs_generate_messages_lisp"
+.PHONY : driving/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+driving/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 driving/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
+.PHONY : driving/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: driving/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : std_msgs_generate_messages_lisp
+
+# clean rule for target.
+driving/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f driving/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make driving/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : driving/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: driving/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target driving/CMakeFiles/std_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+driving/CMakeFiles/std_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f driving/CMakeFiles/std_msgs_generate_messages_py.dir/build.make driving/CMakeFiles/std_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f driving/CMakeFiles/std_msgs_generate_messages_py.dir/build.make driving/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 
+	@echo "Built target std_msgs_generate_messages_py"
+.PHONY : driving/CMakeFiles/std_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+driving/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 driving/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
+.PHONY : driving/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_py: driving/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : std_msgs_generate_messages_py
+
+# clean rule for target.
+driving/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f driving/CMakeFiles/std_msgs_generate_messages_py.dir/build.make driving/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : driving/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: driving/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory imgconvert
 
 # Convenience name for "all" pass in the directory.
@@ -353,9 +725,6 @@ imgconvert/clean: imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/c
 imgconvert/clean: imgconvert/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 imgconvert/clean: imgconvert/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 imgconvert/clean: imgconvert/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-imgconvert/clean: imgconvert/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-imgconvert/clean: imgconvert/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-imgconvert/clean: imgconvert/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 .PHONY : imgconvert/clean
 
 # Convenience name for "preinstall" pass in the directory.
@@ -735,99 +1104,6 @@ clean: imgconvert/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target imgconvert/CMakeFiles/std_msgs_generate_messages_cpp.dir
-
-# All Build rule for target.
-imgconvert/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f imgconvert/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make imgconvert/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f imgconvert/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make imgconvert/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 
-	@echo "Built target std_msgs_generate_messages_cpp"
-.PHONY : imgconvert/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-imgconvert/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
-.PHONY : imgconvert/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: imgconvert/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : std_msgs_generate_messages_cpp
-
-# clean rule for target.
-imgconvert/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f imgconvert/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make imgconvert/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : imgconvert/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: imgconvert/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target imgconvert/CMakeFiles/std_msgs_generate_messages_lisp.dir
-
-# All Build rule for target.
-imgconvert/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f imgconvert/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make imgconvert/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f imgconvert/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make imgconvert/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 
-	@echo "Built target std_msgs_generate_messages_lisp"
-.PHONY : imgconvert/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-imgconvert/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
-.PHONY : imgconvert/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: imgconvert/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : std_msgs_generate_messages_lisp
-
-# clean rule for target.
-imgconvert/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f imgconvert/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make imgconvert/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : imgconvert/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-
-# clean rule for target.
-clean: imgconvert/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target imgconvert/CMakeFiles/std_msgs_generate_messages_py.dir
-
-# All Build rule for target.
-imgconvert/CMakeFiles/std_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f imgconvert/CMakeFiles/std_msgs_generate_messages_py.dir/build.make imgconvert/CMakeFiles/std_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f imgconvert/CMakeFiles/std_msgs_generate_messages_py.dir/build.make imgconvert/CMakeFiles/std_msgs_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 
-	@echo "Built target std_msgs_generate_messages_py"
-.PHONY : imgconvert/CMakeFiles/std_msgs_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-imgconvert/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
-.PHONY : imgconvert/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: imgconvert/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : std_msgs_generate_messages_py
-
-# clean rule for target.
-imgconvert/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f imgconvert/CMakeFiles/std_msgs_generate_messages_py.dir/build.make imgconvert/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : imgconvert/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-
-# clean rule for target.
-clean: imgconvert/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : clean
-
-#=============================================================================
 # Directory level rules for directory localization_tests
 
 # Convenience name for "all" pass in the directory.
@@ -932,9 +1208,9 @@ clean: object_recognition/CMakeFiles/object_recognition_gencpp.dir/clean
 # Target rules for target object_recognition/CMakeFiles/object_recognition_generate_messages.dir
 
 # All Build rule for target.
+object_recognition/CMakeFiles/object_recognition_generate_messages.dir/all: object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.dir/all
 object_recognition/CMakeFiles/object_recognition_generate_messages.dir/all: object_recognition/CMakeFiles/object_recognition_generate_messages_lisp.dir/all
 object_recognition/CMakeFiles/object_recognition_generate_messages.dir/all: object_recognition/CMakeFiles/object_recognition_generate_messages_py.dir/all
-object_recognition/CMakeFiles/object_recognition_generate_messages.dir/all: object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.dir/all
 	$(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages.dir/depend
 	$(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 
@@ -972,7 +1248,7 @@ clean: object_recognition/CMakeFiles/object_recognition_generate_messages.dir/cl
 object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.dir/all: object_recognition/CMakeFiles/_object_recognition_generate_messages_check_deps_Image.dir/all
 	$(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.dir/depend
 	$(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  8
 	@echo "Built target object_recognition_generate_messages_cpp"
 .PHONY : object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.dir/all
 
@@ -1003,7 +1279,7 @@ clean: object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.di
 object_recognition/CMakeFiles/object_recognition_generate_messages_lisp.dir/all: object_recognition/CMakeFiles/_object_recognition_generate_messages_check_deps_Image.dir/all
 	$(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages_lisp.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages_lisp.dir/depend
 	$(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages_lisp.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  5
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  9
 	@echo "Built target object_recognition_generate_messages_lisp"
 .PHONY : object_recognition/CMakeFiles/object_recognition_generate_messages_lisp.dir/all
 
@@ -1034,7 +1310,7 @@ clean: object_recognition/CMakeFiles/object_recognition_generate_messages_lisp.d
 object_recognition/CMakeFiles/object_recognition_generate_messages_py.dir/all: object_recognition/CMakeFiles/_object_recognition_generate_messages_check_deps_Image.dir/all
 	$(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages_py.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages_py.dir/depend
 	$(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages_py.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  6 7
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  10 11
 	@echo "Built target object_recognition_generate_messages_py"
 .PHONY : object_recognition/CMakeFiles/object_recognition_generate_messages_py.dir/all
 
@@ -1127,7 +1403,7 @@ clean: object_recognition/CMakeFiles/object_recognition_genpy.dir/clean
 object_recognition/CMakeFiles/sift_node.dir/all:
 	$(MAKE) -f object_recognition/CMakeFiles/sift_node.dir/build.make object_recognition/CMakeFiles/sift_node.dir/depend
 	$(MAKE) -f object_recognition/CMakeFiles/sift_node.dir/build.make object_recognition/CMakeFiles/sift_node.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  8
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  12
 	@echo "Built target sift_node"
 .PHONY : object_recognition/CMakeFiles/sift_node.dir/all
 
@@ -1217,7 +1493,7 @@ clean: thresholding/CMakeFiles/_thresholding_generate_messages_check_deps_Proces
 thresholding/CMakeFiles/thresholding.dir/all: thresholding/CMakeFiles/thresholding_gencpp.dir/all
 	$(MAKE) -f thresholding/CMakeFiles/thresholding.dir/build.make thresholding/CMakeFiles/thresholding.dir/depend
 	$(MAKE) -f thresholding/CMakeFiles/thresholding.dir/build.make thresholding/CMakeFiles/thresholding.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  9
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  13
 	@echo "Built target thresholding"
 .PHONY : thresholding/CMakeFiles/thresholding.dir/all
 
@@ -1280,8 +1556,8 @@ clean: thresholding/CMakeFiles/thresholding_gencpp.dir/clean
 # Target rules for target thresholding/CMakeFiles/thresholding_generate_messages.dir
 
 # All Build rule for target.
-thresholding/CMakeFiles/thresholding_generate_messages.dir/all: thresholding/CMakeFiles/thresholding_generate_messages_py.dir/all
 thresholding/CMakeFiles/thresholding_generate_messages.dir/all: thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/all
+thresholding/CMakeFiles/thresholding_generate_messages.dir/all: thresholding/CMakeFiles/thresholding_generate_messages_py.dir/all
 thresholding/CMakeFiles/thresholding_generate_messages.dir/all: thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/all
 	$(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages.dir/depend
 	$(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages.dir/build
@@ -1317,11 +1593,11 @@ clean: thresholding/CMakeFiles/thresholding_generate_messages.dir/clean
 # Target rules for target thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir
 
 # All Build rule for target.
-thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/all: imgconvert/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/all: driving/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/all: thresholding/CMakeFiles/_thresholding_generate_messages_check_deps_ProcessImage.dir/all
 	$(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/depend
 	$(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  10
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  14
 	@echo "Built target thresholding_generate_messages_cpp"
 .PHONY : thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/all
 
@@ -1349,11 +1625,11 @@ clean: thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/clean
 # Target rules for target thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir
 
 # All Build rule for target.
-thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/all: imgconvert/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/all: driving/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/all: thresholding/CMakeFiles/_thresholding_generate_messages_check_deps_ProcessImage.dir/all
 	$(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/depend
 	$(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  11
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  15
 	@echo "Built target thresholding_generate_messages_lisp"
 .PHONY : thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/all
 
@@ -1381,11 +1657,11 @@ clean: thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/clean
 # Target rules for target thresholding/CMakeFiles/thresholding_generate_messages_py.dir
 
 # All Build rule for target.
-thresholding/CMakeFiles/thresholding_generate_messages_py.dir/all: imgconvert/CMakeFiles/std_msgs_generate_messages_py.dir/all
+thresholding/CMakeFiles/thresholding_generate_messages_py.dir/all: driving/CMakeFiles/std_msgs_generate_messages_py.dir/all
 thresholding/CMakeFiles/thresholding_generate_messages_py.dir/all: thresholding/CMakeFiles/_thresholding_generate_messages_check_deps_ProcessImage.dir/all
 	$(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages_py.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages_py.dir/depend
 	$(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages_py.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  12 13
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  16 17
 	@echo "Built target thresholding_generate_messages_py"
 .PHONY : thresholding/CMakeFiles/thresholding_generate_messages_py.dir/all
 
@@ -1953,7 +2229,7 @@ clean: gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/gazebo_ros_gencfg.dir/
 gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/gazebo_tutorials.dir/all:
 	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/gazebo_tutorials.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/gazebo_tutorials.dir/depend
 	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/gazebo_tutorials.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/gazebo_tutorials.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles  5
 	@echo "Built target gazebo_tutorials"
 .PHONY : gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/gazebo_tutorials.dir/all
 
