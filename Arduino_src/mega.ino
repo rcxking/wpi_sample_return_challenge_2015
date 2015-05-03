@@ -110,6 +110,7 @@ void parseSerial(char *data,int datasz)
   else if(value<256&&value>-256) //If it's an acceptable value
   {
     motors[motor]=value;
+    SetMotor(motor,value);
     Serial.print("Setting motor ");
     Serial.print(motor);
     Serial.print(" to speed ");
