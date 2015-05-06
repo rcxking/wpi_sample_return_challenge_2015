@@ -118,29 +118,46 @@ void establishContact() {
 void parseSerial(char *data,int datasz)
 {
   data[datasz]='\0';  //Make sure it's null terminated.
-  char *itr;
-  char *name= strtok_r(data,"-",&itr); //Motor is anything up to the first dash.
-  char *val= strtok_r(NULL,"\0",&itr); //Speed is anything after the first dash.
-  int value = atoi(val);
-  int motor= atoi(name);
-  if(value==256)
-  {
-    Serial.print("Motor ");
-    Serial.print(motor);
-    Serial.print(" is set to speed ");
-    Serial.print(motors[motor]);
-    Serial.print('\n');
-  }
-  else if(value<256&&value>-256) //If it's an acceptable value
-  {
-    motors[motor]=value;
-    SetMotor(motor,value);
-    Serial.print("Setting motor ");
-    Serial.print(motor);
-    Serial.print(" to speed ");
-    Serial.print(value);
-    Serial.print('\n');
-  }
+  
+  // Variables for string tokenization:
+  const char commaDelim[2] = ",";
+  char *commaToken;
+  
+  // Get the next motor command:
+  commaToken = strtok(data, commaDelim);
+  
+  while(commaToken != NULL) {
+    
+    Serial.print("Next command: ");
+    Serial.println(commaToken);
+    
+    // Next parse the commands by commaToken:
+    char *itr;
+    char *name= strtok_r(commaToken,"-",&itr); //Motor is anything up to the first dash.
+    char *val= strtok_r(NULL,"\0",&itr); //Speed is anything after the first dash.
+    int value = atoi(val);
+    int motor= atoi(name);
+    if(value==256)
+    {
+      Serial.print("Motor ");
+      Serial.print(motor);
+      Serial.print(" is set to speed ");
+      Serial.print(motors[motor]);
+      Serial.print('\n');
+    }
+    else if(value<256&&value>-256) //If it's an acceptable value
+    {
+      motors[motor]=value;
+      SetMotor(motor,value);
+      Serial.print("Setting motor ");
+      Serial.print(motor);
+      Serial.print(" to speed ");
+      Serial.print(value);
+      Serial.print('\n');
+    }
+    
+    commaToken = strtok(NULL, commaDelim);
+  } // End while
 }
 
 void SetMotor(int motor,int value) //To be modified when other actuators are added.

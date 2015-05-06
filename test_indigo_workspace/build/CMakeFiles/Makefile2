@@ -424,9 +424,9 @@ clean: driving/CMakeFiles/driving_gencpp.dir/clean
 # Target rules for target driving/CMakeFiles/driving_generate_messages.dir
 
 # All Build rule for target.
-driving/CMakeFiles/driving_generate_messages.dir/all: driving/CMakeFiles/driving_generate_messages_py.dir/all
 driving/CMakeFiles/driving_generate_messages.dir/all: driving/CMakeFiles/driving_generate_messages_cpp.dir/all
 driving/CMakeFiles/driving_generate_messages.dir/all: driving/CMakeFiles/driving_generate_messages_lisp.dir/all
+driving/CMakeFiles/driving_generate_messages.dir/all: driving/CMakeFiles/driving_generate_messages_py.dir/all
 	$(MAKE) -f driving/CMakeFiles/driving_generate_messages.dir/build.make driving/CMakeFiles/driving_generate_messages.dir/depend
 	$(MAKE) -f driving/CMakeFiles/driving_generate_messages.dir/build.make driving/CMakeFiles/driving_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 
@@ -1208,9 +1208,9 @@ clean: object_recognition/CMakeFiles/object_recognition_gencpp.dir/clean
 # Target rules for target object_recognition/CMakeFiles/object_recognition_generate_messages.dir
 
 # All Build rule for target.
-object_recognition/CMakeFiles/object_recognition_generate_messages.dir/all: object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.dir/all
-object_recognition/CMakeFiles/object_recognition_generate_messages.dir/all: object_recognition/CMakeFiles/object_recognition_generate_messages_lisp.dir/all
 object_recognition/CMakeFiles/object_recognition_generate_messages.dir/all: object_recognition/CMakeFiles/object_recognition_generate_messages_py.dir/all
+object_recognition/CMakeFiles/object_recognition_generate_messages.dir/all: object_recognition/CMakeFiles/object_recognition_generate_messages_lisp.dir/all
+object_recognition/CMakeFiles/object_recognition_generate_messages.dir/all: object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.dir/all
 	$(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages.dir/depend
 	$(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 
@@ -1556,8 +1556,8 @@ clean: thresholding/CMakeFiles/thresholding_gencpp.dir/clean
 # Target rules for target thresholding/CMakeFiles/thresholding_generate_messages.dir
 
 # All Build rule for target.
-thresholding/CMakeFiles/thresholding_generate_messages.dir/all: thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/all
 thresholding/CMakeFiles/thresholding_generate_messages.dir/all: thresholding/CMakeFiles/thresholding_generate_messages_py.dir/all
+thresholding/CMakeFiles/thresholding_generate_messages.dir/all: thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/all
 thresholding/CMakeFiles/thresholding_generate_messages.dir/all: thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/all
 	$(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages.dir/depend
 	$(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages.dir/build
