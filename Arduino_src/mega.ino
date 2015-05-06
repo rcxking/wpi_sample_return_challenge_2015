@@ -1,36 +1,44 @@
 #include <string.h> //strtok_r
 
+#define MOTOR0PWM   2
 #define MOTOR0FWD   22 
 #define MOTOR0REV   23
-#define MOTOR0EN    2
+#define MOTOR0EN    24
 
-#define MOTOR1FWD   24
-#define MOTOR1REV   25
-#define MOTOR1EN    3
+#define MOTOR1PWM   3
+#define MOTOR1FWD   25
+#define MOTOR1REV   26
+#define MOTOR1EN    27
 
-#define MOTOR2FWD   26
-#define MOTOR2REV   27
-#define MOTOR2EN    4
+#define MOTOR2PWM   4
+#define MOTOR2FWD   28
+#define MOTOR2REV   29
+#define MOTOR2EN    30
 
-#define MOTOR3FWD   28
-#define MOTOR3REV   29
-#define MOTOR3EN    5
+#define MOTOR3PWM   5
+#define MOTOR3FWD   31
+#define MOTOR3REV   32
+#define MOTOR3EN    33
 
-#define MOTOR4FWD   30
-#define MOTOR4REV   31
-#define MOTOR4EN    6
+#define MOTOR4PWM   6
+#define MOTOR4FWD   34
+#define MOTOR4REV   35
+#define MOTOR4EN    36
 
-#define MOTOR5FWD   32
-#define MOTOR5REV   33
-#define MOTOR5EN    7
+#define MOTOR5PWM   7
+#define MOTOR5FWD   37
+#define MOTOR5REV   38
+#define MOTOR5EN    39
 
-#define MOTOR6FWD   34
-#define MOTOR6REV   35
-#define MOTOR6EN    8
+#define MOTOR6PWM   8
+#define MOTOR6FWD   40
+#define MOTOR6REV   41
+#define MOTOR6EN    42
 
-#define MOTOR7FWD   36
-#define MOTOR7REV   37
-#define MOTOR7EN    9
+#define MOTOR7PWM   9
+#define MOTOR7FWD   43
+#define MOTOR7REV   44
+#define MOTOR7EN    45
 
 int motors[8]; //Array which holds all the motors statuses.
 void SetMotorPorts()
@@ -38,27 +46,42 @@ void SetMotorPorts()
    pinMode(MOTOR0FWD,OUTPUT);
    pinMode(MOTOR0REV,OUTPUT);
    pinMode(MOTOR0EN,OUTPUT);
+   pinMode(MOTOR0PWM,OUTPUT);
+   
    pinMode(MOTOR1FWD,OUTPUT);
    pinMode(MOTOR1REV,OUTPUT);
    pinMode(MOTOR1EN,OUTPUT);
+   pinMode(MOTOR1PWM,OUTPUT);
+   
    pinMode(MOTOR2FWD,OUTPUT);
    pinMode(MOTOR2REV,OUTPUT);
    pinMode(MOTOR2EN,OUTPUT);
+   pinMode(MOTOR2PWM,OUTPUT);
+   
    pinMode(MOTOR3FWD,OUTPUT);
    pinMode(MOTOR3REV,OUTPUT);
    pinMode(MOTOR3EN,OUTPUT);
+   pinMode(MOTOR3PWM,OUTPUT);
+   
    pinMode(MOTOR4FWD,OUTPUT);
    pinMode(MOTOR4REV,OUTPUT);
    pinMode(MOTOR4EN,OUTPUT);
+   pinMode(MOTOR4PWM,OUTPUT);
+   
    pinMode(MOTOR5FWD,OUTPUT);
    pinMode(MOTOR5REV,OUTPUT);
    pinMode(MOTOR5EN,OUTPUT);
+   pinMode(MOTOR5PWM,OUTPUT);
+
    pinMode(MOTOR6FWD,OUTPUT);
    pinMode(MOTOR6REV,OUTPUT);
    pinMode(MOTOR6EN,OUTPUT);
+   pinMode(MOTOR6PWM,OUTPUT);   
+   
    pinMode(MOTOR7FWD,OUTPUT);
    pinMode(MOTOR7REV,OUTPUT);
    pinMode(MOTOR7EN,OUTPUT);
+   pinMode(MOTOR7PWM,OUTPUT);
 }
 
 void setup()
@@ -106,6 +129,7 @@ void parseSerial(char *data,int datasz)
     Serial.print(motor);
     Serial.print(" is set to speed ");
     Serial.print(motors[motor]);
+    Serial.print('\n');
   }
   else if(value<256&&value>-256) //If it's an acceptable value
   {
@@ -130,44 +154,52 @@ void SetMotor(int motor,int value) //To be modified when other actuators are add
   switch(motor)
   {
     case 0:
-      analogWrite(MOTOR0EN,value);
       digitalWrite(MOTOR0FWD,fwd); 
       digitalWrite(MOTOR0REV,!fwd);
+      digitalWrite(MOTOR0EN,1);
+      analogWrite(MOTOR0PWM,value);
       break;
     case 1:
-      analogWrite(MOTOR1EN,value);
       digitalWrite(MOTOR1FWD,fwd); 
       digitalWrite(MOTOR1REV,!fwd);
+      digitalWrite(MOTOR1EN,1);
+      analogWrite(MOTOR1PWM,value);
       break;
     case 2:
-      analogWrite(MOTOR2EN,value);
       digitalWrite(MOTOR2FWD,fwd); 
       digitalWrite(MOTOR2REV,!fwd);
+      digitalWrite(MOTOR2EN,1);
+      analogWrite(MOTOR2PWM,value);
       break;
     case 3:
-      analogWrite(MOTOR3EN,value);
       digitalWrite(MOTOR3FWD,fwd); 
       digitalWrite(MOTOR3REV,!fwd);
+      digitalWrite(MOTOR3EN,1);
+      analogWrite(MOTOR3PWM,value);
       break;
     case 4:
-      analogWrite(MOTOR4EN,value);
       digitalWrite(MOTOR4FWD,fwd); 
       digitalWrite(MOTOR4REV,!fwd);
+      digitalWrite(MOTOR4EN,1);
+      analogWrite(MOTOR4PWM,value);
       break;
     case 5:
-      analogWrite(MOTOR5EN,value);
       digitalWrite(MOTOR5FWD,fwd); 
       digitalWrite(MOTOR5REV,!fwd);
+      digitalWrite(MOTOR5EN,1);
+      analogWrite(MOTOR5PWM,value);
       break;
     case 6:      
-      analogWrite(MOTOR6EN,value);
       digitalWrite(MOTOR6FWD,fwd); 
       digitalWrite(MOTOR6REV,!fwd);
+      digitalWrite(MOTOR6EN,1);
+      analogWrite(MOTOR6PWM,value);
       break;
     case 7:
-      analogWrite(MOTOR7EN,value);
       digitalWrite(MOTOR7FWD,fwd); 
       digitalWrite(MOTOR7REV,!fwd);
+      digitalWrite(MOTOR7EN,1);
+      analogWrite(MOTOR7PWM,value);
       break;
     break;
   }
