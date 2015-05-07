@@ -1,8 +1,0 @@
-prefix=/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel
-
-Name: gazebo_tutorials
-Description: Description of gazebo_tutorials
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib 
-Requires: roscpp gazebo_ros

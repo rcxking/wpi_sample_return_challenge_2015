@@ -1,8 +1,8 @@
-# Install script for directory: /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/imgconvert
+# Install script for directory: /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src/imgconvert
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/imgconvert/catkin_generated/installspace/imgconvert.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/imgconvert/catkin_generated/installspace/imgconvert.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/imgconvert/cmake" TYPE FILE FILES
-    "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/imgconvert/catkin_generated/installspace/imgconvertConfig.cmake"
-    "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/imgconvert/catkin_generated/installspace/imgconvertConfig-version.cmake"
+    "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/imgconvert/catkin_generated/installspace/imgconvertConfig.cmake"
+    "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/imgconvert/catkin_generated/installspace/imgconvertConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/imgconvert" TYPE FILE FILES "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/imgconvert/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/imgconvert" TYPE FILE FILES "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src/imgconvert/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

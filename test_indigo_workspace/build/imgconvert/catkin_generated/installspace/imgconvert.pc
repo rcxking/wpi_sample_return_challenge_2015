@@ -1,8 +1,8 @@
-prefix=/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/install
+prefix=/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/install
 
 Name: imgconvert
 Description: Description of imgconvert
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/install/lib 
+Libs: -L/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/install/lib 
 Requires: 

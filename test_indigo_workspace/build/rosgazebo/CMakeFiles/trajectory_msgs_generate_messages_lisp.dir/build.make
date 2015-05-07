@@ -31,17 +31,11 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src
+CMAKE_SOURCE_DIR = /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build
+CMAKE_BINARY_DIR = /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build
 
 # Utility rule file for trajectory_msgs_generate_messages_lisp.
 
@@ -59,10 +53,10 @@ rosgazebo/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build: trajector
 .PHONY : rosgazebo/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
 
 rosgazebo/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/clean:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/rosgazebo && $(CMAKE_COMMAND) -P CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/rosgazebo && $(CMAKE_COMMAND) -P CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : rosgazebo/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/clean
 
 rosgazebo/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/depend:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/rosgazebo /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/rosgazebo /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/rosgazebo/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src/rosgazebo /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/rosgazebo /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/rosgazebo/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rosgazebo/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/depend
 

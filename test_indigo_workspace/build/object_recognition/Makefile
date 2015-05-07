@@ -35,25 +35,19 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src
+CMAKE_SOURCE_DIR = /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build
+CMAKE_BINARY_DIR = /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,14 +117,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition/CMakeFiles/progress.marks
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition/CMakeFiles/progress.marks
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/clean
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/clean
 .PHONY : clean
 
 # The main clean target
@@ -139,36 +133,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/preinstall
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/preinstall
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-object_recognition/CMakeFiles/_object_recognition_generate_messages_check_deps_Image.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/CMakeFiles/_object_recognition_generate_messages_check_deps_Image.dir/rule
-.PHONY : object_recognition/CMakeFiles/_object_recognition_generate_messages_check_deps_Image.dir/rule
-
-# Convenience name for target.
-_object_recognition_generate_messages_check_deps_Image: object_recognition/CMakeFiles/_object_recognition_generate_messages_check_deps_Image.dir/rule
-.PHONY : _object_recognition_generate_messages_check_deps_Image
-
-# fast build rule for target.
-_object_recognition_generate_messages_check_deps_Image/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/_object_recognition_generate_messages_check_deps_Image.dir/build.make object_recognition/CMakeFiles/_object_recognition_generate_messages_check_deps_Image.dir/build
-.PHONY : _object_recognition_generate_messages_check_deps_Image/fast
-
-# Convenience name for target.
 object_recognition/CMakeFiles/object_recognition_gencpp.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/CMakeFiles/object_recognition_gencpp.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/CMakeFiles/object_recognition_gencpp.dir/rule
 .PHONY : object_recognition/CMakeFiles/object_recognition_gencpp.dir/rule
 
 # Convenience name for target.
@@ -177,12 +157,12 @@ object_recognition_gencpp: object_recognition/CMakeFiles/object_recognition_genc
 
 # fast build rule for target.
 object_recognition_gencpp/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/object_recognition_gencpp.dir/build.make object_recognition/CMakeFiles/object_recognition_gencpp.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/object_recognition_gencpp.dir/build.make object_recognition/CMakeFiles/object_recognition_gencpp.dir/build
 .PHONY : object_recognition_gencpp/fast
 
 # Convenience name for target.
 object_recognition/CMakeFiles/object_recognition_generate_messages.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/CMakeFiles/object_recognition_generate_messages.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/CMakeFiles/object_recognition_generate_messages.dir/rule
 .PHONY : object_recognition/CMakeFiles/object_recognition_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -191,12 +171,12 @@ object_recognition_generate_messages: object_recognition/CMakeFiles/object_recog
 
 # fast build rule for target.
 object_recognition_generate_messages/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages.dir/build
 .PHONY : object_recognition_generate_messages/fast
 
 # Convenience name for target.
 object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.dir/rule
 .PHONY : object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -205,12 +185,12 @@ object_recognition_generate_messages_cpp: object_recognition/CMakeFiles/object_r
 
 # fast build rule for target.
 object_recognition_generate_messages_cpp/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages_cpp.dir/build
 .PHONY : object_recognition_generate_messages_cpp/fast
 
 # Convenience name for target.
 object_recognition/CMakeFiles/object_recognition_generate_messages_lisp.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/CMakeFiles/object_recognition_generate_messages_lisp.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/CMakeFiles/object_recognition_generate_messages_lisp.dir/rule
 .PHONY : object_recognition/CMakeFiles/object_recognition_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -219,12 +199,12 @@ object_recognition_generate_messages_lisp: object_recognition/CMakeFiles/object_
 
 # fast build rule for target.
 object_recognition_generate_messages_lisp/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages_lisp.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages_lisp.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages_lisp.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages_lisp.dir/build
 .PHONY : object_recognition_generate_messages_lisp/fast
 
 # Convenience name for target.
 object_recognition/CMakeFiles/object_recognition_generate_messages_py.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/CMakeFiles/object_recognition_generate_messages_py.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/CMakeFiles/object_recognition_generate_messages_py.dir/rule
 .PHONY : object_recognition/CMakeFiles/object_recognition_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -233,12 +213,12 @@ object_recognition_generate_messages_py: object_recognition/CMakeFiles/object_re
 
 # fast build rule for target.
 object_recognition_generate_messages_py/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages_py.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages_py.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/object_recognition_generate_messages_py.dir/build.make object_recognition/CMakeFiles/object_recognition_generate_messages_py.dir/build
 .PHONY : object_recognition_generate_messages_py/fast
 
 # Convenience name for target.
 object_recognition/CMakeFiles/object_recognition_genlisp.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/CMakeFiles/object_recognition_genlisp.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/CMakeFiles/object_recognition_genlisp.dir/rule
 .PHONY : object_recognition/CMakeFiles/object_recognition_genlisp.dir/rule
 
 # Convenience name for target.
@@ -247,12 +227,12 @@ object_recognition_genlisp: object_recognition/CMakeFiles/object_recognition_gen
 
 # fast build rule for target.
 object_recognition_genlisp/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/object_recognition_genlisp.dir/build.make object_recognition/CMakeFiles/object_recognition_genlisp.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/object_recognition_genlisp.dir/build.make object_recognition/CMakeFiles/object_recognition_genlisp.dir/build
 .PHONY : object_recognition_genlisp/fast
 
 # Convenience name for target.
 object_recognition/CMakeFiles/object_recognition_genpy.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/CMakeFiles/object_recognition_genpy.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/CMakeFiles/object_recognition_genpy.dir/rule
 .PHONY : object_recognition/CMakeFiles/object_recognition_genpy.dir/rule
 
 # Convenience name for target.
@@ -261,12 +241,12 @@ object_recognition_genpy: object_recognition/CMakeFiles/object_recognition_genpy
 
 # fast build rule for target.
 object_recognition_genpy/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/object_recognition_genpy.dir/build.make object_recognition/CMakeFiles/object_recognition_genpy.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/object_recognition_genpy.dir/build.make object_recognition/CMakeFiles/object_recognition_genpy.dir/build
 .PHONY : object_recognition_genpy/fast
 
 # Convenience name for target.
 object_recognition/CMakeFiles/sift_node.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/CMakeFiles/sift_node.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 object_recognition/CMakeFiles/sift_node.dir/rule
 .PHONY : object_recognition/CMakeFiles/sift_node.dir/rule
 
 # Convenience name for target.
@@ -275,7 +255,7 @@ sift_node: object_recognition/CMakeFiles/sift_node.dir/rule
 
 # fast build rule for target.
 sift_node/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/sift_node.dir/build.make object_recognition/CMakeFiles/sift_node.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/sift_node.dir/build.make object_recognition/CMakeFiles/sift_node.dir/build
 .PHONY : sift_node/fast
 
 src/sift.o: src/sift.cpp.o
@@ -283,7 +263,7 @@ src/sift.o: src/sift.cpp.o
 
 # target to build an object file
 src/sift.cpp.o:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/sift_node.dir/build.make object_recognition/CMakeFiles/sift_node.dir/src/sift.cpp.o
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/sift_node.dir/build.make object_recognition/CMakeFiles/sift_node.dir/src/sift.cpp.o
 .PHONY : src/sift.cpp.o
 
 src/sift.i: src/sift.cpp.i
@@ -291,7 +271,7 @@ src/sift.i: src/sift.cpp.i
 
 # target to preprocess a source file
 src/sift.cpp.i:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/sift_node.dir/build.make object_recognition/CMakeFiles/sift_node.dir/src/sift.cpp.i
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/sift_node.dir/build.make object_recognition/CMakeFiles/sift_node.dir/src/sift.cpp.i
 .PHONY : src/sift.cpp.i
 
 src/sift.s: src/sift.cpp.s
@@ -299,7 +279,7 @@ src/sift.s: src/sift.cpp.s
 
 # target to generate assembly for a file
 src/sift.cpp.s:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/sift_node.dir/build.make object_recognition/CMakeFiles/sift_node.dir/src/sift.cpp.s
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f object_recognition/CMakeFiles/sift_node.dir/build.make object_recognition/CMakeFiles/sift_node.dir/src/sift.cpp.s
 .PHONY : src/sift.cpp.s
 
 # Help Target
@@ -308,7 +288,6 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... _object_recognition_generate_messages_check_deps_Image"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
@@ -338,6 +317,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

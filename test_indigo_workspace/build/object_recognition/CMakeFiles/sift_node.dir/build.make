@@ -31,17 +31,11 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src
+CMAKE_SOURCE_DIR = /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build
+CMAKE_BINARY_DIR = /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build
 
 # Include any dependencies generated for this target.
 include object_recognition/CMakeFiles/sift_node.dir/depend.make
@@ -53,18 +47,18 @@ include object_recognition/CMakeFiles/sift_node.dir/progress.make
 include object_recognition/CMakeFiles/sift_node.dir/flags.make
 
 object_recognition/CMakeFiles/sift_node.dir/src/sift.cpp.o: object_recognition/CMakeFiles/sift_node.dir/flags.make
-object_recognition/CMakeFiles/sift_node.dir/src/sift.cpp.o: /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/src/sift.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles $(CMAKE_PROGRESS_1)
+object_recognition/CMakeFiles/sift_node.dir/src/sift.cpp.o: /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/src/sift.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object object_recognition/CMakeFiles/sift_node.dir/src/sift.cpp.o"
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/sift_node.dir/src/sift.cpp.o -c /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/src/sift.cpp
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/sift_node.dir/src/sift.cpp.o -c /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/src/sift.cpp
 
 object_recognition/CMakeFiles/sift_node.dir/src/sift.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sift_node.dir/src/sift.cpp.i"
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/src/sift.cpp > CMakeFiles/sift_node.dir/src/sift.cpp.i
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/src/sift.cpp > CMakeFiles/sift_node.dir/src/sift.cpp.i
 
 object_recognition/CMakeFiles/sift_node.dir/src/sift.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sift_node.dir/src/sift.cpp.s"
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/src/sift.cpp -o CMakeFiles/sift_node.dir/src/sift.cpp.s
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/src/sift.cpp -o CMakeFiles/sift_node.dir/src/sift.cpp.s
 
 object_recognition/CMakeFiles/sift_node.dir/src/sift.cpp.o.requires:
 .PHONY : object_recognition/CMakeFiles/sift_node.dir/src/sift.cpp.o.requires
@@ -82,59 +76,60 @@ sift_node_OBJECTS = \
 # External object files for target sift_node
 sift_node_EXTERNAL_OBJECTS =
 
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: object_recognition/CMakeFiles/sift_node.dir/src/sift.cpp.o
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: object_recognition/CMakeFiles/sift_node.dir/build.make
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/indigo/lib/libroscpp.so
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/indigo/lib/libxmlrpcpp.so
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/indigo/lib/libcv_bridge.so
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.8
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.8
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.8
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/indigo/lib/librosconsole.so
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/indigo/lib/librosconsole_log4cxx.so
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/indigo/lib/librosconsole_backend_interface.so
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/liblog4cxx.so
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/indigo/lib/libroscpp_serialization.so
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/indigo/lib/librostime.so
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/indigo/lib/libcpp_common.so
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: object_recognition/CMakeFiles/sift_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node"
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sift_node.dir/link.txt --verbose=$(VERBOSE)
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: object_recognition/CMakeFiles/sift_node.dir/src/sift.cpp.o
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libroscpp.so
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/libboost_signals-mt.so
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/libboost_filesystem-mt.so
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libxmlrpcpp.so
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libcv_bridge.so
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libopencv_videostab.so.2.4.9
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libopencv_video.so.2.4.9
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libopencv_superres.so.2.4.9
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libopencv_stitching.so.2.4.9
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libopencv_photo.so.2.4.9
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libopencv_ocl.so.2.4.9
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libopencv_objdetect.so.2.4.9
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libopencv_nonfree.so.2.4.9
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libopencv_ml.so.2.4.9
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libopencv_legacy.so.2.4.9
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libopencv_imgproc.so.2.4.9
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libopencv_highgui.so.2.4.9
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libopencv_gpu.so.2.4.9
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libopencv_flann.so.2.4.9
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libopencv_features2d.so.2.4.9
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libopencv_core.so.2.4.9
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libopencv_contrib.so.2.4.9
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libopencv_calib3d.so.2.4.9
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/librosconsole.so
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/librosconsole_log4cxx.so
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/librosconsole_backend_interface.so
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/liblog4cxx.so
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/libboost_regex-mt.so
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libroscpp_serialization.so
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/librostime.so
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/libboost_date_time-mt.so
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/libboost_system-mt.so
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/libboost_thread-mt.so
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libcpp_common.so
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: /opt/ros/hydro/lib/libconsole_bridge.so
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: object_recognition/CMakeFiles/sift_node.dir/build.make
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node: object_recognition/CMakeFiles/sift_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node"
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sift_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-object_recognition/CMakeFiles/sift_node.dir/build: /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node
+object_recognition/CMakeFiles/sift_node.dir/build: /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/object_recognition/sift_node
 .PHONY : object_recognition/CMakeFiles/sift_node.dir/build
 
 object_recognition/CMakeFiles/sift_node.dir/requires: object_recognition/CMakeFiles/sift_node.dir/src/sift.cpp.o.requires
 .PHONY : object_recognition/CMakeFiles/sift_node.dir/requires
 
 object_recognition/CMakeFiles/sift_node.dir/clean:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition && $(CMAKE_COMMAND) -P CMakeFiles/sift_node.dir/cmake_clean.cmake
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition && $(CMAKE_COMMAND) -P CMakeFiles/sift_node.dir/cmake_clean.cmake
 .PHONY : object_recognition/CMakeFiles/sift_node.dir/clean
 
 object_recognition/CMakeFiles/sift_node.dir/depend:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition/CMakeFiles/sift_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition/CMakeFiles/sift_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : object_recognition/CMakeFiles/sift_node.dir/depend
 

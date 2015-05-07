@@ -2,7 +2,7 @@
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

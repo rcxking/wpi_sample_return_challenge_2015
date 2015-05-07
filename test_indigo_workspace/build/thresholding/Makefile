@@ -35,25 +35,19 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src
+CMAKE_SOURCE_DIR = /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build
+CMAKE_BINARY_DIR = /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,14 +117,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/thresholding/CMakeFiles/progress.marks
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/thresholding/CMakeFiles/progress.marks
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/clean
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/clean
 .PHONY : clean
 
 # The main clean target
@@ -139,36 +133,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/preinstall
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/preinstall
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-thresholding/CMakeFiles/_thresholding_generate_messages_check_deps_ProcessImage.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/CMakeFiles/_thresholding_generate_messages_check_deps_ProcessImage.dir/rule
-.PHONY : thresholding/CMakeFiles/_thresholding_generate_messages_check_deps_ProcessImage.dir/rule
-
-# Convenience name for target.
-_thresholding_generate_messages_check_deps_ProcessImage: thresholding/CMakeFiles/_thresholding_generate_messages_check_deps_ProcessImage.dir/rule
-.PHONY : _thresholding_generate_messages_check_deps_ProcessImage
-
-# fast build rule for target.
-_thresholding_generate_messages_check_deps_ProcessImage/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/_thresholding_generate_messages_check_deps_ProcessImage.dir/build.make thresholding/CMakeFiles/_thresholding_generate_messages_check_deps_ProcessImage.dir/build
-.PHONY : _thresholding_generate_messages_check_deps_ProcessImage/fast
-
-# Convenience name for target.
 thresholding/CMakeFiles/thresholding.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/CMakeFiles/thresholding.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/CMakeFiles/thresholding.dir/rule
 .PHONY : thresholding/CMakeFiles/thresholding.dir/rule
 
 # Convenience name for target.
@@ -177,12 +157,12 @@ thresholding: thresholding/CMakeFiles/thresholding.dir/rule
 
 # fast build rule for target.
 thresholding/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding.dir/build.make thresholding/CMakeFiles/thresholding.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding.dir/build.make thresholding/CMakeFiles/thresholding.dir/build
 .PHONY : thresholding/fast
 
 # Convenience name for target.
 thresholding/CMakeFiles/thresholding_gencpp.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/CMakeFiles/thresholding_gencpp.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/CMakeFiles/thresholding_gencpp.dir/rule
 .PHONY : thresholding/CMakeFiles/thresholding_gencpp.dir/rule
 
 # Convenience name for target.
@@ -191,12 +171,12 @@ thresholding_gencpp: thresholding/CMakeFiles/thresholding_gencpp.dir/rule
 
 # fast build rule for target.
 thresholding_gencpp/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding_gencpp.dir/build.make thresholding/CMakeFiles/thresholding_gencpp.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding_gencpp.dir/build.make thresholding/CMakeFiles/thresholding_gencpp.dir/build
 .PHONY : thresholding_gencpp/fast
 
 # Convenience name for target.
 thresholding/CMakeFiles/thresholding_generate_messages.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/CMakeFiles/thresholding_generate_messages.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/CMakeFiles/thresholding_generate_messages.dir/rule
 .PHONY : thresholding/CMakeFiles/thresholding_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -205,12 +185,12 @@ thresholding_generate_messages: thresholding/CMakeFiles/thresholding_generate_me
 
 # fast build rule for target.
 thresholding_generate_messages/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages.dir/build
 .PHONY : thresholding_generate_messages/fast
 
 # Convenience name for target.
 thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/rule
 .PHONY : thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -219,12 +199,12 @@ thresholding_generate_messages_cpp: thresholding/CMakeFiles/thresholding_generat
 
 # fast build rule for target.
 thresholding_generate_messages_cpp/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages_cpp.dir/build
 .PHONY : thresholding_generate_messages_cpp/fast
 
 # Convenience name for target.
 thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/rule
 .PHONY : thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -233,12 +213,12 @@ thresholding_generate_messages_lisp: thresholding/CMakeFiles/thresholding_genera
 
 # fast build rule for target.
 thresholding_generate_messages_lisp/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages_lisp.dir/build
 .PHONY : thresholding_generate_messages_lisp/fast
 
 # Convenience name for target.
 thresholding/CMakeFiles/thresholding_generate_messages_py.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/CMakeFiles/thresholding_generate_messages_py.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/CMakeFiles/thresholding_generate_messages_py.dir/rule
 .PHONY : thresholding/CMakeFiles/thresholding_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -247,12 +227,12 @@ thresholding_generate_messages_py: thresholding/CMakeFiles/thresholding_generate
 
 # fast build rule for target.
 thresholding_generate_messages_py/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages_py.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages_py.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding_generate_messages_py.dir/build.make thresholding/CMakeFiles/thresholding_generate_messages_py.dir/build
 .PHONY : thresholding_generate_messages_py/fast
 
 # Convenience name for target.
 thresholding/CMakeFiles/thresholding_genlisp.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/CMakeFiles/thresholding_genlisp.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/CMakeFiles/thresholding_genlisp.dir/rule
 .PHONY : thresholding/CMakeFiles/thresholding_genlisp.dir/rule
 
 # Convenience name for target.
@@ -261,12 +241,12 @@ thresholding_genlisp: thresholding/CMakeFiles/thresholding_genlisp.dir/rule
 
 # fast build rule for target.
 thresholding_genlisp/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding_genlisp.dir/build.make thresholding/CMakeFiles/thresholding_genlisp.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding_genlisp.dir/build.make thresholding/CMakeFiles/thresholding_genlisp.dir/build
 .PHONY : thresholding_genlisp/fast
 
 # Convenience name for target.
 thresholding/CMakeFiles/thresholding_genpy.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/CMakeFiles/thresholding_genpy.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 thresholding/CMakeFiles/thresholding_genpy.dir/rule
 .PHONY : thresholding/CMakeFiles/thresholding_genpy.dir/rule
 
 # Convenience name for target.
@@ -275,7 +255,7 @@ thresholding_genpy: thresholding/CMakeFiles/thresholding_genpy.dir/rule
 
 # fast build rule for target.
 thresholding_genpy/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding_genpy.dir/build.make thresholding/CMakeFiles/thresholding_genpy.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding_genpy.dir/build.make thresholding/CMakeFiles/thresholding_genpy.dir/build
 .PHONY : thresholding_genpy/fast
 
 src/main.o: src/main.cpp.o
@@ -283,7 +263,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding.dir/build.make thresholding/CMakeFiles/thresholding.dir/src/main.cpp.o
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding.dir/build.make thresholding/CMakeFiles/thresholding.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -291,7 +271,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding.dir/build.make thresholding/CMakeFiles/thresholding.dir/src/main.cpp.i
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding.dir/build.make thresholding/CMakeFiles/thresholding.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -299,7 +279,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding.dir/build.make thresholding/CMakeFiles/thresholding.dir/src/main.cpp.s
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f thresholding/CMakeFiles/thresholding.dir/build.make thresholding/CMakeFiles/thresholding.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -308,7 +288,6 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... _thresholding_generate_messages_check_deps_ProcessImage"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
@@ -338,6 +317,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

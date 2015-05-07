@@ -43,23 +43,28 @@ def forward(motorNum, powerLvl):
 	print("Arduino responds with: " + str(resp))
 
 def stopall():
+	'''
 	request = "";
 	for i in xrange(7):
 		request += (str(i) + "-0,")
 	request += "7-0"
+	'''
+
+	request = "0-0,1-0"
 
 	ser.write(request)
 
-	for i in xrange(16):
+	for i in xrange(4):
 		resp = ser.readline()
 		print("Arduino responded with: " + str(resp))
 
 def startall(motorPwr):
 
-	ser.write("0-"+str(motorPwr)+",1-"+str(motorPwr)+",2-"+str(motorPwr)+\
+	ser.write("0-"+str(motorPwr)+",1-"+str(motorPwr))
+	#ser.write("0-"+str(motorPwr)+",1-"+str(motorPwr)+",2-"+str(motorPwr)+\
 	          ",3-"+str(motorPwr))
 
-	for i in xrange(8):
+	for i in xrange(4):
 		resp = ser.readline()
 		print("Arduino responded with: " + str(resp))
 

@@ -35,25 +35,19 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src
+CMAKE_SOURCE_DIR = /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build
+CMAKE_BINARY_DIR = /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,14 +117,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/imgconvert/CMakeFiles/progress.marks
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/imgconvert/CMakeFiles/progress.marks
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/clean
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/clean
 .PHONY : clean
 
 # The main clean target
@@ -139,22 +133,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/preinstall
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/preinstall
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 imgconvert/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : imgconvert/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -163,12 +157,12 @@ geometry_msgs_generate_messages_cpp: imgconvert/CMakeFiles/geometry_msgs_generat
 
 # fast build rule for target.
 geometry_msgs_generate_messages_cpp/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make imgconvert/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make imgconvert/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 imgconvert/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 .PHONY : imgconvert/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -177,12 +171,12 @@ geometry_msgs_generate_messages_lisp: imgconvert/CMakeFiles/geometry_msgs_genera
 
 # fast build rule for target.
 geometry_msgs_generate_messages_lisp/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make imgconvert/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make imgconvert/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 imgconvert/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 .PHONY : imgconvert/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -191,12 +185,12 @@ geometry_msgs_generate_messages_py: imgconvert/CMakeFiles/geometry_msgs_generate
 
 # fast build rule for target.
 geometry_msgs_generate_messages_py/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make imgconvert/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make imgconvert/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 imgconvert/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : imgconvert/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -205,12 +199,12 @@ roscpp_generate_messages_cpp: imgconvert/CMakeFiles/roscpp_generate_messages_cpp
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make imgconvert/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make imgconvert/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
 imgconvert/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : imgconvert/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -219,12 +213,12 @@ roscpp_generate_messages_lisp: imgconvert/CMakeFiles/roscpp_generate_messages_li
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make imgconvert/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make imgconvert/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
 imgconvert/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/roscpp_generate_messages_py.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : imgconvert/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -233,12 +227,12 @@ roscpp_generate_messages_py: imgconvert/CMakeFiles/roscpp_generate_messages_py.d
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/roscpp_generate_messages_py.dir/build.make imgconvert/CMakeFiles/roscpp_generate_messages_py.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/roscpp_generate_messages_py.dir/build.make imgconvert/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
 imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -247,12 +241,12 @@ rosgraph_msgs_generate_messages_cpp: imgconvert/CMakeFiles/rosgraph_msgs_generat
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -261,12 +255,12 @@ rosgraph_msgs_generate_messages_lisp: imgconvert/CMakeFiles/rosgraph_msgs_genera
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -275,12 +269,12 @@ rosgraph_msgs_generate_messages_py: imgconvert/CMakeFiles/rosgraph_msgs_generate
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make imgconvert/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 imgconvert/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 .PHONY : imgconvert/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -289,12 +283,12 @@ sensor_msgs_generate_messages_cpp: imgconvert/CMakeFiles/sensor_msgs_generate_me
 
 # fast build rule for target.
 sensor_msgs_generate_messages_cpp/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make imgconvert/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make imgconvert/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 imgconvert/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 .PHONY : imgconvert/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -303,12 +297,12 @@ sensor_msgs_generate_messages_lisp: imgconvert/CMakeFiles/sensor_msgs_generate_m
 
 # fast build rule for target.
 sensor_msgs_generate_messages_lisp/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make imgconvert/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make imgconvert/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 imgconvert/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 imgconvert/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 .PHONY : imgconvert/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -317,7 +311,7 @@ sensor_msgs_generate_messages_py: imgconvert/CMakeFiles/sensor_msgs_generate_mes
 
 # fast build rule for target.
 sensor_msgs_generate_messages_py/fast:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make imgconvert/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(MAKE) -f imgconvert/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make imgconvert/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 # Help Target
@@ -356,6 +350,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,8 +1,0 @@
-prefix=/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/install
-
-Name: rrbot_control
-Description: Description of rrbot_control
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/install/lib 
-Requires: 

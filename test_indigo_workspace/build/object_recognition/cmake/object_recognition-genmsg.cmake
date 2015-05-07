@@ -11,15 +11,6 @@ find_package(genpy REQUIRED)
 
 add_custom_target(object_recognition_generate_messages ALL)
 
-# verify that message/service dependencies have not changed since configure
-
-
-
-get_filename_component(_filename "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/srv/Image.srv" NAME_WE)
-add_custom_target(_object_recognition_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "object_recognition" "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/srv/Image.srv" ""
-)
-
 #
 #  langs = gencpp;genlisp;genpy
 #
@@ -29,7 +20,7 @@ add_custom_target(_object_recognition_generate_messages_check_deps_${_filename}
 
 ### Generating Services
 _generate_srv_cpp(object_recognition
-  "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/srv/Image.srv"
+  "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/srv/Image.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/object_recognition
@@ -46,10 +37,6 @@ add_custom_target(object_recognition_generate_messages_cpp
 )
 add_dependencies(object_recognition_generate_messages object_recognition_generate_messages_cpp)
 
-# add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/srv/Image.srv" NAME_WE)
-add_dependencies(object_recognition_generate_messages_cpp _object_recognition_generate_messages_check_deps_${_filename})
-
 # target for backward compatibility
 add_custom_target(object_recognition_gencpp)
 add_dependencies(object_recognition_gencpp object_recognition_generate_messages_cpp)
@@ -62,7 +49,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS object_recognition_generate_message
 
 ### Generating Services
 _generate_srv_lisp(object_recognition
-  "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/srv/Image.srv"
+  "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/srv/Image.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/object_recognition
@@ -79,10 +66,6 @@ add_custom_target(object_recognition_generate_messages_lisp
 )
 add_dependencies(object_recognition_generate_messages object_recognition_generate_messages_lisp)
 
-# add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/srv/Image.srv" NAME_WE)
-add_dependencies(object_recognition_generate_messages_lisp _object_recognition_generate_messages_check_deps_${_filename})
-
 # target for backward compatibility
 add_custom_target(object_recognition_genlisp)
 add_dependencies(object_recognition_genlisp object_recognition_generate_messages_lisp)
@@ -95,7 +78,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS object_recognition_generate_message
 
 ### Generating Services
 _generate_srv_py(object_recognition
-  "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/srv/Image.srv"
+  "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/srv/Image.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/object_recognition
@@ -111,10 +94,6 @@ add_custom_target(object_recognition_generate_messages_py
   DEPENDS ${ALL_GEN_OUTPUT_FILES_py}
 )
 add_dependencies(object_recognition_generate_messages object_recognition_generate_messages_py)
-
-# add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/srv/Image.srv" NAME_WE)
-add_dependencies(object_recognition_generate_messages_py _object_recognition_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(object_recognition_genpy)

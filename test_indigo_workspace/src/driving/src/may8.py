@@ -11,7 +11,7 @@ Tasks:
 RPI Rock Raiders
 5/6/15
 
-Last Updated: Bryant Pong: 5/6/15 - 5:06 PM       
+Last Updated: Bryant Pong: 5/7/15 - 2:40 PM       
 '''
 
 # Python imports:
@@ -32,6 +32,8 @@ def drive_callback(cmd, pwr):
 def main():
 	# Call the callback to drive and pick up the sample:
 	drive_callback("startall", 255)
+	drive_callback("stopall", 0)
+	drive_callback("startall", -255)
 	drive_callback("stopall", 0)
 
 # Main function runner:

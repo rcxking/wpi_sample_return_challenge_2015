@@ -1,8 +1,8 @@
-# Install script for directory: /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition
+# Install script for directory: /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,45 +33,45 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/object_recognition/srv" TYPE FILE FILES "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/srv/Image.srv")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/object_recognition/srv" TYPE FILE FILES "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/srv/Image.srv")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/object_recognition/cmake" TYPE FILE FILES "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition/catkin_generated/installspace/object_recognition-msg-paths.cmake")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/object_recognition/cmake" TYPE FILE FILES "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition/catkin_generated/installspace/object_recognition-msg-paths.cmake")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/include/object_recognition")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/include/object_recognition")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/share/common-lisp/ros/object_recognition")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/share/common-lisp/ros/object_recognition")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/object_recognition")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/object_recognition")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/object_recognition")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/object_recognition")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition/catkin_generated/installspace/object_recognition.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition/catkin_generated/installspace/object_recognition.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/object_recognition/cmake" TYPE FILE FILES "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition/catkin_generated/installspace/object_recognition-msg-extras.cmake")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/object_recognition/cmake" TYPE FILE FILES "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition/catkin_generated/installspace/object_recognition-msg-extras.cmake")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/object_recognition/cmake" TYPE FILE FILES
-    "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition/catkin_generated/installspace/object_recognitionConfig.cmake"
-    "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition/catkin_generated/installspace/object_recognitionConfig-version.cmake"
+    "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition/catkin_generated/installspace/object_recognitionConfig.cmake"
+    "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/object_recognition/catkin_generated/installspace/object_recognitionConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/object_recognition" TYPE FILE FILES "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/object_recognition" TYPE FILE FILES "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src/object_recognition/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

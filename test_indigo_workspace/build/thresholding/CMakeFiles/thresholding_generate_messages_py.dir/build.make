@@ -31,41 +31,35 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src
+CMAKE_SOURCE_DIR = /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build
+CMAKE_BINARY_DIR = /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build
 
 # Utility rule file for thresholding_generate_messages_py.
 
 # Include the progress variables for this target.
 include thresholding/CMakeFiles/thresholding_generate_messages_py.dir/progress.make
 
-thresholding/CMakeFiles/thresholding_generate_messages_py: /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv/_ProcessImage.py
-thresholding/CMakeFiles/thresholding_generate_messages_py: /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv/__init__.py
+thresholding/CMakeFiles/thresholding_generate_messages_py: /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv/_ProcessImage.py
+thresholding/CMakeFiles/thresholding_generate_messages_py: /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv/__init__.py
 
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv/_ProcessImage.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv/_ProcessImage.py: /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/thresholding/srv/ProcessImage.srv
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles $(CMAKE_PROGRESS_1)
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv/_ProcessImage.py: /opt/ros/hydro/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv/_ProcessImage.py: /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src/thresholding/srv/ProcessImage.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV thresholding/ProcessImage"
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/thresholding && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/thresholding/srv/ProcessImage.srv -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p thresholding -o /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/thresholding && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/hydro/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src/thresholding/srv/ProcessImage.srv -Istd_msgs:/opt/ros/hydro/share/std_msgs/cmake/../msg -p thresholding -o /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv
 
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv/__init__.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv/__init__.py: /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv/_ProcessImage.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles $(CMAKE_PROGRESS_2)
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv/__init__.py: /opt/ros/hydro/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv/__init__.py: /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv/_ProcessImage.py
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python srv __init__.py for thresholding"
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/thresholding && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv --initpy
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/thresholding && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/hydro/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv --initpy
 
 thresholding_generate_messages_py: thresholding/CMakeFiles/thresholding_generate_messages_py
-thresholding_generate_messages_py: /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv/_ProcessImage.py
-thresholding_generate_messages_py: /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv/__init__.py
+thresholding_generate_messages_py: /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv/_ProcessImage.py
+thresholding_generate_messages_py: /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib/python2.7/dist-packages/thresholding/srv/__init__.py
 thresholding_generate_messages_py: thresholding/CMakeFiles/thresholding_generate_messages_py.dir/build.make
 .PHONY : thresholding_generate_messages_py
 
@@ -74,10 +68,10 @@ thresholding/CMakeFiles/thresholding_generate_messages_py.dir/build: thresholdin
 .PHONY : thresholding/CMakeFiles/thresholding_generate_messages_py.dir/build
 
 thresholding/CMakeFiles/thresholding_generate_messages_py.dir/clean:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/thresholding && $(CMAKE_COMMAND) -P CMakeFiles/thresholding_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/thresholding && $(CMAKE_COMMAND) -P CMakeFiles/thresholding_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : thresholding/CMakeFiles/thresholding_generate_messages_py.dir/clean
 
 thresholding/CMakeFiles/thresholding_generate_messages_py.dir/depend:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src/thresholding /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/thresholding /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/thresholding/CMakeFiles/thresholding_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src/thresholding /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/thresholding /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/thresholding/CMakeFiles/thresholding_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : thresholding/CMakeFiles/thresholding_generate_messages_py.dir/depend
 

@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "imgconvert"
-PROJECT_SPACE_DIR = "/home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/devel"
+PROJECT_SPACE_DIR = "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel"
 PROJECT_VERSION = "0.0.0"

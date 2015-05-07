@@ -2,18 +2,18 @@
 
 #define MOTOR0PWM   2
 #define MOTOR0FWD   22 
-#define MOTOR0REV   23
-#define MOTOR0EN    24
+#define MOTOR0REV   24
+#define MOTOR0EN    26
 
 #define MOTOR1PWM   3
-#define MOTOR1FWD   25
-#define MOTOR1REV   26
+#define MOTOR1FWD   23
+#define MOTOR1REV   25
 #define MOTOR1EN    27
 
 #define MOTOR2PWM   4
 #define MOTOR2FWD   28
-#define MOTOR2REV   29
-#define MOTOR2EN    30
+#define MOTOR2REV   30
+#define MOTOR2EN    32
 
 #define MOTOR3PWM   5
 #define MOTOR3FWD   31
@@ -88,9 +88,11 @@ void setup()
 {
   // start serial port at 9600 bps:
   Serial.begin(115200);
+  
+  /*
   while (!Serial) {
     ; // wait for serial port to connect. Needed for Leonardo only
-  }
+  }*/
   for(int i=0;i<8;i++) motors[i]=0; //Initialize motors speed to 0
   SetMotorPorts();  //Set digital outs and PWM outs
   establishContact();  // send a byte to establish contact until receiver responds 
@@ -147,6 +149,14 @@ void parseSerial(char *data,int datasz)
     }
     else if(value<256&&value>-256) //If it's an acceptable value
     {
+      if(value > 25) {
+        value = 25;
+      }
+      
+      if(value < -25) {
+        value = -25;
+      }
+      
       motors[motor]=value;
       SetMotor(motor,value);
       Serial.print("Setting motor ");

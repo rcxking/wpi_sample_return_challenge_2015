@@ -31,17 +31,11 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src
+CMAKE_SOURCE_DIR = /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build
+CMAKE_BINARY_DIR = /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build
 
 # Utility rule file for tests.
 
@@ -63,6 +57,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/src /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build /home/bryant/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 
