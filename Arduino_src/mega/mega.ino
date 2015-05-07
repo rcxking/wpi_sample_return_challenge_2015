@@ -168,6 +168,11 @@ void SetMotor(int motor,int value) //To be modified when other actuators are add
     fwd=false;
     value=value*-1;
   }
+  
+  // DON'T BREAK THE MOTORS
+  if(value > 25) {
+    value = 25;
+  }
   switch(motor)
   {
     case 0:
