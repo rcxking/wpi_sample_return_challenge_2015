@@ -1,5 +1,6 @@
 #include <string.h> //strtok_r
 
+<<<<<<< HEAD
 #define MOTOR0PWM   2
 #define MOTOR0FWD   22 
 #define MOTOR0REV   24
@@ -14,6 +15,22 @@
 #define MOTOR2FWD   28
 #define MOTOR2REV   30
 #define MOTOR2EN    32
+=======
+#define MOTOR0PWM   3
+#define MOTOR0FWD   10
+#define MOTOR0REV   9
+#define MOTOR0EN    8
+
+#define MOTOR1PWM   3
+#define MOTOR1FWD   7
+#define MOTOR1REV   6
+#define MOTOR1EN    5
+
+#define MOTOR2PWM   3
+#define MOTOR2FWD   4
+#define MOTOR2REV   3
+#define MOTOR2EN    2
+>>>>>>> f7a700d3de4f3f6dc0f899e4912f4ac29953cfce
 
 #define MOTOR3PWM   5
 #define MOTOR3FWD   31
@@ -40,6 +57,9 @@
 #define MOTOR7REV   44
 #define MOTOR7EN    45
 
+#define SOLENOID1 12
+#define SOLENOID2 13
+
 int motors[8]; //Array which holds all the motors statuses.
 void SetMotorPorts()
 {
@@ -50,7 +70,7 @@ void SetMotorPorts()
    
    pinMode(MOTOR1FWD,OUTPUT);
    pinMode(MOTOR1REV,OUTPUT);
-   pinMode(MOTOR1EN,OUTPUT);
+   pinMode(MOTOR1EN, OUTPUT);
    pinMode(MOTOR1PWM,OUTPUT);
    
    pinMode(MOTOR2FWD,OUTPUT);
@@ -82,6 +102,9 @@ void SetMotorPorts()
    pinMode(MOTOR7REV,OUTPUT);
    pinMode(MOTOR7EN,OUTPUT);
    pinMode(MOTOR7PWM,OUTPUT);
+   
+   pinMode(SOLENOID1, OUTPUT);
+   pinMode(SOLENOID2, OUTPUT);
 }
 
 void setup()
@@ -139,7 +162,27 @@ void parseSerial(char *data,int datasz)
     char *val= strtok_r(NULL,"\0",&itr); //Speed is anything after the first dash.
     int value = atoi(val);
     int motor= atoi(name);
-    if(value==256)
+    
+    if(value >= 50) {
+      value = 50;
+    }
+    if(value <= -50) {
+      value = -50;
+    }
+    
+    // Handle Solenoids 1 and 2:
+    if(motor == 9 || motor == 10) {
+      digitalWrite(motor, HIGH);
+      
+      Serial.print("Solenoid ");
+      if(motor == 9) {
+        Serial.print(1);
+      } else {
+        Serial.print(2);
+      }
+      Serial.print(" is turned on\n");
+    }
+    else if(value==256)
     {
       Serial.print("Motor ");
       Serial.print(motor);
@@ -180,29 +223,30 @@ void SetMotor(int motor,int value) //To be modified when other actuators are add
   }
   
   // DON'T BREAK THE MOTORS
-  if(value > 25) {
-    value = 25;
+  if(value > 50) {
+    value = 50;
   }
   switch(motor)
   {
     case 0:
-      digitalWrite(MOTOR0FWD,fwd); 
-      digitalWrite(MOTOR0REV,!fwd);
+      analogWrite(MOTOR0FWD,fwd*value); 
+      analogWrite(MOTOR0REV,!fwd*value);
       digitalWrite(MOTOR0EN,1);
-      analogWrite(MOTOR0PWM,value);
+      //analogWrite(MOTOR0PWM,value);
       break;
     case 1:
-      digitalWrite(MOTOR1FWD,fwd); 
-      digitalWrite(MOTOR1REV,!fwd);
+      analogWrite(MOTOR1FWD,fwd*value); 
+      analogWrite(MOTOR1REV,!fwd*value);
       digitalWrite(MOTOR1EN,1);
-      analogWrite(MOTOR1PWM,value);
+      //analogWrite(MOTOR1PWM,value);
       break;
     case 2:
-      digitalWrite(MOTOR2FWD,fwd); 
-      digitalWrite(MOTOR2REV,!fwd);
+      analogWrite(MOTOR2FWD,fwd*value); 
+      analogWrite(MOTOR2REV,!fwd*value);
       digitalWrite(MOTOR2EN,1);
-      analogWrite(MOTOR2PWM,value);
+      //analogWrite(MOTOR2PWM,value);
       break;
+    /*
     case 3:
       digitalWrite(MOTOR3FWD,fwd); 
       digitalWrite(MOTOR3REV,!fwd);
@@ -233,6 +277,7 @@ void SetMotor(int motor,int value) //To be modified when other actuators are add
       digitalWrite(MOTOR7EN,1);
       analogWrite(MOTOR7PWM,value);
       break;
+    */
     break;
   }
 }
