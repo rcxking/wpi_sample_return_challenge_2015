@@ -7,6 +7,7 @@ drive.py - This file contains functions to interface with the Arduino
 # Python Imports:
 import serial
 import rospy
+import time
 from driving.srv import Drive
 
 '''
@@ -34,6 +35,9 @@ def stop(motorNum):
 	# Read the response back from the Arduino:
 	resp = ser.readline()
 	print("Arduino responds with: " + str(resp))
+	resp = ser.readline()
+        print("Arduino responds with: " + str(resp))
+
 
 def forward(motorNum, powerLvl):
 	ser.write(str(motorNum) + "-" + str(powerLvl)) 			
@@ -41,6 +45,35 @@ def forward(motorNum, powerLvl):
 	# Read the response back from the Arduino:
 	resp = ser.readline()
 	print("Arduino responds with: " + str(resp))
+	resp = ser.readline()
+        print("Arduino responds with: " + str(resp))
+
+def down():
+	ser.write("1--50")
+	resp = ser.readline()
+	print("Arduino responds with : " + str(resp))
+	resp = ser.readline()
+        print("Arduino responds with: " + str(resp))
+	time.sleep(8)
+	ser.write("1-0")
+        resp = ser.readline()
+        print("Arduino responds with : " + str(resp))
+        resp = ser.readline()
+        print("Arduino responds with: " + str(resp))
+
+def up():
+        ser.write("1-50")
+        resp = ser.readline()
+        print("Arduino responds with : " + str(resp))
+        resp = ser.readline()
+        print("Arduino responds with: " + str(resp))
+        time.sleep(8)
+        ser.write("1-0")
+        resp = ser.readline()
+        print("Arduino responds with : " + str(resp))
+        resp = ser.readline()
+        print("Arduino responds with: " + str(resp))
+
 
 def stopall():
 	'''
@@ -60,11 +93,11 @@ def stopall():
 
 def startall(motorPwr):
 
-	ser.write("0-"+str(motorPwr)+",1-"+str(motorPwr))
+	ser.write("0-"+str(motorPwr))
 	#ser.write("0-"+str(motorPwr)+",1-"+str(motorPwr)+",2-"+str(motorPwr)+\
-	          ",3-"+str(motorPwr))
+	#          ",3-"+str(motorPwr))
 
-	for i in xrange(4):
+	for i in xrange(2):
 		resp = ser.readline()
 		print("Arduino responded with: " + str(resp))
 
@@ -76,6 +109,14 @@ def drive_handler(req):
 		startall(req.power)
 	elif req.cmd == "stopall":
 		stopall()
+	elif req.cmd == "forward":
+		forward(req.motor, req.power)
+	elif req.cmd == "stop":
+		stop(req.motor)
+	elif req.cmd == "up":
+		up()
+	elif req.cmd == "down":
+		down()
 			 	  	
 	return True	  
 

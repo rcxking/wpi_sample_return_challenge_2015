@@ -1,4 +1,5 @@
 string cmd
+int64 motor
 int64 power 
 ---
 bool status 

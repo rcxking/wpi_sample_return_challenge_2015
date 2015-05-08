@@ -1,21 +1,5 @@
 #include <string.h> //strtok_r
 
-<<<<<<< HEAD
-#define MOTOR0PWM   2
-#define MOTOR0FWD   22 
-#define MOTOR0REV   24
-#define MOTOR0EN    26
-
-#define MOTOR1PWM   3
-#define MOTOR1FWD   23
-#define MOTOR1REV   25
-#define MOTOR1EN    27
-
-#define MOTOR2PWM   4
-#define MOTOR2FWD   28
-#define MOTOR2REV   30
-#define MOTOR2EN    32
-=======
 #define MOTOR0PWM   3
 #define MOTOR0FWD   10
 #define MOTOR0REV   9
@@ -30,7 +14,6 @@
 #define MOTOR2FWD   4
 #define MOTOR2REV   3
 #define MOTOR2EN    2
->>>>>>> f7a700d3de4f3f6dc0f899e4912f4ac29953cfce
 
 #define MOTOR3PWM   5
 #define MOTOR3FWD   31
@@ -163,22 +146,32 @@ void parseSerial(char *data,int datasz)
     int value = atoi(val);
     int motor= atoi(name);
     
+    /*
     if(value >= 50) {
       value = 50;
     }
     if(value <= -50) {
       value = -50;
-    }
+    }*/
     
     // Handle Solenoids 1 and 2:
-    if(motor == 9 || motor == 10) {
-      digitalWrite(motor, HIGH);
+    if(motor == 12 || motor == 13) {
       
       Serial.print("Solenoid ");
-      if(motor == 9) {
+      if(motor == 12) {
         Serial.print(1);
+        if(value == 0) {
+          digitalWrite(12, LOW);
+        } else {
+            digitalWrite(12, HIGH);
+        }
       } else {
         Serial.print(2);
+        if(value == 0) {
+          digitalWrite(13, LOW);
+        } else {
+          digitalWrite(13, HIGH);
+        }
       }
       Serial.print(" is turned on\n");
     }
@@ -192,13 +185,6 @@ void parseSerial(char *data,int datasz)
     }
     else if(value<256&&value>-256) //If it's an acceptable value
     {
-      if(value > 25) {
-        value = 25;
-      }
-      
-      if(value < -25) {
-        value = -25;
-      }
       
       motors[motor]=value;
       SetMotor(motor,value);
@@ -222,10 +208,6 @@ void SetMotor(int motor,int value) //To be modified when other actuators are add
     value=value*-1;
   }
   
-  // DON'T BREAK THE MOTORS
-  if(value > 50) {
-    value = 50;
-  }
   switch(motor)
   {
     case 0:

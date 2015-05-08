@@ -311,8 +311,8 @@ clean: driving/CMakeFiles/driving_gencpp.dir/clean
 
 # All Build rule for target.
 driving/CMakeFiles/driving_generate_messages.dir/all: driving/CMakeFiles/driving_generate_messages_cpp.dir/all
-driving/CMakeFiles/driving_generate_messages.dir/all: driving/CMakeFiles/driving_generate_messages_py.dir/all
 driving/CMakeFiles/driving_generate_messages.dir/all: driving/CMakeFiles/driving_generate_messages_lisp.dir/all
+driving/CMakeFiles/driving_generate_messages.dir/all: driving/CMakeFiles/driving_generate_messages_py.dir/all
 	$(MAKE) -f driving/CMakeFiles/driving_generate_messages.dir/build.make driving/CMakeFiles/driving_generate_messages.dir/depend
 	$(MAKE) -f driving/CMakeFiles/driving_generate_messages.dir/build.make driving/CMakeFiles/driving_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/build/CMakeFiles 
