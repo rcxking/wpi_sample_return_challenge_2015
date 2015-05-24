@@ -1,0 +1,8 @@
+<launch>
+  <arg name="sim" default="false" />
+
+  <rosparam file="$(find rockie_core)/config/stage_1.yaml"/>
+
+  <include unless="$(arg sim)" file="$(find rockie_core)/launch/rockie.launch"/>
+  <include if="$(arg sim)" file="$(find rockie_core)/launch/rockie_sim.launch"/>
+</launch>
