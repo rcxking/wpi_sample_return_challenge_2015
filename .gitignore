@@ -8,3 +8,4 @@ devel/
 *.so
 *.la
 *.a
+*.pyc
