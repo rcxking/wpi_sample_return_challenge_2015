@@ -1,0 +1,11 @@
+<launch>
+  <node pkg="camera1394stereo" type="camera1394stereo_node" name="camera1394stereo_node" output="screen" >
+    <param name="video_mode" value="1024x768_mono16" />
+    <param name="format7_color_coding" value="raw16" />
+    <param name="bayer_pattern" value="" />
+    <param name="bayer_method" value="" />
+    <param name="stereo_method" value="Interlaced" />
+    <param name="camera_info_url_left" value="file:///home/rockie/wpi_sample_return_challenge_2015/rockie_workspace_final/src/stereo_slam/config/cal_left.yaml" />
+    <param name="camera_info_url_right" value="file:///home/rockie/wpi_sample_return_challenge_2015/rockie_workspace_final/src/stereo_slam/config/cal_right.yaml" />
+  </node>
+</launch>
