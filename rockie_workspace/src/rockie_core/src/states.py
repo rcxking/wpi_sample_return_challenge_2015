@@ -123,7 +123,7 @@ if __name__ == '__main__':
 
   rospy.init_node('state_machine')
   sm.set_initial_state(['EGRESS'])
-  sis = smach_ros.IntrospectionServer('meh', sm, 'murgh')
+  sis = smach_ros.IntrospectionServer('name', sm, '/SM_ROOT')
   sis.start()
   outcome = sm.execute()
   sis.stop()
