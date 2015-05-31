@@ -6,7 +6,7 @@ State machine to run for stage 1.
 RPI Rock Raiders
 5/31/15
 
-Last Updated: Bryant Pong: 5/31/15 - 5:31 PM
+Last Updated: Bryant Pong: 5/31/15 - 6:26 PM
 '''
 
 # Python Imports:
@@ -14,6 +14,15 @@ import roslib
 import rospy
 import smach
 import smach_ros
+
+'''
+This state performs system checks on the robot before beginning the run.   
+'''
+class StartupSequence(smach.State):
+	def __init__(self):
+		smach.State.__init__(self, outcomes=['egressEnter'])    
+
+	def execute(self,  
 
 class Foo(smach.State):
 	def __init__(self):
