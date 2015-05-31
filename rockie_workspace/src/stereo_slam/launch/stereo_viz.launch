@@ -27,5 +27,6 @@
   </group>
   
   <!-- Visualisation RVIZ --> 
-  <node if="$(arg rviz)" pkg="rviz" type="rviz" name="rviz" args="-d $(find rtabmap_ros)/launch/config/demo_stereo_outdoor.rviz"/>
+  <node if="$(arg rviz)" pkg="rviz" type="rviz" name="rviz" args="-d $(find
+stereo_slam)/rviz/stereo_slam.rviz"/>
 </launch>
