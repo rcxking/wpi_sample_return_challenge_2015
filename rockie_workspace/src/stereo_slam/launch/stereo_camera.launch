@@ -5,7 +5,7 @@
     <param name="bayer_pattern" value="" />
     <param name="bayer_method" value="" />
     <param name="stereo_method" value="Interlaced" />
-    <param name="camera_info_url_left" value="file:///home/rockie/wpi_sample_return_challenge_2015/rockie_workspace_final/src/stereo_slam/config/cal_left.yaml" />
-    <param name="camera_info_url_right" value="file:///home/rockie/wpi_sample_return_challenge_2015/rockie_workspace_final/src/stereo_slam/config/cal_right.yaml" />
+    <param name="camera_info_url_left" value="file://$(find stereo_slam)/config/cal_left.yaml" />
+    <param name="camera_info_url_right" value="file://$(find stereo_slam)/config/cal_right.yaml" />
   </node>
 </launch>
