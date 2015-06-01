@@ -6,7 +6,7 @@ State machine to run for stage 1.
 RPI Rock Raiders
 5/31/15
 
-Last Updated: Bryant Pong: 5/31/15 - 6:26 PM
+Last Updated: Bryant Pong: 6/1/15 - 12:39 PM
 '''
 
 # Python Imports:
@@ -20,38 +20,89 @@ This state performs system checks on the robot before beginning the run.
 '''
 class StartupSequence(smach.State):
 	def __init__(self):
-		smach.State.__init__(self, outcomes=['egressEnter'])    
+		smach.State.__init__(self, outcomes=["egressEnter"])    
 
-	def execute(self,  
+	def execute(self, userdata):
+		rospy.loginfo("Executing Startup Sequence") 
+		return "egressEnter"
 
-class Foo(smach.State):
+class Egress(smach.State):
 	def __init__(self):
-		smach.State.__init__(self, outcomes=['outcome1', 'outcome2'])
-		self.counter = 0
+		smach.State.__init__(self, outcomes=["transitEnter"])
+
+	def execute(self, userdata):
+		rospy.loginfo("Executing Egress")
+		return "transitEnter"
+
+class Transit(smach.State):
+	def __init__(self):
+		smach.State.__init__(self, outcomes=["searchEnter"])
+		
+	def execute(self, userdata):
+		rospy.loginfo("Executing Transit")
+		return "searchEnter"
+		
+class Search(smach.State):
+	def __init__(self):
+		smach.State.__init__(self, outcomes=["searchTransitEnter"])
+
+	def execute(self, userdata):
+		rospy.loginfo("Executing Search")
+		return "searchTransitEnter"
+
+class SearchTransit(smach.State):
+	def __init__(self):
+		smach.State.__init__(self, outcomes=["sampleRecogEnter"])
 	
 	def execute(self, userdata):
-		rospy.loginfo("Executing state FOO")
-		if self.counter < 3:
-			self.counter += 1
-			return 'outcome1'
-		else:
-			return 'outcome2'
-
-class Bar(smach.State):
+		rospy.loginfo("Executing Search Transit")
+		return "sampleRecogEnter"
+		
+class SampleRecognition(smach.State):
 	def __init__(self):
-		smach.State.__init__(self, outcomes=['outcome1'])
+		smach.State.__init__(self, outcomes=["sampleNotFound", "sampleFound"]) 			
 
 	def execute(self, userdata):
-		rospy.loginfo('Executing state BAR')
-		return 'outcome1'
+		rospy.loginfo("Executing Sample Recognition")
+
+		sampleFound = True
+		# Has the sample been found?
+		if sampleFound:  
+			return "sampleFound"
+		else:
+			return "sampleNotFound"
+
+class RetrieveSample(smach.State):
+	def __init__(self):
+		smach.State.__init__(self, outcomes=["endTransitEnter"])
+	
+	def execute(self, userdata):
+		rospy.loginfo("Executing Retrieve Sample")
+		return "endTransitEnter"
+
+class EndTransit(smach.State);
+	def __init__(self):
+		smach.State.__init__(self, outcomes=["end"])
+	
+	def execute(self, userdata):
+		rospy.loginfo("Executing End Transit")
+		return "end" 
+
 
 def main():
-	rospy.init_node('smach_example_state_machine')
+	rospy.init_node('rockie_state_machine')
 
-	sm = smach.StateMachine(outcomes=['outcome4'])
+	sm = smach.StateMachine(outcomes=['complete'])
 	with sm:
-		smach.StateMachine.add("FOO", Foo(), transitions={'outcome1':'BAR','outcome2':'outcome4'})
-		smach.StateMachine.add("BAR", Bar(), transitions={'outcome1':'FOO'})
+		#smach.StateMachine.add("FOO", Foo(), transitions={'outcome1':'BAR','outcome2':'outcome4'})
+		smach.StateMachine.add("STARTUPSEQUENCE", StartupSequence(), transitions={"egressEnter":"EGRESS"})
+		smach.StateMachine.add("EGRESS", Egress(), transitions={"transitEnter":"TRANSIT"})
+		smach.StateMachine.add("TRANSIT", Transit(), transitions={"searchEnter":"SEARCH"})
+		smach.StateMachine.add("SEARCH", Search(), transitions={"searchTransitEnter":"SEARCHTRANSIT"})
+		smach.StateMachine.add("SEARCHTRANSIT", SearchTransit(), transitions={"sampleRecogEnter":"SAMPLERECOGNITION"})
+		smach.StateMachine.add("SAMPLERECOGNITION", SampleRecognition(), transitions={"sampleNotFound":"SEARCH","sampleFound":"RETRIEVESAMPLE"})
+		smach.StateMachine.add("RETRIEVESAMPLE", RetrieveSample(), transitions={"endTransitEnter":"ENDTRANSIT"})
+		smach.StateMachine.add("ENDTRANSIT", EndTransit(), transitions={"end":"complete"})
 
 	outcome = sm.execute()
 
