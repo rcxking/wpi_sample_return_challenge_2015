@@ -7,7 +7,7 @@ board responsible for the embedded control side of the robot.
 RPI Rock Raiders
 5/31/15
 
-Last Updated: Bryant Pong: 5/31/15 - 4:24 PM    
+Last Updated: Bryant Pong: 6/2/15 - 1:34 PM
 '''
 
 # Python includes:
@@ -23,6 +23,19 @@ Parity: None
 Stop Bits: 1
 '''
 def createSerial(port):
-	return serial.Serial(port, 115200, 8, 'N', 1) 
 
+	serialObject = -1
+
+	try:
+		serialObject = serial.Serial(port, 115200, 8, 'N', 1) 
+	except serial.SerialException:
+		print("Error in creating serial connection to PSOC.  Maybe the port is wrong?") 
+	return serialObject
+
+'''
+Movement commands to the PSOC:
+
+Supported Commands:
+'''
+ 
 

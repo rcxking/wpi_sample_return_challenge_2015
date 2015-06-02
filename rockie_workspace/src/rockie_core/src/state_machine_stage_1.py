@@ -6,7 +6,7 @@ State machine to run for stage 1.
 RPI Rock Raiders
 5/31/15
 
-Last Updated: Bryant Pong: 6/1/15 - 7:46 PM
+Last Updated: Bryant Pong: 6/2/15 - 1:23 PM
 '''
 
 # ROS Libraries:
@@ -38,8 +38,23 @@ import serialhelper
 import warnings
 import matplotlib.pyplot as plt
 
-# Global Serial Object:
-serialObj = 0
+'''
+Global Objects:
+'''
+# Serial Object:
+serialObj = None
+
+# Neural Network Objects:
+l_in = None
+l_conv1 = None
+l_pool1 = None
+l_conv2 = None
+l_pool2 = None
+l_conv3 = None
+l_conv4 = None
+l_pool3 = None
+
+
 
 # Global flag for whether the sample has been found:
 sampleFound = False  
@@ -49,16 +64,45 @@ This state performs system checks on the robot before beginning the run.
 '''
 class StartupSequence(smach.State):
 	def __init__(self):
-		smach.State.__init__(self, outcomes=["egressEnter"])    
+		smach.State.__init__(self, outcomes=["egressEnter", "serialFailure"])    
 
 	def execute(self, userdata):
 		rospy.loginfo("Executing Startup Sequence") 
 
 		# Create the Serial Port to communicate with the PSOC:
+		rospy.loginfo("Now creating PSOC Serial Object") 
 		global serialObj
 		serialObj = serialhelper.createSerial("/dev/ttyUSB0") 
+		if serialObj != -1:
+			rospy.loginfo("Successfully created PSOC Serial Object")		
+		else:
+			return "serialFailure" 
+
+		# 
+		#nnparams = pickle.load(open("nnparams.dat", "rb"))	 
+
+		# Create the neural network:
 			  
 		return "egressEnter"
+
+'''
+In the event of a serial port exception raised, this state provides some 
+advice on looking for debugging issues:    
+'''
+class SerialFailure(smach.State):
+	def __init__(self):
+		smach.State.__init__(self, outcomes=["end"])
+
+	def execute(self, userdata):
+		rospy.loginfo("It looks like I could not connect to the PSOC")
+		rospy.loginfo("Ensure that the following parameters have been set correctly:")
+		rospy.loginfo("1) Is the Serial port set correctly?  (i.e. /dev/ttyUSB0")
+		rospy.loginfo("2) Baud Rate: 115200")
+		rospy.loginfo("3) Data Bits: 8")
+		rospy.loginfo("4) Parity: None")
+		rospy.loginfo("5) Stop Bits: 1")  
+		    
+		return "end"
 
 class Egress(smach.State):
 	def __init__(self):
@@ -129,6 +173,7 @@ def main():
 	sm = smach.StateMachine(outcomes=['complete'])
 	with sm:
 		smach.StateMachine.add("STARTUPSEQUENCE", StartupSequence(), transitions={"egressEnter":"EGRESS"})
+		smach.StateMachine.add("SERIALFAILURE", SerialFailure(), transitions={"end":"complete"})
 		smach.StateMachine.add("EGRESS", Egress(), transitions={"transitEnter":"TRANSIT"})
 		smach.StateMachine.add("TRANSIT", Transit(), transitions={"searchEnter":"SEARCH"})
 		smach.StateMachine.add("SEARCH", Search(), transitions={"searchTransitEnter":"SEARCHTRANSIT"})
