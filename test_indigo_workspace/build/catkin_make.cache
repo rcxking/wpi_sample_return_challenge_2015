@@ -1,2 +1,0 @@
-driving
--DCATKIN_DEVEL_PREFIX=/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel -DCMAKE_INSTALL_PREFIX=/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/install

@@ -6,14 +6,43 @@ State machine to run for stage 1.
 RPI Rock Raiders
 5/31/15
 
-Last Updated: Bryant Pong: 6/1/15 - 12:39 PM
+Last Updated: Bryant Pong: 6/1/15 - 7:46 PM
 '''
 
-# Python Imports:
+# ROS Libraries:
 import roslib
 import rospy
+
+# Finite State Machine Libraries
 import smach
 import smach_ros
+
+# For OpenCV:
+import cv2
+import numpy as np
+
+# For Neural Network / Object Recognition:
+import theano
+import theano.tensor as T
+import lasagne
+
+# Operating System / Data Libraries:
+import os
+import cPickle as pickle
+
+# Serial Communications to PSOC:
+import serial
+import serialhelper
+
+# Miscellaneous Libraries:
+import warnings
+import matplotlib.pyplot as plt
+
+# Global Serial Object:
+serialObj = 0
+
+# Global flag for whether the sample has been found:
+sampleFound = False  
 
 '''
 This state performs system checks on the robot before beginning the run.   
@@ -24,6 +53,11 @@ class StartupSequence(smach.State):
 
 	def execute(self, userdata):
 		rospy.loginfo("Executing Startup Sequence") 
+
+		# Create the Serial Port to communicate with the PSOC:
+		global serialObj
+		serialObj = serialhelper.createSerial("/dev/ttyUSB0") 
+			  
 		return "egressEnter"
 
 class Egress(smach.State):
@@ -65,7 +99,8 @@ class SampleRecognition(smach.State):
 	def execute(self, userdata):
 		rospy.loginfo("Executing Sample Recognition")
 
-		sampleFound = True
+		global sampleFound
+
 		# Has the sample been found?
 		if sampleFound:  
 			return "sampleFound"
@@ -88,13 +123,11 @@ class EndTransit(smach.State);
 		rospy.loginfo("Executing End Transit")
 		return "end" 
 
-
 def main():
 	rospy.init_node('rockie_state_machine')
 
 	sm = smach.StateMachine(outcomes=['complete'])
 	with sm:
-		#smach.StateMachine.add("FOO", Foo(), transitions={'outcome1':'BAR','outcome2':'outcome4'})
 		smach.StateMachine.add("STARTUPSEQUENCE", StartupSequence(), transitions={"egressEnter":"EGRESS"})
 		smach.StateMachine.add("EGRESS", Egress(), transitions={"transitEnter":"TRANSIT"})
 		smach.StateMachine.add("TRANSIT", Transit(), transitions={"searchEnter":"SEARCH"})

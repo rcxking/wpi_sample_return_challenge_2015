@@ -5,4 +5,6 @@
 
   <include unless="$(arg sim)" file="$(find rockie_core)/launch/rockie.launch"/>
   <include if="$(arg sim)" file="$(find rockie_core)/launch/rockie_sim.launch"/>
+
+  <node pkg="rockie_core" name="state_machine_1" type="state_machine_stage_1.py"/> 
 </launch>

@@ -1,5 +1,0 @@
-# generated from catkin/cmake/template/order_packages.context.py.in
-source_root_dir = "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/src"
-whitelisted_packages = "".split(';') if "" != "" else []
-blacklisted_packages = "".split(';') if "" != "" else []
-underlay_workspaces = "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel;/opt/ros/hydro".split(';') if "/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel;/opt/ros/hydro" != "" else []

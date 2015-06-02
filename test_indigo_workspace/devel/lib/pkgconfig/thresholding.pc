@@ -1,8 +1,0 @@
-prefix=/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel
-
-Name: thresholding
-Description: Description of thresholding
-Version: 0.0.0
-Cflags: -I/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/include
-Libs: -L/home/rockie/wpi_sample_return_challenge_2015/test_indigo_workspace/devel/lib 
-Requires: 
