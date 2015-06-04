@@ -1,0 +1,2179 @@
+Loading plugins phase: Elapsed time ==> 5s.791ms
+Initializing data phase: Elapsed time ==> 0s.000ms
+<CYPRESSTAG name="CyDsfit arguments...">
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p C:\Users\kit\Documents\PSoC Creator\Design03\QuadDecoder2.cydsn\QuadDecoder2.cyprj -d CY8C4245AXI-483 -s C:\Users\kit\Documents\PSoC Creator\Design03\QuadDecoder2.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
+<CYPRESSTAG name="Design elaboration results...">
+</CYPRESSTAG>
+Elaboration phase: Elapsed time ==> 37s.932ms
+<CYPRESSTAG name="HDL generation results...">
+</CYPRESSTAG>
+HDL generation phase: Elapsed time ==> 0s.373ms
+<CYPRESSTAG name="Synthesis results...">
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp Verilog Synthesis Compiler: Version 6.3 IR 41
+  -|               |-   Copyright (C) 1991-2001 Cypress Semiconductor
+   |_______________|
+     | | | | | | |
+
+======================================================================
+Compiling:  QuadDecoder2.v
+Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\bin/warp.exe
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\kit\Documents\PSoC Creator\Design03\QuadDecoder2.cydsn\QuadDecoder2.cyprj -dcpsoc3 QuadDecoder2.v -verilog
+======================================================================
+
+======================================================================
+Compiling:  QuadDecoder2.v
+Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\bin/warp.exe
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\kit\Documents\PSoC Creator\Design03\QuadDecoder2.cydsn\QuadDecoder2.cyprj -dcpsoc3 QuadDecoder2.v -verilog
+======================================================================
+
+======================================================================
+Compiling:  QuadDecoder2.v
+Program  :   vlogfe
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\kit\Documents\PSoC Creator\Design03\QuadDecoder2.cydsn\QuadDecoder2.cyprj -dcpsoc3 -verilog QuadDecoder2.v
+======================================================================
+
+vlogfe V6.3 IR 41:  Verilog parser
+Mon Jun 01 18:15:39 2015
+
+
+======================================================================
+Compiling:  QuadDecoder2.v
+Program  :   vpp
+Options  :    -yv2 -q10 QuadDecoder2.v
+======================================================================
+
+vpp V6.3 IR 41:  Verilog Pre-Processor
+Mon Jun 01 18:15:39 2015
+
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\..\psoc\content\cyprimitives\CyPrimitives.cylib\and_v1_0\and_v1_0.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\..\psoc\content\cyprimitives\CyPrimitives.cylib\cydff_v1_30\cydff_v1_30.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\..\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\..\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\..\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\..\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\..\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\..\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_Counter_v2_40\B_Counter_v2_40.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\cypress.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'
+
+vpp:  No errors.
+
+Library 'work' => directory 'lcpsoc3'
+General_symbol_table
+General_symbol_table
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Using control file 'QuadDecoder2.ctl'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3pkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif'.
+
+vlogfe:  No errors.
+
+
+======================================================================
+Compiling:  QuadDecoder2.v
+Program  :   tovif
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\kit\Documents\PSoC Creator\Design03\QuadDecoder2.cydsn\QuadDecoder2.cyprj -dcpsoc3 -verilog QuadDecoder2.v
+======================================================================
+
+tovif V6.3 IR 41:  High-level synthesis
+Mon Jun 01 18:15:40 2015
+
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Linking 'C:\Users\kit\Documents\PSoC Creator\Design03\QuadDecoder2.cydsn\codegentemp\QuadDecoder2.ctl'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\and_v1_0\and_v1_0.v'.
+Linking 'C:\Users\kit\Documents\PSoC Creator\Design03\QuadDecoder2.cydsn\codegentemp\QuadDecoder2.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cydff_v1_30\cydff_v1_30.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_Counter_v2_40\B_Counter_v2_40.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\cypress.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3pkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif'.
+
+tovif:  No errors.
+
+
+======================================================================
+Compiling:  QuadDecoder2.v
+Program  :   topld
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\kit\Documents\PSoC Creator\Design03\QuadDecoder2.cydsn\QuadDecoder2.cyprj -dcpsoc3 -verilog QuadDecoder2.v
+======================================================================
+
+topld V6.3 IR 41:  Synthesis and optimization
+Mon Jun 01 18:15:44 2015
+
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Linking 'C:\Users\kit\Documents\PSoC Creator\Design03\QuadDecoder2.cydsn\codegentemp\QuadDecoder2.ctl'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\and_v1_0\and_v1_0.v'.
+Linking 'C:\Users\kit\Documents\PSoC Creator\Design03\QuadDecoder2.cydsn\codegentemp\QuadDecoder2.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cydff_v1_30\cydff_v1_30.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_Counter_v2_40\B_Counter_v2_40.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\cypress.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3pkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\lcpsoc3\stdlogic\cpsoc3.vif'.
+
+----------------------------------------------------------
+Detecting unused logic.
+----------------------------------------------------------
+    User names
+	\Counter_2:CounterUDB:ctrl_cmod_2\
+	\Counter_2:CounterUDB:ctrl_cmod_1\
+	\Counter_2:CounterUDB:ctrl_cmod_0\
+	Net_349
+	Net_350
+	\Counter_3:CounterUDB:ctrl_cmod_2\
+	\Counter_3:CounterUDB:ctrl_cmod_1\
+	\Counter_3:CounterUDB:ctrl_cmod_0\
+	Net_384
+	Net_385
+	\Counter_4:CounterUDB:ctrl_cmod_2\
+	\Counter_4:CounterUDB:ctrl_cmod_1\
+	\Counter_4:CounterUDB:ctrl_cmod_0\
+	Net_418
+	Net_419
+	\Counter_1:CounterUDB:ctrl_cmod_2\
+	\Counter_1:CounterUDB:ctrl_cmod_1\
+	\Counter_1:CounterUDB:ctrl_cmod_0\
+	Net_312
+	Net_313
+
+
+Deleted 20 User equations/components.
+Deleted 0 Synthesized equations/components.
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+Aliasing one to tmpOE__phiB_In_net_0
+Aliasing tmpOE__phiA_In_net_0 to tmpOE__phiB_In_net_0
+Aliasing tmpOE__phiA_Out_net_0 to tmpOE__phiB_In_net_0
+Aliasing Net_185 to Net_121
+Aliasing tmpOE__phiA_In_1_net_0 to tmpOE__phiB_In_net_0
+Aliasing tmpOE__phiA_Out_1_net_0 to tmpOE__phiB_In_net_0
+Aliasing Net_392 to tmpOE__phiB_In_net_0
+Aliasing \Counter_2:Net_95\ to zero
+Aliasing \Counter_2:CounterUDB:ctrl_capmode_1\ to zero
+Aliasing \Counter_2:CounterUDB:ctrl_capmode_0\ to zero
+Aliasing \Counter_2:CounterUDB:capt_rising\ to zero
+Aliasing Net_348 to zero
+Aliasing \Counter_2:CounterUDB:tc_i\ to \Counter_2:CounterUDB:reload\
+Aliasing Net_357 to tmpOE__phiB_In_net_0
+Aliasing Net_334 to Net_336
+Aliasing tmpOE__phiB_In_1_net_0 to tmpOE__phiB_In_net_0
+Aliasing Net_383 to zero
+Aliasing \Counter_3:Net_95\ to zero
+Aliasing \Counter_3:CounterUDB:ctrl_capmode_1\ to zero
+Aliasing \Counter_3:CounterUDB:ctrl_capmode_0\ to zero
+Aliasing \Counter_3:CounterUDB:capt_rising\ to zero
+Aliasing \Counter_3:CounterUDB:tc_i\ to \Counter_3:CounterUDB:reload\
+Aliasing Net_369 to Net_371
+Aliasing tmpOE__phiB_In_2_net_0 to tmpOE__phiB_In_net_0
+Aliasing tmpOE__phiA_In_2_net_0 to tmpOE__phiB_In_net_0
+Aliasing tmpOE__phiA_Out_2_net_0 to tmpOE__phiB_In_net_0
+Aliasing Net_417 to zero
+Aliasing \Counter_4:Net_95\ to zero
+Aliasing \Counter_4:CounterUDB:ctrl_capmode_1\ to zero
+Aliasing \Counter_4:CounterUDB:ctrl_capmode_0\ to zero
+Aliasing \Counter_4:CounterUDB:capt_rising\ to zero
+Aliasing \Counter_4:CounterUDB:tc_i\ to \Counter_4:CounterUDB:reload\
+Aliasing Net_426 to tmpOE__phiB_In_net_0
+Aliasing Net_403 to Net_405
+Aliasing tmpOE__phiB_In_3_net_0 to tmpOE__phiB_In_net_0
+Aliasing tmpOE__phiA_In_3_net_0 to tmpOE__phiB_In_net_0
+Aliasing tmpOE__phiA_Out_3_net_0 to tmpOE__phiB_In_net_0
+Aliasing \Counter_1:Net_95\ to zero
+Aliasing \Counter_1:CounterUDB:ctrl_capmode_1\ to zero
+Aliasing \Counter_1:CounterUDB:ctrl_capmode_0\ to zero
+Aliasing \Counter_1:CounterUDB:capt_rising\ to zero
+Aliasing Net_311 to zero
+Aliasing \Counter_1:CounterUDB:tc_i\ to \Counter_1:CounterUDB:reload\
+Aliasing Net_321 to tmpOE__phiB_In_net_0
+Aliasing \Counter_2:CounterUDB:prevCapture\\D\ to zero
+Aliasing \Counter_2:CounterUDB:cmp_out_reg_i\\D\ to \Counter_2:CounterUDB:prevCompare\\D\
+Aliasing \Counter_3:CounterUDB:prevCapture\\D\ to zero
+Aliasing \Counter_3:CounterUDB:cmp_out_reg_i\\D\ to \Counter_3:CounterUDB:prevCompare\\D\
+Aliasing \Counter_4:CounterUDB:prevCapture\\D\ to zero
+Aliasing \Counter_4:CounterUDB:cmp_out_reg_i\\D\ to \Counter_4:CounterUDB:prevCompare\\D\
+Aliasing \Counter_1:CounterUDB:prevCapture\\D\ to zero
+Aliasing \Counter_1:CounterUDB:cmp_out_reg_i\\D\ to \Counter_1:CounterUDB:prevCompare\\D\
+Removing Rhs of wire Net_169[2] = cydff_4[13]
+Removing Rhs of wire Net_112[8] = cydff_3[14]
+Removing Lhs of wire one[20] = tmpOE__phiB_In_net_0[16]
+Removing Lhs of wire tmpOE__phiA_In_net_0[23] = tmpOE__phiB_In_net_0[16]
+Removing Lhs of wire tmpOE__phiA_Out_net_0[28] = tmpOE__phiB_In_net_0[16]
+Removing Lhs of wire Net_185[34] = Net_121[1]
+Removing Lhs of wire tmpOE__phiA_In_1_net_0[47] = tmpOE__phiB_In_net_0[16]
+Removing Lhs of wire tmpOE__phiA_Out_1_net_0[53] = tmpOE__phiB_In_net_0[16]
+Removing Lhs of wire Net_392[58] = tmpOE__phiB_In_net_0[16]
+Removing Lhs of wire \Counter_2:Net_89\[59] = zero[17]
+Removing Lhs of wire \Counter_2:Net_95\[60] = zero[17]
+Removing Lhs of wire \Counter_2:CounterUDB:ctrl_capmode_1\[67] = zero[17]
+Removing Lhs of wire \Counter_2:CounterUDB:ctrl_capmode_0\[68] = zero[17]
+Removing Lhs of wire \Counter_2:CounterUDB:ctrl_enable\[80] = \Counter_2:CounterUDB:control_7\[72]
+Removing Lhs of wire \Counter_2:CounterUDB:capt_rising\[82] = zero[17]
+Removing Lhs of wire \Counter_2:CounterUDB:capt_falling\[83] = \Counter_2:CounterUDB:prevCapture\[81]
+Removing Lhs of wire \Counter_2:CounterUDB:final_enable\[89] = \Counter_2:CounterUDB:control_7\[72]
+Removing Lhs of wire \Counter_2:CounterUDB:counter_enable\[90] = \Counter_2:CounterUDB:control_7\[72]
+Removing Rhs of wire \Counter_2:CounterUDB:status_0\[91] = \Counter_2:CounterUDB:cmp_out_status\[92]
+Removing Rhs of wire \Counter_2:CounterUDB:status_1\[93] = \Counter_2:CounterUDB:per_zero\[94]
+Removing Rhs of wire \Counter_2:CounterUDB:status_2\[95] = \Counter_2:CounterUDB:overflow_status\[96]
+Removing Rhs of wire \Counter_2:CounterUDB:status_3\[97] = \Counter_2:CounterUDB:underflow_status\[98]
+Removing Lhs of wire \Counter_2:CounterUDB:status_4\[99] = \Counter_2:CounterUDB:hwCapture\[85]
+Removing Rhs of wire \Counter_2:CounterUDB:status_5\[100] = \Counter_2:CounterUDB:fifo_full\[101]
+Removing Rhs of wire \Counter_2:CounterUDB:status_6\[102] = \Counter_2:CounterUDB:fifo_nempty\[103]
+Removing Lhs of wire Net_348[105] = zero[17]
+Removing Lhs of wire \Counter_2:CounterUDB:dp_dir\[107] = zero[17]
+Removing Lhs of wire \Counter_2:CounterUDB:tc_i\[111] = \Counter_2:CounterUDB:reload\[86]
+Removing Rhs of wire \Counter_2:CounterUDB:cmp_out_i\[114] = \Counter_2:CounterUDB:cmp_less\[115]
+Removing Lhs of wire Net_357[120] = tmpOE__phiB_In_net_0[16]
+Removing Lhs of wire \Counter_2:CounterUDB:cs_addr_2\[122] = zero[17]
+Removing Lhs of wire \Counter_2:CounterUDB:cs_addr_1\[123] = \Counter_2:CounterUDB:count_enable\[121]
+Removing Lhs of wire \Counter_2:CounterUDB:cs_addr_0\[124] = \Counter_2:CounterUDB:reload\[86]
+Removing Rhs of wire Net_327[171] = cydff_2[175]
+Removing Lhs of wire Net_334[172] = Net_336[165]
+Removing Rhs of wire Net_326[174] = cydff_1[176]
+Removing Lhs of wire tmpOE__phiB_In_1_net_0[178] = tmpOE__phiB_In_net_0[16]
+Removing Lhs of wire Net_383[182] = zero[17]
+Removing Lhs of wire \Counter_3:Net_89\[183] = zero[17]
+Removing Lhs of wire \Counter_3:Net_95\[184] = zero[17]
+Removing Lhs of wire \Counter_3:CounterUDB:ctrl_capmode_1\[191] = zero[17]
+Removing Lhs of wire \Counter_3:CounterUDB:ctrl_capmode_0\[192] = zero[17]
+Removing Lhs of wire \Counter_3:CounterUDB:ctrl_enable\[204] = \Counter_3:CounterUDB:control_7\[196]
+Removing Lhs of wire \Counter_3:CounterUDB:capt_rising\[206] = zero[17]
+Removing Lhs of wire \Counter_3:CounterUDB:capt_falling\[207] = \Counter_3:CounterUDB:prevCapture\[205]
+Removing Lhs of wire \Counter_3:CounterUDB:final_enable\[213] = \Counter_3:CounterUDB:control_7\[196]
+Removing Lhs of wire \Counter_3:CounterUDB:counter_enable\[214] = \Counter_3:CounterUDB:control_7\[196]
+Removing Rhs of wire \Counter_3:CounterUDB:status_0\[215] = \Counter_3:CounterUDB:cmp_out_status\[216]
+Removing Rhs of wire \Counter_3:CounterUDB:status_1\[217] = \Counter_3:CounterUDB:per_zero\[218]
+Removing Rhs of wire \Counter_3:CounterUDB:status_2\[219] = \Counter_3:CounterUDB:overflow_status\[220]
+Removing Rhs of wire \Counter_3:CounterUDB:status_3\[221] = \Counter_3:CounterUDB:underflow_status\[222]
+Removing Lhs of wire \Counter_3:CounterUDB:status_4\[223] = \Counter_3:CounterUDB:hwCapture\[209]
+Removing Rhs of wire \Counter_3:CounterUDB:status_5\[224] = \Counter_3:CounterUDB:fifo_full\[225]
+Removing Rhs of wire \Counter_3:CounterUDB:status_6\[226] = \Counter_3:CounterUDB:fifo_nempty\[227]
+Removing Lhs of wire \Counter_3:CounterUDB:dp_dir\[230] = zero[17]
+Removing Lhs of wire \Counter_3:CounterUDB:tc_i\[234] = \Counter_3:CounterUDB:reload\[210]
+Removing Rhs of wire \Counter_3:CounterUDB:cmp_out_i\[237] = \Counter_3:CounterUDB:cmp_less\[238]
+Removing Lhs of wire \Counter_3:CounterUDB:cs_addr_2\[244] = zero[17]
+Removing Lhs of wire \Counter_3:CounterUDB:cs_addr_1\[245] = \Counter_3:CounterUDB:count_enable\[243]
+Removing Lhs of wire \Counter_3:CounterUDB:cs_addr_0\[246] = \Counter_3:CounterUDB:reload\[210]
+Removing Rhs of wire Net_362[294] = cydff_6[298]
+Removing Lhs of wire Net_369[295] = Net_371[288]
+Removing Rhs of wire Net_361[297] = cydff_5[299]
+Removing Lhs of wire tmpOE__phiB_In_2_net_0[301] = tmpOE__phiB_In_net_0[16]
+Removing Lhs of wire tmpOE__phiA_In_2_net_0[306] = tmpOE__phiB_In_net_0[16]
+Removing Lhs of wire tmpOE__phiA_Out_2_net_0[311] = tmpOE__phiB_In_net_0[16]
+Removing Lhs of wire Net_417[316] = zero[17]
+Removing Lhs of wire \Counter_4:Net_89\[317] = zero[17]
+Removing Lhs of wire \Counter_4:Net_95\[318] = zero[17]
+Removing Lhs of wire \Counter_4:CounterUDB:ctrl_capmode_1\[325] = zero[17]
+Removing Lhs of wire \Counter_4:CounterUDB:ctrl_capmode_0\[326] = zero[17]
+Removing Lhs of wire \Counter_4:CounterUDB:ctrl_enable\[338] = \Counter_4:CounterUDB:control_7\[330]
+Removing Lhs of wire \Counter_4:CounterUDB:capt_rising\[340] = zero[17]
+Removing Lhs of wire \Counter_4:CounterUDB:capt_falling\[341] = \Counter_4:CounterUDB:prevCapture\[339]
+Removing Lhs of wire \Counter_4:CounterUDB:final_enable\[347] = \Counter_4:CounterUDB:control_7\[330]
+Removing Lhs of wire \Counter_4:CounterUDB:counter_enable\[348] = \Counter_4:CounterUDB:control_7\[330]
+Removing Rhs of wire \Counter_4:CounterUDB:status_0\[349] = \Counter_4:CounterUDB:cmp_out_status\[350]
+Removing Rhs of wire \Counter_4:CounterUDB:status_1\[351] = \Counter_4:CounterUDB:per_zero\[352]
+Removing Rhs of wire \Counter_4:CounterUDB:status_2\[353] = \Counter_4:CounterUDB:overflow_status\[354]
+Removing Rhs of wire \Counter_4:CounterUDB:status_3\[355] = \Counter_4:CounterUDB:underflow_status\[356]
+Removing Lhs of wire \Counter_4:CounterUDB:status_4\[357] = \Counter_4:CounterUDB:hwCapture\[343]
+Removing Rhs of wire \Counter_4:CounterUDB:status_5\[358] = \Counter_4:CounterUDB:fifo_full\[359]
+Removing Rhs of wire \Counter_4:CounterUDB:status_6\[360] = \Counter_4:CounterUDB:fifo_nempty\[361]
+Removing Lhs of wire \Counter_4:CounterUDB:dp_dir\[364] = zero[17]
+Removing Lhs of wire \Counter_4:CounterUDB:tc_i\[368] = \Counter_4:CounterUDB:reload\[344]
+Removing Rhs of wire \Counter_4:CounterUDB:cmp_out_i\[371] = \Counter_4:CounterUDB:cmp_less\[372]
+Removing Lhs of wire Net_426[377] = tmpOE__phiB_In_net_0[16]
+Removing Lhs of wire \Counter_4:CounterUDB:cs_addr_2\[379] = zero[17]
+Removing Lhs of wire \Counter_4:CounterUDB:cs_addr_1\[380] = \Counter_4:CounterUDB:count_enable\[378]
+Removing Lhs of wire \Counter_4:CounterUDB:cs_addr_0\[381] = \Counter_4:CounterUDB:reload\[344]
+Removing Rhs of wire Net_396[429] = cydff_8[433]
+Removing Lhs of wire Net_403[430] = Net_405[423]
+Removing Rhs of wire Net_395[432] = cydff_7[434]
+Removing Lhs of wire tmpOE__phiB_In_3_net_0[436] = tmpOE__phiB_In_net_0[16]
+Removing Lhs of wire tmpOE__phiA_In_3_net_0[441] = tmpOE__phiB_In_net_0[16]
+Removing Lhs of wire tmpOE__phiA_Out_3_net_0[446] = tmpOE__phiB_In_net_0[16]
+Removing Lhs of wire \Counter_1:Net_89\[451] = zero[17]
+Removing Lhs of wire \Counter_1:Net_95\[452] = zero[17]
+Removing Lhs of wire \Counter_1:CounterUDB:ctrl_capmode_1\[458] = zero[17]
+Removing Lhs of wire \Counter_1:CounterUDB:ctrl_capmode_0\[459] = zero[17]
+Removing Lhs of wire \Counter_1:CounterUDB:ctrl_enable\[471] = \Counter_1:CounterUDB:control_7\[463]
+Removing Lhs of wire \Counter_1:CounterUDB:capt_rising\[473] = zero[17]
+Removing Lhs of wire \Counter_1:CounterUDB:capt_falling\[474] = \Counter_1:CounterUDB:prevCapture\[472]
+Removing Lhs of wire \Counter_1:CounterUDB:final_enable\[480] = \Counter_1:CounterUDB:control_7\[463]
+Removing Lhs of wire \Counter_1:CounterUDB:counter_enable\[481] = \Counter_1:CounterUDB:control_7\[463]
+Removing Rhs of wire \Counter_1:CounterUDB:status_0\[482] = \Counter_1:CounterUDB:cmp_out_status\[483]
+Removing Rhs of wire \Counter_1:CounterUDB:status_1\[484] = \Counter_1:CounterUDB:per_zero\[485]
+Removing Rhs of wire \Counter_1:CounterUDB:status_2\[486] = \Counter_1:CounterUDB:overflow_status\[487]
+Removing Rhs of wire \Counter_1:CounterUDB:status_3\[488] = \Counter_1:CounterUDB:underflow_status\[489]
+Removing Lhs of wire \Counter_1:CounterUDB:status_4\[490] = \Counter_1:CounterUDB:hwCapture\[476]
+Removing Rhs of wire \Counter_1:CounterUDB:status_5\[491] = \Counter_1:CounterUDB:fifo_full\[492]
+Removing Rhs of wire \Counter_1:CounterUDB:status_6\[493] = \Counter_1:CounterUDB:fifo_nempty\[494]
+Removing Lhs of wire Net_311[496] = zero[17]
+Removing Lhs of wire \Counter_1:CounterUDB:dp_dir\[498] = zero[17]
+Removing Lhs of wire \Counter_1:CounterUDB:tc_i\[502] = \Counter_1:CounterUDB:reload\[477]
+Removing Rhs of wire \Counter_1:CounterUDB:cmp_out_i\[505] = \Counter_1:CounterUDB:cmp_less\[506]
+Removing Lhs of wire Net_321[511] = tmpOE__phiB_In_net_0[16]
+Removing Lhs of wire \Counter_1:CounterUDB:cs_addr_2\[513] = zero[17]
+Removing Lhs of wire \Counter_1:CounterUDB:cs_addr_1\[514] = \Counter_1:CounterUDB:count_enable\[512]
+Removing Lhs of wire \Counter_1:CounterUDB:cs_addr_0\[515] = \Counter_1:CounterUDB:reload\[477]
+Removing Lhs of wire cydff_4D[544] = Net_182[4]
+Removing Lhs of wire cydff_3D[545] = Net_183[10]
+Removing Lhs of wire \Counter_2:CounterUDB:prevCapture\\D\[546] = zero[17]
+Removing Lhs of wire \Counter_2:CounterUDB:overflow_reg_i\\D\[547] = \Counter_2:CounterUDB:overflow\[87]
+Removing Lhs of wire \Counter_2:CounterUDB:underflow_reg_i\\D\[548] = \Counter_2:CounterUDB:underflow\[88]
+Removing Lhs of wire \Counter_2:CounterUDB:tc_reg_i\\D\[549] = \Counter_2:CounterUDB:reload\[86]
+Removing Lhs of wire \Counter_2:CounterUDB:prevCompare\\D\[550] = \Counter_2:CounterUDB:cmp_out_i\[114]
+Removing Lhs of wire \Counter_2:CounterUDB:cmp_out_reg_i\\D\[551] = \Counter_2:CounterUDB:cmp_out_i\[114]
+Removing Lhs of wire \Counter_2:CounterUDB:count_stored_i\\D\[552] = tmpOE__phiB_In_net_0[16]
+Removing Lhs of wire cydff_2D[553] = Net_325[169]
+Removing Lhs of wire cydff_1D[554] = Net_324[48]
+Removing Lhs of wire \Counter_3:CounterUDB:prevCapture\\D\[555] = zero[17]
+Removing Lhs of wire \Counter_3:CounterUDB:overflow_reg_i\\D\[556] = \Counter_3:CounterUDB:overflow\[211]
+Removing Lhs of wire \Counter_3:CounterUDB:underflow_reg_i\\D\[557] = \Counter_3:CounterUDB:underflow\[212]
+Removing Lhs of wire \Counter_3:CounterUDB:tc_reg_i\\D\[558] = \Counter_3:CounterUDB:reload\[210]
+Removing Lhs of wire \Counter_3:CounterUDB:prevCompare\\D\[559] = \Counter_3:CounterUDB:cmp_out_i\[237]
+Removing Lhs of wire \Counter_3:CounterUDB:cmp_out_reg_i\\D\[560] = \Counter_3:CounterUDB:cmp_out_i\[237]
+Removing Lhs of wire \Counter_3:CounterUDB:count_stored_i\\D\[561] = tmpOE__phiB_In_net_0[16]
+Removing Lhs of wire cydff_6D[562] = Net_360[292]
+Removing Lhs of wire cydff_5D[563] = Net_359[286]
+Removing Lhs of wire \Counter_4:CounterUDB:prevCapture\\D\[564] = zero[17]
+Removing Lhs of wire \Counter_4:CounterUDB:overflow_reg_i\\D\[565] = \Counter_4:CounterUDB:overflow\[345]
+Removing Lhs of wire \Counter_4:CounterUDB:underflow_reg_i\\D\[566] = \Counter_4:CounterUDB:underflow\[346]
+Removing Lhs of wire \Counter_4:CounterUDB:tc_reg_i\\D\[567] = \Counter_4:CounterUDB:reload\[344]
+Removing Lhs of wire \Counter_4:CounterUDB:prevCompare\\D\[568] = \Counter_4:CounterUDB:cmp_out_i\[371]
+Removing Lhs of wire \Counter_4:CounterUDB:cmp_out_reg_i\\D\[569] = \Counter_4:CounterUDB:cmp_out_i\[371]
+Removing Lhs of wire \Counter_4:CounterUDB:count_stored_i\\D\[570] = tmpOE__phiB_In_net_0[16]
+Removing Lhs of wire cydff_8D[571] = Net_394[427]
+Removing Lhs of wire cydff_7D[572] = Net_393[421]
+Removing Lhs of wire \Counter_1:CounterUDB:prevCapture\\D\[573] = zero[17]
+Removing Lhs of wire \Counter_1:CounterUDB:overflow_reg_i\\D\[574] = \Counter_1:CounterUDB:overflow\[478]
+Removing Lhs of wire \Counter_1:CounterUDB:underflow_reg_i\\D\[575] = \Counter_1:CounterUDB:underflow\[479]
+Removing Lhs of wire \Counter_1:CounterUDB:tc_reg_i\\D\[576] = \Counter_1:CounterUDB:reload\[477]
+Removing Lhs of wire \Counter_1:CounterUDB:prevCompare\\D\[577] = \Counter_1:CounterUDB:cmp_out_i\[505]
+Removing Lhs of wire \Counter_1:CounterUDB:cmp_out_reg_i\\D\[578] = \Counter_1:CounterUDB:cmp_out_i\[505]
+Removing Lhs of wire \Counter_1:CounterUDB:count_stored_i\\D\[579] = tmpOE__phiB_In_net_0[16]
+
+------------------------------------------------------
+Aliased 0 equations, 156 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+Substituting virtuals - pass 1:
+
+Note:  Expanding virtual equation for 'Net_121' (cost = 0):
+Net_121 <= (not Net_182);
+
+Note:  Expanding virtual equation for 'Net_221' (cost = 0):
+Net_221 <= (not Net_169);
+
+Note:  Expanding virtual equation for 'Net_115' (cost = 0):
+Net_115 <= (not Net_183);
+
+Note:  Expanding virtual equation for 'Net_225' (cost = 0):
+Net_225 <= (not Net_112);
+
+Note:  Expanding virtual equation for 'tmpOE__phiB_In_net_0' (cost = 0):
+tmpOE__phiB_In_net_0 <=  ('1') ;
+
+Note:  Expanding virtual equation for 'zero' (cost = 0):
+zero <=  ('0') ;
+
+Note:  Expanding virtual equation for '\Counter_2:CounterUDB:capt_either_edge\' (cost = 0):
+\Counter_2:CounterUDB:capt_either_edge\ <= (\Counter_2:CounterUDB:prevCapture\);
+
+Note:  Expanding virtual equation for '\Counter_2:CounterUDB:overflow\' (cost = 0):
+\Counter_2:CounterUDB:overflow\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\Counter_2:CounterUDB:underflow\' (cost = 0):
+\Counter_2:CounterUDB:underflow\ <= (\Counter_2:CounterUDB:status_1\);
+
+Note:  Expanding virtual equation for 'Net_330' (cost = 0):
+Net_330 <= (not Net_324);
+
+Note:  Expanding virtual equation for 'Net_331' (cost = 2):
+Net_331 <= ((not Net_324 and Net_326));
+
+Note:  Expanding virtual equation for 'Net_336' (cost = 0):
+Net_336 <= (not Net_325);
+
+Note:  Expanding virtual equation for 'Net_335' (cost = 2):
+Net_335 <= ((not Net_325 and Net_327));
+
+Note:  Expanding virtual equation for 'Net_332' (cost = 0):
+Net_332 <= (not Net_327);
+
+Note:  Expanding virtual equation for 'Net_328' (cost = 0):
+Net_328 <= (not Net_326);
+
+Note:  Expanding virtual equation for '\Counter_3:CounterUDB:capt_either_edge\' (cost = 0):
+\Counter_3:CounterUDB:capt_either_edge\ <= (\Counter_3:CounterUDB:prevCapture\);
+
+Note:  Expanding virtual equation for '\Counter_3:CounterUDB:overflow\' (cost = 0):
+\Counter_3:CounterUDB:overflow\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\Counter_3:CounterUDB:underflow\' (cost = 0):
+\Counter_3:CounterUDB:underflow\ <= (\Counter_3:CounterUDB:status_1\);
+
+Note:  Expanding virtual equation for 'Net_365' (cost = 0):
+Net_365 <= (not Net_359);
+
+Note:  Expanding virtual equation for 'Net_366' (cost = 2):
+Net_366 <= ((not Net_359 and Net_361));
+
+Note:  Expanding virtual equation for 'Net_371' (cost = 0):
+Net_371 <= (not Net_360);
+
+Note:  Expanding virtual equation for 'Net_370' (cost = 2):
+Net_370 <= ((not Net_360 and Net_362));
+
+Note:  Expanding virtual equation for 'Net_367' (cost = 0):
+Net_367 <= (not Net_362);
+
+Note:  Expanding virtual equation for 'Net_363' (cost = 0):
+Net_363 <= (not Net_361);
+
+Note:  Expanding virtual equation for '\Counter_4:CounterUDB:capt_either_edge\' (cost = 0):
+\Counter_4:CounterUDB:capt_either_edge\ <= (\Counter_4:CounterUDB:prevCapture\);
+
+Note:  Expanding virtual equation for '\Counter_4:CounterUDB:overflow\' (cost = 0):
+\Counter_4:CounterUDB:overflow\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\Counter_4:CounterUDB:underflow\' (cost = 0):
+\Counter_4:CounterUDB:underflow\ <= (\Counter_4:CounterUDB:status_1\);
+
+Note:  Expanding virtual equation for 'Net_399' (cost = 0):
+Net_399 <= (not Net_393);
+
+Note:  Expanding virtual equation for 'Net_400' (cost = 2):
+Net_400 <= ((not Net_393 and Net_395));
+
+Note:  Expanding virtual equation for 'Net_405' (cost = 0):
+Net_405 <= (not Net_394);
+
+Note:  Expanding virtual equation for 'Net_404' (cost = 2):
+Net_404 <= ((not Net_394 and Net_396));
+
+Note:  Expanding virtual equation for 'Net_401' (cost = 0):
+Net_401 <= (not Net_396);
+
+Note:  Expanding virtual equation for 'Net_397' (cost = 0):
+Net_397 <= (not Net_395);
+
+Note:  Expanding virtual equation for '\Counter_1:CounterUDB:capt_either_edge\' (cost = 0):
+\Counter_1:CounterUDB:capt_either_edge\ <= (\Counter_1:CounterUDB:prevCapture\);
+
+Note:  Expanding virtual equation for '\Counter_1:CounterUDB:overflow\' (cost = 0):
+\Counter_1:CounterUDB:overflow\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\Counter_1:CounterUDB:underflow\' (cost = 0):
+\Counter_1:CounterUDB:underflow\ <= (\Counter_1:CounterUDB:status_1\);
+
+
+Substituting virtuals - pass 2:
+
+Note:  Expanding virtual equation for 'Net_142' (cost = 2):
+Net_142 <= ((not Net_182 and Net_169));
+
+Note:  Expanding virtual equation for 'Net_184' (cost = 2):
+Net_184 <= ((not Net_169 and Net_182));
+
+Note:  Expanding virtual equation for 'Net_180' (cost = 2):
+Net_180 <= ((not Net_183 and Net_112));
+
+Note:  Expanding virtual equation for 'Net_186' (cost = 2):
+Net_186 <= ((not Net_112 and Net_183));
+
+Note:  Expanding virtual equation for 'Net_203' (cost = 1):
+Net_203 <= ((not Net_182 and not Net_112 and Net_183));
+
+Note:  Expanding virtual equation for 'Net_202' (cost = 1):
+Net_202 <= ((not Net_169 and Net_182 and Net_183));
+
+Note:  Expanding virtual equation for 'Net_201' (cost = 1):
+Net_201 <= ((not Net_183 and Net_182 and Net_112));
+
+Note:  Expanding virtual equation for 'Net_200' (cost = 1):
+Net_200 <= ((not Net_182 and not Net_183 and Net_169));
+
+Note:  Expanding virtual equation for 'Net_205' (cost = 1):
+Net_205 <= ((not Net_112 and Net_182 and Net_183));
+
+Note:  Expanding virtual equation for 'Net_207' (cost = 1):
+Net_207 <= ((not Net_169 and not Net_183 and Net_182));
+
+Note:  Expanding virtual equation for 'Net_196' (cost = 1):
+Net_196 <= ((not Net_182 and not Net_183 and Net_112));
+
+Note:  Expanding virtual equation for 'Net_195' (cost = 1):
+Net_195 <= ((not Net_182 and Net_169 and Net_183));
+
+Note:  Expanding virtual equation for 'Net_223' (cost = 4):
+Net_223 <= ((not Net_182 and not Net_183 and Net_169)
+	OR (not Net_183 and Net_182 and Net_112)
+	OR (not Net_169 and Net_182 and Net_183)
+	OR (not Net_182 and not Net_112 and Net_183));
+
+Note:  Expanding virtual equation for 'Net_222' (cost = 4):
+Net_222 <= ((not Net_182 and Net_169 and Net_183)
+	OR (not Net_182 and not Net_183 and Net_112)
+	OR (not Net_169 and not Net_183 and Net_182)
+	OR (not Net_112 and Net_182 and Net_183));
+
+Note:  Expanding virtual equation for 'Net_339' (cost = 1):
+Net_339 <= ((not Net_324 and Net_325 and Net_326));
+
+Note:  Expanding virtual equation for 'Net_340' (cost = 1):
+Net_340 <= ((not Net_324 and not Net_325 and Net_327));
+
+Note:  Expanding virtual equation for 'Net_343' (cost = 1):
+Net_343 <= ((not Net_324 and not Net_325 and Net_326));
+
+Note:  Expanding virtual equation for 'Net_344' (cost = 1):
+Net_344 <= ((not Net_325 and Net_324 and Net_327));
+
+Note:  Expanding virtual equation for 'Net_333' (cost = 2):
+Net_333 <= ((not Net_327 and Net_325));
+
+Note:  Expanding virtual equation for 'Net_329' (cost = 2):
+Net_329 <= ((not Net_326 and Net_324));
+
+Note:  Expanding virtual equation for 'Net_374' (cost = 1):
+Net_374 <= ((not Net_359 and Net_360 and Net_361));
+
+Note:  Expanding virtual equation for 'Net_375' (cost = 1):
+Net_375 <= ((not Net_359 and not Net_360 and Net_362));
+
+Note:  Expanding virtual equation for 'Net_378' (cost = 1):
+Net_378 <= ((not Net_359 and not Net_360 and Net_361));
+
+Note:  Expanding virtual equation for 'Net_379' (cost = 1):
+Net_379 <= ((not Net_360 and Net_359 and Net_362));
+
+Note:  Expanding virtual equation for 'Net_368' (cost = 2):
+Net_368 <= ((not Net_362 and Net_360));
+
+Note:  Expanding virtual equation for 'Net_364' (cost = 2):
+Net_364 <= ((not Net_361 and Net_359));
+
+Note:  Expanding virtual equation for 'Net_408' (cost = 1):
+Net_408 <= ((not Net_393 and Net_394 and Net_395));
+
+Note:  Expanding virtual equation for 'Net_409' (cost = 1):
+Net_409 <= ((not Net_393 and not Net_394 and Net_396));
+
+Note:  Expanding virtual equation for 'Net_412' (cost = 1):
+Net_412 <= ((not Net_393 and not Net_394 and Net_395));
+
+Note:  Expanding virtual equation for 'Net_413' (cost = 1):
+Net_413 <= ((not Net_394 and Net_393 and Net_396));
+
+Note:  Expanding virtual equation for 'Net_402' (cost = 2):
+Net_402 <= ((not Net_396 and Net_394));
+
+Note:  Expanding virtual equation for 'Net_398' (cost = 2):
+Net_398 <= ((not Net_395 and Net_393));
+
+
+Substituting virtuals - pass 3:
+
+Note:  Expanding virtual equation for 'Net_338' (cost = 1):
+Net_338 <= ((not Net_327 and Net_324 and Net_325));
+
+Note:  Expanding virtual equation for 'Net_337' (cost = 1):
+Net_337 <= ((not Net_325 and not Net_326 and Net_324));
+
+Note:  Expanding virtual equation for 'Net_342' (cost = 1):
+Net_342 <= ((not Net_324 and not Net_327 and Net_325));
+
+Note:  Expanding virtual equation for 'Net_341' (cost = 1):
+Net_341 <= ((not Net_326 and Net_324 and Net_325));
+
+Note:  Expanding virtual equation for 'Net_373' (cost = 1):
+Net_373 <= ((not Net_362 and Net_359 and Net_360));
+
+Note:  Expanding virtual equation for 'Net_372' (cost = 1):
+Net_372 <= ((not Net_360 and not Net_361 and Net_359));
+
+Note:  Expanding virtual equation for 'Net_377' (cost = 1):
+Net_377 <= ((not Net_359 and not Net_362 and Net_360));
+
+Note:  Expanding virtual equation for 'Net_376' (cost = 1):
+Net_376 <= ((not Net_361 and Net_359 and Net_360));
+
+Note:  Expanding virtual equation for 'Net_407' (cost = 1):
+Net_407 <= ((not Net_396 and Net_393 and Net_394));
+
+Note:  Expanding virtual equation for 'Net_406' (cost = 1):
+Net_406 <= ((not Net_394 and not Net_395 and Net_393));
+
+Note:  Expanding virtual equation for 'Net_411' (cost = 1):
+Net_411 <= ((not Net_393 and not Net_396 and Net_394));
+
+Note:  Expanding virtual equation for 'Net_410' (cost = 1):
+Net_410 <= ((not Net_395 and Net_393 and Net_394));
+
+
+Substituting virtuals - pass 4:
+
+Note:  Expanding virtual equation for 'Net_345' (cost = 4):
+Net_345 <= ((not Net_325 and not Net_326 and Net_324)
+	OR (not Net_324 and not Net_325 and Net_327)
+	OR (not Net_324 and Net_325 and Net_326)
+	OR (not Net_327 and Net_324 and Net_325));
+
+Note:  Expanding virtual equation for 'Net_346' (cost = 4):
+Net_346 <= ((not Net_326 and Net_324 and Net_325)
+	OR (not Net_325 and Net_324 and Net_327)
+	OR (not Net_324 and not Net_325 and Net_326)
+	OR (not Net_324 and not Net_327 and Net_325));
+
+Note:  Expanding virtual equation for 'Net_380' (cost = 4):
+Net_380 <= ((not Net_360 and not Net_361 and Net_359)
+	OR (not Net_359 and not Net_360 and Net_362)
+	OR (not Net_359 and Net_360 and Net_361)
+	OR (not Net_362 and Net_359 and Net_360));
+
+Note:  Expanding virtual equation for 'Net_381' (cost = 4):
+Net_381 <= ((not Net_361 and Net_359 and Net_360)
+	OR (not Net_360 and Net_359 and Net_362)
+	OR (not Net_359 and not Net_360 and Net_361)
+	OR (not Net_359 and not Net_362 and Net_360));
+
+Note:  Expanding virtual equation for 'Net_414' (cost = 4):
+Net_414 <= ((not Net_394 and not Net_395 and Net_393)
+	OR (not Net_393 and not Net_394 and Net_396)
+	OR (not Net_393 and Net_394 and Net_395)
+	OR (not Net_396 and Net_393 and Net_394));
+
+Note:  Expanding virtual equation for 'Net_415' (cost = 4):
+Net_415 <= ((not Net_395 and Net_393 and Net_394)
+	OR (not Net_394 and Net_393 and Net_396)
+	OR (not Net_393 and not Net_394 and Net_395)
+	OR (not Net_393 and not Net_396 and Net_394));
+
+
+Substituting virtuals - pass 5:
+
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 86 signals.
+	Turned 0 signals into soft nodes.
+	Maximum default expansion cost was set at 3.
+----------------------------------------------------------
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+Aliasing \Counter_2:CounterUDB:hwCapture\ to zero
+Aliasing \Counter_2:CounterUDB:overflow\ to zero
+Aliasing \Counter_2:CounterUDB:status_2\ to zero
+Aliasing \Counter_3:CounterUDB:hwCapture\ to zero
+Aliasing \Counter_3:CounterUDB:overflow\ to zero
+Aliasing \Counter_3:CounterUDB:status_2\ to zero
+Aliasing \Counter_4:CounterUDB:hwCapture\ to zero
+Aliasing \Counter_4:CounterUDB:overflow\ to zero
+Aliasing \Counter_4:CounterUDB:status_2\ to zero
+Aliasing \Counter_1:CounterUDB:hwCapture\ to zero
+Aliasing \Counter_1:CounterUDB:overflow\ to zero
+Aliasing \Counter_1:CounterUDB:status_2\ to zero
+Removing Lhs of wire \Counter_2:CounterUDB:hwCapture\[85] = zero[17]
+Removing Rhs of wire \Counter_2:CounterUDB:reload\[86] = \Counter_2:CounterUDB:status_1\[93]
+Removing Lhs of wire \Counter_2:CounterUDB:overflow\[87] = zero[17]
+Removing Lhs of wire \Counter_2:CounterUDB:status_2\[95] = zero[17]
+Removing Lhs of wire \Counter_3:CounterUDB:hwCapture\[209] = zero[17]
+Removing Rhs of wire \Counter_3:CounterUDB:reload\[210] = \Counter_3:CounterUDB:status_1\[217]
+Removing Lhs of wire \Counter_3:CounterUDB:overflow\[211] = zero[17]
+Removing Lhs of wire \Counter_3:CounterUDB:status_2\[219] = zero[17]
+Removing Lhs of wire \Counter_4:CounterUDB:hwCapture\[343] = zero[17]
+Removing Rhs of wire \Counter_4:CounterUDB:reload\[344] = \Counter_4:CounterUDB:status_1\[351]
+Removing Lhs of wire \Counter_4:CounterUDB:overflow\[345] = zero[17]
+Removing Lhs of wire \Counter_4:CounterUDB:status_2\[353] = zero[17]
+Removing Lhs of wire \Counter_1:CounterUDB:hwCapture\[476] = zero[17]
+Removing Rhs of wire \Counter_1:CounterUDB:reload\[477] = \Counter_1:CounterUDB:status_1\[484]
+Removing Lhs of wire \Counter_1:CounterUDB:overflow\[478] = zero[17]
+Removing Lhs of wire \Counter_1:CounterUDB:status_2\[486] = zero[17]
+
+------------------------------------------------------
+Aliased 0 equations, 16 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+Eliminating unused logic - pass 1:
+
+
+Eliminating unused logic - pass 2:
+
+
+Substituting virtuals - pass 1:
+
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 0 signals.
+	Turned 0 signals into soft nodes.
+	Maximum default expansion cost was set at 3.
+----------------------------------------------------------
+
+topld:  No errors.
+
+CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp
+Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\bin/warp.exe
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=C:\Users\kit\Documents\PSoC Creator\Design03\QuadDecoder2.cydsn\QuadDecoder2.cyprj" -dcpsoc3 QuadDecoder2.v -verilog
+</CYPRESSTAG>
+Warp synthesis phase: Elapsed time ==> 7s.747ms
+<CYPRESSTAG name="Fitter results...">
+<CYPRESSTAG name="Fitter startup details...">
+cyp3fit: V3.1.0.1722, Family: PSoC3, Started at: Monday, 01 June 2015 18:15:46
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\kit\Documents\PSoC Creator\Design03\QuadDecoder2.cydsn\QuadDecoder2.cyprj -d CY8C4245AXI-483 QuadDecoder2.v -verilog
+</CYPRESSTAG>
+<CYPRESSTAG name="Design parsing">
+Design parsing phase: Elapsed time ==> 0s.216ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Tech mapping">
+<CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
+    Converted constant MacroCell: \Counter_1:CounterUDB:overflow_reg_i\ from registered to combinatorial
+    Converted constant MacroCell: \Counter_1:CounterUDB:prevCapture\ from registered to combinatorial
+    Converted constant MacroCell: \Counter_2:CounterUDB:overflow_reg_i\ from registered to combinatorial
+    Converted constant MacroCell: \Counter_2:CounterUDB:prevCapture\ from registered to combinatorial
+    Converted constant MacroCell: \Counter_3:CounterUDB:overflow_reg_i\ from registered to combinatorial
+    Converted constant MacroCell: \Counter_3:CounterUDB:prevCapture\ from registered to combinatorial
+    Converted constant MacroCell: \Counter_4:CounterUDB:overflow_reg_i\ from registered to combinatorial
+    Converted constant MacroCell: \Counter_4:CounterUDB:prevCapture\ from registered to combinatorial
+
+Removing unused cells resulting from optimization
+Done removing unused cells.
+<CYPRESSTAG name="Global Clock Selection" icon="FILE_RPT_TECHM">
+    Digital Clock 0: Automatic-assigning  clock 'Clock_1'. Fanout=8, Signal=CLK_digital
+<CYPRESSTAG name="UDB Clock/Enable Remapping Results">
+    UDB Clk/Enable \Counter_1:CounterUDB:clock_enable_block\: with output requested to be synchronous
+        ClockIn: Net_224:macrocell.q was determined to be a routed clock that is asynchronous
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: HFCLK, EnableOut: Net_224__SYNC:synccell.out
+    UDB Clk/Enable \Counter_1:CounterUDB:sCTRLReg:SyncCtl:cy_psoc3_udb_Ctl_Clk_Sync\: with output requested to be synchronous
+        ClockIn: Net_224:macrocell.q was determined to be a routed clock that is asynchronous
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: HFCLK, EnableOut: Net_224__SYNC_1:synccell.out
+    UDB Clk/Enable \Counter_2:CounterUDB:clock_enable_block\: with output requested to be synchronous
+        ClockIn: Net_347:macrocell.q was determined to be a routed clock that is asynchronous
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: HFCLK, EnableOut: Net_347__SYNC:synccell.out
+    UDB Clk/Enable \Counter_2:CounterUDB:sCTRLReg:SyncCtl:cy_psoc3_udb_Ctl_Clk_Sync\: with output requested to be synchronous
+        ClockIn: Net_347:macrocell.q was determined to be a routed clock that is asynchronous
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: HFCLK, EnableOut: Net_347__SYNC_1:synccell.out
+    UDB Clk/Enable \Counter_3:CounterUDB:clock_enable_block\: with output requested to be synchronous
+        ClockIn: Net_382:macrocell.q was determined to be a routed clock that is asynchronous
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: HFCLK, EnableOut: Net_382__SYNC:synccell.out
+    UDB Clk/Enable \Counter_3:CounterUDB:sCTRLReg:SyncCtl:cy_psoc3_udb_Ctl_Clk_Sync\: with output requested to be synchronous
+        ClockIn: Net_382:macrocell.q was determined to be a routed clock that is asynchronous
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: HFCLK, EnableOut: Net_382__SYNC_1:synccell.out
+    UDB Clk/Enable \Counter_4:CounterUDB:clock_enable_block\: with output requested to be synchronous
+        ClockIn: Net_416:macrocell.q was determined to be a routed clock that is asynchronous
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: HFCLK, EnableOut: Net_416__SYNC:synccell.out
+    UDB Clk/Enable \Counter_4:CounterUDB:sCTRLReg:SyncCtl:cy_psoc3_udb_Ctl_Clk_Sync\: with output requested to be synchronous
+        ClockIn: Net_416:macrocell.q was determined to be a routed clock that is asynchronous
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: HFCLK, EnableOut: Net_416__SYNC_1:synccell.out
+</CYPRESSTAG>
+</CYPRESSTAG>
+ADD: pft.M0040: information: The following 12 pin(s) will be assigned a location by the fitter: phiA_In(0), phiA_In_1(0), phiA_In_2(0), phiA_In_3(0), phiA_Out(0), phiA_Out_1(0), phiA_Out_2(0), phiA_Out_3(0), phiB_In(0), phiB_In_1(0), phiB_In_2(0), phiB_In_3(0)
+
+
+Removing unused cells resulting from optimization
+Done removing unused cells.
+<CYPRESSTAG name="Duplicate Macrocell detection">
+</CYPRESSTAG>
+</CYPRESSTAG>
+<CYPRESSTAG name="Duplicate Macrocell detection">
+</CYPRESSTAG>
+<CYPRESSTAG name="Design Equations" icon="FILE_RPT_EQUATION">
+
+------------------------------------------------------------
+Design Equations
+------------------------------------------------------------
+    <CYPRESSTAG name="Pin listing">
+
+    ------------------------------------------------------------
+    Pin listing
+    ------------------------------------------------------------
+
+    Pin : Name = phiA_In(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL, ROUTABLE
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => phiA_In(0)__PA ,
+            fb => Net_183 ,
+            pad => phiA_In(0)_PAD );
+
+    Pin : Name = phiA_In_1(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL, ROUTABLE
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => phiA_In_1(0)__PA ,
+            fb => Net_324 ,
+            pad => phiA_In_1(0)_PAD );
+
+    Pin : Name = phiA_In_2(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL, ROUTABLE
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => phiA_In_2(0)__PA ,
+            fb => Net_359 ,
+            pad => phiA_In_2(0)_PAD );
+
+    Pin : Name = phiA_In_3(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL, ROUTABLE
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => phiA_In_3(0)__PA ,
+            fb => Net_393 ,
+            pad => phiA_In_3(0)_PAD );
+
+    Pin : Name = phiA_Out(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: CMOS_OUT
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => phiA_Out(0)__PA ,
+            pad => phiA_Out(0)_PAD );
+
+    Pin : Name = phiA_Out_1(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: CMOS_OUT
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => phiA_Out_1(0)__PA ,
+            pad => phiA_Out_1(0)_PAD );
+
+    Pin : Name = phiA_Out_2(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: CMOS_OUT
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => phiA_Out_2(0)__PA ,
+            pad => phiA_Out_2(0)_PAD );
+
+    Pin : Name = phiA_Out_3(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: CMOS_OUT
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => phiA_Out_3(0)__PA ,
+            pad => phiA_Out_3(0)_PAD );
+
+    Pin : Name = phiB_In(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL, ROUTABLE
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => phiB_In(0)__PA ,
+            fb => Net_182 ,
+            pad => phiB_In(0)_PAD );
+
+    Pin : Name = phiB_In_1(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL, ROUTABLE
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => phiB_In_1(0)__PA ,
+            fb => Net_325 ,
+            pad => phiB_In_1(0)_PAD );
+
+    Pin : Name = phiB_In_2(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL, ROUTABLE
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => phiB_In_2(0)__PA ,
+            fb => Net_360 ,
+            pad => phiB_In_2(0)_PAD );
+
+    Pin : Name = phiB_In_3(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL, ROUTABLE
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => phiB_In_3(0)__PA ,
+            fb => Net_394 ,
+            pad => phiB_In_3(0)_PAD );
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
+
+    ------------------------------------------------------------
+    Macrocell listing
+    ------------------------------------------------------------
+
+    MacroCell: Name=Net_112, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (CLK_digital) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_183
+        );
+        Output = Net_112 (fanout=1)
+
+    MacroCell: Name=Net_169, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (CLK_digital) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_182
+        );
+        Output = Net_169 (fanout=1)
+
+    MacroCell: Name=Net_224, Mode=(Combinatorial)
+        Total # of inputs        : 4
+        Total # of product terms : 4
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              !Net_169 * Net_182
+            + Net_169 * !Net_182
+            + !Net_112 * Net_183
+            + Net_112 * !Net_183
+        );
+        Output = Net_224 (fanout=2)
+        Properties               : 
+        {
+        }
+
+    MacroCell: Name=Net_326, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (CLK_digital) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_324
+        );
+        Output = Net_326 (fanout=1)
+
+    MacroCell: Name=Net_327, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (CLK_digital) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_325
+        );
+        Output = Net_327 (fanout=1)
+
+    MacroCell: Name=Net_347, Mode=(Combinatorial)
+        Total # of inputs        : 4
+        Total # of product terms : 4
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              !Net_324 * Net_326
+            + Net_324 * !Net_326
+            + !Net_325 * Net_327
+            + Net_325 * !Net_327
+        );
+        Output = Net_347 (fanout=2)
+        Properties               : 
+        {
+        }
+
+    MacroCell: Name=Net_361, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (CLK_digital) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_359
+        );
+        Output = Net_361 (fanout=1)
+
+    MacroCell: Name=Net_362, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (CLK_digital) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_360
+        );
+        Output = Net_362 (fanout=1)
+
+    MacroCell: Name=Net_382, Mode=(Combinatorial)
+        Total # of inputs        : 4
+        Total # of product terms : 4
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              !Net_359 * Net_361
+            + Net_359 * !Net_361
+            + !Net_360 * Net_362
+            + Net_360 * !Net_362
+        );
+        Output = Net_382 (fanout=2)
+        Properties               : 
+        {
+        }
+
+    MacroCell: Name=Net_395, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (CLK_digital) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_393
+        );
+        Output = Net_395 (fanout=1)
+
+    MacroCell: Name=Net_396, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (CLK_digital) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_394
+        );
+        Output = Net_396 (fanout=1)
+
+    MacroCell: Name=Net_416, Mode=(Combinatorial)
+        Total # of inputs        : 4
+        Total # of product terms : 4
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              !Net_393 * Net_395
+            + Net_393 * !Net_395
+            + !Net_394 * Net_396
+            + Net_394 * !Net_396
+        );
+        Output = Net_416 (fanout=2)
+        Properties               : 
+        {
+        }
+
+    MacroCell: Name=\Counter_1:CounterUDB:count_enable\, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Counter_1:CounterUDB:control_7\ * 
+              !\Counter_1:CounterUDB:count_stored_i\
+        );
+        Output = \Counter_1:CounterUDB:count_enable\ (fanout=1)
+
+    MacroCell: Name=\Counter_1:CounterUDB:count_stored_i\, Mode=(D-Register)
+        Total # of inputs        : 0
+        Total # of product terms : 0
+        List of special equations: 
+            Clock  = (ClockBlock_HFCLK) => Global
+            Clock Enable: PosEdge(Net_224__SYNC_OUT)
+        Main Equation            : 0 pterms
+        !(
+            0
+        );
+        Output = \Counter_1:CounterUDB:count_stored_i\ (fanout=1)
+
+    MacroCell: Name=\Counter_1:CounterUDB:prevCompare\, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (ClockBlock_HFCLK) => Global
+            Clock Enable: PosEdge(Net_224__SYNC_OUT)
+        Main Equation            : 1 pterm
+        (
+              \Counter_1:CounterUDB:cmp_out_i\
+        );
+        Output = \Counter_1:CounterUDB:prevCompare\ (fanout=1)
+
+    MacroCell: Name=\Counter_1:CounterUDB:status_0\, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Counter_1:CounterUDB:cmp_out_i\ * 
+              !\Counter_1:CounterUDB:prevCompare\
+        );
+        Output = \Counter_1:CounterUDB:status_0\ (fanout=1)
+
+    MacroCell: Name=\Counter_1:CounterUDB:status_3\, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Counter_1:CounterUDB:reload\ * 
+              !\Counter_1:CounterUDB:underflow_reg_i\
+        );
+        Output = \Counter_1:CounterUDB:status_3\ (fanout=1)
+
+    MacroCell: Name=\Counter_1:CounterUDB:underflow_reg_i\, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (ClockBlock_HFCLK) => Global
+            Clock Enable: PosEdge(Net_224__SYNC_OUT)
+        Main Equation            : 1 pterm
+        (
+              \Counter_1:CounterUDB:reload\
+        );
+        Output = \Counter_1:CounterUDB:underflow_reg_i\ (fanout=1)
+
+    MacroCell: Name=\Counter_2:CounterUDB:count_enable\, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Counter_2:CounterUDB:control_7\ * 
+              !\Counter_2:CounterUDB:count_stored_i\
+        );
+        Output = \Counter_2:CounterUDB:count_enable\ (fanout=1)
+
+    MacroCell: Name=\Counter_2:CounterUDB:count_stored_i\, Mode=(D-Register)
+        Total # of inputs        : 0
+        Total # of product terms : 0
+        List of special equations: 
+            Clock  = (ClockBlock_HFCLK) => Global
+            Clock Enable: PosEdge(Net_347__SYNC_OUT)
+        Main Equation            : 0 pterms
+        !(
+            0
+        );
+        Output = \Counter_2:CounterUDB:count_stored_i\ (fanout=1)
+
+    MacroCell: Name=\Counter_2:CounterUDB:prevCompare\, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (ClockBlock_HFCLK) => Global
+            Clock Enable: PosEdge(Net_347__SYNC_OUT)
+        Main Equation            : 1 pterm
+        (
+              \Counter_2:CounterUDB:cmp_out_i\
+        );
+        Output = \Counter_2:CounterUDB:prevCompare\ (fanout=1)
+
+    MacroCell: Name=\Counter_2:CounterUDB:status_0\, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Counter_2:CounterUDB:cmp_out_i\ * 
+              !\Counter_2:CounterUDB:prevCompare\
+        );
+        Output = \Counter_2:CounterUDB:status_0\ (fanout=1)
+
+    MacroCell: Name=\Counter_2:CounterUDB:status_3\, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Counter_2:CounterUDB:reload\ * 
+              !\Counter_2:CounterUDB:underflow_reg_i\
+        );
+        Output = \Counter_2:CounterUDB:status_3\ (fanout=1)
+
+    MacroCell: Name=\Counter_2:CounterUDB:underflow_reg_i\, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (ClockBlock_HFCLK) => Global
+            Clock Enable: PosEdge(Net_347__SYNC_OUT)
+        Main Equation            : 1 pterm
+        (
+              \Counter_2:CounterUDB:reload\
+        );
+        Output = \Counter_2:CounterUDB:underflow_reg_i\ (fanout=1)
+
+    MacroCell: Name=\Counter_3:CounterUDB:count_enable\, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Counter_3:CounterUDB:control_7\ * 
+              !\Counter_3:CounterUDB:count_stored_i\
+        );
+        Output = \Counter_3:CounterUDB:count_enable\ (fanout=1)
+
+    MacroCell: Name=\Counter_3:CounterUDB:count_stored_i\, Mode=(D-Register)
+        Total # of inputs        : 0
+        Total # of product terms : 0
+        List of special equations: 
+            Clock  = (ClockBlock_HFCLK) => Global
+            Clock Enable: PosEdge(Net_382__SYNC_OUT)
+        Main Equation            : 0 pterms
+        !(
+            0
+        );
+        Output = \Counter_3:CounterUDB:count_stored_i\ (fanout=1)
+
+    MacroCell: Name=\Counter_3:CounterUDB:prevCompare\, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (ClockBlock_HFCLK) => Global
+            Clock Enable: PosEdge(Net_382__SYNC_OUT)
+        Main Equation            : 1 pterm
+        (
+              \Counter_3:CounterUDB:cmp_out_i\
+        );
+        Output = \Counter_3:CounterUDB:prevCompare\ (fanout=1)
+
+    MacroCell: Name=\Counter_3:CounterUDB:status_0\, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Counter_3:CounterUDB:cmp_out_i\ * 
+              !\Counter_3:CounterUDB:prevCompare\
+        );
+        Output = \Counter_3:CounterUDB:status_0\ (fanout=1)
+
+    MacroCell: Name=\Counter_3:CounterUDB:status_3\, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Counter_3:CounterUDB:reload\ * 
+              !\Counter_3:CounterUDB:underflow_reg_i\
+        );
+        Output = \Counter_3:CounterUDB:status_3\ (fanout=1)
+
+    MacroCell: Name=\Counter_3:CounterUDB:underflow_reg_i\, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (ClockBlock_HFCLK) => Global
+            Clock Enable: PosEdge(Net_382__SYNC_OUT)
+        Main Equation            : 1 pterm
+        (
+              \Counter_3:CounterUDB:reload\
+        );
+        Output = \Counter_3:CounterUDB:underflow_reg_i\ (fanout=1)
+
+    MacroCell: Name=\Counter_4:CounterUDB:count_enable\, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Counter_4:CounterUDB:control_7\ * 
+              !\Counter_4:CounterUDB:count_stored_i\
+        );
+        Output = \Counter_4:CounterUDB:count_enable\ (fanout=1)
+
+    MacroCell: Name=\Counter_4:CounterUDB:count_stored_i\, Mode=(D-Register)
+        Total # of inputs        : 0
+        Total # of product terms : 0
+        List of special equations: 
+            Clock  = (ClockBlock_HFCLK) => Global
+            Clock Enable: PosEdge(Net_416__SYNC_OUT)
+        Main Equation            : 0 pterms
+        !(
+            0
+        );
+        Output = \Counter_4:CounterUDB:count_stored_i\ (fanout=1)
+
+    MacroCell: Name=\Counter_4:CounterUDB:prevCompare\, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (ClockBlock_HFCLK) => Global
+            Clock Enable: PosEdge(Net_416__SYNC_OUT)
+        Main Equation            : 1 pterm
+        (
+              \Counter_4:CounterUDB:cmp_out_i\
+        );
+        Output = \Counter_4:CounterUDB:prevCompare\ (fanout=1)
+
+    MacroCell: Name=\Counter_4:CounterUDB:status_0\, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Counter_4:CounterUDB:cmp_out_i\ * 
+              !\Counter_4:CounterUDB:prevCompare\
+        );
+        Output = \Counter_4:CounterUDB:status_0\ (fanout=1)
+
+    MacroCell: Name=\Counter_4:CounterUDB:status_3\, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Counter_4:CounterUDB:reload\ * 
+              !\Counter_4:CounterUDB:underflow_reg_i\
+        );
+        Output = \Counter_4:CounterUDB:status_3\ (fanout=1)
+
+    MacroCell: Name=\Counter_4:CounterUDB:underflow_reg_i\, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (ClockBlock_HFCLK) => Global
+            Clock Enable: PosEdge(Net_416__SYNC_OUT)
+        Main Equation            : 1 pterm
+        (
+              \Counter_4:CounterUDB:reload\
+        );
+        Output = \Counter_4:CounterUDB:underflow_reg_i\ (fanout=1)
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Datapath listing">
+
+    ------------------------------------------------------------
+    Datapath listing
+    ------------------------------------------------------------
+
+    datapathcell: Name =\Counter_1:CounterUDB:sC8:counterdp:u0\
+        PORT MAP (
+            clock => ClockBlock_HFCLK ,
+            cs_addr_1 => \Counter_1:CounterUDB:count_enable\ ,
+            cs_addr_0 => \Counter_1:CounterUDB:reload\ ,
+            z0_comb => \Counter_1:CounterUDB:reload\ ,
+            cl1_comb => \Counter_1:CounterUDB:cmp_out_i\ ,
+            f0_bus_stat_comb => \Counter_1:CounterUDB:status_6\ ,
+            f0_blk_stat_comb => \Counter_1:CounterUDB:status_5\ ,
+            clk_en => Net_224__SYNC_OUT );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000001000000000000001000000001000000010000000000000010000000000000000100000010101000010100000010000001000000101010000101000011111111000000001111111111111111101000000000000000000001000000000000000000011000"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: PosEdge(Net_224__SYNC_OUT)
+
+    datapathcell: Name =\Counter_2:CounterUDB:sC8:counterdp:u0\
+        PORT MAP (
+            clock => ClockBlock_HFCLK ,
+            cs_addr_1 => \Counter_2:CounterUDB:count_enable\ ,
+            cs_addr_0 => \Counter_2:CounterUDB:reload\ ,
+            z0_comb => \Counter_2:CounterUDB:reload\ ,
+            cl1_comb => \Counter_2:CounterUDB:cmp_out_i\ ,
+            f0_bus_stat_comb => \Counter_2:CounterUDB:status_6\ ,
+            f0_blk_stat_comb => \Counter_2:CounterUDB:status_5\ ,
+            clk_en => Net_347__SYNC_OUT );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000001000000000000001000000001000000010000000000000010000000000000000100000010101000010100000010000001000000101010000101000011111111000000001111111111111111101000000000000000000001000000000000000000011000"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: PosEdge(Net_347__SYNC_OUT)
+
+    datapathcell: Name =\Counter_3:CounterUDB:sC8:counterdp:u0\
+        PORT MAP (
+            clock => ClockBlock_HFCLK ,
+            cs_addr_1 => \Counter_3:CounterUDB:count_enable\ ,
+            cs_addr_0 => \Counter_3:CounterUDB:reload\ ,
+            z0_comb => \Counter_3:CounterUDB:reload\ ,
+            cl1_comb => \Counter_3:CounterUDB:cmp_out_i\ ,
+            f0_bus_stat_comb => \Counter_3:CounterUDB:status_6\ ,
+            f0_blk_stat_comb => \Counter_3:CounterUDB:status_5\ ,
+            clk_en => Net_382__SYNC_OUT );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000001000000000000001000000001000000010000000000000010000000000000000100000010101000010100000010000001000000101010000101000011111111000000001111111111111111101000000000000000000001000000000000000000011000"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: PosEdge(Net_382__SYNC_OUT)
+
+    datapathcell: Name =\Counter_4:CounterUDB:sC8:counterdp:u0\
+        PORT MAP (
+            clock => ClockBlock_HFCLK ,
+            cs_addr_1 => \Counter_4:CounterUDB:count_enable\ ,
+            cs_addr_0 => \Counter_4:CounterUDB:reload\ ,
+            z0_comb => \Counter_4:CounterUDB:reload\ ,
+            cl1_comb => \Counter_4:CounterUDB:cmp_out_i\ ,
+            f0_bus_stat_comb => \Counter_4:CounterUDB:status_6\ ,
+            f0_blk_stat_comb => \Counter_4:CounterUDB:status_5\ ,
+            clk_en => Net_416__SYNC_OUT );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000001000000000000001000000001000000010000000000000010000000000000000100000010101000010100000010000001000000101010000101000011111111000000001111111111111111101000000000000000000001000000000000000000011000"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: PosEdge(Net_416__SYNC_OUT)
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Status register listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="StatusI register listing">
+
+    ------------------------------------------------------------
+    StatusI register listing
+    ------------------------------------------------------------
+
+    statusicell: Name =\Counter_1:CounterUDB:sSTSReg:rstSts:stsreg\
+        PORT MAP (
+            clock => ClockBlock_HFCLK ,
+            status_6 => \Counter_1:CounterUDB:status_6\ ,
+            status_5 => \Counter_1:CounterUDB:status_5\ ,
+            status_3 => \Counter_1:CounterUDB:status_3\ ,
+            status_1 => \Counter_1:CounterUDB:reload\ ,
+            status_0 => \Counter_1:CounterUDB:status_0\ ,
+            clk_en => Net_224__SYNC_OUT );
+        Properties:
+        {
+            cy_force_order = 1
+            cy_int_mask = "1111111"
+            cy_md_select = "0011111"
+        }
+        Clock Polarity: Active High
+        Clock Enable: PosEdge(Net_224__SYNC_OUT)
+
+    statusicell: Name =\Counter_2:CounterUDB:sSTSReg:rstSts:stsreg\
+        PORT MAP (
+            clock => ClockBlock_HFCLK ,
+            status_6 => \Counter_2:CounterUDB:status_6\ ,
+            status_5 => \Counter_2:CounterUDB:status_5\ ,
+            status_3 => \Counter_2:CounterUDB:status_3\ ,
+            status_1 => \Counter_2:CounterUDB:reload\ ,
+            status_0 => \Counter_2:CounterUDB:status_0\ ,
+            clk_en => Net_347__SYNC_OUT );
+        Properties:
+        {
+            cy_force_order = 1
+            cy_int_mask = "1111111"
+            cy_md_select = "0011111"
+        }
+        Clock Polarity: Active High
+        Clock Enable: PosEdge(Net_347__SYNC_OUT)
+
+    statusicell: Name =\Counter_3:CounterUDB:sSTSReg:rstSts:stsreg\
+        PORT MAP (
+            clock => ClockBlock_HFCLK ,
+            status_6 => \Counter_3:CounterUDB:status_6\ ,
+            status_5 => \Counter_3:CounterUDB:status_5\ ,
+            status_3 => \Counter_3:CounterUDB:status_3\ ,
+            status_1 => \Counter_3:CounterUDB:reload\ ,
+            status_0 => \Counter_3:CounterUDB:status_0\ ,
+            clk_en => Net_382__SYNC_OUT );
+        Properties:
+        {
+            cy_force_order = 1
+            cy_int_mask = "1111111"
+            cy_md_select = "0011111"
+        }
+        Clock Polarity: Active High
+        Clock Enable: PosEdge(Net_382__SYNC_OUT)
+
+    statusicell: Name =\Counter_4:CounterUDB:sSTSReg:rstSts:stsreg\
+        PORT MAP (
+            clock => ClockBlock_HFCLK ,
+            status_6 => \Counter_4:CounterUDB:status_6\ ,
+            status_5 => \Counter_4:CounterUDB:status_5\ ,
+            status_3 => \Counter_4:CounterUDB:status_3\ ,
+            status_1 => \Counter_4:CounterUDB:reload\ ,
+            status_0 => \Counter_4:CounterUDB:status_0\ ,
+            clk_en => Net_416__SYNC_OUT );
+        Properties:
+        {
+            cy_force_order = 1
+            cy_int_mask = "1111111"
+            cy_md_select = "0011111"
+        }
+        Clock Polarity: Active High
+        Clock Enable: PosEdge(Net_416__SYNC_OUT)
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Sync listing">
+
+    ------------------------------------------------------------
+    Sync listing
+    ------------------------------------------------------------
+
+    synccell: Name =Net_224__SYNC
+        PORT MAP (
+            in => Net_224 ,
+            out => Net_224__SYNC_OUT ,
+            clock => ClockBlock_HFCLK );
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    synccell: Name =Net_224__SYNC_1
+        PORT MAP (
+            in => Net_224 ,
+            out => Net_224__SYNC_OUT_1 ,
+            clock => ClockBlock_HFCLK );
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    synccell: Name =Net_347__SYNC
+        PORT MAP (
+            in => Net_347 ,
+            out => Net_347__SYNC_OUT ,
+            clock => ClockBlock_HFCLK );
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    synccell: Name =Net_347__SYNC_1
+        PORT MAP (
+            in => Net_347 ,
+            out => Net_347__SYNC_OUT_1 ,
+            clock => ClockBlock_HFCLK );
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    synccell: Name =Net_382__SYNC
+        PORT MAP (
+            in => Net_382 ,
+            out => Net_382__SYNC_OUT ,
+            clock => ClockBlock_HFCLK );
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    synccell: Name =Net_382__SYNC_1
+        PORT MAP (
+            in => Net_382 ,
+            out => Net_382__SYNC_OUT_1 ,
+            clock => ClockBlock_HFCLK );
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    synccell: Name =Net_416__SYNC
+        PORT MAP (
+            in => Net_416 ,
+            out => Net_416__SYNC_OUT ,
+            clock => ClockBlock_HFCLK );
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    synccell: Name =Net_416__SYNC_1
+        PORT MAP (
+            in => Net_416 ,
+            out => Net_416__SYNC_OUT_1 ,
+            clock => ClockBlock_HFCLK );
+        Clock Polarity: Active High
+        Clock Enable: True
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Control register listing">
+
+    ------------------------------------------------------------
+    Control register listing
+    ------------------------------------------------------------
+
+    controlcell: Name =\Counter_1:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\
+        PORT MAP (
+            clock => ClockBlock_HFCLK ,
+            control_7 => \Counter_1:CounterUDB:control_7\ ,
+            control_6 => \Counter_1:CounterUDB:control_6\ ,
+            control_5 => \Counter_1:CounterUDB:control_5\ ,
+            control_4 => \Counter_1:CounterUDB:control_4\ ,
+            control_3 => \Counter_1:CounterUDB:control_3\ ,
+            control_2 => \Counter_1:CounterUDB:control_2\ ,
+            control_1 => \Counter_1:CounterUDB:control_1\ ,
+            control_0 => \Counter_1:CounterUDB:control_0\ ,
+            clk_en => Net_224__SYNC_OUT_1 );
+        Properties:
+        {
+            cy_ctrl_mode_0 = "11111111"
+            cy_ctrl_mode_1 = "00000000"
+            cy_ext_reset = 0
+            cy_force_order = 1
+            cy_init_value = "00000000"
+        }
+        Clock Polarity: Active High
+        Clock Enable: PosEdge(Net_224__SYNC_OUT_1)
+
+    controlcell: Name =\Counter_2:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\
+        PORT MAP (
+            clock => ClockBlock_HFCLK ,
+            control_7 => \Counter_2:CounterUDB:control_7\ ,
+            control_6 => \Counter_2:CounterUDB:control_6\ ,
+            control_5 => \Counter_2:CounterUDB:control_5\ ,
+            control_4 => \Counter_2:CounterUDB:control_4\ ,
+            control_3 => \Counter_2:CounterUDB:control_3\ ,
+            control_2 => \Counter_2:CounterUDB:control_2\ ,
+            control_1 => \Counter_2:CounterUDB:control_1\ ,
+            control_0 => \Counter_2:CounterUDB:control_0\ ,
+            clk_en => Net_347__SYNC_OUT_1 );
+        Properties:
+        {
+            cy_ctrl_mode_0 = "11111111"
+            cy_ctrl_mode_1 = "00000000"
+            cy_ext_reset = 0
+            cy_force_order = 1
+            cy_init_value = "00000000"
+        }
+        Clock Polarity: Active High
+        Clock Enable: PosEdge(Net_347__SYNC_OUT_1)
+
+    controlcell: Name =\Counter_3:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\
+        PORT MAP (
+            clock => ClockBlock_HFCLK ,
+            control_7 => \Counter_3:CounterUDB:control_7\ ,
+            control_6 => \Counter_3:CounterUDB:control_6\ ,
+            control_5 => \Counter_3:CounterUDB:control_5\ ,
+            control_4 => \Counter_3:CounterUDB:control_4\ ,
+            control_3 => \Counter_3:CounterUDB:control_3\ ,
+            control_2 => \Counter_3:CounterUDB:control_2\ ,
+            control_1 => \Counter_3:CounterUDB:control_1\ ,
+            control_0 => \Counter_3:CounterUDB:control_0\ ,
+            clk_en => Net_382__SYNC_OUT_1 );
+        Properties:
+        {
+            cy_ctrl_mode_0 = "11111111"
+            cy_ctrl_mode_1 = "00000000"
+            cy_ext_reset = 0
+            cy_force_order = 1
+            cy_init_value = "00000000"
+        }
+        Clock Polarity: Active High
+        Clock Enable: PosEdge(Net_382__SYNC_OUT_1)
+
+    controlcell: Name =\Counter_4:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\
+        PORT MAP (
+            clock => ClockBlock_HFCLK ,
+            control_7 => \Counter_4:CounterUDB:control_7\ ,
+            control_6 => \Counter_4:CounterUDB:control_6\ ,
+            control_5 => \Counter_4:CounterUDB:control_5\ ,
+            control_4 => \Counter_4:CounterUDB:control_4\ ,
+            control_3 => \Counter_4:CounterUDB:control_3\ ,
+            control_2 => \Counter_4:CounterUDB:control_2\ ,
+            control_1 => \Counter_4:CounterUDB:control_1\ ,
+            control_0 => \Counter_4:CounterUDB:control_0\ ,
+            clk_en => Net_416__SYNC_OUT_1 );
+        Properties:
+        {
+            cy_ctrl_mode_0 = "11111111"
+            cy_ctrl_mode_1 = "00000000"
+            cy_ext_reset = 0
+            cy_force_order = 1
+            cy_init_value = "00000000"
+        }
+        Clock Polarity: Active High
+        Clock Enable: PosEdge(Net_416__SYNC_OUT_1)
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Count7 listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="DRQ listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Interrupt listing">
+    </CYPRESSTAG>
+</CYPRESSTAG>
+<CYPRESSTAG name="Technology mapping summary" expanded>
+
+------------------------------------------------------------
+Technology mapping summary
+------------------------------------------------------------
+
+Resource Type                 : Used : Free :  Max :  % Used
+============================================================
+Digital clock dividers        :    1 :    3 :    4 :  25.00%
+Pins                          :   14 :   22 :   36 :  38.89%
+UDB Macrocells                :   36 :   -4 :   32 : 112.50%
+Error: mpr.M0014: Resource limit: Maximum number of UDB Macrocells exceeded (max=32, needed=36). (App=cydsfit)
+UDB Unique Pterms             :   44 :   20 :   64 :  68.75%
+UDB Total Pterms              :   44 :      :      : 
+UDB Datapath Cells            :    4 :    0 :    4 : 100.00%
+UDB Status Cells              :    6 :   -2 :    4 : 150.00%
+Error: mpr.M0014: Resource limit: Maximum number of UDB Status Cells exceeded (max=4, needed=6). (App=cydsfit)
+            StatusI Registers :    4 
+                   Sync Cells :    8 (in 2 status cells)
+UDB Control Cells             :    4 :    0 :    4 : 100.00%
+            Control Registers :    4 
+Interrupts                    :    0 :   32 :   32 :   0.00%
+Comparator/Opamp Fixed Blocks :    0 :    2 :    2 :   0.00%
+SAR Fixed Blocks              :    0 :    1 :    1 :   0.00%
+CSD Fixed Blocks              :    0 :    1 :    1 :   0.00%
+CapSense Blocks               :    0 :    1 :    1 :   0.00%
+8-bit CapSense IDACs          :    0 :    1 :    1 :   0.00%
+7-bit CapSense IDACs          :    0 :    1 :    1 :   0.00%
+Temperature Sensors           :    0 :    1 :    1 :   0.00%
+Low Power Comparators         :    0 :    2 :    2 :   0.00%
+TCPWM Blocks                  :    0 :    4 :    4 :   0.00%
+Serial Communication Blocks   :    0 :    2 :    2 :   0.00%
+Segment LCD Blocks            :    0 :    1 :    1 :   0.00%
+</CYPRESSTAG>
+Technology Mapping: Elapsed time ==> 1s.356ms
+Tech mapping phase: Elapsed time ==> 1s.683ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Database update...">
+Design database save phase: Elapsed time ==> 0s.301ms
+</CYPRESSTAG>
+cydsfit: Elapsed time ==> 2s.406ms
+</CYPRESSTAG>
+Fitter phase: Elapsed time ==> 2s.536ms
+Fitter phase: Elapsed time ==> 0s.000ms
+Dependency generation phase: Elapsed time ==> 0s.080ms
+Cleanup phase: Elapsed time ==> 0s.007ms

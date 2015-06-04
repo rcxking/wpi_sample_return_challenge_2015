@@ -1,0 +1,760 @@
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccpi9amd.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"main.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.comm	InterruptCnt,4,4
+  18              		.section	.text.InterruptHandler,"ax",%progbits
+  19              		.align	2
+  20              		.global	InterruptHandler
+  21              		.code	16
+  22              		.thumb_func
+  23              		.type	InterruptHandler, %function
+  24              	InterruptHandler:
+  25              	.LFB33:
+  26              		.file 1 ".\\main.c"
+   1:.\main.c      **** /*******************************************************************************
+   2:.\main.c      **** * File Name: main.c
+   3:.\main.c      **** *
+   4:.\main.c      **** * Version: 2.00
+   5:.\main.c      **** *
+   6:.\main.c      **** * Description:
+   7:.\main.c      **** *  This is source code for the datasheet example of the TCPWM (Quadrature 
+   8:.\main.c      **** *  Decoder mode) component.
+   9:.\main.c      **** *
+  10:.\main.c      **** ********************************************************************************
+  11:.\main.c      **** * Copyright 2013-2014, Cypress Semiconductor Corporation. All rights reserved.
+  12:.\main.c      **** * This software is owned by Cypress Semiconductor Corporation and is protected
+  13:.\main.c      **** * by and subject to worldwide patent and copyright laws and treaties.
+  14:.\main.c      **** * Therefore, you may use this software only as provided in the license agreement
+  15:.\main.c      **** * accompanying the software package from which you obtained this software.
+  16:.\main.c      **** * CYPRESS AND ITS SUPPLIERS MAKE NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+  17:.\main.c      **** * WITH REGARD TO THIS SOFTWARE, INCLUDING, BUT NOT LIMITED TO, NONINFRINGEMENT,
+  18:.\main.c      **** * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+  19:.\main.c      **** *******************************************************************************/
+  20:.\main.c      **** 
+  21:.\main.c      **** #include <project.h>
+  22:.\main.c      **** 
+  23:.\main.c      **** #define DELAY       (0x0u)
+  24:.\main.c      **** #define UP          (0x1u)
+  25:.\main.c      **** #define DOWN        (0x0u)
+  26:.\main.c      **** #define CNT_PULSE   (0x8000u)
+  27:.\main.c      **** 
+  28:.\main.c      **** uint32 InterruptCnt;
+  29:.\main.c      **** 
+  30:.\main.c      **** 
+  31:.\main.c      **** /*******************************************************************************
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccpi9amd.s 			page 2
+
+
+  32:.\main.c      **** * Define Interrupt service routine and allocate an vector to the Interrupt
+  33:.\main.c      **** ********************************************************************************/
+  34:.\main.c      **** CY_ISR(InterruptHandler)
+  35:.\main.c      **** {
+  27              		.loc 1 35 0
+  28              		.cfi_startproc
+  29 0000 80B5     		push	{r7, lr}
+  30              		.cfi_def_cfa_offset 8
+  31              		.cfi_offset 7, -8
+  32              		.cfi_offset 14, -4
+  33 0002 00AF     		add	r7, sp, #0
+  34              		.cfi_def_cfa_register 7
+  36:.\main.c      **** 	/* Clear Inerrupt */
+  37:.\main.c      ****    	//QuadDec_ClearInterrupt(QuadDec_INTR_MASK_CC_MATCH);
+  38:.\main.c      ****     
+  39:.\main.c      ****     //LED_GREEN_Write(0u);
+  40:.\main.c      ****     CyDelay(200u);
+  35              		.loc 1 40 0
+  36 0004 C820     		mov	r0, #200
+  37 0006 FFF7FEFF 		bl	CyDelay
+  41:.\main.c      ****     LED_GREEN_Write(1u);  
+  38              		.loc 1 41 0
+  39 000a 0120     		mov	r0, #1
+  40 000c FFF7FEFF 		bl	LED_GREEN_Write
+  42:.\main.c      **** }
+  41              		.loc 1 42 0
+  42 0010 BD46     		mov	sp, r7
+  43              		@ sp needed
+  44 0012 80BD     		pop	{r7, pc}
+  45              		.cfi_endproc
+  46              	.LFE33:
+  47              		.size	InterruptHandler, .-InterruptHandler
+  48              		.section	.text.PhiAbGeneration,"ax",%progbits
+  49              		.align	2
+  50              		.code	16
+  51              		.thumb_func
+  52              		.type	PhiAbGeneration, %function
+  53              	PhiAbGeneration:
+  54              	.LFB34:
+  43:.\main.c      **** 
+  44:.\main.c      **** 
+  45:.\main.c      **** /*******************************************************************************
+  46:.\main.c      **** * Function Name: PhiAbGeneration
+  47:.\main.c      **** ********************************************************************************
+  48:.\main.c      **** *
+  49:.\main.c      **** * Summary:
+  50:.\main.c      **** *  Generates PhiA pulses
+  51:.\main.c      **** *
+  52:.\main.c      **** * Parameters direction: 
+  53:.\main.c      **** *  count: count of pulses
+  54:.\main.c      **** *
+  55:.\main.c      **** * Return:
+  56:.\main.c      **** *  None
+  57:.\main.c      **** *
+  58:.\main.c      **** *******************************************************************************/
+  59:.\main.c      **** static void PhiAbGeneration(uint32 count)
+  60:.\main.c      **** {
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccpi9amd.s 			page 3
+
+
+  55              		.loc 1 60 0
+  56              		.cfi_startproc
+  57 0000 80B5     		push	{r7, lr}
+  58              		.cfi_def_cfa_offset 8
+  59              		.cfi_offset 7, -8
+  60              		.cfi_offset 14, -4
+  61 0002 84B0     		sub	sp, sp, #16
+  62              		.cfi_def_cfa_offset 24
+  63 0004 00AF     		add	r7, sp, #0
+  64              		.cfi_def_cfa_register 7
+  65 0006 7860     		str	r0, [r7, #4]
+  61:.\main.c      **** 	uint32 tmp;
+  62:.\main.c      **** 	
+  63:.\main.c      **** 	for(tmp=0; tmp < count; tmp++)
+  66              		.loc 1 63 0
+  67 0008 0023     		mov	r3, #0
+  68 000a FB60     		str	r3, [r7, #12]
+  69 000c 0EE0     		b	.L3
+  70              	.L4:
+  64:.\main.c      **** 	{
+  65:.\main.c      ****             phiA_Out_Write (UP); 
+  71              		.loc 1 65 0 discriminator 2
+  72 000e 0120     		mov	r0, #1
+  73 0010 FFF7FEFF 		bl	phiA_Out_Write
+  66:.\main.c      **** 			CyDelay(DELAY);
+  74              		.loc 1 66 0 discriminator 2
+  75 0014 0020     		mov	r0, #0
+  76 0016 FFF7FEFF 		bl	CyDelay
+  67:.\main.c      **** 			phiA_Out_Write (DOWN); 
+  77              		.loc 1 67 0 discriminator 2
+  78 001a 0020     		mov	r0, #0
+  79 001c FFF7FEFF 		bl	phiA_Out_Write
+  68:.\main.c      ****             CyDelay(DELAY);
+  80              		.loc 1 68 0 discriminator 2
+  81 0020 0020     		mov	r0, #0
+  82 0022 FFF7FEFF 		bl	CyDelay
+  63:.\main.c      **** 	for(tmp=0; tmp < count; tmp++)
+  83              		.loc 1 63 0 discriminator 2
+  84 0026 FB68     		ldr	r3, [r7, #12]
+  85 0028 0133     		add	r3, r3, #1
+  86 002a FB60     		str	r3, [r7, #12]
+  87              	.L3:
+  63:.\main.c      **** 	for(tmp=0; tmp < count; tmp++)
+  88              		.loc 1 63 0 is_stmt 0 discriminator 1
+  89 002c FA68     		ldr	r2, [r7, #12]
+  90 002e 7B68     		ldr	r3, [r7, #4]
+  91 0030 9A42     		cmp	r2, r3
+  92 0032 ECD3     		bcc	.L4
+  69:.\main.c      **** 	}
+  70:.\main.c      **** }
+  93              		.loc 1 70 0 is_stmt 1
+  94 0034 BD46     		mov	sp, r7
+  95 0036 04B0     		add	sp, sp, #16
+  96              		@ sp needed
+  97 0038 80BD     		pop	{r7, pc}
+  98              		.cfi_endproc
+  99              	.LFE34:
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccpi9amd.s 			page 4
+
+
+ 100              		.size	PhiAbGeneration, .-PhiAbGeneration
+ 101 003a C046     		.section	.text.main,"ax",%progbits
+ 102              		.align	2
+ 103              		.global	main
+ 104              		.code	16
+ 105              		.thumb_func
+ 106              		.type	main, %function
+ 107              	main:
+ 108              	.LFB35:
+  71:.\main.c      **** 
+  72:.\main.c      **** int main()
+  73:.\main.c      **** {   
+ 109              		.loc 1 73 0
+ 110              		.cfi_startproc
+ 111 0000 80B5     		push	{r7, lr}
+ 112              		.cfi_def_cfa_offset 8
+ 113              		.cfi_offset 7, -8
+ 114              		.cfi_offset 14, -4
+ 115 0002 00AF     		add	r7, sp, #0
+ 116              		.cfi_def_cfa_register 7
+  74:.\main.c      ****     #if (CY_PSOC4_4000)
+  75:.\main.c      ****         CySysWdtDisable();
+  76:.\main.c      ****     #endif /* (CY_PSOC4_4000) */
+  77:.\main.c      ****      
+  78:.\main.c      ****     CyDelay(50u);
+ 117              		.loc 1 78 0
+ 118 0004 3220     		mov	r0, #50
+ 119 0006 FFF7FEFF 		bl	CyDelay
+  79:.\main.c      ****     
+  80:.\main.c      ****     /* Enable the global interrupt */
+  81:.\main.c      ****     CyGlobalIntEnable;
+ 120              		.loc 1 81 0
+ 121              	@ 81 ".\main.c" 1
+ 122 000a 62B6     		CPSIE   i
+ 123              	@ 0 "" 2
+ 124              		.code	16
+ 125              	.L6:
+  82:.\main.c      ****     
+  83:.\main.c      ****     /* Enable the Interrupt component connected to interrupt */
+  84:.\main.c      ****    // CC_ISR_StartEx(InterruptHandler);
+  85:.\main.c      **** 
+  86:.\main.c      **** 	/* Start the components */
+  87:.\main.c      **** //    QuadDec_Start();
+  88:.\main.c      **** 
+  89:.\main.c      ****     /* Set index trigger */
+  90:.\main.c      ****    // QuadDec_TriggerCommand(QuadDec_MASK, QuadDec_CMD_RELOAD);
+  91:.\main.c      ****     
+  92:.\main.c      ****     for(;;)
+  93:.\main.c      ****     {
+  94:.\main.c      ****         PhiAbGeneration(CNT_PULSE);
+ 126              		.loc 1 94 0 discriminator 1
+ 127 000c 8023     		mov	r3, #128
+ 128 000e 1B02     		lsl	r3, r3, #8
+ 129 0010 181C     		mov	r0, r3
+ 130 0012 FFF7FEFF 		bl	PhiAbGeneration
+  95:.\main.c      ****     }
+ 131              		.loc 1 95 0 discriminator 1
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccpi9amd.s 			page 5
+
+
+ 132 0016 F9E7     		b	.L6
+ 133              		.cfi_endproc
+ 134              	.LFE35:
+ 135              		.size	main, .-main
+ 136              		.text
+ 137              	.Letext0:
+ 138              		.file 2 ".\\Generated_Source\\PSoC4/cytypes.h"
+ 139              		.section	.debug_info,"",%progbits
+ 140              	.Ldebug_info0:
+ 141 0000 0A010000 		.4byte	0x10a
+ 142 0004 0400     		.2byte	0x4
+ 143 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 144 000a 04       		.byte	0x4
+ 145 000b 01       		.uleb128 0x1
+ 146 000c 56000000 		.4byte	.LASF13
+ 147 0010 01       		.byte	0x1
+ 148 0011 4D010000 		.4byte	.LASF14
+ 149 0015 74010000 		.4byte	.LASF15
+ 150 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 151 001d 00000000 		.4byte	0
+ 152 0021 00000000 		.4byte	.Ldebug_line0
+ 153 0025 02       		.uleb128 0x2
+ 154 0026 01       		.byte	0x1
+ 155 0027 06       		.byte	0x6
+ 156 0028 28010000 		.4byte	.LASF0
+ 157 002c 02       		.uleb128 0x2
+ 158 002d 01       		.byte	0x1
+ 159 002e 08       		.byte	0x8
+ 160 002f D2000000 		.4byte	.LASF1
+ 161 0033 02       		.uleb128 0x2
+ 162 0034 02       		.byte	0x2
+ 163 0035 05       		.byte	0x5
+ 164 0036 F4000000 		.4byte	.LASF2
+ 165 003a 02       		.uleb128 0x2
+ 166 003b 02       		.byte	0x2
+ 167 003c 07       		.byte	0x7
+ 168 003d 15010000 		.4byte	.LASF3
+ 169 0041 02       		.uleb128 0x2
+ 170 0042 04       		.byte	0x4
+ 171 0043 05       		.byte	0x5
+ 172 0044 EB000000 		.4byte	.LASF4
+ 173 0048 02       		.uleb128 0x2
+ 174 0049 04       		.byte	0x4
+ 175 004a 07       		.byte	0x7
+ 176 004b 27000000 		.4byte	.LASF5
+ 177 004f 02       		.uleb128 0x2
+ 178 0050 08       		.byte	0x8
+ 179 0051 05       		.byte	0x5
+ 180 0052 00000000 		.4byte	.LASF6
+ 181 0056 02       		.uleb128 0x2
+ 182 0057 08       		.byte	0x8
+ 183 0058 07       		.byte	0x7
+ 184 0059 39000000 		.4byte	.LASF7
+ 185 005d 03       		.uleb128 0x3
+ 186 005e 04       		.byte	0x4
+ 187 005f 05       		.byte	0x5
+ 188 0060 696E7400 		.ascii	"int\000"
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccpi9amd.s 			page 6
+
+
+ 189 0064 02       		.uleb128 0x2
+ 190 0065 04       		.byte	0x4
+ 191 0066 07       		.byte	0x7
+ 192 0067 15000000 		.4byte	.LASF8
+ 193 006b 04       		.uleb128 0x4
+ 194 006c 0E000000 		.4byte	.LASF16
+ 195 0070 02       		.byte	0x2
+ 196 0071 A3       		.byte	0xa3
+ 197 0072 48000000 		.4byte	0x48
+ 198 0076 02       		.uleb128 0x2
+ 199 0077 04       		.byte	0x4
+ 200 0078 04       		.byte	0x4
+ 201 0079 50000000 		.4byte	.LASF9
+ 202 007d 02       		.uleb128 0x2
+ 203 007e 08       		.byte	0x8
+ 204 007f 04       		.byte	0x4
+ 205 0080 0E010000 		.4byte	.LASF10
+ 206 0084 02       		.uleb128 0x2
+ 207 0085 01       		.byte	0x1
+ 208 0086 08       		.byte	0x8
+ 209 0087 E0000000 		.4byte	.LASF11
+ 210 008b 02       		.uleb128 0x2
+ 211 008c 04       		.byte	0x4
+ 212 008d 07       		.byte	0x7
+ 213 008e 44010000 		.4byte	.LASF12
+ 214 0092 05       		.uleb128 0x5
+ 215 0093 56010000 		.4byte	.LASF17
+ 216 0097 01       		.byte	0x1
+ 217 0098 22       		.byte	0x22
+ 218 0099 00000000 		.4byte	.LFB33
+ 219 009d 14000000 		.4byte	.LFE33-.LFB33
+ 220 00a1 01       		.uleb128 0x1
+ 221 00a2 9C       		.byte	0x9c
+ 222 00a3 B5000000 		.4byte	0xb5
+ 223 00a7 06       		.uleb128 0x6
+ 224 00a8 FE000000 		.4byte	.LASF18
+ 225 00ac 01       		.byte	0x1
+ 226 00ad 29       		.byte	0x29
+ 227 00ae 5D000000 		.4byte	0x5d
+ 228 00b2 07       		.uleb128 0x7
+ 229 00b3 00       		.byte	0
+ 230 00b4 00       		.byte	0
+ 231 00b5 08       		.uleb128 0x8
+ 232 00b6 34010000 		.4byte	.LASF19
+ 233 00ba 01       		.byte	0x1
+ 234 00bb 3B       		.byte	0x3b
+ 235 00bc 00000000 		.4byte	.LFB34
+ 236 00c0 3A000000 		.4byte	.LFE34-.LFB34
+ 237 00c4 01       		.uleb128 0x1
+ 238 00c5 9C       		.byte	0x9c
+ 239 00c6 E7000000 		.4byte	0xe7
+ 240 00ca 09       		.uleb128 0x9
+ 241 00cb E5000000 		.4byte	.LASF20
+ 242 00cf 01       		.byte	0x1
+ 243 00d0 3B       		.byte	0x3b
+ 244 00d1 6B000000 		.4byte	0x6b
+ 245 00d5 02       		.uleb128 0x2
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccpi9amd.s 			page 7
+
+
+ 246 00d6 91       		.byte	0x91
+ 247 00d7 6C       		.sleb128 -20
+ 248 00d8 0A       		.uleb128 0xa
+ 249 00d9 746D7000 		.ascii	"tmp\000"
+ 250 00dd 01       		.byte	0x1
+ 251 00de 3D       		.byte	0x3d
+ 252 00df 6B000000 		.4byte	0x6b
+ 253 00e3 02       		.uleb128 0x2
+ 254 00e4 91       		.byte	0x91
+ 255 00e5 74       		.sleb128 -12
+ 256 00e6 00       		.byte	0
+ 257 00e7 0B       		.uleb128 0xb
+ 258 00e8 22000000 		.4byte	.LASF21
+ 259 00ec 01       		.byte	0x1
+ 260 00ed 48       		.byte	0x48
+ 261 00ee 5D000000 		.4byte	0x5d
+ 262 00f2 00000000 		.4byte	.LFB35
+ 263 00f6 18000000 		.4byte	.LFE35-.LFB35
+ 264 00fa 01       		.uleb128 0x1
+ 265 00fb 9C       		.byte	0x9c
+ 266 00fc 0C       		.uleb128 0xc
+ 267 00fd 67010000 		.4byte	.LASF22
+ 268 0101 01       		.byte	0x1
+ 269 0102 1C       		.byte	0x1c
+ 270 0103 6B000000 		.4byte	0x6b
+ 271 0107 05       		.uleb128 0x5
+ 272 0108 03       		.byte	0x3
+ 273 0109 00000000 		.4byte	InterruptCnt
+ 274 010d 00       		.byte	0
+ 275              		.section	.debug_abbrev,"",%progbits
+ 276              	.Ldebug_abbrev0:
+ 277 0000 01       		.uleb128 0x1
+ 278 0001 11       		.uleb128 0x11
+ 279 0002 01       		.byte	0x1
+ 280 0003 25       		.uleb128 0x25
+ 281 0004 0E       		.uleb128 0xe
+ 282 0005 13       		.uleb128 0x13
+ 283 0006 0B       		.uleb128 0xb
+ 284 0007 03       		.uleb128 0x3
+ 285 0008 0E       		.uleb128 0xe
+ 286 0009 1B       		.uleb128 0x1b
+ 287 000a 0E       		.uleb128 0xe
+ 288 000b 55       		.uleb128 0x55
+ 289 000c 17       		.uleb128 0x17
+ 290 000d 11       		.uleb128 0x11
+ 291 000e 01       		.uleb128 0x1
+ 292 000f 10       		.uleb128 0x10
+ 293 0010 17       		.uleb128 0x17
+ 294 0011 00       		.byte	0
+ 295 0012 00       		.byte	0
+ 296 0013 02       		.uleb128 0x2
+ 297 0014 24       		.uleb128 0x24
+ 298 0015 00       		.byte	0
+ 299 0016 0B       		.uleb128 0xb
+ 300 0017 0B       		.uleb128 0xb
+ 301 0018 3E       		.uleb128 0x3e
+ 302 0019 0B       		.uleb128 0xb
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccpi9amd.s 			page 8
+
+
+ 303 001a 03       		.uleb128 0x3
+ 304 001b 0E       		.uleb128 0xe
+ 305 001c 00       		.byte	0
+ 306 001d 00       		.byte	0
+ 307 001e 03       		.uleb128 0x3
+ 308 001f 24       		.uleb128 0x24
+ 309 0020 00       		.byte	0
+ 310 0021 0B       		.uleb128 0xb
+ 311 0022 0B       		.uleb128 0xb
+ 312 0023 3E       		.uleb128 0x3e
+ 313 0024 0B       		.uleb128 0xb
+ 314 0025 03       		.uleb128 0x3
+ 315 0026 08       		.uleb128 0x8
+ 316 0027 00       		.byte	0
+ 317 0028 00       		.byte	0
+ 318 0029 04       		.uleb128 0x4
+ 319 002a 16       		.uleb128 0x16
+ 320 002b 00       		.byte	0
+ 321 002c 03       		.uleb128 0x3
+ 322 002d 0E       		.uleb128 0xe
+ 323 002e 3A       		.uleb128 0x3a
+ 324 002f 0B       		.uleb128 0xb
+ 325 0030 3B       		.uleb128 0x3b
+ 326 0031 0B       		.uleb128 0xb
+ 327 0032 49       		.uleb128 0x49
+ 328 0033 13       		.uleb128 0x13
+ 329 0034 00       		.byte	0
+ 330 0035 00       		.byte	0
+ 331 0036 05       		.uleb128 0x5
+ 332 0037 2E       		.uleb128 0x2e
+ 333 0038 01       		.byte	0x1
+ 334 0039 3F       		.uleb128 0x3f
+ 335 003a 19       		.uleb128 0x19
+ 336 003b 03       		.uleb128 0x3
+ 337 003c 0E       		.uleb128 0xe
+ 338 003d 3A       		.uleb128 0x3a
+ 339 003e 0B       		.uleb128 0xb
+ 340 003f 3B       		.uleb128 0x3b
+ 341 0040 0B       		.uleb128 0xb
+ 342 0041 27       		.uleb128 0x27
+ 343 0042 19       		.uleb128 0x19
+ 344 0043 11       		.uleb128 0x11
+ 345 0044 01       		.uleb128 0x1
+ 346 0045 12       		.uleb128 0x12
+ 347 0046 06       		.uleb128 0x6
+ 348 0047 40       		.uleb128 0x40
+ 349 0048 18       		.uleb128 0x18
+ 350 0049 9642     		.uleb128 0x2116
+ 351 004b 19       		.uleb128 0x19
+ 352 004c 01       		.uleb128 0x1
+ 353 004d 13       		.uleb128 0x13
+ 354 004e 00       		.byte	0
+ 355 004f 00       		.byte	0
+ 356 0050 06       		.uleb128 0x6
+ 357 0051 2E       		.uleb128 0x2e
+ 358 0052 01       		.byte	0x1
+ 359 0053 3F       		.uleb128 0x3f
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccpi9amd.s 			page 9
+
+
+ 360 0054 19       		.uleb128 0x19
+ 361 0055 03       		.uleb128 0x3
+ 362 0056 0E       		.uleb128 0xe
+ 363 0057 3A       		.uleb128 0x3a
+ 364 0058 0B       		.uleb128 0xb
+ 365 0059 3B       		.uleb128 0x3b
+ 366 005a 0B       		.uleb128 0xb
+ 367 005b 49       		.uleb128 0x49
+ 368 005c 13       		.uleb128 0x13
+ 369 005d 3C       		.uleb128 0x3c
+ 370 005e 19       		.uleb128 0x19
+ 371 005f 00       		.byte	0
+ 372 0060 00       		.byte	0
+ 373 0061 07       		.uleb128 0x7
+ 374 0062 18       		.uleb128 0x18
+ 375 0063 00       		.byte	0
+ 376 0064 00       		.byte	0
+ 377 0065 00       		.byte	0
+ 378 0066 08       		.uleb128 0x8
+ 379 0067 2E       		.uleb128 0x2e
+ 380 0068 01       		.byte	0x1
+ 381 0069 03       		.uleb128 0x3
+ 382 006a 0E       		.uleb128 0xe
+ 383 006b 3A       		.uleb128 0x3a
+ 384 006c 0B       		.uleb128 0xb
+ 385 006d 3B       		.uleb128 0x3b
+ 386 006e 0B       		.uleb128 0xb
+ 387 006f 27       		.uleb128 0x27
+ 388 0070 19       		.uleb128 0x19
+ 389 0071 11       		.uleb128 0x11
+ 390 0072 01       		.uleb128 0x1
+ 391 0073 12       		.uleb128 0x12
+ 392 0074 06       		.uleb128 0x6
+ 393 0075 40       		.uleb128 0x40
+ 394 0076 18       		.uleb128 0x18
+ 395 0077 9642     		.uleb128 0x2116
+ 396 0079 19       		.uleb128 0x19
+ 397 007a 01       		.uleb128 0x1
+ 398 007b 13       		.uleb128 0x13
+ 399 007c 00       		.byte	0
+ 400 007d 00       		.byte	0
+ 401 007e 09       		.uleb128 0x9
+ 402 007f 05       		.uleb128 0x5
+ 403 0080 00       		.byte	0
+ 404 0081 03       		.uleb128 0x3
+ 405 0082 0E       		.uleb128 0xe
+ 406 0083 3A       		.uleb128 0x3a
+ 407 0084 0B       		.uleb128 0xb
+ 408 0085 3B       		.uleb128 0x3b
+ 409 0086 0B       		.uleb128 0xb
+ 410 0087 49       		.uleb128 0x49
+ 411 0088 13       		.uleb128 0x13
+ 412 0089 02       		.uleb128 0x2
+ 413 008a 18       		.uleb128 0x18
+ 414 008b 00       		.byte	0
+ 415 008c 00       		.byte	0
+ 416 008d 0A       		.uleb128 0xa
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccpi9amd.s 			page 10
+
+
+ 417 008e 34       		.uleb128 0x34
+ 418 008f 00       		.byte	0
+ 419 0090 03       		.uleb128 0x3
+ 420 0091 08       		.uleb128 0x8
+ 421 0092 3A       		.uleb128 0x3a
+ 422 0093 0B       		.uleb128 0xb
+ 423 0094 3B       		.uleb128 0x3b
+ 424 0095 0B       		.uleb128 0xb
+ 425 0096 49       		.uleb128 0x49
+ 426 0097 13       		.uleb128 0x13
+ 427 0098 02       		.uleb128 0x2
+ 428 0099 18       		.uleb128 0x18
+ 429 009a 00       		.byte	0
+ 430 009b 00       		.byte	0
+ 431 009c 0B       		.uleb128 0xb
+ 432 009d 2E       		.uleb128 0x2e
+ 433 009e 00       		.byte	0
+ 434 009f 3F       		.uleb128 0x3f
+ 435 00a0 19       		.uleb128 0x19
+ 436 00a1 03       		.uleb128 0x3
+ 437 00a2 0E       		.uleb128 0xe
+ 438 00a3 3A       		.uleb128 0x3a
+ 439 00a4 0B       		.uleb128 0xb
+ 440 00a5 3B       		.uleb128 0x3b
+ 441 00a6 0B       		.uleb128 0xb
+ 442 00a7 49       		.uleb128 0x49
+ 443 00a8 13       		.uleb128 0x13
+ 444 00a9 11       		.uleb128 0x11
+ 445 00aa 01       		.uleb128 0x1
+ 446 00ab 12       		.uleb128 0x12
+ 447 00ac 06       		.uleb128 0x6
+ 448 00ad 40       		.uleb128 0x40
+ 449 00ae 18       		.uleb128 0x18
+ 450 00af 9642     		.uleb128 0x2116
+ 451 00b1 19       		.uleb128 0x19
+ 452 00b2 00       		.byte	0
+ 453 00b3 00       		.byte	0
+ 454 00b4 0C       		.uleb128 0xc
+ 455 00b5 34       		.uleb128 0x34
+ 456 00b6 00       		.byte	0
+ 457 00b7 03       		.uleb128 0x3
+ 458 00b8 0E       		.uleb128 0xe
+ 459 00b9 3A       		.uleb128 0x3a
+ 460 00ba 0B       		.uleb128 0xb
+ 461 00bb 3B       		.uleb128 0x3b
+ 462 00bc 0B       		.uleb128 0xb
+ 463 00bd 49       		.uleb128 0x49
+ 464 00be 13       		.uleb128 0x13
+ 465 00bf 3F       		.uleb128 0x3f
+ 466 00c0 19       		.uleb128 0x19
+ 467 00c1 02       		.uleb128 0x2
+ 468 00c2 18       		.uleb128 0x18
+ 469 00c3 00       		.byte	0
+ 470 00c4 00       		.byte	0
+ 471 00c5 00       		.byte	0
+ 472              		.section	.debug_aranges,"",%progbits
+ 473 0000 2C000000 		.4byte	0x2c
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccpi9amd.s 			page 11
+
+
+ 474 0004 0200     		.2byte	0x2
+ 475 0006 00000000 		.4byte	.Ldebug_info0
+ 476 000a 04       		.byte	0x4
+ 477 000b 00       		.byte	0
+ 478 000c 0000     		.2byte	0
+ 479 000e 0000     		.2byte	0
+ 480 0010 00000000 		.4byte	.LFB33
+ 481 0014 14000000 		.4byte	.LFE33-.LFB33
+ 482 0018 00000000 		.4byte	.LFB34
+ 483 001c 3A000000 		.4byte	.LFE34-.LFB34
+ 484 0020 00000000 		.4byte	.LFB35
+ 485 0024 18000000 		.4byte	.LFE35-.LFB35
+ 486 0028 00000000 		.4byte	0
+ 487 002c 00000000 		.4byte	0
+ 488              		.section	.debug_ranges,"",%progbits
+ 489              	.Ldebug_ranges0:
+ 490 0000 00000000 		.4byte	.LFB33
+ 491 0004 14000000 		.4byte	.LFE33
+ 492 0008 00000000 		.4byte	.LFB34
+ 493 000c 3A000000 		.4byte	.LFE34
+ 494 0010 00000000 		.4byte	.LFB35
+ 495 0014 18000000 		.4byte	.LFE35
+ 496 0018 00000000 		.4byte	0
+ 497 001c 00000000 		.4byte	0
+ 498              		.section	.debug_line,"",%progbits
+ 499              	.Ldebug_line0:
+ 500 0000 AC000000 		.section	.debug_str,"MS",%progbits,1
+ 500      02004500 
+ 500      00000201 
+ 500      FB0E0D00 
+ 500      01010101 
+ 501              	.LASF6:
+ 502 0000 6C6F6E67 		.ascii	"long long int\000"
+ 502      206C6F6E 
+ 502      6720696E 
+ 502      7400
+ 503              	.LASF16:
+ 504 000e 75696E74 		.ascii	"uint32\000"
+ 504      333200
+ 505              	.LASF8:
+ 506 0015 756E7369 		.ascii	"unsigned int\000"
+ 506      676E6564 
+ 506      20696E74 
+ 506      00
+ 507              	.LASF21:
+ 508 0022 6D61696E 		.ascii	"main\000"
+ 508      00
+ 509              	.LASF5:
+ 510 0027 6C6F6E67 		.ascii	"long unsigned int\000"
+ 510      20756E73 
+ 510      69676E65 
+ 510      6420696E 
+ 510      7400
+ 511              	.LASF7:
+ 512 0039 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 512      206C6F6E 
+ 512      6720756E 
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccpi9amd.s 			page 12
+
+
+ 512      7369676E 
+ 512      65642069 
+ 513              	.LASF9:
+ 514 0050 666C6F61 		.ascii	"float\000"
+ 514      7400
+ 515              	.LASF13:
+ 516 0056 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 516      4320342E 
+ 516      382E3420 
+ 516      32303134 
+ 516      30353236 
+ 517 0089 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 517      20726576 
+ 517      6973696F 
+ 517      6E203231 
+ 517      31333538 
+ 518 00bc 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 518      66756E63 
+ 518      74696F6E 
+ 518      2D736563 
+ 518      74696F6E 
+ 519              	.LASF1:
+ 520 00d2 756E7369 		.ascii	"unsigned char\000"
+ 520      676E6564 
+ 520      20636861 
+ 520      7200
+ 521              	.LASF11:
+ 522 00e0 63686172 		.ascii	"char\000"
+ 522      00
+ 523              	.LASF20:
+ 524 00e5 636F756E 		.ascii	"count\000"
+ 524      7400
+ 525              	.LASF4:
+ 526 00eb 6C6F6E67 		.ascii	"long int\000"
+ 526      20696E74 
+ 526      00
+ 527              	.LASF2:
+ 528 00f4 73686F72 		.ascii	"short int\000"
+ 528      7420696E 
+ 528      7400
+ 529              	.LASF18:
+ 530 00fe 4C45445F 		.ascii	"LED_GREEN_Write\000"
+ 530      47524545 
+ 530      4E5F5772 
+ 530      69746500 
+ 531              	.LASF10:
+ 532 010e 646F7562 		.ascii	"double\000"
+ 532      6C6500
+ 533              	.LASF3:
+ 534 0115 73686F72 		.ascii	"short unsigned int\000"
+ 534      7420756E 
+ 534      7369676E 
+ 534      65642069 
+ 534      6E7400
+ 535              	.LASF0:
+ 536 0128 7369676E 		.ascii	"signed char\000"
+ 536      65642063 
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccpi9amd.s 			page 13
+
+
+ 536      68617200 
+ 537              	.LASF19:
+ 538 0134 50686941 		.ascii	"PhiAbGeneration\000"
+ 538      6247656E 
+ 538      65726174 
+ 538      696F6E00 
+ 539              	.LASF12:
+ 540 0144 73697A65 		.ascii	"sizetype\000"
+ 540      74797065 
+ 540      00
+ 541              	.LASF14:
+ 542 014d 2E5C6D61 		.ascii	".\\main.c\000"
+ 542      696E2E63 
+ 542      00
+ 543              	.LASF17:
+ 544 0156 496E7465 		.ascii	"InterruptHandler\000"
+ 544      72727570 
+ 544      7448616E 
+ 544      646C6572 
+ 544      00
+ 545              	.LASF22:
+ 546 0167 496E7465 		.ascii	"InterruptCnt\000"
+ 546      72727570 
+ 546      74436E74 
+ 546      00
+ 547              	.LASF15:
+ 548 0174 433A5C55 		.ascii	"C:\\Users\\kit\\Documents\\PSoC Creator\\Design03\\"
+ 548      73657273 
+ 548      5C6B6974 
+ 548      5C446F63 
+ 548      756D656E 
+ 549 01a1 51756164 		.ascii	"QuadratureDecoder.cydsn\000"
+ 549      72617475 
+ 549      72654465 
+ 549      636F6465 
+ 549      722E6379 
+ 550              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

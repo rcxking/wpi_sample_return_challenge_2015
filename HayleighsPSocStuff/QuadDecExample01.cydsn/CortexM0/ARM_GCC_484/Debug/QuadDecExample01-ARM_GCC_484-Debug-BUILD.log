@@ -1,0 +1,7 @@
+--------------- Build Started: 05/27/2015 20:27:17 Project: QuadDecExample01, Configuration: ARM GCC 4.8.4 Debug ---------------
+cydsfit.exe -.appdatapath "C:\Users\kit\AppData\Local\Cypress Semiconductor\PSoC Creator\3.1" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p "C:\Users\kit\Documents\PSoC Creator\Design03\QuadDecExample01.cydsn\QuadDecExample01.cyprj" -d CY8C4245AXI-483 -s "C:\Users\kit\Documents\PSoC Creator\Design03\QuadDecExample01.cydsn\Generated_Source\PSoC4" -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+Elaborating Design...
+ADD: pft.M0084: error: A Bootloadable component was discovered in a project configured as a Normal project. Conflicting components are: Bootloadable_1. Remove the conflicting components or change the Application Type in the Build Settings dialog.
+ * C:\Users\kit\Documents\PSoC Creator\Design03\QuadDecExample01.cydsn\TopDesign\TopDesign.cysch (Instance:Bootloadable_1)
+Error: cdf.M0005: CyDsFit aborted due to errors, please address all errors and rerun CyDsFit. (App=cydsfit)
+--------------- Build Failed: 05/27/2015 20:27:23 ---------------

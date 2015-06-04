@@ -1,0 +1,7 @@
+C:\Users\kit\Documents\PSoC Creator\Design03\QuadDecExample01.cydsn\QuadDecExample01.cyprj|68bbe9ff-280c-4748-a003-962ad544c816
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|4cab65e1-71f0-4835-b21d-706e3683808f
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|7eab7715-18bd-4a79-bacf-ae722a6c98b4
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|13c0a8f3-a061-4ba4-9aae-3cab1ad5f4ab
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|f91db13f-0007-4887-8fe9-460d3db09c13
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|84e803f8-37fd-4666-8d0c-2137a9860af6
+C:\Users\kit\Documents\PSoC Creator\Design03\QuadratureDecoder.cydsn\QuadratureDecoder.cyprj|13e24835-232e-4146-b3c5-499b3bef5c80

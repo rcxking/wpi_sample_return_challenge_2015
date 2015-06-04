@@ -1,0 +1,345 @@
+ARM GAS  C:\Users\kit\AppData\Local\Temp\cckVtnRY.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"main.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.main,"ax",%progbits
+  18              		.align	2
+  19              		.global	main
+  20              		.code	16
+  21              		.thumb_func
+  22              		.type	main, %function
+  23              	main:
+  24              	.LFB33:
+  25              		.file 1 ".\\main.c"
+   1:.\main.c      **** /* ========================================
+   2:.\main.c      ****  *
+   3:.\main.c      ****  * Copyright YOUR COMPANY, THE YEAR
+   4:.\main.c      ****  * All Rights Reserved
+   5:.\main.c      ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:.\main.c      ****  *
+   7:.\main.c      ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:.\main.c      ****  * WHICH IS THE PROPERTY OF your company.
+   9:.\main.c      ****  *
+  10:.\main.c      ****  * ========================================
+  11:.\main.c      **** */
+  12:.\main.c      **** #include <project.h>
+  13:.\main.c      **** 
+  14:.\main.c      **** int main()
+  15:.\main.c      **** {
+  26              		.loc 1 15 0
+  27              		.cfi_startproc
+  28 0000 80B5     		push	{r7, lr}
+  29              		.cfi_def_cfa_offset 8
+  30              		.cfi_offset 7, -8
+  31              		.cfi_offset 14, -4
+  32 0002 00AF     		add	r7, sp, #0
+  33              		.cfi_def_cfa_register 7
+  34              	.L2:
+  16:.\main.c      ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+  17:.\main.c      **** 
+  18:.\main.c      ****     /* CyGlobalIntEnable; */ /* Uncomment this line to enable global interrupts. */
+  19:.\main.c      ****     for(;;)
+  20:.\main.c      ****     {
+  21:.\main.c      ****         /* Place your application code here. */
+  22:.\main.c      ****     }
+  35              		.loc 1 22 0 discriminator 1
+ARM GAS  C:\Users\kit\AppData\Local\Temp\cckVtnRY.s 			page 2
+
+
+  36 0004 FEE7     		b	.L2
+  37              		.cfi_endproc
+  38              	.LFE33:
+  39              		.size	main, .-main
+  40 0006 C046     		.text
+  41              	.Letext0:
+  42              		.section	.debug_info,"",%progbits
+  43              	.Ldebug_info0:
+  44 0000 99000000 		.4byte	0x99
+  45 0004 0400     		.2byte	0x4
+  46 0006 00000000 		.4byte	.Ldebug_abbrev0
+  47 000a 04       		.byte	0x4
+  48 000b 01       		.uleb128 0x1
+  49 000c 49000000 		.4byte	.LASF13
+  50 0010 01       		.byte	0x1
+  51 0011 53010000 		.4byte	.LASF14
+  52 0015 11010000 		.4byte	.LASF15
+  53 0019 00000000 		.4byte	.Ldebug_ranges0+0
+  54 001d 00000000 		.4byte	0
+  55 0021 00000000 		.4byte	.Ldebug_line0
+  56 0025 02       		.uleb128 0x2
+  57 0026 01       		.byte	0x1
+  58 0027 06       		.byte	0x6
+  59 0028 05010000 		.4byte	.LASF0
+  60 002c 02       		.uleb128 0x2
+  61 002d 01       		.byte	0x1
+  62 002e 08       		.byte	0x8
+  63 002f C5000000 		.4byte	.LASF1
+  64 0033 02       		.uleb128 0x2
+  65 0034 02       		.byte	0x2
+  66 0035 05       		.byte	0x5
+  67 0036 E1000000 		.4byte	.LASF2
+  68 003a 02       		.uleb128 0x2
+  69 003b 02       		.byte	0x2
+  70 003c 07       		.byte	0x7
+  71 003d F2000000 		.4byte	.LASF3
+  72 0041 02       		.uleb128 0x2
+  73 0042 04       		.byte	0x4
+  74 0043 05       		.byte	0x5
+  75 0044 D8000000 		.4byte	.LASF4
+  76 0048 02       		.uleb128 0x2
+  77 0049 04       		.byte	0x4
+  78 004a 07       		.byte	0x7
+  79 004b 20000000 		.4byte	.LASF5
+  80 004f 02       		.uleb128 0x2
+  81 0050 08       		.byte	0x8
+  82 0051 05       		.byte	0x5
+  83 0052 00000000 		.4byte	.LASF6
+  84 0056 02       		.uleb128 0x2
+  85 0057 08       		.byte	0x8
+  86 0058 07       		.byte	0x7
+  87 0059 32000000 		.4byte	.LASF7
+  88 005d 03       		.uleb128 0x3
+  89 005e 04       		.byte	0x4
+  90 005f 05       		.byte	0x5
+  91 0060 696E7400 		.ascii	"int\000"
+  92 0064 02       		.uleb128 0x2
+ARM GAS  C:\Users\kit\AppData\Local\Temp\cckVtnRY.s 			page 3
+
+
+  93 0065 04       		.byte	0x4
+  94 0066 07       		.byte	0x7
+  95 0067 0E000000 		.4byte	.LASF8
+  96 006b 02       		.uleb128 0x2
+  97 006c 04       		.byte	0x4
+  98 006d 04       		.byte	0x4
+  99 006e 4D010000 		.4byte	.LASF9
+ 100 0072 02       		.uleb128 0x2
+ 101 0073 08       		.byte	0x8
+ 102 0074 04       		.byte	0x4
+ 103 0075 EB000000 		.4byte	.LASF10
+ 104 0079 02       		.uleb128 0x2
+ 105 007a 01       		.byte	0x1
+ 106 007b 08       		.byte	0x8
+ 107 007c D3000000 		.4byte	.LASF11
+ 108 0080 02       		.uleb128 0x2
+ 109 0081 04       		.byte	0x4
+ 110 0082 07       		.byte	0x7
+ 111 0083 5C010000 		.4byte	.LASF12
+ 112 0087 04       		.uleb128 0x4
+ 113 0088 1B000000 		.4byte	.LASF16
+ 114 008c 01       		.byte	0x1
+ 115 008d 0E       		.byte	0xe
+ 116 008e 5D000000 		.4byte	0x5d
+ 117 0092 00000000 		.4byte	.LFB33
+ 118 0096 06000000 		.4byte	.LFE33-.LFB33
+ 119 009a 01       		.uleb128 0x1
+ 120 009b 9C       		.byte	0x9c
+ 121 009c 00       		.byte	0
+ 122              		.section	.debug_abbrev,"",%progbits
+ 123              	.Ldebug_abbrev0:
+ 124 0000 01       		.uleb128 0x1
+ 125 0001 11       		.uleb128 0x11
+ 126 0002 01       		.byte	0x1
+ 127 0003 25       		.uleb128 0x25
+ 128 0004 0E       		.uleb128 0xe
+ 129 0005 13       		.uleb128 0x13
+ 130 0006 0B       		.uleb128 0xb
+ 131 0007 03       		.uleb128 0x3
+ 132 0008 0E       		.uleb128 0xe
+ 133 0009 1B       		.uleb128 0x1b
+ 134 000a 0E       		.uleb128 0xe
+ 135 000b 55       		.uleb128 0x55
+ 136 000c 17       		.uleb128 0x17
+ 137 000d 11       		.uleb128 0x11
+ 138 000e 01       		.uleb128 0x1
+ 139 000f 10       		.uleb128 0x10
+ 140 0010 17       		.uleb128 0x17
+ 141 0011 00       		.byte	0
+ 142 0012 00       		.byte	0
+ 143 0013 02       		.uleb128 0x2
+ 144 0014 24       		.uleb128 0x24
+ 145 0015 00       		.byte	0
+ 146 0016 0B       		.uleb128 0xb
+ 147 0017 0B       		.uleb128 0xb
+ 148 0018 3E       		.uleb128 0x3e
+ 149 0019 0B       		.uleb128 0xb
+ARM GAS  C:\Users\kit\AppData\Local\Temp\cckVtnRY.s 			page 4
+
+
+ 150 001a 03       		.uleb128 0x3
+ 151 001b 0E       		.uleb128 0xe
+ 152 001c 00       		.byte	0
+ 153 001d 00       		.byte	0
+ 154 001e 03       		.uleb128 0x3
+ 155 001f 24       		.uleb128 0x24
+ 156 0020 00       		.byte	0
+ 157 0021 0B       		.uleb128 0xb
+ 158 0022 0B       		.uleb128 0xb
+ 159 0023 3E       		.uleb128 0x3e
+ 160 0024 0B       		.uleb128 0xb
+ 161 0025 03       		.uleb128 0x3
+ 162 0026 08       		.uleb128 0x8
+ 163 0027 00       		.byte	0
+ 164 0028 00       		.byte	0
+ 165 0029 04       		.uleb128 0x4
+ 166 002a 2E       		.uleb128 0x2e
+ 167 002b 00       		.byte	0
+ 168 002c 3F       		.uleb128 0x3f
+ 169 002d 19       		.uleb128 0x19
+ 170 002e 03       		.uleb128 0x3
+ 171 002f 0E       		.uleb128 0xe
+ 172 0030 3A       		.uleb128 0x3a
+ 173 0031 0B       		.uleb128 0xb
+ 174 0032 3B       		.uleb128 0x3b
+ 175 0033 0B       		.uleb128 0xb
+ 176 0034 49       		.uleb128 0x49
+ 177 0035 13       		.uleb128 0x13
+ 178 0036 11       		.uleb128 0x11
+ 179 0037 01       		.uleb128 0x1
+ 180 0038 12       		.uleb128 0x12
+ 181 0039 06       		.uleb128 0x6
+ 182 003a 40       		.uleb128 0x40
+ 183 003b 18       		.uleb128 0x18
+ 184 003c 9742     		.uleb128 0x2117
+ 185 003e 19       		.uleb128 0x19
+ 186 003f 00       		.byte	0
+ 187 0040 00       		.byte	0
+ 188 0041 00       		.byte	0
+ 189              		.section	.debug_aranges,"",%progbits
+ 190 0000 1C000000 		.4byte	0x1c
+ 191 0004 0200     		.2byte	0x2
+ 192 0006 00000000 		.4byte	.Ldebug_info0
+ 193 000a 04       		.byte	0x4
+ 194 000b 00       		.byte	0
+ 195 000c 0000     		.2byte	0
+ 196 000e 0000     		.2byte	0
+ 197 0010 00000000 		.4byte	.LFB33
+ 198 0014 06000000 		.4byte	.LFE33-.LFB33
+ 199 0018 00000000 		.4byte	0
+ 200 001c 00000000 		.4byte	0
+ 201              		.section	.debug_ranges,"",%progbits
+ 202              	.Ldebug_ranges0:
+ 203 0000 00000000 		.4byte	.LFB33
+ 204 0004 06000000 		.4byte	.LFE33
+ 205 0008 00000000 		.4byte	0
+ 206 000c 00000000 		.4byte	0
+ARM GAS  C:\Users\kit\AppData\Local\Temp\cckVtnRY.s 			page 5
+
+
+ 207              		.section	.debug_line,"",%progbits
+ 208              	.Ldebug_line0:
+ 209 0000 39000000 		.section	.debug_str,"MS",%progbits,1
+ 209      02001F00 
+ 209      00000201 
+ 209      FB0E0D00 
+ 209      01010101 
+ 210              	.LASF6:
+ 211 0000 6C6F6E67 		.ascii	"long long int\000"
+ 211      206C6F6E 
+ 211      6720696E 
+ 211      7400
+ 212              	.LASF8:
+ 213 000e 756E7369 		.ascii	"unsigned int\000"
+ 213      676E6564 
+ 213      20696E74 
+ 213      00
+ 214              	.LASF16:
+ 215 001b 6D61696E 		.ascii	"main\000"
+ 215      00
+ 216              	.LASF5:
+ 217 0020 6C6F6E67 		.ascii	"long unsigned int\000"
+ 217      20756E73 
+ 217      69676E65 
+ 217      6420696E 
+ 217      7400
+ 218              	.LASF7:
+ 219 0032 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 219      206C6F6E 
+ 219      6720756E 
+ 219      7369676E 
+ 219      65642069 
+ 220              	.LASF13:
+ 221 0049 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 221      4320342E 
+ 221      382E3420 
+ 221      32303134 
+ 221      30353236 
+ 222 007c 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 222      20726576 
+ 222      6973696F 
+ 222      6E203231 
+ 222      31333538 
+ 223 00af 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 223      66756E63 
+ 223      74696F6E 
+ 223      2D736563 
+ 223      74696F6E 
+ 224              	.LASF1:
+ 225 00c5 756E7369 		.ascii	"unsigned char\000"
+ 225      676E6564 
+ 225      20636861 
+ 225      7200
+ 226              	.LASF11:
+ 227 00d3 63686172 		.ascii	"char\000"
+ 227      00
+ 228              	.LASF4:
+ARM GAS  C:\Users\kit\AppData\Local\Temp\cckVtnRY.s 			page 6
+
+
+ 229 00d8 6C6F6E67 		.ascii	"long int\000"
+ 229      20696E74 
+ 229      00
+ 230              	.LASF2:
+ 231 00e1 73686F72 		.ascii	"short int\000"
+ 231      7420696E 
+ 231      7400
+ 232              	.LASF10:
+ 233 00eb 646F7562 		.ascii	"double\000"
+ 233      6C6500
+ 234              	.LASF3:
+ 235 00f2 73686F72 		.ascii	"short unsigned int\000"
+ 235      7420756E 
+ 235      7369676E 
+ 235      65642069 
+ 235      6E7400
+ 236              	.LASF0:
+ 237 0105 7369676E 		.ascii	"signed char\000"
+ 237      65642063 
+ 237      68617200 
+ 238              	.LASF15:
+ 239 0111 433A5C55 		.ascii	"C:\\Users\\kit\\Documents\\PSoC Creator\\Design03\\"
+ 239      73657273 
+ 239      5C6B6974 
+ 239      5C446F63 
+ 239      756D656E 
+ 240 013e 44657369 		.ascii	"Design01.cydsn\000"
+ 240      676E3031 
+ 240      2E637964 
+ 240      736E00
+ 241              	.LASF9:
+ 242 014d 666C6F61 		.ascii	"float\000"
+ 242      7400
+ 243              	.LASF14:
+ 244 0153 2E5C6D61 		.ascii	".\\main.c\000"
+ 244      696E2E63 
+ 244      00
+ 245              	.LASF12:
+ 246 015c 73697A65 		.ascii	"sizetype\000"
+ 246      74797065 
+ 246      00
+ 247              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

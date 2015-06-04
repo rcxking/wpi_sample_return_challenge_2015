@@ -1,0 +1,15 @@
+--------------- Build Started: 05/29/2015 20:28:07 Project: QuadratureDecoder, Configuration: ARM GCC 4.8.4 Debug ---------------
+The code generation step is up to date.
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_484\Debug/main.lst -g -D DEBUG -Wall -ffunction-sections -O0 -c .\main.c -o .\CortexM0\ARM_GCC_484\Debug\main.o
+.\main.c: In function 'InterruptHandler':
+.\main.c:41:5: warning: implicit declaration of function 'LED_GREEN_Write' [-Wimplicit-function-declaration]
+     LED_GREEN_Write(1u);  
+     ^
+arm-none-eabi-ar.exe -rs .\CortexM0\ARM_GCC_484\Debug\QuadratureDecoder.a .\CortexM0\ARM_GCC_484\Debug\cyfitter_cfg.o .\CortexM0\ARM_GCC_484\Debug\Clock_1.o .\CortexM0\ARM_GCC_484\Debug\phiA_Out.o .\CortexM0\ARM_GCC_484\Debug\phiA_In.o .\CortexM0\ARM_GCC_484\Debug\phiB_In.o .\CortexM0\ARM_GCC_484\Debug\Bootloadable_1.o .\CortexM0\ARM_GCC_484\Debug\CyBootAsmGnu.o .\CortexM0\ARM_GCC_484\Debug\CyFlash.o .\CortexM0\ARM_GCC_484\Debug\CyLib.o .\CortexM0\ARM_GCC_484\Debug\cyPm.o .\CortexM0\ARM_GCC_484\Debug\cyutils.o .\CortexM0\ARM_GCC_484\Debug\Pin_1.o .\CortexM0\ARM_GCC_484\Debug\Pin_2.o
+arm-none-eabi-ar.exe: creating .\CortexM0\ARM_GCC_484\Debug\QuadratureDecoder.a
+arm-none-eabi-gcc.exe -Wl,--start-group -o .\CortexM0\ARM_GCC_484\Debug\QuadratureDecoder.elf .\CortexM0\ARM_GCC_484\Debug\main.o .\CortexM0\ARM_GCC_484\Debug\cybootloader.o .\CortexM0\ARM_GCC_484\Debug\cymetadata.o .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o .\CortexM0\ARM_GCC_484\Debug\QuadratureDecoder.a "C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM0\ARM_GCC_484\Debug\CyComponentLibrary.a" -mthumb -march=armv6-m -Wl,-Map,.\CortexM0\ARM_GCC_484\Debug/QuadratureDecoder.map -T .\Generated_Source\PSoC4\cm0gcc.ld -g -specs=nano.specs "-u _printf_float" "" -Wl,--gc-sections -Wl,--end-group
+cyelftool.exe -B "C:\Users\kit\Documents\PSoC Creator\Design03\QuadratureDecoder.cydsn\CortexM0\ARM_GCC_484\Debug\QuadratureDecoder.elf" --flash_row_size 128 --flash_size 32768 --flash_array_size 32768
+cyelftool.exe -S "C:\Users\kit\Documents\PSoC Creator\Design03\QuadratureDecoder.cydsn\CortexM0\ARM_GCC_484\Debug\QuadratureDecoder.elf"
+Flash used: 10976 of 32768 bytes (33.5 %). Bootloader: 9088 bytes. Application: 1888 bytes
+SRAM used: 1408 of 4096 bytes (34.4 %). Stack: 1024 bytes. Heap: 128 bytes.
+--------------- Build Succeeded: 05/29/2015 20:28:09 ---------------

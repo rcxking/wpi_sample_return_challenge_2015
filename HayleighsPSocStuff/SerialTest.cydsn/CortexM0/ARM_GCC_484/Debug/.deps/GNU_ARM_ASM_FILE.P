@@ -1,0 +1,8 @@
+C:/Users/kit/Documents/PSoC\ Creator/Design03/SerialTest.cydsn/CortexM0/ARM_GCC_484/Debug/CyBootAsmGnu.o : C:/Users/kit/Documents/PSoC\ Creator/Design03/SerialTest.cydsn/Generated_Source/PSoC4/cydevicegnu_trm.inc C:/Users/kit/Documents/PSoC\ Creator/Design03/SerialTest.cydsn/Generated_Source/PSoC4/cyfittergnu.inc C:/Users/kit/Documents/PSoC\ Creator/Design03/SerialTest.cydsn/Generated_Source/PSoC4/CyBootAsmGnu.s 
+
+C:/Users/kit/Documents/PSoC\ Creator/Design03/SerialTest.cydsn/Generated_Source/PSoC4/cydevicegnu_trm.inc : 
+
+C:/Users/kit/Documents/PSoC\ Creator/Design03/SerialTest.cydsn/Generated_Source/PSoC4/cyfittergnu.inc : 
+
+C:/Users/kit/Documents/PSoC\ Creator/Design03/SerialTest.cydsn/Generated_Source/PSoC4/CyBootAsmGnu.s : 
+
