@@ -1,0 +1,20 @@
+<launch>
+  <arg name="name" default="camera" />
+  <arg name="hostname" default="169.254.22.102" />
+  <arg name="password" default="docs" />
+
+  <include file="$(find network_camera)/launch/axis.launch">
+    <arg name="name" default="$(arg name)" />
+    <arg name="hostname" default="$(arg hostname)" />
+    <arg name="password" default="$(arg password)" />
+  </include>
+
+  <!--
+  size: measured in number of corners not squares
+  square: dimension of squares in meters
+  -->
+  <node name="calibrator" pkg="camera_calibration" type="cameracalibrator.py" args="--size 7x6 --square 0.02609" >
+      <remap from="image"       to="/$(arg name)/image_raw"/>
+      <remap from="camera"      to="/$(arg name)"/>
+  </node>
+</launch>

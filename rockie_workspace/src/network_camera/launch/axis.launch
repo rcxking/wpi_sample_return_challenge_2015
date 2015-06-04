@@ -1,0 +1,25 @@
+<!--xml-->
+<launch>
+  <arg name="name" default="camera" />
+  <arg name="hostname" default="169.254.22.102" />
+  <arg name="password" default="docs" />
+
+  <group ns="$(arg name)">
+    <node pkg="axis_camera" type="axis.py" name="axis" output="screen">
+      <param name="frame_id" value="$(arg name)" />
+      <param name="hostname" value="$(arg hostname)" />
+      <param name="password" value="$(arg password)" />
+<!--
+      <param name="width" value="1920" />
+      <param name="height" value="1080" />
+-->
+      <param name="camera_info_url" value="file://$(find network_camera)/config/cal_$(arg password).yaml" />
+    </node>
+
+    <!-- decompress image -->
+    <node pkg="image_transport" type="republish" name="republish" args="compressed in:=image_raw raw out:=image_raw" />
+
+    <!-- image rectification -->
+    <node pkg="image_proc" type="image_proc" name="image_proc"/>
+  </group>
+</launch>  

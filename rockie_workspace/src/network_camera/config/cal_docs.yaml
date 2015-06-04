@@ -1,0 +1,20 @@
+image_width: 1024
+image_height: 768
+camera_name: "169_254_22_102"
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [1022.712335, 0, 558.836994, 0, 1023.035283, 426.576508, 0, 0, 1]
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [-0.467426, 0.152915, -0.006584, -0.002647, 0]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1, 0, 0, 0, 1, 0, 0, 0, 1]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [872.95636, 0, 573.014144, 0, 0, 945.863892, 429.423077, 0, 0, 0, 1, 0]
