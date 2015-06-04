@@ -19,7 +19,7 @@
         <register>
           <name>_CTRL</name>
           <description>Generic control register</description>
-          <addressOffset>0x40070000</addressOffset>
+          <addressOffset>0x40060000</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -86,7 +86,7 @@
         <register>
           <name>_SPI_CTRL</name>
           <description>SPI control register</description>
-          <addressOffset>0x40070020</addressOffset>
+          <addressOffset>0x40060020</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -160,7 +160,7 @@
         <register>
           <name>_SPI_STATUS</name>
           <description>SPI status register</description>
-          <addressOffset>0x40070024</addressOffset>
+          <addressOffset>0x40060024</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -178,7 +178,7 @@
         <register>
           <name>_UART_CTRL</name>
           <description>Extended Configuration Register</description>
-          <addressOffset>0x40070040</addressOffset>
+          <addressOffset>0x40060040</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -203,7 +203,7 @@
         <register>
           <name>_UART_TX_CTRL</name>
           <description>Extended Configuration Register</description>
-          <addressOffset>0x40070044</addressOffset>
+          <addressOffset>0x40060044</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -242,7 +242,7 @@
         <register>
           <name>_UART_RX_CTRL</name>
           <description>Extended Configuration Register</description>
-          <addressOffset>0x40070048</addressOffset>
+          <addressOffset>0x40060048</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -323,7 +323,7 @@
         <register>
           <name>_I2C_CTRL</name>
           <description>Slave address and mask register</description>
-          <addressOffset>0x40070060</addressOffset>
+          <addressOffset>0x40060060</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -418,7 +418,7 @@
         <register>
           <name>_I2C_STATUS</name>
           <description>Slave address and mask register</description>
-          <addressOffset>0x40070064</addressOffset>
+          <addressOffset>0x40060064</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -450,7 +450,7 @@
         <register>
           <name>_I2C_M_CMD</name>
           <description>Slave address and mask register</description>
-          <addressOffset>0x40070068</addressOffset>
+          <addressOffset>0x40060068</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -496,7 +496,7 @@
         <register>
           <name>_I2C_S_CMD</name>
           <description>I2C slave command register</description>
-          <addressOffset>0x4007006C</addressOffset>
+          <addressOffset>0x4006006C</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -521,7 +521,7 @@
         <register>
           <name>_I2C_CFG</name>
           <description>I2C control register</description>
-          <addressOffset>0x40070070</addressOffset>
+          <addressOffset>0x40060070</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -616,7 +616,7 @@
         <register>
           <name>_TX_CTRL</name>
           <description>Transmitter control register</description>
-          <addressOffset>0x40070200</addressOffset>
+          <addressOffset>0x40060200</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -648,7 +648,7 @@
         <register>
           <name>_TX_FIFO_CTRL</name>
           <description>Transmitter FIFO control register</description>
-          <addressOffset>0x40070204</addressOffset>
+          <addressOffset>0x40060204</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -680,7 +680,7 @@
         <register>
           <name>_TX_FIFO_STATUS</name>
           <description>Transmitter FIFO status register</description>
-          <addressOffset>0x40070208</addressOffset>
+          <addressOffset>0x40060208</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -719,7 +719,7 @@
         <register>
           <name>_TX_FIFO_WR</name>
           <description>Transmitter FIFO write register</description>
-          <addressOffset>0x40070240</addressOffset>
+          <addressOffset>0x40060240</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -737,7 +737,7 @@
         <register>
           <name>_RX_CTRL</name>
           <description>Receiver control register</description>
-          <addressOffset>0x40070300</addressOffset>
+          <addressOffset>0x40060300</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -776,7 +776,7 @@
         <register>
           <name>_RX_FIFO_CTRL</name>
           <description>Receiver FIFO control register</description>
-          <addressOffset>0x40070304</addressOffset>
+          <addressOffset>0x40060304</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -808,7 +808,7 @@
         <register>
           <name>_RX_FIFO_STATUS</name>
           <description>Receiver FIFO status registerS</description>
-          <addressOffset>0x40070308</addressOffset>
+          <addressOffset>0x40060308</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -847,7 +847,7 @@
         <register>
           <name>_RX_MATCH</name>
           <description>Slave address and mask register</description>
-          <addressOffset>0x40070310</addressOffset>
+          <addressOffset>0x40060310</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -872,7 +872,7 @@
         <register>
           <name>_RX_FIFO_RD</name>
           <description>Receiver FIFO read register</description>
-          <addressOffset>0x40070340</addressOffset>
+          <addressOffset>0x40060340</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -890,7 +890,7 @@
         <register>
           <name>_INTR_CAUSE</name>
           <description>Interrupt cause register</description>
-          <addressOffset>0x40070E00</addressOffset>
+          <addressOffset>0x40060E00</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -943,7 +943,7 @@
         <register>
           <name>_INTR_I2C_EC</name>
           <description>Externally clocked I2C interrupt request register</description>
-          <addressOffset>0x40070E80</addressOffset>
+          <addressOffset>0x40060E80</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -961,7 +961,7 @@
         <register>
           <name>_INTR_I2C_EC_MASK</name>
           <description>Externally clocked I2C interrupt mask register</description>
-          <addressOffset>0x40070E88</addressOffset>
+          <addressOffset>0x40060E88</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -979,7 +979,7 @@
         <register>
           <name>_INTR_I2C_EC_MASKED</name>
           <description>Externally clocked SPI interrupt masked register</description>
-          <addressOffset>0x40070E8C</addressOffset>
+          <addressOffset>0x40060E8C</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -997,7 +997,7 @@
         <register>
           <name>_INTR_INTR_SPI_EC</name>
           <description>Externally clocked SPI interrupt request register</description>
-          <addressOffset>0x40070EC0</addressOffset>
+          <addressOffset>0x40060EC0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1015,7 +1015,7 @@
         <register>
           <name>_INTR_INTR_SPI_EC_MASK</name>
           <description>Externally clocked SPI interrupt mask register</description>
-          <addressOffset>0x40070EC8</addressOffset>
+          <addressOffset>0x40060EC8</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1033,7 +1033,7 @@
         <register>
           <name>_INTR_INTR_SPI_EC_MASKED</name>
           <description>Externally clocked SPI interrupt masked register</description>
-          <addressOffset>0x40070ECC</addressOffset>
+          <addressOffset>0x40060ECC</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1051,7 +1051,7 @@
         <register>
           <name>_INTR_M</name>
           <description>Master interrupt request register.</description>
-          <addressOffset>0x40070F00</addressOffset>
+          <addressOffset>0x40060F00</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1104,7 +1104,7 @@
         <register>
           <name>_INTR_M_SET</name>
           <description>Master interrupt set request register</description>
-          <addressOffset>0x40070F04</addressOffset>
+          <addressOffset>0x40060F04</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1157,7 +1157,7 @@
         <register>
           <name>_INTR_M_MASK</name>
           <description>Master interrupt mask register</description>
-          <addressOffset>0x40070F08</addressOffset>
+          <addressOffset>0x40060F08</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1210,7 +1210,7 @@
         <register>
           <name>_INTR_M_MASKED</name>
           <description>Master interrupt masked request register</description>
-          <addressOffset>0x40070F0C</addressOffset>
+          <addressOffset>0x40060F0C</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1263,7 +1263,7 @@
         <register>
           <name>_INTR_S</name>
           <description>Slave interrupt request register</description>
-          <addressOffset>0x40070F40</addressOffset>
+          <addressOffset>0x40060F40</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1344,7 +1344,7 @@
         <register>
           <name>_INTR_S_SET</name>
           <description>Slave interrupt set request register</description>
-          <addressOffset>0x40070F44</addressOffset>
+          <addressOffset>0x40060F44</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1425,7 +1425,7 @@
         <register>
           <name>_INTR_S_MASK</name>
           <description>Slave interrupt mask register</description>
-          <addressOffset>0x40070F48</addressOffset>
+          <addressOffset>0x40060F48</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1506,7 +1506,7 @@
         <register>
           <name>_INTR_S_MASKED</name>
           <description>Slave interrupt masked register</description>
-          <addressOffset>0x40070F4C</addressOffset>
+          <addressOffset>0x40060F4C</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1580,7 +1580,7 @@
         <register>
           <name>_INTR_TX</name>
           <description>Transmitter interrupt request register</description>
-          <addressOffset>0x40070F80</addressOffset>
+          <addressOffset>0x40060F80</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1647,7 +1647,7 @@
         <register>
           <name>_INTR_TX_SET</name>
           <description>Transmitter interrupt set request register</description>
-          <addressOffset>0x40070F84</addressOffset>
+          <addressOffset>0x40060F84</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1714,7 +1714,7 @@
         <register>
           <name>_INTR_TX_MASK</name>
           <description>Transmitter interrupt mask request register</description>
-          <addressOffset>0x40070F88</addressOffset>
+          <addressOffset>0x40060F88</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1781,7 +1781,7 @@
         <register>
           <name>_INTR_TX_MASKED</name>
           <description>Transmitter interrupt masked request register</description>
-          <addressOffset>0x40070F8C</addressOffset>
+          <addressOffset>0x40060F8C</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1848,7 +1848,7 @@
         <register>
           <name>_INTR_RX</name>
           <description>Receiver interrupt request register</description>
-          <addressOffset>0x40070FC0</addressOffset>
+          <addressOffset>0x40060FC0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1922,7 +1922,7 @@
         <register>
           <name>_INTR_RX_SET</name>
           <description>Receiver interrupt set request register</description>
-          <addressOffset>0x40070FC4</addressOffset>
+          <addressOffset>0x40060FC4</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1996,7 +1996,7 @@
         <register>
           <name>_INTR_RX_MASK</name>
           <description>Receiver interrupt mask register</description>
-          <addressOffset>0x40070FC8</addressOffset>
+          <addressOffset>0x40060FC8</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2070,7 +2070,7 @@
         <register>
           <name>_INTR_RX_MASKED</name>
           <description>Receiver interrupt masked register</description>
-          <addressOffset>0x40070FCC</addressOffset>
+          <addressOffset>0x40060FCC</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>

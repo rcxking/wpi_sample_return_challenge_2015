@@ -1,5 +1,5 @@
 -- Project:   C:\Users\kit\Documents\PSoC Creator\Design03\SerialTest.cydsn\SerialTest.cyprj
--- Generated: 06/02/2015 18:02:20
+-- Generated: 06/03/2015 23:35:09
 -- PSoC Creator  3.1 SP1
 
 ENTITY SerialTest IS
@@ -46,11 +46,11 @@ ARCHITECTURE __DEFAULT__ OF SerialTest IS
     ATTRIBUTE GROUND OF zero : SIGNAL IS true;
     ATTRIBUTE Location OF ClockBlock : LABEL IS "F(Clock,0)";
     ATTRIBUTE Location OF ClockGenBlock : LABEL IS "F(CLK_GEN,0)";
-    ATTRIBUTE Location OF \UART:SCB\ : LABEL IS "F(SCB,1)";
+    ATTRIBUTE Location OF \UART:SCB\ : LABEL IS "F(SCB,0)";
     ATTRIBUTE lib_model OF \UART:rx(0)\ : LABEL IS "iocell1";
-    ATTRIBUTE Location OF \UART:rx(0)\ : LABEL IS "P0[4]";
+    ATTRIBUTE Location OF \UART:rx(0)\ : LABEL IS "P4[0]";
     ATTRIBUTE lib_model OF \UART:tx(0)\ : LABEL IS "iocell2";
-    ATTRIBUTE Location OF \UART:tx(0)\ : LABEL IS "P0[5]";
+    ATTRIBUTE Location OF \UART:tx(0)\ : LABEL IS "P4[1]";
     COMPONENT iocell
         PORT (
             pin_input : IN std_ulogic;
@@ -192,8 +192,7 @@ BEGIN
             ext => ClockBlock_EXTCLK,
             imo => ClockBlock_IMO,
             hfclk => ClockBlock_HFCLK,
-            ff_div_2 => open,
-            ff_div_3 => \UART:Net_847_ff2\);
+            ff_div_2 => \UART:Net_847_ff2\);
 
     ClockGenBlock:m0s8clockgenblockcell;
 

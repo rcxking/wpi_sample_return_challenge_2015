@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
   18:.\Generated_Source\PSoC4/UART.c **** 
   19:.\Generated_Source\PSoC4/UART.c **** #if(UART_SCB_MODE_I2C_INC)
   20:.\Generated_Source\PSoC4/UART.c ****     #include "UART_I2C_PVT.h"
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 2
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 2
 
 
   21:.\Generated_Source\PSoC4/UART.c **** #endif /* (UART_SCB_MODE_I2C_INC) */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
   75:.\Generated_Source\PSoC4/UART.c **** ***************************************/
   76:.\Generated_Source\PSoC4/UART.c **** 
   77:.\Generated_Source\PSoC4/UART.c **** static void UART_ScbEnableIntr(void);
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 3
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 3
 
 
   78:.\Generated_Source\PSoC4/UART.c **** static void UART_ScbModeStop(void);
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  122:.\Generated_Source\PSoC4/UART.c **** 
  123:.\Generated_Source\PSoC4/UART.c **** #endif /* (UART_SCB_MODE_UNCONFIG_CONST_CFG) */
  124:.\Generated_Source\PSoC4/UART.c **** }
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 4
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 4
 
 
   48              		.loc 1 124 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
   72 0004 054B     		ldr	r3, .L3
   73 0006 054A     		ldr	r2, .L3
   74 0008 1268     		ldr	r2, [r2]
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 5
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 5
 
 
   75 000a 8021     		mov	r1, #128
@@ -258,7 +258,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
   85              	.L4:
   86 001a C046     		.align	2
   87              	.L3:
-  88 001c 00000740 		.word	1074200576
+  88 001c 00000640 		.word	1074135040
   89              		.cfi_endproc
   90              	.LFE1:
   91              		.size	UART_Enable, .-UART_Enable
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  184:.\Generated_Source\PSoC4/UART.c **** {
  100              		.loc 1 184 0
  101              		.cfi_startproc
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 6
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 6
 
 
  102 0000 80B5     		push	{r7, lr}
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  200:.\Generated_Source\PSoC4/UART.c **** *  Disables the SCB component and its interrupt.
  201:.\Generated_Source\PSoC4/UART.c **** *
  202:.\Generated_Source\PSoC4/UART.c **** * Parameters:
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 7
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 7
 
 
  203:.\Generated_Source\PSoC4/UART.c **** *  None
@@ -405,7 +405,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  162              	.L11:
  163              		.align	2
  164              	.L10:
- 165 0018 00000740 		.word	1074200576
+ 165 0018 00000640 		.word	1074135040
  166              		.cfi_endproc
  167              	.LFE3:
  168              		.size	UART_Stop, .-UART_Stop
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  175              	UART_SetRxFifoLevel:
  176              	.LFB4:
  223:.\Generated_Source\PSoC4/UART.c **** 
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 8
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 8
 
 
  224:.\Generated_Source\PSoC4/UART.c **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  251:.\Generated_Source\PSoC4/UART.c ****     UART_RX_FIFO_CTRL_REG = rxFifoCtrl;
  204              		.loc 1 251 0
  205 0022 034B     		ldr	r3, .L13
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 9
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 9
 
 
  206 0024 FA68     		ldr	r2, [r7, #12]
@@ -492,7 +492,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  213              	.L14:
  214 002e C046     		.align	2
  215              	.L13:
- 216 0030 04030740 		.word	1074201348
+ 216 0030 04030640 		.word	1074135812
  217              		.cfi_endproc
  218              	.LFE4:
  219              		.size	UART_SetRxFifoLevel, .-UART_SetRxFifoLevel
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  238 0006 7860     		str	r0, [r7, #4]
  274:.\Generated_Source\PSoC4/UART.c ****     uint32 txFifoCtrl;
  275:.\Generated_Source\PSoC4/UART.c **** 
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 10
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 10
 
 
  276:.\Generated_Source\PSoC4/UART.c ****     txFifoCtrl = UART_TX_FIFO_CTRL_REG;
@@ -576,7 +576,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  264              	.L17:
  265 002e C046     		.align	2
  266              	.L16:
- 267 0030 04020740 		.word	1074201092
+ 267 0030 04020640 		.word	1074135556
  268              		.cfi_endproc
  269              	.LFE5:
  270              		.size	UART_SetTxFifoLevel, .-UART_SetTxFifoLevel
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  290:.\Generated_Source\PSoC4/UART.c **** *  Registers a function to be called by the internal interrupt handler.
  291:.\Generated_Source\PSoC4/UART.c **** *  First the function that is registered is called, then the internal interrupt
  292:.\Generated_Source\PSoC4/UART.c **** *  handler performs any operation such as software buffer management functions
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 11
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 11
 
 
  293:.\Generated_Source\PSoC4/UART.c **** *  before the interrupt returns.  It is the user's responsibility not to break
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  308              		.code	16
  309              		.thumb_func
  310              		.type	UART_ScbEnableIntr, %function
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 12
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 12
 
 
  311              	UART_ScbEnableIntr:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  334              	.LFB8:
  349:.\Generated_Source\PSoC4/UART.c **** 
  350:.\Generated_Source\PSoC4/UART.c **** 
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 13
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 13
 
 
  351:.\Generated_Source\PSoC4/UART.c **** /*******************************************************************************
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  343              		.loc 1 396 0
  344 0004 BD46     		mov	sp, r7
  345              		@ sp needed
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 14
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 14
 
 
  346 0006 80BD     		pop	{r7, pc}
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  439:.\Generated_Source\PSoC4/UART.c ****         if((UART_SCB_MODE_I2C   == mode) ||
  440:.\Generated_Source\PSoC4/UART.c ****            (UART_SCB_MODE_EZI2C == mode))
  441:.\Generated_Source\PSoC4/UART.c ****         {
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 15
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 15
 
 
  442:.\Generated_Source\PSoC4/UART.c ****             hsiomSel[UART_MOSI_SCL_RX_PIN_INDEX] = UART_HSIOM_I2C_SEL;
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  496:.\Generated_Source\PSoC4/UART.c **** 
  497:.\Generated_Source\PSoC4/UART.c ****             #if(UART_SS3_PIN)
  498:.\Generated_Source\PSoC4/UART.c ****                 hsiomSel [UART_SS3_PIN_INDEX] = UART_HSIOM_SPI_SEL;
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 16
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 16
 
 
  499:.\Generated_Source\PSoC4/UART.c ****                 pinsDm   [UART_SS3_PIN_INDEX] = UART_PIN_DM_STRONG;
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  553:.\Generated_Source\PSoC4/UART.c ****                     if(0u != (UART_UART_RTS_PIN_ENABLE & uartEnableMask))
  554:.\Generated_Source\PSoC4/UART.c ****                     {
  555:.\Generated_Source\PSoC4/UART.c ****                         /* RTS output is multiplexed with SS0 */
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 17
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 17
 
 
  556:.\Generated_Source\PSoC4/UART.c ****                         hsiomSel[UART_SS0_PIN_INDEX] = UART_HSIOM_UART_SEL;
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  610:.\Generated_Source\PSoC4/UART.c ****                                        UART_MISO_SDA_TX_HSIOM_MASK,
  611:.\Generated_Source\PSoC4/UART.c ****                                        UART_MISO_SDA_TX_HSIOM_POS,
  612:.\Generated_Source\PSoC4/UART.c ****                                        hsiomSel[UART_MISO_SDA_TX_PIN_INDEX]);
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 18
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 18
 
 
  613:.\Generated_Source\PSoC4/UART.c **** 
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  667:.\Generated_Source\PSoC4/UART.c ****     #if(UART_SS3_PIN)
  668:.\Generated_Source\PSoC4/UART.c ****         UART_SET_HSIOM_SEL(UART_SS3_HSIOM_REG,  UART_SS3_HSIOM_MASK,
  669:.\Generated_Source\PSoC4/UART.c ****                                        UART_SS3_HSIOM_POS, hsiomSel[UART_SS3_PIN_INDEX]);
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 19
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 19
 
 
  670:.\Generated_Source\PSoC4/UART.c **** 
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  379              		.loc 1 700 0 discriminator 1
  380 001a 0CD1     		bne	.L24
  702:.\Generated_Source\PSoC4/UART.c ****         {
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 20
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 20
 
 
  703:.\Generated_Source\PSoC4/UART.c ****             /* Toggle EC_AM before NACK generation */
@@ -1175,10 +1175,10 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  405              	.L26:
  406              		.align	2
  407              	.L25:
- 408 0040 00000740 		.word	1074200576
- 409 0044 60000740 		.word	1074200672
+ 408 0040 00000640 		.word	1074135040
+ 409 0044 60000640 		.word	1074135136
  410 0048 FFFEFFFF 		.word	-257
- 411 004c 6C000740 		.word	1074200684
+ 411 004c 6C000640 		.word	1074135148
  412              		.cfi_endproc
  413              	.LFE9:
  414              		.size	UART_I2CSlaveNackGeneration, .-UART_I2CSlaveNackGeneration
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  428 0015 62000000 		.4byte	.LASF35
  429 0019 00000000 		.4byte	.Ldebug_ranges0+0
  430 001d 00000000 		.4byte	0
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 21
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 21
 
 
  431 0021 00000000 		.4byte	.Ldebug_line0
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  485 0084 A0000000 		.4byte	.LASF11
  486 0088 02       		.uleb128 0x2
  487 0089 08       		.byte	0x8
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 22
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 22
 
 
  488 008a 04       		.byte	0x4
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  542 00fb 00000000 		.4byte	.LFB3
  543 00ff 1C000000 		.4byte	.LFE3-.LFB3
  544 0103 01       		.uleb128 0x1
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 23
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 23
 
 
  545 0104 9C       		.byte	0x9c
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  599 016d 75010000 		.4byte	.LASF26
  600 0171 01       		.byte	0x1
  601 0172 3301     		.2byte	0x133
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 24
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 24
 
 
  602 0174 00000000 		.4byte	.LFB6
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  656 01ea 00       		.byte	0
  657              		.section	.debug_abbrev,"",%progbits
  658              	.Ldebug_abbrev0:
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 25
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 25
 
 
  659 0000 01       		.uleb128 0x1
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  713 0036 05       		.uleb128 0x5
  714 0037 16       		.uleb128 0x16
  715 0038 00       		.byte	0
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 26
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 26
 
 
  716 0039 03       		.uleb128 0x3
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  770 0070 00       		.byte	0
  771 0071 00       		.byte	0
  772 0072 0A       		.uleb128 0xa
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 27
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 27
 
 
  773 0073 2E       		.uleb128 0x2e
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  827 00aa 0D       		.uleb128 0xd
  828 00ab 2E       		.uleb128 0x2e
  829 00ac 01       		.byte	0x1
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 28
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 28
 
 
  830 00ad 3F       		.uleb128 0x3f
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  884 00e4 00       		.byte	0
  885 00e5 03       		.uleb128 0x3
  886 00e6 0E       		.uleb128 0xe
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 29
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 29
 
 
  887 00e7 3A       		.uleb128 0x3a
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  941 011f 00       		.byte	0
  942 0120 00       		.byte	0
  943 0121 00       		.byte	0
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 30
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 30
 
 
  944              		.section	.debug_aranges,"",%progbits
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  998              		.section	.debug_line,"",%progbits
  999              	.Ldebug_line0:
  1000 0000 1B010000 		.section	.debug_str,"MS",%progbits,1
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 31
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 31
 
 
  1000      02004300 
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  1021      382E3420 
  1021      32303134 
  1021      30353236 
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 32
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 32
 
 
  1022 00d9 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  1045      7465645F 
  1045      536F7572 
  1045      63655C50 
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 33
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 33
 
 
  1046              	.LASF29:
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 1
  1068              	.LASF24:
  1069 0254 72784669 		.ascii	"rxFifoCtrl\000"
  1069      666F4374 
-ARM GAS  C:\Users\kit\AppData\Local\Temp\ccNpO8hW.s 			page 34
+ARM GAS  C:\Users\kit\AppData\Local\Temp\ccRK5OED.s 			page 34
 
 
  1069      726C00

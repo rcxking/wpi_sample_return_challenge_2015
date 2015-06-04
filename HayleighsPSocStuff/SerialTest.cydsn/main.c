@@ -26,7 +26,7 @@
 #define LED_ON  (0u)
 #define LED_OFF (1u)
 
-void main()
+int main()
 {   
     uint32 ch;
             
@@ -41,6 +41,8 @@ void main()
     
     for (;;)
     {
+        UART_UartPutString("Hello");
+        CyDelay(1000);
         /* Get received character or zero if nothing has been received yet */
         ch = UART_UartGetChar(); 
 

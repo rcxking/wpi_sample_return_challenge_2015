@@ -1,9 +1,7 @@
-C:\Users\kit\Documents\PSoC Creator\Design03\QuadDecoder2.cydsn\QuadDecoder2.cyprj|1cbc53df-7fb4-4dcc-bcad-d7cb327be017
-C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|2805302e-99fd-45a6-ba4e-4abca295cb28
-C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|59dcf51c-dceb-4809-89a3-daf753dcf6d1
-C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|44c2ae2c-e2b8-4d29-b71e-d23e865c4fe1
-C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|bd93ff7f-0b05-475a-9d86-8cec3b70b1d1
-C:\Users\kit\Documents\PSoC Creator\Design03\Design01.cydsn\Design01.cyprj|2d793f4a-2a24-4de6-9aa0-0a898c62c6f9
-C:\Users\kit\Documents\PSoC Creator\Design03\SerialTest.cydsn\SerialTest.cyprj|8f08eae8-8c40-4fe2-ada1-5f259ec30af9
-C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|c039d2c8-271e-44aa-b2aa-d5957b5c067f
-C:\Users\kit\Documents\PSoC Creator\Design03\SCB_UartComm01.cydsn\SCB_UartComm01.cyprj|f807857e-0734-4e10-82fe-18b770c4e977
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|738bf385-87f8-412c-b773-7226a9e3ce4e
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|cc613f94-3df7-4259-86d2-86c6be2d4116
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|a5e42513-1298-46fb-98b8-c805baae4ef1
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|c8a8111b-b212-4b17-bc0a-75b53ae9ddf1
+C:\Users\kit\Documents\PSoC Creator\Design03\SerialTest.cydsn\SerialTest.cyprj|35acdbcb-8213-4fe2-a272-0eef4f8c484d
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|f1fb114d-9b77-4b25-9f88-b592be7412cb
+C:\Users\kit\Documents\PSoC Creator\Design03\SerialUART_Test.cydsn\SerialUART_Test.cyprj|eac035d2-4d4f-49ca-8393-967675c15864

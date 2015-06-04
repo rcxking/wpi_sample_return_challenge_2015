@@ -2,7 +2,7 @@
 --	Conversion of SerialTest.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Tue Jun 02 18:02:13 2015
+--	Wed Jun 03 23:35:00 2015
 --
 
 USE cypress.cypress.all;
