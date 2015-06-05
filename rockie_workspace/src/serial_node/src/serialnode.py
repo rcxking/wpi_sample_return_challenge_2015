@@ -20,9 +20,6 @@ def serial_server():
 
 if __name__ == "__main__":
 	try:
-		# Create the serial port:
-		serial = serial.Serial("/dev/ttyS0", 115200, 8, 'N', 1)	
-
-
+					
 	except:
-		
+
