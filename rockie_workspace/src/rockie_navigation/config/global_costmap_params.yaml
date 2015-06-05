@@ -1,0 +1,7 @@
+lgobal_costmap:
+  global_frame: map
+  robot_base_frame: base_link
+  update_frequency: 1.0 # what exactly is this update rate?
+  static_map: false
+  map_type: costmap
+  meter_scoring: true

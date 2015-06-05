@@ -1,0 +1,11 @@
+local_costmap:
+  global_frame: odom
+  robot_base_frame: base_link
+  update_frequency: 1.0 # need to look this up
+  publish_frequency: 1.0 # yeah no idea
+  static_map: false
+  rolling_window: true
+  width: 6.0
+  height: 7.0
+  resolution: 0.1
+  map_type: costmap
