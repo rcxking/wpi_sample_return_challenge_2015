@@ -83,19 +83,21 @@
       <node pkg="rtabmap_ros" type="map_assembler" name="map_assembler">
         <remap from="mapData" to="mapData_optimized"/>
         <remap from="grid_projection_map" to="/map"/>
-        <param name="occupancy_grid" type="bool" value="true"/>
-        <param name="cloud_max_depth" type="double" value="5.0"/>
-        <param name="occupancy_cell_size" type="double" value="0.1"/>
-        <param name="occupancy_empty_filling_radius" type="int" value="1"/>
-        <param name="occupancy_cluster_min_size" type="int" value="20"/>
-        <param name="cloud_voxel_size" type="double" value="0.1"/>
+        <param name="cloud_max_depth" type="double" value="8.0"/>
+        <param name="cloud_voxel_size" type="double" value="0.05"/>
         <param name="filter_radius" type="double" value="1"/>
         <param name="filter_angle" type="double" value="30"/>
-        <param name="noise_filter_radius" type="double" value="0.1"/>
-        <param name="noise_filter_min_neighbors" type="int" value="5"/>
+
+        <param name="occupancy_grid" type="bool" value="true"/>
+        <param name="occupancy_cell_size" type="double" value="0.1"/>
         <param name="occupancy_ground_max_angle" type="double" value="$(arg pi/4)"/>
+        <param name="occupancy_cluster_min_size" type="int" value="20"/>
         <param name="occupancy_max_height" type="double" value="0.0"/>
         <param name="occupancy_map_size" type="double" value="0.0"/>
+        <param name="occupancy_empty_filling_radius" type="int" value="1"/>
+
+        <param name="noise_filter_radius" type="double" value="0.0"/>
+        <param name="noise_filter_min_neighbors" type="int" value="5"/>
       </node>
    </group>
 
