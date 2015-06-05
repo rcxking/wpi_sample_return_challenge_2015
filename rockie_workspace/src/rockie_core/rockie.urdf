@@ -1,4 +1,5 @@
 <!-- description of rockie's kinematics -->
+<!-- note that all dimensions are in meters -->
 <robot name="rockie">
   <!-- lower, back, right, corner of the frame -->
   <link name="corner">
@@ -13,21 +14,21 @@
     <child link="base_link"/>
 
     <!-- need actual values -->
-    <origin xyz="0.5 0.2 0"/>
+    <origin xyz="0.4572 0.3048 0"/>
   </joint>
 
   <link name="arm_revolute">
   </link>
 
-  <joint name="base_link_to_arm_revolute" type="revolute">
+  <joint name="corner_to_arm_revolute" type="revolute">
     <parent link="corner"/>
     <child link="arm_revolute"/>
 
     <!-- need actual limits -->
     <limit lower="0" upper="3.14159" effort="1.0" velocity="1.0"/>
 
-    <!-- find actual origin: top of center of rotation of arm body -->
-    <origin xyz="1 0.1 0.5"/>
+    <!-- bottom of arm body at center of rotation -->
+    <origin xyz="0.942975 0.098425 0.73025"/>
 
     <axis xyz="0 0 1"/>
   </joint>
@@ -39,12 +40,10 @@
     <parent link="arm_revolute"/>
     <child link="arm_prismatic"/>
 
-    <!-- need actual limits -->
-    <limit lower="0" upper="0.5" effort="1.0" velocity="1.0"/>
+    <limit lower="0" upper="0.542925" effort="1.0" velocity="1.0"/>
 
-    <!-- find actual origin -->
-    <!-- center of rotation of gripper at same height as origin of revolute -->
-    <origin xyz="0.2 0 0"/>
+    <!-- center of sliding 8020 at same height as origin of revolute -->
+    <origin xyz="0.3302 0 0"/>
 
     <axis xyz="0 0 1"/>
   </joint>
@@ -59,9 +58,11 @@
     <!-- need actual limits -->
     <limit lower="-1.57" upper="1.57" effort="1.0" velocity="1.0"/>
 
-    <!-- find actual origin: end of gripper -->
-    <origin xyz="0 0 -0.5"/>
+    <!-- end of gripper -->
+    <origin xyz="0 0.053974999999999995 -0.8191499999999999"/>
 
     <axis xyz="0 0 1"/>
   </joint>
+
+  <!-- adding the sample tray will be necessary sometime -->
 </robot>
