@@ -115,10 +115,10 @@
 
 /* UART_SCBCLK */
 .set UART_SCBCLK__DIVIDER_MASK, 0x0000FFFF
-.set UART_SCBCLK__ENABLE, CYREG_CLK_DIVIDER_A00
+.set UART_SCBCLK__ENABLE, CYREG_CLK_DIVIDER_B00
 .set UART_SCBCLK__ENABLE_MASK, 0x80000000
 .set UART_SCBCLK__MASK, 0x80000000
-.set UART_SCBCLK__REGISTER, CYREG_CLK_DIVIDER_A00
+.set UART_SCBCLK__REGISTER, CYREG_CLK_DIVIDER_B00
 
 /* UART_tx */
 .set UART_tx__0__DM__MASK, 0x38
@@ -144,6 +144,72 @@
 .set UART_tx__PORT, 4
 .set UART_tx__PS, CYREG_PRT4_PS
 .set UART_tx__SHIFT, 1
+
+/* Clock_1 */
+.set Clock_1__DIVIDER_MASK, 0x0000FFFF
+.set Clock_1__ENABLE, CYREG_CLK_DIVIDER_A00
+.set Clock_1__ENABLE_MASK, 0x80000000
+.set Clock_1__MASK, 0x80000000
+.set Clock_1__REGISTER, CYREG_CLK_DIVIDER_A00
+
+/* Counter_1_CounterUDB */
+.set Counter_1_CounterUDB_sC8_counterdp_u0__16BIT_A0_REG, CYREG_UDB_W16_A0_02
+.set Counter_1_CounterUDB_sC8_counterdp_u0__16BIT_A1_REG, CYREG_UDB_W16_A1_02
+.set Counter_1_CounterUDB_sC8_counterdp_u0__16BIT_D0_REG, CYREG_UDB_W16_D0_02
+.set Counter_1_CounterUDB_sC8_counterdp_u0__16BIT_D1_REG, CYREG_UDB_W16_D1_02
+.set Counter_1_CounterUDB_sC8_counterdp_u0__16BIT_DP_AUX_CTL_REG, CYREG_UDB_W16_ACTL_02
+.set Counter_1_CounterUDB_sC8_counterdp_u0__16BIT_F0_REG, CYREG_UDB_W16_F0_02
+.set Counter_1_CounterUDB_sC8_counterdp_u0__16BIT_F1_REG, CYREG_UDB_W16_F1_02
+.set Counter_1_CounterUDB_sC8_counterdp_u0__A0_A1_REG, CYREG_UDB_CAT16_A_02
+.set Counter_1_CounterUDB_sC8_counterdp_u0__A0_REG, CYREG_UDB_W8_A0_02
+.set Counter_1_CounterUDB_sC8_counterdp_u0__A1_REG, CYREG_UDB_W8_A1_02
+.set Counter_1_CounterUDB_sC8_counterdp_u0__D0_D1_REG, CYREG_UDB_CAT16_D_02
+.set Counter_1_CounterUDB_sC8_counterdp_u0__D0_REG, CYREG_UDB_W8_D0_02
+.set Counter_1_CounterUDB_sC8_counterdp_u0__D1_REG, CYREG_UDB_W8_D1_02
+.set Counter_1_CounterUDB_sC8_counterdp_u0__DP_AUX_CTL_REG, CYREG_UDB_W8_ACTL_02
+.set Counter_1_CounterUDB_sC8_counterdp_u0__F0_F1_REG, CYREG_UDB_CAT16_F_02
+.set Counter_1_CounterUDB_sC8_counterdp_u0__F0_REG, CYREG_UDB_W8_F0_02
+.set Counter_1_CounterUDB_sC8_counterdp_u0__F1_REG, CYREG_UDB_W8_F1_02
+.set Counter_1_CounterUDB_sCTRLReg_SyncCtl_ctrlreg__7__MASK, 0x80
+.set Counter_1_CounterUDB_sCTRLReg_SyncCtl_ctrlreg__7__POS, 7
+.set Counter_1_CounterUDB_sCTRLReg_SyncCtl_ctrlreg__CONTROL_AUX_CTL_REG, CYREG_UDB_W8_ACTL_03
+.set Counter_1_CounterUDB_sCTRLReg_SyncCtl_ctrlreg__CONTROL_REG, CYREG_UDB_W8_CTL_03
+.set Counter_1_CounterUDB_sCTRLReg_SyncCtl_ctrlreg__CONTROL_ST_REG, CYREG_UDB_CAT16_CTL_ST_03
+.set Counter_1_CounterUDB_sCTRLReg_SyncCtl_ctrlreg__COUNT_REG, CYREG_UDB_W8_CTL_03
+.set Counter_1_CounterUDB_sCTRLReg_SyncCtl_ctrlreg__COUNT_ST_REG, CYREG_UDB_CAT16_CTL_ST_03
+.set Counter_1_CounterUDB_sCTRLReg_SyncCtl_ctrlreg__MASK, 0x80
+.set Counter_1_CounterUDB_sCTRLReg_SyncCtl_ctrlreg__MASK_CTL_AUX_CTL_REG, CYREG_UDB_CAT16_ACTL_MSK_03
+.set Counter_1_CounterUDB_sCTRLReg_SyncCtl_ctrlreg__PER_CTL_AUX_CTL_REG, CYREG_UDB_CAT16_ACTL_MSK_03
+.set Counter_1_CounterUDB_sCTRLReg_SyncCtl_ctrlreg__PERIOD_REG, CYREG_UDB_W8_MSK_03
+.set Counter_1_CounterUDB_sSTSReg_rstSts_stsreg__0__MASK, 0x01
+.set Counter_1_CounterUDB_sSTSReg_rstSts_stsreg__0__POS, 0
+.set Counter_1_CounterUDB_sSTSReg_rstSts_stsreg__1__MASK, 0x02
+.set Counter_1_CounterUDB_sSTSReg_rstSts_stsreg__1__POS, 1
+.set Counter_1_CounterUDB_sSTSReg_rstSts_stsreg__16BIT_STATUS_AUX_CTL_REG, CYREG_UDB_W16_ACTL_02
+.set Counter_1_CounterUDB_sSTSReg_rstSts_stsreg__16BIT_STATUS_REG, CYREG_UDB_W16_ST_02
+.set Counter_1_CounterUDB_sSTSReg_rstSts_stsreg__2__MASK, 0x04
+.set Counter_1_CounterUDB_sSTSReg_rstSts_stsreg__2__POS, 2
+.set Counter_1_CounterUDB_sSTSReg_rstSts_stsreg__3__MASK, 0x08
+.set Counter_1_CounterUDB_sSTSReg_rstSts_stsreg__3__POS, 3
+.set Counter_1_CounterUDB_sSTSReg_rstSts_stsreg__5__MASK, 0x20
+.set Counter_1_CounterUDB_sSTSReg_rstSts_stsreg__5__POS, 5
+.set Counter_1_CounterUDB_sSTSReg_rstSts_stsreg__6__MASK, 0x40
+.set Counter_1_CounterUDB_sSTSReg_rstSts_stsreg__6__POS, 6
+.set Counter_1_CounterUDB_sSTSReg_rstSts_stsreg__MASK, 0x6F
+.set Counter_1_CounterUDB_sSTSReg_rstSts_stsreg__MASK_REG, CYREG_UDB_W8_MSK_02
+.set Counter_1_CounterUDB_sSTSReg_rstSts_stsreg__STATUS_AUX_CTL_REG, CYREG_UDB_W8_ACTL_02
+.set Counter_1_CounterUDB_sSTSReg_rstSts_stsreg__STATUS_REG, CYREG_UDB_W8_ST_02
+
+/* CounterISR */
+.set CounterISR__INTC_CLR_EN_REG, CYREG_CM0_ICER
+.set CounterISR__INTC_CLR_PD_REG, CYREG_CM0_ICPR
+.set CounterISR__INTC_MASK, 0x01
+.set CounterISR__INTC_NUMBER, 0
+.set CounterISR__INTC_PRIOR_MASK, 0xC0
+.set CounterISR__INTC_PRIOR_NUM, 3
+.set CounterISR__INTC_PRIOR_REG, CYREG_CM0_IPR0
+.set CounterISR__INTC_SET_EN_REG, CYREG_CM0_ISER
+.set CounterISR__INTC_SET_PD_REG, CYREG_CM0_ISPR
 
 /* Miscellaneous */
 .set CYDEV_BCLK__HFCLK__HZ, 24000000

@@ -1,5 +1,5 @@
 # SerialTest
-# 2015-06-04 03:35:07Z
+# 2015-06-05 01:11:58Z
 
 # IO_2@[IOP=(3)][IoId=(2)] is reserved: SWDDebugEnabled
 dont_use_io iocell 3 2
@@ -7,6 +7,19 @@ dont_use_io iocell 3 2
 dont_use_io iocell 3 3
 set_location "ClockBlock" m0s8clockblockcell -1 -1 0
 set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_location "CounterISR" interrupt -1 -1 0
+set_location "\Counter_1:CounterUDB:count_enable\" 0 0 0 0
+set_location "\Counter_1:CounterUDB:count_stored_i\" 0 0 0 1
+set_location "\Counter_1:CounterUDB:overflow_reg_i\" 1 0 0 3
+set_location "\Counter_1:CounterUDB:prevCompare\" 1 0 0 1
+set_location "\Counter_1:CounterUDB:reload\" 1 0 0 2
+set_location "\Counter_1:CounterUDB:sC8:counterdp:u0\" 1 0 2
+set_location "\Counter_1:CounterUDB:sCTRLReg:SyncCtl:ctrlreg\" 0 0 6
+set_location "\Counter_1:CounterUDB:sSTSReg:rstSts:stsreg\" 1 0 4
+set_location "\Counter_1:CounterUDB:status_0\" 1 0 0 0
+set_location "\Counter_1:CounterUDB:status_2\" 1 0 1 0
+set_location "\Counter_1:CounterUDB:status_3\" 1 0 1 2
+set_location "\Counter_1:CounterUDB:underflow_reg_i\" 1 0 1 1
 set_location "\UART:SCB\" m0s8scbcell -1 -1 0
 set_io "\UART:rx(0)\" iocell 4 0
 set_io "\UART:tx(0)\" iocell 4 1

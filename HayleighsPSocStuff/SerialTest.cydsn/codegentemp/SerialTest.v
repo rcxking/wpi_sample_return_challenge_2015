@@ -1,6 +1,6 @@
 // ======================================================================
 // SerialTest.v generated from TopDesign.cysch
-// 06/03/2015 at 23:34
+// 06/04/2015 at 21:11
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -395,15 +395,258 @@ module SCB_P4_v2_0_0 (
 
 endmodule
 
+// Component: and_v1_0
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "$CYPRESS_DIR\..\psoc\content\cyprimitives\CyPrimitives.cylib\and_v1_0"
+`include "$CYPRESS_DIR\..\psoc\content\cyprimitives\CyPrimitives.cylib\and_v1_0\and_v1_0.v"
+`else
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\and_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\and_v1_0\and_v1_0.v"
+`endif
+
+// Component: cy_tff_v1_0
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "$CYPRESS_DIR\..\psoc\content\cyprimitives\CyPrimitives.cylib\cy_tff_v1_0"
+`include "$CYPRESS_DIR\..\psoc\content\cyprimitives\CyPrimitives.cylib\cy_tff_v1_0\cy_tff_v1_0.v"
+`else
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_tff_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_tff_v1_0\cy_tff_v1_0.v"
+`endif
+
+// Component: cy_constant_v1_0
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "$CYPRESS_DIR\..\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0"
+`include "$CYPRESS_DIR\..\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v"
+`else
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v"
+`endif
+
+// Component: B_Counter_v2_40
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "$CYPRESS_DIR\..\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_Counter_v2_40"
+`include "$CYPRESS_DIR\..\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_Counter_v2_40\B_Counter_v2_40.v"
+`else
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_Counter_v2_40"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_Counter_v2_40\B_Counter_v2_40.v"
+`endif
+
+// Counter_v2_40(CaptureMode=0, CaptureModeSoftware=0, ClockMode=1, CompareMode=1, CompareModeSoftware=0, CompareStatusEdgeSense=true, CompareValue=128, CONTROL3=0, ControlRegRemoved=0, CtlModeReplacementString=SyncCtl, CyGetRegReplacementString=CY_GET_REG8, CySetRegReplacementString=CY_SET_REG8, EnableMode=0, FF16=false, FF8=false, FixedFunction=false, FixedFunctionUsed=0, InitCounterValue=254, InterruptOnCapture=false, InterruptOnCompare=false, InterruptOnOverUnderFlow=false, InterruptOnTC=false, Period=254, RegDefReplacementString=reg8, RegSizeReplacementString=uint8, ReloadOnCapture=false, ReloadOnCompare=false, ReloadOnOverUnder=true, ReloadOnReset=true, Resolution=8, RstStatusReplacementString=sSTSReg_rstSts, RunMode=0, UDB16=false, UDB24=false, UDB32=false, UDB8=true, UDBControlReg=true, UseInterrupt=true, VerilogSectionReplacementString=sC8, CY_COMPONENT_NAME=Counter_v2_40, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=Counter_1, CY_INSTANCE_SHORT_NAME=Counter_1, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=40, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.1 SP1, INSTANCE_NAME=Counter_1, )
+module Counter_v2_40_1 (
+    clock,
+    comp,
+    tc,
+    reset,
+    interrupt,
+    enable,
+    capture,
+    upCnt,
+    downCnt,
+    up_ndown,
+    count);
+    input       clock;
+    output      comp;
+    output      tc;
+    input       reset;
+    output      interrupt;
+    input       enable;
+    input       capture;
+    input       upCnt;
+    input       downCnt;
+    input       up_ndown;
+    input       count;
+
+    parameter CaptureMode = 0;
+    parameter ClockMode = 1;
+    parameter CompareMode = 1;
+    parameter CompareStatusEdgeSense = 1;
+    parameter EnableMode = 0;
+    parameter ReloadOnCapture = 0;
+    parameter ReloadOnCompare = 0;
+    parameter ReloadOnOverUnder = 1;
+    parameter ReloadOnReset = 1;
+    parameter Resolution = 8;
+    parameter RunMode = 0;
+    parameter UseInterrupt = 1;
+
+          wire  Net_95;
+          wire  Net_89;
+
+	// VirtualMux_1 (cy_virtualmux_v1_0)
+	assign Net_89 = up_ndown;
+
+    ZeroTerminal ZeroTerminal_2 (
+        .z(Net_95));
+
+    B_Counter_v2_40 CounterUDB (
+        .reset(reset),
+        .tc_out(tc),
+        .cmp_out(comp),
+        .clock(clock),
+        .irq_out(interrupt),
+        .up_ndown(Net_89),
+        .upcnt(upCnt),
+        .dwncnt(downCnt),
+        .enable(enable),
+        .capture(capture),
+        .count(count));
+    defparam CounterUDB.CaptureMode = 0;
+    defparam CounterUDB.ClockMode = 1;
+    defparam CounterUDB.CompareMode = 1;
+    defparam CounterUDB.CompareStatusEdgeSense = 1;
+    defparam CounterUDB.EnableMode = 0;
+    defparam CounterUDB.ReloadOnCapture = 0;
+    defparam CounterUDB.ReloadOnCompare = 0;
+    defparam CounterUDB.ReloadOnOverUnder = 1;
+    defparam CounterUDB.ReloadOnReset = 1;
+    defparam CounterUDB.Resolution = 8;
+    defparam CounterUDB.RunMode = 0;
+    defparam CounterUDB.UseInterrupt = 1;
+
+
+
+endmodule
+
+// Component: EdgeDetect_v1_0
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "$CYPRESS_DIR\..\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\EdgeDetect_v1_0"
+`include "$CYPRESS_DIR\..\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\EdgeDetect_v1_0\EdgeDetect_v1_0.v"
+`else
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\EdgeDetect_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\EdgeDetect_v1_0\EdgeDetect_v1_0.v"
+`endif
+
 // top
 module top ;
 
+          wire  Net_12;
+          wire  Net_9;
+          wire  Net_8;
+          wire  Net_7;
+          wire  Net_6;
+          wire  Net_5;
+          wire  Net_4;
+          wire  Net_3;
           wire  Net_2;
           wire  Net_1;
+          wire  Net_117;
+          wire  Net_118;
+          wire  Net_10;
+          wire  Net_116;
+          wire  Net_120;
+          wire  Net_28;
+          wire  Net_101;
+          wire  Net_52;
+          wire  Net_26;
+          wire  Net_46;
+          wire  Net_44;
+          wire  Net_50;
 
     SCB_P4_v2_0_0 UART (
         .interrupt(Net_1),
         .clock(1'b0));
+
+
+    assign Net_101 = Net_50 & Net_44;
+
+
+    assign Net_116 = Net_44 | Net_50;
+
+    // -- TFF Start --
+    reg  cy_tff_1;
+    always @(posedge Net_120)
+    begin
+        cy_tff_1 <= Net_10^Net_46;
+    end
+    assign Net_46 = cy_tff_1;
+    // -- TFF End --
+
+
+    assign Net_52 = Net_46 & Net_44;
+
+
+    assign Net_26 = Net_50 & Net_46;
+
+
+    assign Net_28 = Net_52 | Net_26;
+
+    assign Net_44 = 1'h0;
+
+    assign Net_50 = 1'h0;
+
+    Counter_v2_40_1 Counter_1 (
+        .reset(Net_101),
+        .tc(Net_3),
+        .comp(Net_4),
+        .clock(Net_28),
+        .interrupt(Net_5),
+        .enable(1'b0),
+        .capture(1'b0),
+        .upCnt(1'b0),
+        .downCnt(1'b0),
+        .up_ndown(Net_26),
+        .count(Net_117));
+    defparam Counter_1.CaptureMode = 0;
+    defparam Counter_1.ClockMode = 1;
+    defparam Counter_1.CompareMode = 1;
+    defparam Counter_1.CompareStatusEdgeSense = 1;
+    defparam Counter_1.EnableMode = 0;
+    defparam Counter_1.ReloadOnCapture = 0;
+    defparam Counter_1.ReloadOnCompare = 0;
+    defparam Counter_1.ReloadOnOverUnder = 1;
+    defparam Counter_1.ReloadOnReset = 1;
+    defparam Counter_1.Resolution = 8;
+    defparam Counter_1.RunMode = 0;
+    defparam Counter_1.UseInterrupt = 1;
+
+    EdgeDetect_v1_0 EdgeDetect_1 (
+        .d(Net_116),
+        .det(Net_120),
+        .clock(Net_118));
+    defparam EdgeDetect_1.EdgeType = 1;
+
+    assign Net_10 = 1'h1;
+
+
+	cy_clock_v1_0
+		#(.id("ab912d3f-1e38-42c9-9b49-8b8ac88d169e"),
+		  .source_clock_id(""),
+		  .divisor(0),
+		  .period("83333333.3333333"),
+		  .is_direct(0),
+		  .is_digital(0))
+		Clock_1
+		 (.clock_out(Net_118));
+
+
+    assign Net_117 = 1'h1;
+
+
+	cy_isr_v1_0
+		#(.int_type(2'b10))
+		CounterISR
+		 (.int_signal(Net_5));
+
 
 
 

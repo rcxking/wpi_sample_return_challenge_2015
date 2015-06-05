@@ -25,6 +25,9 @@
 #include <UART_SPI_UART_PVT.h>
 #include <UART_PVT.h>
 #include <UART_BOOT.h>
+#include <Counter_1.h>
+#include <Clock_1.h>
+#include <CounterISR.h>
 #include <UART_SCBCLK.h>
 #include <UART_tx.h>
 #include <UART_tx_aliases.h>

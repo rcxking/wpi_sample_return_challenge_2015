@@ -31,6 +31,13 @@
   <file name="C:\Users\kit\Documents\PSoC Creator\Design03\SerialTest.cydsn\codegentemp\UART_SPI_UART_PVT.h" value="NONE;UART" />
   <file name="C:\Users\kit\Documents\PSoC Creator\Design03\SerialTest.cydsn\codegentemp\UART_PVT.h" value="NONE;UART" />
   <file name="C:\Users\kit\Documents\PSoC Creator\Design03\SerialTest.cydsn\codegentemp\UART_BOOT.h" value="NONE;UART" />
+  <file name="C:\Users\kit\Documents\PSoC Creator\Design03\SerialTest.cydsn\codegentemp\Counter_1.c" value="ARM_C_FILE;Counter_1" />
+  <file name="C:\Users\kit\Documents\PSoC Creator\Design03\SerialTest.cydsn\codegentemp\Counter_1.h" value="NONE;Counter_1" />
+  <file name="C:\Users\kit\Documents\PSoC Creator\Design03\SerialTest.cydsn\codegentemp\Counter_1_PM.c" value="ARM_C_FILE;Counter_1" />
+  <file name="C:\Users\kit\Documents\PSoC Creator\Design03\SerialTest.cydsn\codegentemp\Clock_1.c" value="ARM_C_FILE;Clock_1" />
+  <file name="C:\Users\kit\Documents\PSoC Creator\Design03\SerialTest.cydsn\codegentemp\Clock_1.h" value="NONE;Clock_1" />
+  <file name="C:\Users\kit\Documents\PSoC Creator\Design03\SerialTest.cydsn\codegentemp\CounterISR.c" value="ARM_C_FILE;CounterISR" />
+  <file name="C:\Users\kit\Documents\PSoC Creator\Design03\SerialTest.cydsn\codegentemp\CounterISR.h" value="NONE;CounterISR" />
   <file name="C:\Users\kit\Documents\PSoC Creator\Design03\SerialTest.cydsn\codegentemp\UART_SCBCLK.c" value="ARM_C_FILE;UART_SCBCLK" />
   <file name="C:\Users\kit\Documents\PSoC Creator\Design03\SerialTest.cydsn\codegentemp\UART_SCBCLK.h" value="NONE;UART_SCBCLK" />
   <file name="C:\Users\kit\Documents\PSoC Creator\Design03\SerialTest.cydsn\codegentemp\UART_tx.c" value="ARM_C_FILE;UART_tx" />

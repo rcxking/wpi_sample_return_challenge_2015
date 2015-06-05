@@ -1,7 +1,7 @@
-C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|738bf385-87f8-412c-b773-7226a9e3ce4e
-C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|cc613f94-3df7-4259-86d2-86c6be2d4116
-C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|a5e42513-1298-46fb-98b8-c805baae4ef1
-C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|c8a8111b-b212-4b17-bc0a-75b53ae9ddf1
-C:\Users\kit\Documents\PSoC Creator\Design03\SerialTest.cydsn\SerialTest.cyprj|35acdbcb-8213-4fe2-a272-0eef4f8c484d
-C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|f1fb114d-9b77-4b25-9f88-b592be7412cb
-C:\Users\kit\Documents\PSoC Creator\Design03\SerialUART_Test.cydsn\SerialUART_Test.cyprj|eac035d2-4d4f-49ca-8393-967675c15864
+C:\Users\kit\Documents\PSoC Creator\Design03\SerialTest.cydsn\SerialTest.cyprj|ddc789d6-cff1-4e3f-8e1d-f91744c205d5
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|acfafb4a-b23d-4785-9dd7-15dbeddbaa16
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|d921a4c2-2f73-4bb9-b497-c0cb62fa14b3
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|38e9adc5-7bba-4bcb-ab83-986f826e8d18
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|4efab62e-f718-4d5b-9a1c-525b929a925b
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|df91a1dd-192e-4462-b0aa-10d973748e41
+C:\Users\kit\Documents\PSoC Creator\Design03\Counter02.cydsn\Counter02.cyprj|5188ebe6-c6a2-4f4d-ad3a-dc70a04c4178

@@ -23,11 +23,33 @@
 
 #include <project.h>
 
+uint8 interruptCnt;
+
 #define LED_ON  (0u)
 #define LED_OFF (1u)
 
+CY_ISR(counterInterrupt)
+{
+	/* Read Status register in order to clear the sticky Terminal Count (TC) bit 
+	 * in the status register. Note that the function is not called, but rather 
+	 * the status is read directly.
+	 */
+   	Counter_1_STATUS;
+	
+	/* Increment the Counter to indicate the keep track of the number of 
+     * interrupts received. 
+	 */
+    interruptCnt++;    
+}
+
 int main()
 {   
+    CounterISR_StartEx(counterInterrupt);
+    Counter_1_Start();
+	/* Enable Global interrupts */
+    CyGlobalIntEnable;
+    
+    
     uint32 ch;
             
     /* Start SCB (UART mode) operation */
@@ -41,7 +63,7 @@ int main()
     
     for (;;)
     {
-        UART_UartPutString("Hello");
+        UART_UartPutString(Counter_1_ReadCounter());
         CyDelay(1000);
         /* Get received character or zero if nothing has been received yet */
         ch = UART_UartGetChar(); 
