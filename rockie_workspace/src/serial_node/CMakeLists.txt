@@ -53,11 +53,11 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate services in the 'srv' folder
 add_service_files(
   FILES
-  armservice.srv
-  gripper.srv
-  wheelvel.srv
-  steer.srv
-  lights.srv
+  ArmService.srv
+  Gripper.srv
+  WheelVel.srv
+  Steer.srv
+  Lights.srv
 )
 
 ## Generate actions in the 'action' folder
