@@ -18,12 +18,6 @@
       <remap from="odom" to="/odometry"/>
       <remap from="mapData" to="mapData_optimized"/>
     </node>
-      
-    <node if="$(arg rviz)" pkg="rtabmap_ros" type="map_assembler" name="map_assembler">
-      <param name="occupancy_grid" type="bool" value="true"/>
-      <remap from="mapData" to="mapData_optimized"/>
-      <remap from="grid_projection_map" to="/map"/>
-    </node>
   </group>
   
   <!-- Visualisation RVIZ --> 
