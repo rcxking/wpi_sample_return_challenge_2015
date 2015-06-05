@@ -1,0 +1,16 @@
+<launch>
+  <arg name="zeros" default="false"/>
+
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="rockie_transorms" >
+    <param name="robot_description" textfile="$(find rockie_core)/config/rockie.urdf"/>
+
+    <remap from="joint_states" to="joint_states" />
+  </node>
+
+  <node if="$(arg zeros)" pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher">
+    <param name="robot_description" textfile="$(find rockie_core)/config/rockie.urdf"/>
+    <param name="publish_default_positions" type="bool" value="true"/>
+
+    <remap from="joint_states" to="joint_states" />
+  </node>
+</launch>
