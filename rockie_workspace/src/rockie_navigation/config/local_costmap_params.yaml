@@ -1,8 +1,8 @@
 local_costmap:
   global_frame: odom
   robot_base_frame: base_link
-  update_frequency: 0.5 # need to look this up
-  publish_frequency: 0.5 # yeah no idea
+  update_frequency: 5 # need to look this up
+  publish_frequency: 5 # yeah no idea
   static_map: false
   rolling_window: true
   width: 10.0
@@ -13,4 +13,3 @@ local_costmap:
   map_type: costmap
   min_obstacle_height: -9999.0
   max_obstacle_height: 9999.0
-  meter_scoring: true
