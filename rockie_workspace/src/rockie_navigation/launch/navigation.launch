@@ -7,6 +7,7 @@
     <rosparam file="$(find rockie_navigation)/config/local_costmap_params.yaml" command="load" />
     <rosparam file="$(find rockie_navigation)/config/global_costmap_params.yaml" command="load" />
     <rosparam file="$(find rockie_navigation)/config/base_local_planner_params.yaml" command="load" />
+    <rosparam file="$(find rockie_navigation)/config/move_base_params.yaml" command="load" />
     <remap from="odom" to="/odometry" />
   </node>
 </launch>

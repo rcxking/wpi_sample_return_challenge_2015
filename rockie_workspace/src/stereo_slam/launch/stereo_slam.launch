@@ -121,8 +121,7 @@
          <param name="frame_id" type="string" value="base_link"/>
          <param name="map_frame_id" type="string" value="map"/>
          <param name="min_cluster_size" type="int" value="20"/>
-         <param name="max_obstacles_height" type="double" value="9999"/>
-         <param name="min_obstacles_height" type="double" value="-9999"/>
+         <param name="max_obstacles_height" type="double" value="0.0"/>
        </node>
    </group>
 
