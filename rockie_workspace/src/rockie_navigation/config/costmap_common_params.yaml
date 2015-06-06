@@ -1,0 +1,8 @@
+obstacle_range: 4
+raytrace_range: 6
+footprint: [[0.889, 0.3048], [0.889, -0.3048], [-0.4572, -0.3048], [-0.4572, 0.3048]]
+inflation_radius: 1
+observation_sources: point_cloud_sensor
+
+# not sure if this is right
+point_cloud_sensor: {sensor_frame: stereo_camera, data_type: PointCloud2, topic: /planner_cloud, marking: true, clearing: true}

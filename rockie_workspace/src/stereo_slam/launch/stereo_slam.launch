@@ -13,7 +13,6 @@
     args="$(arg optical_rotate) base_link stereo_camera 100" />
   
    <!-- Stereo Odometry -->   
-   
    <node pkg="rtabmap_ros" type="stereo_odometry" name="stereo_odometry" output="screen" >
       <remap from="left/image_rect"       to="/stereo_camera/left/image_rect"/>
       <remap from="right/image_rect"      to="/stereo_camera/right/image_rect"/>
@@ -36,6 +35,7 @@
       <param name="Odom/FillInfoData" type="string" value="true"/>
    </node>
  
+   <!-- mapping (uses odometry and camera data) -->
    <group ns="rtabmap">   
       <!-- Visual SLAM: args: "delete_db_on_start" and "udebug" -->
       <node name="rtabmap" pkg="rtabmap_ros" type="rtabmap" output="screen" args="--delete_db_on_start">
@@ -75,52 +75,56 @@
          <param name="publish_tf" type="bool" value="false"/>
       </node>
     
-      <!-- Optimizing outside rtabmap node makes it able to always optimize the global map -->
+      <!-- map optimization, uses output of rtabmap, this probably needs to be tuned more -->
       <node pkg="rtabmap_ros" type="map_optimizer" name="map_optimizer"/>
 
       <arg name="pi/4" value="0.78539816339" />
+      <!-- assembles global map and produces occupancy grid -->
       <node pkg="rtabmap_ros" type="map_assembler" name="map_assembler">
-        <remap from="mapdata" to="mapData_optimized"/>
+        <remap from="mapData" to="mapData_optimized"/>
         <remap from="grid_projection_map" to="/map"/>
-<!--
-        <param name="cloud_max_depth" type="double" value="5.0"/>
-        <param name="occupancy_grid" type="bool" value="true"/>
-        <param name="occupancy_cluster_min_size" type="int" value="20"/>
-        <param name="occupancy_empty_filling_radius" type="int" value="1"/>
--->
-<!--
-        <param name="cloud_voxel_size" type="double" value="0.1"/>
+        <param name="cloud_max_depth" type="double" value="8.0"/>
+        <param name="cloud_voxel_size" type="double" value="0.05"/>
         <param name="filter_radius" type="double" value="1"/>
         <param name="filter_angle" type="double" value="30"/>
-        <param name="noise_filter_radius" type="double" value="0.1"/>
-        <param name="noise_filter_min_neighbors" type="int" value="5"/>
-        <param name="occupancy_cell_size" type="double" value="0.1"/>
--->
-        <param name="occupancy_ground_max_angle" type="double" value="$(arg pi/4)"/>
 
+        <param name="occupancy_grid" type="bool" value="true"/>
+        <param name="occupancy_cell_size" type="double" value="0.1"/>
+        <param name="occupancy_ground_max_angle" type="double" value="$(arg pi/4)"/>
+        <param name="occupancy_cluster_min_size" type="int" value="20"/>
         <param name="occupancy_max_height" type="double" value="0.0"/>
         <param name="occupancy_map_size" type="double" value="0.0"/>
+        <param name="occupancy_empty_filling_radius" type="int" value="1"/>
+
+        <param name="noise_filter_radius" type="double" value="0.0"/>
+        <param name="noise_filter_min_neighbors" type="int" value="5"/>
       </node>
    </group>
 
-<!--
-  <node pkg="nodelet" type="nodelet" name="obstacle_manager" args="manager"/>
-  <node pkg="nodelet" type="nodelet" name="obstacle_detection"
-      args="load rtabmap_ros/obstacles_detection obstacle_manager">
-    <remap from="cloud" to="???"/>
-    <param name="frame_id" type="string" value="base_link"/>
-    <param name="normal_estimation_radius" type="double" value="0.1"/>
-    <param name="ground_normal_angle" type="double" value="$(arg pi/4)"/>
-  </node>
+   <group ns="/stereo_camera" >
+      <!-- Generate a point cloud from the disparity image -->
+      <node pkg="nodelet" type="nodelet" name="disparity2cloud" args="load rtabmap_ros/point_cloud_xyz stereo_nodelet">
+         <remap from="disparity/image"       to="disparity"/>
+         <remap from="disparity/camera_info" to="right/camera_info"/>
+         <remap from="cloud"                to="cloudXYZ"/>
+         
+         <param name="voxel_size" type="double" value="0.05"/>
+         <param name="decimation" type="int" value="4"/>
+         <param name="max_depth" type="double" value="4"/>
+      </node>
 
-  <node pkg="nodelet" type="nodelet" name="obstacle_detection"
-      args="load rtabmap_ros/obstacles_detection obstacle_manager">
-    <remap from="cloud" to="???"/>
-    <param name="frame_id" type="string" value="base_link"/>
-    <param name="normal_estimation_radius" type="double" value="0.1"/>
-    <param name="ground_normal_angle" type="double" value="$(arg pi/4)"/>
-  </node>
--->
+      <!-- Create point cloud for the local planner -->
+      <node pkg="nodelet" type="nodelet" name="obstacles_detection" args="load rtabmap_ros/obstacles_detection stereo_nodelet">
+         <remap from="cloud" to="cloudXYZ"/>
+         <remap from="obstacles" to="/planner_cloud"/>
+
+         <param name="frame_id" type="string" value="base_link"/>
+         <param name="map_frame_id" type="string" value="map"/>
+         <param name="min_cluster_size" type="int" value="20"/>
+         <param name="max_obstacles_height" type="double" value="9999"/>
+         <param name="min_obstacles_height" type="double" value="-9999"/>
+       </node>
+   </group>
 
   <include file="$(find stereo_slam)/launch/stereo_viz.launch">
     <arg name="rviz" value="$(arg rviz)" />
