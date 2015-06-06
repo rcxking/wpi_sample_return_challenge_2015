@@ -24,7 +24,7 @@
       <param name="odom_frame_id" type="string" value="odom"/>
 	
       <param name="Odom/InlierDistance" type="string" value="0.1"/>
-      <param name="Odom/MinInliers" type="string" value="10"/>
+      <param name="Odom/MinInliers" type="string" value="8"/>
       <param name="Odom/RoiRatios" type="string" value="0.03 0.03 0.04 0.04"/>
       <param name="Odom/MaxDepth" type="string" value="10"/>
       <param name="OdomBow/NNDR" type="string" value="0.8"/>
@@ -50,7 +50,7 @@
 
          <remap from="odom" to="/odometry"/>
 
-         <param name="queue_size" type="int" value="30"/>
+         <param name="queue_size" type="int" value="5"/>
 
          <!-- RTAB-Map's parameters -->
          <param name="Rtabmap/TimeThr" type="string" value="700"/>
@@ -102,6 +102,17 @@
    </group>
 
    <group ns="/stereo_camera" >
+      <!-- throttle stereo data so stuff goes faster -->
+      <!--
+      <node pkg="nodelet" type="nodelet" name="stereo_throttle" args="load rtabmap_ros/stereo_throttle stereo_nodelet">
+         <remap from="left/image" to="left/image_rect"/>
+         <remap from="right/image" to="right/image_rect"/>
+         <param name="queue_size" type="int" value="2"/>
+         <param name="rate" type="double" value="8"/>
+         <param name="approx_sync" type="bool" value="true"/>
+      </node>
+      -->
+
       <!-- Generate a point cloud from the disparity image -->
       <node pkg="nodelet" type="nodelet" name="disparity2cloud" args="load rtabmap_ros/point_cloud_xyz stereo_nodelet">
          <remap from="disparity/image"       to="disparity"/>
