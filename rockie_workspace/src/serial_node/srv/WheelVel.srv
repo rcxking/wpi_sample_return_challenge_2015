@@ -1,5 +1,5 @@
-float32 vel1
-float32 vel2
-float32 vel3
-float32 vel4
+float32 front_left
+float32 rear_left
+float32 rear_right
+float32 front_right
 ---
