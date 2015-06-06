@@ -6,10 +6,6 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /MapGraph1
-        - /Image1
-        - /Info1
-        - /PointCloud21
       Splitter Ratio: 0.5
     Tree Height: 344
   - Class: rviz/Selection
@@ -172,6 +168,38 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 25; 255; 0
+      Enabled: true
+      Name: Path
+      Topic: /move_base/NavfnROS/plan
+      Value: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 25; 255; 0
+      Enabled: true
+      Name: Path
+      Topic: /move_base/TrajectoryPlannerROS/local_plan
+      Value: true
+    - Alpha: 0.7
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: false
+      Name: Map
+      Topic: /move_base/global_costmap/costmap
+      Value: false
+    - Alpha: 0.7
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: false
+      Name: Map
+      Topic: /move_base/local_costmap/costmap
+      Value: false
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -196,22 +224,22 @@ Visualization Manager:
   Views:
     Current:
       Class: rtabmap_ros/OrbitOriented
-      Distance: 6.60197
+      Distance: 12.0517
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 1.68188
-        Y: -0.342414
-        Z: 0.294746
+        X: 0.633828
+        Y: 0.250983
+        Z: -0.0451654
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.540398
+      Pitch: 0.975204
       Target Frame: base_footprint
       Value: OrbitOriented (rtabmap)
-      Yaw: 3.2754
+      Yaw: 3.97038
     Saved: ~
 Window Geometry:
   Displays:
@@ -231,5 +259,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1301
-  X: 65
+  X: 58
   Y: 24
