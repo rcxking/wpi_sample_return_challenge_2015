@@ -6,7 +6,7 @@ State machine to run for stage 1.
 RPI Rock Raiders
 5/31/15
 
-Last Updated: Bryant Pong: 6/2/15 - 1:23 PM
+Last Updated: Bryant Pong: 6/5/15 - 10:37 PM
 '''
 
 # ROS Libraries:
@@ -30,10 +30,6 @@ import lasagne
 import os
 import cPickle as pickle
 
-# Serial Communications to PSOC:
-import serial
-import serialhelper
-
 # Miscellaneous Libraries:
 import warnings
 import matplotlib.pyplot as plt
@@ -43,18 +39,6 @@ Global Objects:
 '''
 # Serial Object:
 serialObj = None
-
-# Neural Network Objects:
-l_in = None
-l_conv1 = None
-l_pool1 = None
-l_conv2 = None
-l_pool2 = None
-l_conv3 = None
-l_conv4 = None
-l_pool3 = None
-
-
 
 # Global flag for whether the sample has been found:
 sampleFound = False  
