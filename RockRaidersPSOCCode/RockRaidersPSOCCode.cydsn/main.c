@@ -23,7 +23,7 @@ int main()
     CyGlobalIntEnable;
     for(;;)
     {
-        PCComms_UartPutString("TEST");
+        CyDelay(100);
         /*if(linesz !=0)
         {
             if(line[linesz]=='\n')

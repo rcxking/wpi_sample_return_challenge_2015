@@ -108,6 +108,13 @@
 <file name=".\Generated_Source\PSoC4\cytypes.h" />
 <file name=".\Generated_Source\PSoC4\project.h" />
 <file name=".\main.c" />
+<file name=".\CortexM0\ARM_GCC_484\Debug\cybootloader.o">
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\cybootloader.c" />
+</file>
+<file name=".\Generated_Source\PSoC4\cybootloader.c" />
 <file name=".\CortexM0\ARM_GCC_484\Debug\Bootloadable_1.o">
 <dep name=".\Generated_Source\PSoC4\Bootloadable_1.h" />
 <dep name=".\Generated_Source\PSoC4\CyFlash.h" />
@@ -524,13 +531,6 @@
 <dep name=".\Generated_Source\PSoC4\cyPm.c" />
 </file>
 <file name=".\Generated_Source\PSoC4\cyPm.c" />
-<file name=".\CortexM0\ARM_GCC_484\Debug\cybootloader.o">
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Generated_Source\PSoC4\cybootloader.c" />
-</file>
-<file name=".\Generated_Source\PSoC4\cybootloader.c" />
 <file name=".\CortexM0\ARM_GCC_484\Debug\cyfitter_cfg.o">
 <dep name=".\Generated_Source\PSoC4\CyLib.h" />
 <dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
@@ -1134,9 +1134,10 @@
 <name_val_pair name=".\Generated_Source\PSoC4\MotorComms_SCBCLK.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -O0" />
 <name_val_pair name=".\Generated_Source\PSoC4\MotorComms_tx.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -O0" />
 <name_val_pair name=".\Generated_Source\PSoC4\MotorComms_rx.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -I.\Generated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -O0" />
+<name_val_pair name="C:\GIT\wpi_sample_return_challenge_2015\RockRaidersPSOCCode\RockRaidersPSOCCode.cydsn\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.hex" v="-mthumb -march=armv6-m -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T .\Generated_Source\PSoC4\cm0gcc.ld -g -specs=nano.specs &quot;-u _printf_float&quot; &quot;&quot; -Wl,--gc-sections" />
 </name>
 </genericCmdLineData>
-<codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\sam\AppData\Local\Cypress Semiconductor\PSoC Creator\3.1&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p &quot;C:\Users\sam\Documents\PSoC Creator\RockRaidersPSOCCode\RockRaidersPSOCCode.cydsn\RockRaidersPSOCCode.cyprj&quot; -d CY8C4245AXI-483 -s &quot;C:\Users\sam\Documents\PSoC Creator\RockRaidersPSOCCode\RockRaidersPSOCCode.cydsn\Generated_Source\PSoC4&quot; -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
+<codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\sam\AppData\Local\Cypress Semiconductor\PSoC Creator\3.1&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p C:\GIT\wpi_sample_return_challenge_2015\RockRaidersPSOCCode\RockRaidersPSOCCode.cydsn\RockRaidersPSOCCode.cyprj -d CY8C4245AXI-483 -s C:\GIT\wpi_sample_return_challenge_2015\RockRaidersPSOCCode\RockRaidersPSOCCode.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
 </CyGuid_b0374e30-ce3a-47f2-ad85-821643292c68>
 </dataGuid>
 <dataGuid v="597c5b74-0c46-4204-8b7f-96f3570671dc">
@@ -2072,14 +2073,14 @@
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 </warp_dep>
-<deps_time v="130775014894023401" />
+<deps_time v="130780176574061614" />
 <top_block v="TopDesign" />
 <last_generation v="1" />
 </CyGuid_925cc1e1-309e-4e08-b0a1-09a83c35b157>
 </dataGuid>
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
-<deps_time v="130780143593461601" />
+<deps_time v="130780177592372601" />
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
 <dataGuid v="237c8ed1-e161-4c9d-af97-582eda6d6952">
