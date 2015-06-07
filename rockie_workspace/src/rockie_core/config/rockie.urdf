@@ -65,4 +65,28 @@
   </joint>
 
   <!-- adding the sample tray will be necessary sometime -->
+
+  <link name="stereo_camera">
+  </link>
+
+  <joint name="corner_to_stereo_camera" type="fixed">
+    <parent link="corner"/>
+    <child link="stereo_camera"/>
+
+    <origin xyz="0.6 0.3 0.5"/>
+
+  </joint>
+  <joint name="/left_camera_joint" type="fixed">
+     <origin rpy="0.463344 -0.886846 -0.408139" xyz="-0.137257 0.105664 0.019686"/>
+     <parent link="stereo_camera"/>
+     <child link="/left_camera"/>
+  </joint>
+  <link name="/left_camera" type="camera"/>
+  <!-- added after running camera_pose_calibration -->
+  <joint name="/right_camera_joint" type="fixed">
+     <origin rpy="0.132469 0.214288 0.101302" xyz="0.691138 0.146036 0.124159"/>
+     <parent link="stereo_camera"/>
+     <child link="/right_camera"/>
+  </joint>
+  <link name="/right_camera" type="camera"/>
 </robot>
