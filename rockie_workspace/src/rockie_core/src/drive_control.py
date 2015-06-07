@@ -32,6 +32,8 @@ class DriveControl:
     self.desired_linear_velocity = 0.0 # m/s
     self.actual_speeds = np.array([0.0, 0.0, 0.0, 0.0])
 
+    self.startController()
+
   def startController(self):
     rospy.Timer(rospy.Duration(self.control_rate), self.controlLoop)
 
