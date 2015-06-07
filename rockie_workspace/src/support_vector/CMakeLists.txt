@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(neural_network)
+project(support_vector)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -80,7 +80,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES neural_network
+#  LIBRARIES support_vector
 #  CATKIN_DEPENDS rospy std_msgs
 #  DEPENDS system_lib
 )
@@ -97,19 +97,19 @@ include_directories(
 )
 
 ## Declare a cpp library
-# add_library(neural_network
-#   src/${PROJECT_NAME}/neural_network.cpp
+# add_library(support_vector
+#   src/${PROJECT_NAME}/support_vector.cpp
 # )
 
 ## Declare a cpp executable
-# add_executable(neural_network_node src/neural_network_node.cpp)
+# add_executable(support_vector_node src/support_vector_node.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
-# add_dependencies(neural_network_node neural_network_generate_messages_cpp)
+# add_dependencies(support_vector_node support_vector_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(neural_network_node
+# target_link_libraries(support_vector_node
 #   ${catkin_LIBRARIES}
 # )
 
@@ -128,7 +128,7 @@ include_directories(
 # )
 
 ## Mark executables and/or libraries for installation
-# install(TARGETS neural_network neural_network_node
+# install(TARGETS support_vector support_vector_node
 #   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
@@ -153,7 +153,7 @@ include_directories(
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_neural_network.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_support_vector.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
