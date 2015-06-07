@@ -2,15 +2,15 @@
   <include file="$(find network_camera)/launch/axis.launch">
     <!-- update names after adding to robot -->
     <arg name="name" value="left_camera"/>
-    <arg name="hostname" value="169.254.22.100"/>
-    <arg name="password" value="axle"/>
+    <arg name="hostname" value="169.254.22.101"/>
+    <arg name="password" value="sparks"/>
   </include>
 
   <include file="$(find network_camera)/launch/axis.launch">
     <!-- update names after adding to robot -->
     <arg name="name" value="right_camera"/>
-    <arg name="hostname" value="169.254.22.101"/>
-    <arg name="password" value="sparks"/>
+    <arg name="hostname" value="169.254.22.100"/>
+    <arg name="password" value="axle"/>
   </include>
 
   <include file="$(find network_camera)/launch/axis.launch">
