@@ -66,16 +66,34 @@
 
   <!-- adding the sample tray will be necessary sometime -->
 
+  <!--
+  rotated frame of the stereo camera platform at the axis of rotation on the
+  right side of the robot
+  -->
+  <link name="stereo_camera_platform">
+  </link>
+
+  
+  <joint name="corner_to_stereo_camera_platform" type="fixed">
+    <parent link="corner"/>
+    <child link="stereo_camera_platform"/>
+    <!-- 30 degree rotation of the stereo camera platform -->
+    <origin xyz="0.9017 0 0.6985" rpy="0.0 0.5235987755982988 0.0"/>
+  </joint>
+
+  <!--
+  camera origin
+  -->
   <link name="stereo_camera">
   </link>
 
-  <joint name="corner_to_stereo_camera" type="fixed">
-    <parent link="corner"/>
+  <joint name="stereo_camera_platform_to_stereo_camera" type="fixed">
+    <parent link="stereo_camera_platform"/>
     <child link="stereo_camera"/>
-
-    <origin xyz="0.6 0.3 0.5"/>
-
+    <!-- rotation because of different coordinate system for cameras -->
+    <origin xyz="0.0333375 0.5651499999999999 0.038099999999999995" rpy="-1.5707963267948966 0 -1.5707963267948966"/>
   </joint>
+
   <joint name="/left_camera_joint" type="fixed">
      <origin rpy="0.463344 -0.886846 -0.408139" xyz="-0.137257 0.105664 0.019686"/>
      <parent link="stereo_camera"/>
@@ -89,4 +107,5 @@
      <child link="/right_camera"/>
   </joint>
   <link name="/right_camera" type="camera"/>
+
 </robot>

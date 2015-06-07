@@ -1,6 +1,7 @@
 <launch>
   <arg name="rviz" default="false" />
   <arg name="rtabmapviz" default="false" />
+  <arg name="disembodied" default="false" />
 
   <include file="$(find stereo_slam)/launch/stereo_camera.launch"/>
    
@@ -9,7 +10,7 @@
   
   <arg name="pi/2" value="1.5707963267948966" />
   <arg name="optical_rotate" value="0 0 0 -$(arg pi/2) 0 -$(arg pi/2)" />
-  <node pkg="tf" type="static_transform_publisher" name="camera_base_link"
+  <node if="$(arg disembodied)" pkg="tf" type="static_transform_publisher" name="camera_base_link"
     args="$(arg optical_rotate) base_link stereo_camera 100" />
   
    <!-- Stereo Odometry -->   
