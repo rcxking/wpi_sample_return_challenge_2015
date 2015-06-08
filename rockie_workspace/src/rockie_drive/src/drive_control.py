@@ -8,7 +8,6 @@ and turning that into a desired speed for the robot
 
 import rospy
 import numpy as np
-import Time
 
 from geometry_msgs.msg import Twist
 from serial_node.srv import WheelVel

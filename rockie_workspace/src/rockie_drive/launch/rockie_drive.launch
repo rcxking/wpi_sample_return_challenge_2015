@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="rockie_drive" type="drive_control.py" name="drive_control" output="screen"/>
+</launch>

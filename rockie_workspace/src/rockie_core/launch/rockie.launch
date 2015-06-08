@@ -8,4 +8,5 @@
   <include file="$(find serial_node)/launch/serial_node.launch"/>
   <include file="$(find object_tracker)/launch/object_tracker.launch"/>
   <include file="$(find rockie_manipulation)/launch/rockie_manipulation.launch"/>
+  <include file="$(find rockie_drive)/launch/rockie_drive.launch"/>
 </launch>
