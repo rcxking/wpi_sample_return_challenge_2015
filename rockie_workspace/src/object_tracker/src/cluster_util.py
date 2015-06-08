@@ -345,23 +345,25 @@ def simulateData(
 def estimatePoints(
     points,
     directions,
-    ground_truth,
+    ground_truth = None,
     threshold = 0.05,
     intersection_per_line = True,
     filter_distance = True,
     kmeans = False,
-    plot_data = False
+    plot_data = False,
+    bounds = (0,1,0,1,0,1)
     ):
   intersections = None
   counts = None
   if intersection_per_line:
     intersections, counts = interSectionPerLine(points, directions, \
         ground_truth = ground_truth, threshold = threshold,
-        plot_data = plot_data)
+        plot_data = plot_data, bounds = bounds
+        )
   else:
     intersections = intersectionByDistance(points, directions, \
         ground_truth = ground_truth, threshold = threshold,
-        plot_data = plot_data
+        plot_data = plot_data, bounds = bounds
         )
 
   if filter_distance:
