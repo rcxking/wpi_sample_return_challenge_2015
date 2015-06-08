@@ -4,7 +4,7 @@
     <block name="TimerUDB" BASE="0x0" SIZE="0x0" desc="" visible="true" />
     <register name="Timer_1_COUNTER" address="0x400F0000" bitWidth="32" desc="UDB.A0 - Current Down Counter Value" />
     <register name="Timer_1_PERIOD" address="0x400F0020" bitWidth="32" desc="UDB.D0 - Assigned Period" />
-    <register name="Timer_1_Control_Reg" address="0x400F0071" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value">
+    <register name="Timer_1_Control_Reg" address="0x400F0070" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value">
       <field name="CTRL_ENABLE" from="7" to="7" access="RW" resetVal="" desc="Enable the Timer" />
       <field name="CTRL_CMODE" from="6" to="5" access="RW" resetVal="" desc="Capture Mode" />
       <field name="CTRL_TEN" from="4" to="4" access="RW" resetVal="" desc="Trigger Enable Bit" />

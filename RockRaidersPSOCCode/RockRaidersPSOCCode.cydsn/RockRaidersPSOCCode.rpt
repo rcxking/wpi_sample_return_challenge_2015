@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.778ms
+Loading plugins phase: Elapsed time ==> 0s.359ms
 Initializing data phase: Elapsed time ==> 0s.000ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p C:\GIT\wpi_sample_return_challenge_2015\RockRaidersPSOCCode\RockRaidersPSOCCode.cydsn\RockRaidersPSOCCode.cyprj -d CY8C4245AXI-483 -s C:\GIT\wpi_sample_return_challenge_2015\RockRaidersPSOCCode\RockRaidersPSOCCode.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 3s.825ms
+Elaboration phase: Elapsed time ==> 34s.690ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.430ms
+HDL generation phase: Elapsed time ==> 1s.294ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -41,7 +41,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\GIT\wpi_sam
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Mon Jun 08 00:26:34 2015
+Mon Jun 08 11:57:33 2015
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 RockRaidersPSOCCode.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Mon Jun 08 00:26:34 2015
+Mon Jun 08 11:57:33 2015
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\..\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\..\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
@@ -90,7 +90,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\GIT\wpi_sam
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Mon Jun 08 00:26:35 2015
+Mon Jun 08 11:57:35 2015
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -122,7 +122,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\GIT\wpi_sam
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Mon Jun 08 00:26:36 2015
+Mon Jun 08 11:57:37 2015
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -357,14 +357,14 @@ CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\wa
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\bin/warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\GIT\wpi_sample_return_challenge_2015\RockRaidersPSOCCode\RockRaidersPSOCCode.cydsn\RockRaidersPSOCCode.cyprj -dcpsoc3 RockRaidersPSOCCode.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 2s.924ms
+Warp synthesis phase: Elapsed time ==> 5s.722ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V3.1.0.2288, Family: PSoC3, Started at: Monday, 08 June 2015 00:26:37
+cyp3fit: V3.1.0.2288, Family: PSoC3, Started at: Monday, 08 June 2015 11:57:39
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\GIT\wpi_sample_return_challenge_2015\RockRaidersPSOCCode\RockRaidersPSOCCode.cydsn\RockRaidersPSOCCode.cyprj -d CY8C4245AXI-483 RockRaidersPSOCCode.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.041ms
+Design parsing phase: Elapsed time ==> 0s.172ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -375,8 +375,8 @@ Assigning clock timer_clock to clock HFCLK because it is a pass-through
 Removing unused cells resulting from optimization
 Done removing unused cells.
 <CYPRESSTAG name="Global Clock Selection" icon="FILE_RPT_TECHM">
-    Fixed Function Clock 2: Automatic-assigning  clock 'MotorComms_SCBCLK'. Signal=\MotorComms:Net_847_ff2\
-    Fixed Function Clock 3: Automatic-assigning  clock 'PCComms_SCBCLK'. Signal=\PCComms:Net_847_ff3\
+    Fixed Function Clock 2: Automatic-assigning  clock 'PCComms_SCBCLK'. Signal=\PCComms:Net_847_ff2\
+    Fixed Function Clock 3: Automatic-assigning  clock 'MotorComms_SCBCLK'. Signal=\MotorComms:Net_847_ff3\
 <CYPRESSTAG name="UDB Clock/Enable Remapping Results">
     UDB Clk/Enable \Timer_1:TimerUDB:clock_enable_block\: with output requested to be synchronous
         ClockIn: HFCLK was determined to be a global clock that is synchronous to HFCLK
@@ -388,6 +388,8 @@ Done removing unused cells.
         ClockOut: HFCLK, EnableOut: Constant 1
 </CYPRESSTAG>
 </CYPRESSTAG>
+ADD: pft.M0040: information: The following 1 pin(s) will be assigned a location by the fitter: ClosePressure(0)
+
 
 Removing unused cells resulting from optimization
 Done removing unused cells.
@@ -414,7 +416,7 @@ Design Equations
             Out Sync Option: NOSYNC
             Interrupt generated: False
             Interrupt mode: NONE
-            Drive mode: CMOS_OUT
+            Drive mode: HI_Z_DIGITAL
             VTrip: EITHER
             Slew: FAST
             Input Sync needed: False
@@ -436,7 +438,7 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO RefSel: VCC_IO
             Required Capabilitites: DIGITAL
-            Initial Value: 0
+            Initial Value: 1
             IO Voltage: 0
         PORT MAP (
             pa_out => CloseExhaust(0)__PA ,
@@ -452,7 +454,7 @@ Design Equations
             Out Sync Option: NOSYNC
             Interrupt generated: False
             Interrupt mode: NONE
-            Drive mode: CMOS_OUT
+            Drive mode: HI_Z_DIGITAL
             VTrip: EITHER
             Slew: FAST
             Input Sync needed: False
@@ -474,14 +476,11 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO RefSel: VCC_IO
             Required Capabilitites: DIGITAL
-            Initial Value: 0
+            Initial Value: 1
             IO Voltage: 0
         PORT MAP (
             pa_out => ClosePressure(0)__PA ,
             pad => ClosePressure(0)_PAD );
-        Properties:
-        {
-        }
 
     Pin : Name = FPGA_EN(0)
         Attributes:
@@ -490,7 +489,7 @@ Design Equations
             Out Sync Option: NOSYNC
             Interrupt generated: False
             Interrupt mode: NONE
-            Drive mode: CMOS_OUT
+            Drive mode: HI_Z_DIGITAL
             VTrip: EITHER
             Slew: FAST
             Input Sync needed: False
@@ -512,7 +511,7 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO RefSel: VCC_IO
             Required Capabilitites: DIGITAL
-            Initial Value: 0
+            Initial Value: 1
             IO Voltage: 0
         PORT MAP (
             pa_out => FPGA_EN(0)__PA ,
@@ -528,7 +527,7 @@ Design Equations
             Out Sync Option: NOSYNC
             Interrupt generated: False
             Interrupt mode: NONE
-            Drive mode: CMOS_OUT
+            Drive mode: HI_Z_DIGITAL
             VTrip: EITHER
             Slew: FAST
             Input Sync needed: False
@@ -550,7 +549,7 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO RefSel: VCC_IO
             Required Capabilitites: DIGITAL
-            Initial Value: 0
+            Initial Value: 1
             IO Voltage: 0
         PORT MAP (
             pa_out => Green(0)__PA ,
@@ -588,7 +587,7 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO RefSel: VCC_IO
             Required Capabilitites: DIGITAL
-            Initial Value: 0
+            Initial Value: 1
             IO Voltage: 0
         PORT MAP (
             pa_out => MotorControl1EN(0)__PA ,
@@ -626,7 +625,7 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO RefSel: VCC_IO
             Required Capabilitites: DIGITAL
-            Initial Value: 0
+            Initial Value: 1
             IO Voltage: 0
         PORT MAP (
             pa_out => MotorControl2EN(0)__PA ,
@@ -664,7 +663,7 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO RefSel: VCC_IO
             Required Capabilitites: DIGITAL
-            Initial Value: 0
+            Initial Value: 1
             IO Voltage: 0
         PORT MAP (
             pa_out => MotorControl3EN(0)__PA ,
@@ -702,7 +701,7 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO RefSel: VCC_IO
             Required Capabilitites: DIGITAL
-            Initial Value: 0
+            Initial Value: 1
             IO Voltage: 0
         PORT MAP (
             pa_out => MotorControl4EN(0)__PA ,
@@ -740,7 +739,7 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO RefSel: VCC_IO
             Required Capabilitites: DIGITAL
-            Initial Value: 0
+            Initial Value: 1
             IO Voltage: 0
         PORT MAP (
             pa_out => MotorControl5EN(0)__PA ,
@@ -756,7 +755,7 @@ Design Equations
             Out Sync Option: NOSYNC
             Interrupt generated: False
             Interrupt mode: NONE
-            Drive mode: CMOS_OUT
+            Drive mode: HI_Z_DIGITAL
             VTrip: EITHER
             Slew: FAST
             Input Sync needed: False
@@ -778,7 +777,7 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO RefSel: VCC_IO
             Required Capabilitites: DIGITAL
-            Initial Value: 0
+            Initial Value: 1
             IO Voltage: 0
         PORT MAP (
             pa_out => OpenExhaust(0)__PA ,
@@ -794,7 +793,7 @@ Design Equations
             Out Sync Option: NOSYNC
             Interrupt generated: False
             Interrupt mode: NONE
-            Drive mode: CMOS_OUT
+            Drive mode: HI_Z_DIGITAL
             VTrip: EITHER
             Slew: FAST
             Input Sync needed: False
@@ -816,7 +815,7 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO RefSel: VCC_IO
             Required Capabilitites: DIGITAL
-            Initial Value: 0
+            Initial Value: 1
             IO Voltage: 0
         PORT MAP (
             pa_out => OpenPressure(0)__PA ,
@@ -832,7 +831,7 @@ Design Equations
             Out Sync Option: NOSYNC
             Interrupt generated: False
             Interrupt mode: NONE
-            Drive mode: CMOS_OUT
+            Drive mode: HI_Z_DIGITAL
             VTrip: EITHER
             Slew: FAST
             Input Sync needed: False
@@ -854,7 +853,7 @@ Design Equations
             SIO Vtrip: MULTIPLIER_0_5
             SIO RefSel: VCC_IO
             Required Capabilitites: DIGITAL
-            Initial Value: 0
+            Initial Value: 1
             IO Voltage: 0
         PORT MAP (
             pa_out => Red(0)__PA ,
@@ -870,7 +869,7 @@ Design Equations
             Out Sync Option: NOSYNC
             Interrupt generated: False
             Interrupt mode: NONE
-            Drive mode: CMOS_OUT
+            Drive mode: HI_Z_DIGITAL
             VTrip: EITHER
             Slew: FAST
             Input Sync needed: False
@@ -1338,20 +1337,20 @@ TCPWM Blocks                  :    0 :    4 :    4 :   0.00%
 Serial Communication Blocks   :    2 :    0 :    2 : 100.00%
 Segment LCD Blocks            :    0 :    1 :    1 :   0.00%
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.810ms
-Tech mapping phase: Elapsed time ==> 0s.864ms
+Technology Mapping: Elapsed time ==> 1s.423ms
+Tech mapping phase: Elapsed time ==> 2s.363ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="Analog Placement">
-Elapsed time ==> 0.0153882s
+Elapsed time ==> 0.0803398s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 0s.044ms
+Analog Placement phase: Elapsed time ==> 0s.538ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0019686 secs
+Route success=True, Iterations=1 Elapsed=0.0192444 secs
 </CYPRESSTAG>
-Analog Routing phase: Elapsed time ==> 0s.003ms
+Analog Routing phase: Elapsed time ==> 0s.060ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -1362,11 +1361,11 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.201ms
+Analog Code Generation phase: Elapsed time ==> 0s.525ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
-I2076: Total run-time: 1.0 sec.
+I2076: Total run-time: 1.4 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
@@ -1390,17 +1389,17 @@ PLD Packing Summary
 <CYPRESSTAG name="Packed PLD Contents">
 Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
 </CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.002ms
+PLD Packing: Elapsed time ==> 0s.028ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.026ms
+Partitioning: Elapsed time ==> 0s.089ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Simulated Annealing">
-Annealing: Elapsed time ==> 0s.003ms
+Annealing: Elapsed time ==> 0s.037ms
 <CYPRESSTAG name="Simulated Annealing Results">
 The seed used for moves was 114161200.
 Inital cost was 47, final cost is 47 (0.00% improvement).</CYPRESSTAG>
@@ -1542,6 +1541,28 @@ datapathcell: Name =\Timer_1:TimerUDB:sT32:timerdp:u0\
     Clock Enable: True
     Next in chain : \Timer_1:TimerUDB:sT32:timerdp:u1\
 
+controlcell: Name =\Timer_1:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
+    PORT MAP (
+        clock => ClockBlock_HFCLK ,
+        control_7 => \Timer_1:TimerUDB:control_7\ ,
+        control_6 => \Timer_1:TimerUDB:control_6\ ,
+        control_5 => \Timer_1:TimerUDB:control_5\ ,
+        control_4 => \Timer_1:TimerUDB:control_4\ ,
+        control_3 => \Timer_1:TimerUDB:control_3\ ,
+        control_2 => \Timer_1:TimerUDB:control_2\ ,
+        control_1 => \Timer_1:TimerUDB:control_1\ ,
+        control_0 => \Timer_1:TimerUDB:control_0\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "11111111"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
 UDB [UDB=(1,0)] contents:
 datapathcell: Name =\Timer_1:TimerUDB:sT32:timerdp:u2\
     PORT MAP (
@@ -1616,28 +1637,6 @@ datapathcell: Name =\Timer_1:TimerUDB:sT32:timerdp:u1\
     Previous in chain : \Timer_1:TimerUDB:sT32:timerdp:u0\
     Next in chain : \Timer_1:TimerUDB:sT32:timerdp:u2\
 
-controlcell: Name =\Timer_1:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
-    PORT MAP (
-        clock => ClockBlock_HFCLK ,
-        control_7 => \Timer_1:TimerUDB:control_7\ ,
-        control_6 => \Timer_1:TimerUDB:control_6\ ,
-        control_5 => \Timer_1:TimerUDB:control_5\ ,
-        control_4 => \Timer_1:TimerUDB:control_4\ ,
-        control_3 => \Timer_1:TimerUDB:control_3\ ,
-        control_2 => \Timer_1:TimerUDB:control_2\ ,
-        control_1 => \Timer_1:TimerUDB:control_1\ ,
-        control_0 => \Timer_1:TimerUDB:control_0\ );
-    Properties:
-    {
-        cy_ctrl_mode_0 = "11111111"
-        cy_ctrl_mode_1 = "00000000"
-        cy_ext_reset = 0
-        cy_force_order = 1
-        cy_init_value = "00000000"
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-
 Intr hod @ [IntrHod=(0)]: 
   Intr@ [IntrHod=(0)][IntrId=(10)] 
     interrupt: Name =\PCComms:SCB_IRQ\
@@ -1648,6 +1647,45 @@ Intr hod @ [IntrHod=(0)]:
             int_type = "10"
         }
 Port 0 contains the following IO cells:
+[IoId=0]: 
+Pin : Name = ClosePressure(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_DIGITAL
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => ClosePressure(0)__PA ,
+        pad => ClosePressure(0)_PAD );
+    Properties:
+    {
+    }
+
 [IoId=4]: 
 Pin : Name = \MotorComms:rx(0)\
     Attributes:
@@ -1758,7 +1796,7 @@ Pin : Name = MotorControl1EN(0)
         SIO Vtrip: MULTIPLIER_0_5
         SIO RefSel: VCC_IO
         Required Capabilitites: DIGITAL
-        Initial Value: 0
+        Initial Value: 1
         IO Voltage: 0
     PORT MAP (
         pa_out => MotorControl1EN(0)__PA ,
@@ -1797,7 +1835,7 @@ Pin : Name = MotorControl2EN(0)
         SIO Vtrip: MULTIPLIER_0_5
         SIO RefSel: VCC_IO
         Required Capabilitites: DIGITAL
-        Initial Value: 0
+        Initial Value: 1
         IO Voltage: 0
     PORT MAP (
         pa_out => MotorControl2EN(0)__PA ,
@@ -1837,7 +1875,7 @@ Pin : Name = MotorControl3EN(0)
         SIO Vtrip: MULTIPLIER_0_5
         SIO RefSel: VCC_IO
         Required Capabilitites: DIGITAL
-        Initial Value: 0
+        Initial Value: 1
         IO Voltage: 0
     PORT MAP (
         pa_out => MotorControl3EN(0)__PA ,
@@ -1876,7 +1914,7 @@ Pin : Name = MotorControl4EN(0)
         SIO Vtrip: MULTIPLIER_0_5
         SIO RefSel: VCC_IO
         Required Capabilitites: DIGITAL
-        Initial Value: 0
+        Initial Value: 1
         IO Voltage: 0
     PORT MAP (
         pa_out => MotorControl4EN(0)__PA ,
@@ -1915,7 +1953,7 @@ Pin : Name = MotorControl5EN(0)
         SIO Vtrip: MULTIPLIER_0_5
         SIO RefSel: VCC_IO
         Required Capabilitites: DIGITAL
-        Initial Value: 0
+        Initial Value: 1
         IO Voltage: 0
     PORT MAP (
         pa_out => MotorControl5EN(0)__PA ,
@@ -1932,7 +1970,7 @@ Pin : Name = FPGA_EN(0)
         Out Sync Option: NOSYNC
         Interrupt generated: False
         Interrupt mode: NONE
-        Drive mode: CMOS_OUT
+        Drive mode: HI_Z_DIGITAL
         VTrip: EITHER
         Slew: FAST
         Input Sync needed: False
@@ -1954,7 +1992,7 @@ Pin : Name = FPGA_EN(0)
         SIO Vtrip: MULTIPLIER_0_5
         SIO RefSel: VCC_IO
         Required Capabilitites: DIGITAL
-        Initial Value: 0
+        Initial Value: 1
         IO Voltage: 0
     PORT MAP (
         pa_out => FPGA_EN(0)__PA ,
@@ -1973,7 +2011,7 @@ Pin : Name = Red(0)
         Out Sync Option: NOSYNC
         Interrupt generated: False
         Interrupt mode: NONE
-        Drive mode: CMOS_OUT
+        Drive mode: HI_Z_DIGITAL
         VTrip: EITHER
         Slew: FAST
         Input Sync needed: False
@@ -1995,7 +2033,7 @@ Pin : Name = Red(0)
         SIO Vtrip: MULTIPLIER_0_5
         SIO RefSel: VCC_IO
         Required Capabilitites: DIGITAL
-        Initial Value: 0
+        Initial Value: 1
         IO Voltage: 0
     PORT MAP (
         pa_out => Red(0)__PA ,
@@ -2004,7 +2042,124 @@ Pin : Name = Red(0)
     {
     }
 
-[IoId=1]: 
+[IoId=2]: 
+Pin : Name = Green(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_DIGITAL
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => Green(0)__PA ,
+        pad => Green(0)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=3]: 
+Pin : Name = OpenPressure(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_DIGITAL
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => OpenPressure(0)__PA ,
+        pad => OpenPressure(0)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=4]: 
+Pin : Name = OpenExhaust(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_DIGITAL
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => OpenExhaust(0)__PA ,
+        pad => OpenExhaust(0)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=5]: 
 Pin : Name = Yellow(0)
     Attributes:
         In Group/Port: True
@@ -2012,7 +2167,7 @@ Pin : Name = Yellow(0)
         Out Sync Option: NOSYNC
         Interrupt generated: False
         Interrupt mode: NONE
-        Drive mode: CMOS_OUT
+        Drive mode: HI_Z_DIGITAL
         VTrip: EITHER
         Slew: FAST
         Input Sync needed: False
@@ -2044,162 +2199,6 @@ Pin : Name = Yellow(0)
     {
     }
 
-[IoId=2]: 
-Pin : Name = Green(0)
-    Attributes:
-        In Group/Port: True
-        In Sync Option: AUTO
-        Out Sync Option: NOSYNC
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: CMOS_OUT
-        VTrip: EITHER
-        Slew: FAST
-        Input Sync needed: False
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: ANY
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: True
-        Is OE Registered: False
-        Uses Analog: False
-        Can contain Digital: True
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
-        Initial Value: 0
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => Green(0)__PA ,
-        pad => Green(0)_PAD );
-    Properties:
-    {
-    }
-
-[IoId=3]: 
-Pin : Name = OpenPressure(0)
-    Attributes:
-        In Group/Port: True
-        In Sync Option: AUTO
-        Out Sync Option: NOSYNC
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: CMOS_OUT
-        VTrip: EITHER
-        Slew: FAST
-        Input Sync needed: False
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: ANY
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: True
-        Is OE Registered: False
-        Uses Analog: False
-        Can contain Digital: True
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
-        Initial Value: 0
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => OpenPressure(0)__PA ,
-        pad => OpenPressure(0)_PAD );
-    Properties:
-    {
-    }
-
-[IoId=4]: 
-Pin : Name = OpenExhaust(0)
-    Attributes:
-        In Group/Port: True
-        In Sync Option: AUTO
-        Out Sync Option: NOSYNC
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: CMOS_OUT
-        VTrip: EITHER
-        Slew: FAST
-        Input Sync needed: False
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: ANY
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: True
-        Is OE Registered: False
-        Uses Analog: False
-        Can contain Digital: True
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
-        Initial Value: 0
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => OpenExhaust(0)__PA ,
-        pad => OpenExhaust(0)_PAD );
-    Properties:
-    {
-    }
-
-[IoId=5]: 
-Pin : Name = ClosePressure(0)
-    Attributes:
-        In Group/Port: True
-        In Sync Option: AUTO
-        Out Sync Option: NOSYNC
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: CMOS_OUT
-        VTrip: EITHER
-        Slew: FAST
-        Input Sync needed: False
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: ANY
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: True
-        Is OE Registered: False
-        Uses Analog: False
-        Can contain Digital: True
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
-        Initial Value: 0
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => ClosePressure(0)__PA ,
-        pad => ClosePressure(0)_PAD );
-    Properties:
-    {
-    }
-
 [IoId=6]: 
 Pin : Name = CloseExhaust(0)
     Attributes:
@@ -2208,7 +2207,7 @@ Pin : Name = CloseExhaust(0)
         Out Sync Option: NOSYNC
         Interrupt generated: False
         Interrupt mode: NONE
-        Drive mode: CMOS_OUT
+        Drive mode: HI_Z_DIGITAL
         VTrip: EITHER
         Slew: FAST
         Input Sync needed: False
@@ -2230,7 +2229,7 @@ Pin : Name = CloseExhaust(0)
         SIO Vtrip: MULTIPLIER_0_5
         SIO RefSel: VCC_IO
         Required Capabilitites: DIGITAL
-        Initial Value: 0
+        Initial Value: 1
         IO Voltage: 0
     PORT MAP (
         pa_out => CloseExhaust(0)__PA ,
@@ -2331,8 +2330,8 @@ Clock group 0:
             ext => ClockBlock_EXTCLK ,
             imo => ClockBlock_IMO ,
             hfclk => ClockBlock_HFCLK ,
-            ff_div_2 => \MotorComms:Net_847_ff2\ ,
-            ff_div_3 => \PCComms:Net_847_ff3\ );
+            ff_div_2 => \PCComms:Net_847_ff2\ ,
+            ff_div_3 => \MotorComms:Net_847_ff3\ );
         Properties:
         {
         }
@@ -2345,7 +2344,7 @@ Serial Communication Block group 0:
     Scb Block @ [FFB(SCB,0)]: 
     m0s8scbcell: Name =\PCComms:SCB\
         PORT MAP (
-            clock => \PCComms:Net_847_ff3\ ,
+            clock => \PCComms:Net_847_ff2\ ,
             interrupt => Net_115 ,
             rx => \PCComms:Net_654\ ,
             tx => \PCComms:Net_656\ ,
@@ -2367,7 +2366,7 @@ Serial Communication Block group 0:
     Scb Block @ [FFB(SCB,1)]: 
     m0s8scbcell: Name =\MotorComms:SCB\
         PORT MAP (
-            clock => \MotorComms:Net_847_ff2\ ,
+            clock => \MotorComms:Net_847_ff3\ ,
             interrupt => Net_1893 ,
             rx => \MotorComms:Net_654\ ,
             tx => \MotorComms:Net_656\ ,
@@ -2414,7 +2413,8 @@ Port Configuration report
      |     |       | Interrupt |                  |                    | 
 Port | Pin | Fixed |      Type |       Drive Mode |               Name | Connections
 -----+-----+-------+-----------+------------------+--------------------+-------------------------
-   0 |   4 |     * |      NONE |     HI_Z_DIGITAL | \MotorComms:rx(0)\ | FB(\MotorComms:Net_654\)
+   0 |   0 |       |      NONE |     HI_Z_DIGITAL |   ClosePressure(0) | 
+     |   4 |     * |      NONE |     HI_Z_DIGITAL | \MotorComms:rx(0)\ | FB(\MotorComms:Net_654\)
      |   5 |     * |      NONE |         CMOS_OUT | \MotorComms:tx(0)\ | In(\MotorComms:Net_656\)
      |   6 |     * |      NONE |         CMOS_OUT | MotorControl1EN(0) | 
      |   7 |     * |      NONE |         CMOS_OUT | MotorControl2EN(0) | 
@@ -2422,15 +2422,14 @@ Port | Pin | Fixed |      Type |       Drive Mode |               Name | Connect
    1 |   0 |     * |      NONE |         CMOS_OUT | MotorControl3EN(0) | 
      |   1 |     * |      NONE |         CMOS_OUT | MotorControl4EN(0) | 
      |   2 |     * |      NONE |         CMOS_OUT | MotorControl5EN(0) | 
-     |   3 |     * |      NONE |         CMOS_OUT |         FPGA_EN(0) | 
+     |   3 |     * |      NONE |     HI_Z_DIGITAL |         FPGA_EN(0) | 
 -----+-----+-------+-----------+------------------+--------------------+-------------------------
-   3 |   0 |     * |      NONE |         CMOS_OUT |             Red(0) | 
-     |   1 |     * |      NONE |         CMOS_OUT |          Yellow(0) | In(Net_1901)
-     |   2 |     * |      NONE |         CMOS_OUT |           Green(0) | 
-     |   3 |     * |      NONE |         CMOS_OUT |    OpenPressure(0) | 
-     |   4 |     * |      NONE |         CMOS_OUT |     OpenExhaust(0) | 
-     |   5 |     * |      NONE |         CMOS_OUT |   ClosePressure(0) | 
-     |   6 |     * |      NONE |         CMOS_OUT |    CloseExhaust(0) | 
+   3 |   0 |     * |      NONE |     HI_Z_DIGITAL |             Red(0) | 
+     |   2 |     * |      NONE |     HI_Z_DIGITAL |           Green(0) | 
+     |   3 |     * |      NONE |     HI_Z_DIGITAL |    OpenPressure(0) | 
+     |   4 |     * |      NONE |     HI_Z_DIGITAL |     OpenExhaust(0) | 
+     |   5 |     * |      NONE |     HI_Z_DIGITAL |          Yellow(0) | In(Net_1901)
+     |   6 |     * |      NONE |     HI_Z_DIGITAL |    CloseExhaust(0) | 
 -----+-----+-------+-----------+------------------+--------------------+-------------------------
    4 |   0 |     * |      NONE |     HI_Z_DIGITAL |    \PCComms:rx(0)\ | FB(\PCComms:Net_654\)
      |   1 |     * |      NONE |         CMOS_OUT |    \PCComms:tx(0)\ | In(\PCComms:Net_656\)
@@ -2438,32 +2437,32 @@ Port | Pin | Fixed |      Type |       Drive Mode |               Name | Connect
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.004ms
-Digital Placement phase: Elapsed time ==> 1s.326ms
+Digital component placer commit/Report: Elapsed time ==> 0s.003ms
+Digital Placement phase: Elapsed time ==> 3s.611ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 Routing successful.
-Digital Routing phase: Elapsed time ==> 0s.963ms
+Digital Routing phase: Elapsed time ==> 1s.954ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream and API generation">
-Bitstream and API generation phase: Elapsed time ==> 0s.352ms
+Bitstream and API generation phase: Elapsed time ==> 1s.248ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream verification">
-Bitstream verification phase: Elapsed time ==> 0s.086ms
+Bitstream verification phase: Elapsed time ==> 0s.228ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in RockRaidersPSOCCode_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.351ms
+Static timing analysis phase: Elapsed time ==> 1s.625ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.254ms
+Design database save phase: Elapsed time ==> 0s.541ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 4s.516ms
+cydsfit: Elapsed time ==> 13s.498ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 4s.576ms
-API generation phase: Elapsed time ==> 4s.226ms
-Dependency generation phase: Elapsed time ==> 0s.022ms
-Cleanup phase: Elapsed time ==> 0s.002ms
+Fitter phase: Elapsed time ==> 13s.988ms
+API generation phase: Elapsed time ==> 8s.788ms
+Dependency generation phase: Elapsed time ==> 0s.059ms
+Cleanup phase: Elapsed time ==> 0s.001ms

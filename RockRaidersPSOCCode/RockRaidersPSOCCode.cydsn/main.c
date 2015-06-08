@@ -24,14 +24,15 @@ int ScaleVal(int val);  //Scales a value to match our schema.
 int main()
 {
     PCComms_SetCustomInterruptHandler(&SerialCB);
-
+    DisableAll();
     PCComms_Start();
+    MotorComms_Start();
     CyGlobalIntEnable;
     OpenExhaust_Write(1);
     CloseExhaust_Write(1);
     for(;;)
     {
-        CyDelay(100);
+        CyDelay(10);
         if(linesz !=0)
         {
             if(line[linesz-1]=='\n' || line[linesz-1]=='\r') //Assume that the computer isn't doing anything funky. 
@@ -57,6 +58,7 @@ void parseSerial(uint8 *data,uint8 datasz)
     char buff[255];
     if(motor==0&&value==0)//SHUT. DOWN. EVERYTHING..
     {
+        PCComms_UartPutString("YOU IDIOT! YOU'LL KILL SOMEONE!\r\n");
         ReallyDisableEverything();
         return;
     }
@@ -64,6 +66,7 @@ void parseSerial(uint8 *data,uint8 datasz)
     {
         if(value==1) //OPEN
         {
+            PCComms_UartPutString("OPENING CLAW \r\n");
             CloseExhaust_Write(0);
             ClosePressure_Write(0);
             OpenExhaust_Write(1);
@@ -71,6 +74,7 @@ void parseSerial(uint8 *data,uint8 datasz)
         }
         else if(value==-1) //CLOSE
         {
+            PCComms_UartPutString("CLOSING CLAW \r\n");
             CloseExhaust_Write(1);
             ClosePressure_Write(1);
             OpenExhaust_Write(0);
@@ -81,9 +85,15 @@ void parseSerial(uint8 *data,uint8 datasz)
     if(motor ==11 || motor ==12)//Red or Green light
     {
         if(motor==11)
+        {
+            PCComms_UartPutString("RED LIGHT\r\n");
             Red_Write(value);
+        }
         else if(motor==12)
+        {
+            PCComms_UartPutString("GREEN LIGHT\r\n");
             Green_Write(value);
+        }
         return;
     }
     if(value==255)
@@ -91,7 +101,7 @@ void parseSerial(uint8 *data,uint8 datasz)
       snprintf(buff,255,"Motor %d is set to speed %d\r\n",motor,motors[motor]);
       PCComms_UartPutString(buff);
     }
-    else if(value<128&&value>-128) //If it's an acceptable value
+    else if(value<64&&value>-64) //If it's an acceptable value
     {      
       motors[motor]=value;
       SetMotor(motor,ScaleVal(value));
@@ -100,7 +110,7 @@ void parseSerial(uint8 *data,uint8 datasz)
     }
     else
     {
-       snprintf(buff,255,"Bad data. Got: motor:%s value:%s\r\n",motor,value);
+       snprintf(buff,255,"Bad data. Got: motor:%d value:%d\r\n",motor,value);
        PCComms_UartPutString(buff);
     }
 }
@@ -117,54 +127,65 @@ void DisableAll()   //This is the function which cripples all the EN pins. Remin
 
 void SetMotor(int motor, int value) //Sets the speed on the motors. TODO: Remove 'Kill All Humans' subroutine.
 {
+    char buff[255];
+    snprintf(buff,255,"Setting motor %d to %d\r\n",motor,value);
+    PCComms_UartPutString(buff);
     switch(motor)
     {
         case 1: //Rear Right motor, MC1-1
             DisableAll();
             MotorControl1EN_Write(1);
+            CyDelay(10);
             MotorComms_UartPutChar(value);
         break;
         case 2: //Front Right motor, MC1-2
             DisableAll();
             MotorControl1EN_Write(1);
+            CyDelay(10);
             MotorComms_UartPutChar(value+127);
         break;
         case 3: //Rear Left motor, MC2-1
             DisableAll();
             MotorControl2EN_Write(1);
+            CyDelay(10);
             MotorComms_UartPutChar(value);
         break;
         case 4: //Front Left motor, MC2-2
             DisableAll();
             MotorControl2EN_Write(1);
+            CyDelay(10);
             MotorComms_UartPutChar(value+127);
         break;
         case 5: //Arm Rotation motor, MC3-1
             DisableAll();
             MotorControl3EN_Write(1);
+            CyDelay(10);
             MotorComms_UartPutChar(value);
         break;
         case 6: //Hand Rotation motor, MC3-2
             DisableAll();
             MotorControl3EN_Write(1);
+            CyDelay(10);
             MotorComms_UartPutChar(value+127);
         break;
         case 7: //Arm Z Axis motor, MC4-1
             DisableAll();
             MotorControl4EN_Write(1);
+            CyDelay(10);
             MotorComms_UartPutChar(value);
         break;
         case 8: //Right Actuator motor, MC5-1
             DisableAll();
             MotorControl5EN_Write(1);
+            CyDelay(10);
             MotorComms_UartPutChar(value);
         break;
         case 9: //Left Actuator motor, MC5-2
             DisableAll();
             MotorControl5EN_Write(1);
+            CyDelay(10);
             MotorComms_UartPutChar(value+127);
     }
-    
 }
 int ScaleVal(int val)
 {
@@ -175,23 +196,29 @@ int ScaleVal(int val)
 void ReallyDisableEverything() //For the pause mode.
 {
     DisableAll();
+    
     MotorControl1EN_Write(1);
+    CyDelay(10);
     MotorComms_UartPutChar(0);
     MotorControl1EN_Write(0);
     
     MotorControl2EN_Write(1);
+    CyDelay(10);    
     MotorComms_UartPutChar(0);
     MotorControl2EN_Write(0);
     
     MotorControl3EN_Write(1);
+    CyDelay(10);
     MotorComms_UartPutChar(0);
     MotorControl3EN_Write(0);
     
     MotorControl4EN_Write(1);
+    CyDelay(10);
     MotorComms_UartPutChar(0);
     MotorControl4EN_Write(0);
     
     MotorControl5EN_Write(1);
+    CyDelay(10);
     MotorComms_UartPutChar(0);
     MotorControl5EN_Write(0);
 }
