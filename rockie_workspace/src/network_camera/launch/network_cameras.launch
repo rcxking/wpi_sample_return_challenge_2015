@@ -4,6 +4,7 @@
     <arg name="name" value="left_camera"/>
     <arg name="hostname" value="169.254.22.101"/>
     <arg name="password" value="sparks"/>
+    <arg name="observatory_camera" value="true"/>
   </include>
 
   <include file="$(find network_camera)/launch/axis.launch">
@@ -11,6 +12,7 @@
     <arg name="name" value="right_camera"/>
     <arg name="hostname" value="169.254.22.100"/>
     <arg name="password" value="axle"/>
+    <arg name="observatory_camera" value="true"/>
   </include>
 
   <include file="$(find network_camera)/launch/axis.launch">
@@ -18,5 +20,6 @@
     <arg name="name" value="gripper_camera"/>
     <arg name="hostname" value="169.254.22.102"/>
     <arg name="password" value="docs"/>
+    <arg name="manipulator_camera" value="true"/>
   </include>
 </launch>

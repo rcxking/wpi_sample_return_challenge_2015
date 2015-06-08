@@ -8,7 +8,6 @@ and turning that into a desired speed for the robot
 
 import rospy
 import numpy as np
-import Time
 
 from geometry_msgs.msg import Twist
 from serial_node.srv import WheelVel
@@ -31,6 +30,8 @@ class DriveControl:
     self.desired_angular_velocity = 0.0 # m/s
     self.desired_linear_velocity = 0.0 # m/s
     self.actual_speeds = np.array([0.0, 0.0, 0.0, 0.0])
+
+    self.startController()
 
   def startController(self):
     rospy.Timer(rospy.Duration(self.control_rate), self.controlLoop)
