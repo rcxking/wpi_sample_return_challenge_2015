@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 '''
-object_tracker.py 
+tracker.py 
 Node to cluster lines for object detection
 
 
@@ -12,6 +12,7 @@ CSCI-4962
 import numpy as np
 import rospy
 import cluster_util as cu
+from object_tracker.msg import Observation
 
 class ObjectTracker:
   def __init__(self):
@@ -24,6 +25,6 @@ class ObjectTracker:
     self.param = rospy.get_param('param', 0.2)
 
 if __name__ == "__main__":
-  rospy.init_node('object_tracker')
+  rospy.init_node('tracker')
   o = ObjectTracker()
   rospy.spin()
