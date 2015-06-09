@@ -6,7 +6,7 @@ State machine to run for stage 1.
 RPI Rock Raiders
 5/31/15
 
-Last Updated: Bryant Pong: 6/5/15 - 10:37 PM
+Last Updated: Bryant Pong: 6/8/15 - 2:01 PM
 '''
 
 # ROS Libraries:
@@ -21,27 +21,25 @@ import smach_ros
 import cv2
 import numpy as np
 
-# For Neural Network / Object Recognition:
-import theano
-import theano.tensor as T
-import lasagne
-
 # Operating System / Data Libraries:
 import os
+import time
 import cPickle as pickle
 
 # Miscellaneous Libraries:
 import warnings
 import matplotlib.pyplot as plt
 
+# Serial Messages for Services:
+from serial_node.srv import *  
+
 '''
 Global Objects:
 '''
-# Serial Object:
-serialObj = None
 
 # Global flag for whether the sample has been found:
 sampleFound = False  
+
 
 '''
 This state performs system checks on the robot before beginning the run.   
@@ -49,44 +47,17 @@ This state performs system checks on the robot before beginning the run.
 class StartupSequence(smach.State):
 	def __init__(self):
 		smach.State.__init__(self, outcomes=["egressEnter", "serialFailure"])    
-
 	def execute(self, userdata):
 		rospy.loginfo("Executing Startup Sequence") 
-
-		# Create the Serial Port to communicate with the PSOC:
-		rospy.loginfo("Now creating PSOC Serial Object") 
-		global serialObj
-		serialObj = serialhelper.createSerial("/dev/ttyUSB0") 
-		if serialObj != -1:
-			rospy.loginfo("Successfully created PSOC Serial Object")		
-		else:
-			return "serialFailure" 
-
-		# 
-		#nnparams = pickle.load(open("nnparams.dat", "rb"))	 
-
-		# Create the neural network:
-			  
+						
+		rospy.loginfo("Now sending motors to home position") 
+		rospy.wait_for_service("steerservice")
+		try:
+			steerservice = rospy.ServiceProxy('steerservice', SteerService)	 
+			steerservice(False)
+		except rospy.ServiceException, e:
+			print("Service call failed: %s" % e)
 		return "egressEnter"
-
-'''
-In the event of a serial port exception raised, this state provides some 
-advice on looking for debugging issues:    
-'''
-class SerialFailure(smach.State):
-	def __init__(self):
-		smach.State.__init__(self, outcomes=["end"])
-
-	def execute(self, userdata):
-		rospy.loginfo("It looks like I could not connect to the PSOC")
-		rospy.loginfo("Ensure that the following parameters have been set correctly:")
-		rospy.loginfo("1) Is the Serial port set correctly?  (i.e. /dev/ttyUSB0")
-		rospy.loginfo("2) Baud Rate: 115200")
-		rospy.loginfo("3) Data Bits: 8")
-		rospy.loginfo("4) Parity: None")
-		rospy.loginfo("5) Stop Bits: 1")  
-		    
-		return "end"
 
 class Egress(smach.State):
 	def __init__(self):
@@ -94,6 +65,8 @@ class Egress(smach.State):
 
 	def execute(self, userdata):
 		rospy.loginfo("Executing Egress")
+
+		rospy.loginfo("Exiting off  
 		return "transitEnter"
 
 class Transit(smach.State):
@@ -102,6 +75,8 @@ class Transit(smach.State):
 		
 	def execute(self, userdata):
 		rospy.loginfo("Executing Transit")
+					
+		rospy.loginfo("Done executing Transit.  Now beginning search for object.")	
 		return "searchEnter"
 		
 class Search(smach.State):
@@ -157,7 +132,6 @@ def main():
 	sm = smach.StateMachine(outcomes=['complete'])
 	with sm:
 		smach.StateMachine.add("STARTUPSEQUENCE", StartupSequence(), transitions={"egressEnter":"EGRESS"})
-		smach.StateMachine.add("SERIALFAILURE", SerialFailure(), transitions={"end":"complete"})
 		smach.StateMachine.add("EGRESS", Egress(), transitions={"transitEnter":"TRANSIT"})
 		smach.StateMachine.add("TRANSIT", Transit(), transitions={"searchEnter":"SEARCH"})
 		smach.StateMachine.add("SEARCH", Search(), transitions={"searchTransitEnter":"SEARCHTRANSIT"})

@@ -7,7 +7,7 @@ to send to the PSOC.
 RPI Rock Raiders
 6/4/15
 
-Last Updated: Bryant Pong: 6/4/15 - 10:33 PM 
+Last Updated: Bryant Pong: 6/8/15 - 1:30 PM
 '''
 
 # Python Imports:
@@ -49,8 +49,10 @@ def gripper_service(req):
 	# Open the gripper:
 	if req.close:
 		# TODO: close the gripper
+		return
 	else:
 		# TODO: Open the gripper
+		return 
 
 '''
 This service sends motor velocity commands to all four motors of the chassis.
@@ -80,8 +82,10 @@ def steer_service(req):
 	# Steer the robot (true = steer):
 	if req.turned:
 		# TODO: Turn the robot
+		return
 	else:
 		# TODO: Straighten the robot 					   
+		return
 
 '''
 This service turns on or off any of the 3 lights on the light beacon.
@@ -93,8 +97,7 @@ def lights_service(req):
 	'''
 	Lights mapping:
 	5 - Red - Send 0
-	6 - Amber - Send 1
-	7 - Green - Send 2
+	6 - Greeh - Send 1
 	'''	
 
 	if req.light == 0:
@@ -103,12 +106,6 @@ def lights_service(req):
 			writeData("5-127")
 		else:
 			writeData("5-0")
-	elif req.light == 1:
-		# Amber Light:
-		if req.on:
-			writeData("6-127") 
-		else:
-			writeData("6-0")
 	else:
 		# Green Light:
 		if req.on:
@@ -120,8 +117,13 @@ def serial_server():
 	rospy.init_node("serial_node_server")
 	# Start all services:
 	armService = rospy.Service("armservice", ArmService, arm_service) 	
+	gripperService = rospy.Service("gripperservice", GripperService, gripper_service)
+	driveService = rospy.Service("driveservice", WheelVel, drive_service)
+	steerService = rospy.Service("steerservice", SteerService, steer_service)
+	lightsService = rospy.Service("lightsservice", Lights, lights_service)
+
+	rospy.spin()
 	
 if __name__ == "__main__":
-
 	serial_server()
 
