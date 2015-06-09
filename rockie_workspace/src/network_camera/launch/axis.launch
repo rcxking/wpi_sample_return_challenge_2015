@@ -5,6 +5,7 @@
   <arg name="password" default="docs" />
   <arg name="observatory_camera" default="false"/>
   <arg name="manipulator_camera" default="false"/>
+  <arg name="viz" default="false"/>
 
   <group ns="$(arg name)">
     <node pkg="axis_camera" type="axis.py" name="axis" output="screen">
@@ -26,10 +27,12 @@
 
     <include if="$(arg observatory_camera)" file="$(find rockie_core)/launch/observatory_camera.launch">
       <arg name="frame_id" value="$(arg name)"/>
+      <arg name="viz" value="$(arg viz)"/>
     </include>
 
     <include if="$(arg manipulator_camera)" file="$(find rockie_core)/launch/manipulator_camera.launch">
       <arg name="frame_id" value="$(arg name)"/>
+      <arg name="viz" value="$(arg viz)"/>
     </include>
   </group>
 </launch>  

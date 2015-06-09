@@ -1,9 +1,10 @@
 <launch>
   <arg name="rviz" default="false" />
   <arg name="rtabmapviz" default="false" />
+  <arg name="camera" default="false" />
   <arg name="disembodied" default="false" />
 
-  <include file="$(find stereo_slam)/launch/stereo_camera.launch"/>
+  <include if="$(arg camera)" file="$(find stereo_slam)/launch/stereo_camera.launch"/>
    
     
   <param name="use_sim_time" type="bool" value="False"/>

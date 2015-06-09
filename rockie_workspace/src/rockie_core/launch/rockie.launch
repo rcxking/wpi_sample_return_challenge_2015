@@ -2,6 +2,7 @@
   <rosparam file="$(find rockie_core)/config/rockie.yaml"/>
 
   <include file="$(find stereo_slam)/launch/stereo_slam.launch"/>
+  <include file="$(find stereo_slam)/launch/stereo_camera.launch"/>
   <include file="$(find network_camera)/launch/network_cameras.launch"/>
   <include file="$(find rockie_core)/launch/rockie_transforms.launch"/>
   <include file="$(find rockie_navigation)/launch/navigation.launch"/>

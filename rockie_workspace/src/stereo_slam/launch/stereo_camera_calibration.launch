@@ -1,5 +1,6 @@
 <launch>
-  <include file="$(find stereo_slam)/launch/stereo_camera.launch"/>
+  <arg name="camera" default="false"/>
+  <include if="$(arg camera)" file="$(find stereo_slam)/launch/stereo_camera.launch"/>
 
   <!--
   size: measured in number of corners not squares

@@ -3,6 +3,7 @@
 Stereo camera setup notes:
 see: /notes/stereo_notes
 -->
+  <arg name="viz" default="false"/>
 
   <!-- stereo camera driver -->
   <node pkg="camera1394stereo" type="camera1394stereo_node" name="camera1394stereo_node" output="screen" >
@@ -46,6 +47,7 @@ see: /notes/stereo_notes
     <group ns="left">
       <include file="$(find rockie_core)/launch/observatory_camera.launch">
         <arg name="frame_id" value="stereo_camera"/>
+        <arg name="viz" value="$(arg viz)"/>
       </include>
     </group>
   </group>

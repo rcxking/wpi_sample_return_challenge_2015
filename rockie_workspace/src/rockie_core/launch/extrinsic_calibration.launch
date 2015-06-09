@@ -1,9 +1,9 @@
 <launch>
-  <arg name="camera" default="left_camera"/>
+  <arg name="name" default="left_camera"/>
   <arg name="mounting_frame" default="base_link"/>
 
   <include file="$(find camera_pose_toolkits)/launch/urdf_updater.launch">
-    <arg name="new_cam_ns" value="$(arg camera)"/>
+    <arg name="new_cam_ns" value="$(arg name)"/>
     <arg name="urdf_cam_ns" value="stereo_camera/left"/>
     <arg name="mounting_frame" value="$(arg mounting_frame)"/>
     <arg name="urdf_input_file" value="$(find rockie_core)/config/rockie.urdf"/>

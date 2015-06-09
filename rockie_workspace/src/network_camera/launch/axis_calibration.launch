@@ -2,8 +2,9 @@
   <arg name="name" default="camera" />
   <arg name="hostname" default="169.254.22.102" />
   <arg name="password" default="docs" />
+  <arg name="camera" default="false" />
 
-  <include file="$(find network_camera)/launch/axis.launch">
+  <include if="$(arg camera)" file="$(find network_camera)/launch/axis.launch">
     <arg name="name" default="$(arg name)" />
     <arg name="hostname" default="$(arg hostname)" />
     <arg name="password" default="$(arg password)" />

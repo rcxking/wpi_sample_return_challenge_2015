@@ -1,8 +1,13 @@
 <launch>
   <arg name="frame_id" default="camera"/>
+  <arg name="viz" default="false"/>
 
   <!-- launch this in the namespace of any camera -->
   <include file="$(find ar_tags)/launch/track_calibration_tags.launch">
     <arg name="frame_id" value="$(arg frame_id)"/>
   </include>
+
+  <node if="$(arg viz)" pkg="image_view" type="image_view" name="image_view" output="screen">
+    <remap from="image" to="image_rect_color"/>
+  </node>
 </launch>
