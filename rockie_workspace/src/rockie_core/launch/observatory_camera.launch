@@ -7,6 +7,8 @@
     <arg name="frame_id" value="$(arg frame_id)"/>
   </include>
 
+  <include file="$(find support_vector)/launch/support_vector.launch"/>
+
   <node if="$(arg viz)" pkg="image_view" type="image_view" name="image_view" output="screen">
     <remap from="image" to="image_rect_color"/>
   </node>

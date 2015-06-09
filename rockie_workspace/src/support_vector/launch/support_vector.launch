@@ -1,0 +1,7 @@
+<launch>
+  <param name="svm_file" type="string" value="$(find support_vector)/src/SVM.pkl"/>
+  <node pkg="support_vector" type="svm_node.py" name="svm" output="screen">
+    <remap from="svminfo" to="/observation" />
+    <param name="svm_file" type="string" value="$(find support_vector)/src/SVM.pkl"/>
+  </node>
+</launch>
