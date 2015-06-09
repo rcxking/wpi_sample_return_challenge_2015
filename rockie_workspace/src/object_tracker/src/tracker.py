@@ -26,7 +26,7 @@ from std_msgs.msg import ColorRGBA
 
 # extract intrinsic matrix from p matrix
 def pToIntrinsic(p):
-  P = numpy.array(p).reshape(3,4)
+  P = np.array(p).reshape(3,4)
   return P[0:3,0:3]
 
 def tuplesToArrays(tuples):
@@ -45,7 +45,6 @@ class ObjectTracker:
 
 
   def __init__(self):
-    self.loadParams()
 
     self.back_log = []
     self.recent_observations = []
@@ -60,6 +59,8 @@ class ObjectTracker:
     self.all_pub = rospy.Publisher('all_objects', Objects)
     self.viz_pub = rospy.Publisher('object_visualizations', Marker)
     #self.service = rospy.ServiceProxy('service', Steer)
+
+    self.loadParams()
 
     self.start()
 
@@ -79,25 +80,25 @@ class ObjectTracker:
     self.all_color = ColorRGBA(0, 0, 255, 0.7)
 
   def observationCallback(self, msg):
-    try:
+    #try:
       self.processObservation(msg)
-    except:
+    #except:
       # the transform for the given time may not have been published yet
       rospy.logwarn("could not look up transform from %s to %s", self.base_frame, msg.header.frame_id)
-      self.back_log.append(msg)
+      self.back_log.append([msg,1])
 
   def blacklistCallback(self, req):
     pass
 
   def backlogCallback(self, t):
-    for msg_tries in self.back_log:
+    for i, msg_tries in enumerate(self.back_log):
       try:
         self.processObservation(msg_tries[0])
-        back_log.pop(msg_tries)
+        self.back_log.pop(msg_tries)
       except:
         msg_tries[1] += 1
         if msg_tries[1] >= self.resolve_observation_attempts:
-          back_log.pop(msg_tries)
+          self.back_log.pop(i)
           rospy.logwarn("failed to insert observation after %d attempts", self.resolve_observation_attempts)
         
   def fullSearchCallback(self, t):
@@ -108,16 +109,18 @@ class ObjectTracker:
     t = msg.header.stamp
     frame_id = msg.header.frame_id
 
-    msg.point.append(1)
+    p = np.array([msg.point[0], msg.point[1], 1])
     point = np.array(msg.point)
     camera = np.zeros((3,1))
 
     # look up transform at given time
     T = self.tf_listener.asMatrix(self.base_frame, msg.header)
+    rospy.logwarn("successfully found observation")
     point = np.dot(T, camera)
     direction = np.dot(T, point) - point
     ray = (point, direction)
     self.pushRay(ray)
+    rospy.logwarn("successfully inserted observation")
     self.recentObservations()
 
   def pushRay(self, line):
