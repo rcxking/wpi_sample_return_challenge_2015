@@ -10,11 +10,11 @@
   </link>
 
   <joint name="corner_to_base_link" type="fixed">
-    <parent link="corner"/>
-    <child link="base_link"/>
+    <parent link="base_link"/>
+    <child link="corner"/>
 
     <!-- need actual values -->
-    <origin xyz="0.4572 0.3048 0"/>
+    <origin xyz="-0.4572 -0.3048 0"/>
   </joint>
 
   <link name="arm_revolute">
