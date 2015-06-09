@@ -7,7 +7,7 @@ Pause signal and publishes a String containing the status of the Pause.
 RPI Rock Raiders
 6/9/15
 
-Last Updated: Bryant Pong: 6/9/15 - 9:25 AM            
+Last Updated: Bryant Pong: 6/9/15 - 2:24 AM            
 '''
 
 # Python Imports
@@ -17,7 +17,7 @@ from std_msgs.msg import String
 
 # Globals:
 PORT = "/dev/ttyUSB0"
-BAUD = 115200 
+BAUD = 9600
 TIMEOUT = 0.25
 
 # Run the ROS Node:
@@ -32,19 +32,19 @@ def xbeenode():
 		Have you checked if PORT is set correctly?")
 		return
 
-	pub = rospy.Publisher("pause", String, queue_size=10)
+	pub = rospy.Publisher("pause", String, queue_size=1)
 	rospy.init_node("pauselistener")
-	rate = rospy.Rate(10)
+	rate = rospy.Rate(200)
 
 	while not rospy.is_shutdown():
 
 		nextData = ser.read()
 		if str(nextData) != '':
-			rospy.loginfo("Pause Command Received")
-			pub.publish("yes")
-		else:
-			rospy.loginfo("No Pause Received")
+			rospy.loginfo("No pause Command Received")
 			pub.publish("no")
+		else:
+			rospy.loginfo("Yes Pause Received")
+			pub.publish("yes")
 		
 		rate.sleep()
 
