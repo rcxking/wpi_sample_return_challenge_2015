@@ -20,10 +20,17 @@ PORT = "/dev/ttyUSB0"
 BAUD = 115200 
 TIMEOUT = 0.25
 
-ser = serial.Serial(PORT, BAUD, timeout=TIMEOUT)
-
 # Run the ROS Node:
 def xbeenode():
+
+	ser = None
+
+	try:
+		ser = serial.Serial(PORT, BAUD, timeout=TIMEOUT)
+	except serial.SerialException:
+		rospy.loginfo("ERROR: xbee.py: Cannot create serial port object! \
+		Have you checked if PORT is set correctly?")
+		return
 
 	pub = rospy.Publisher("pause", String, queue_size=10)
 	rospy.init_node("pauselistener")

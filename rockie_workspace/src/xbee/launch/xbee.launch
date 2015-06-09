@@ -1,0 +1,4 @@
+<launch>
+
+	<node pkg="xbee" type="xbee.py" name="xbee"/>
+</launch>
