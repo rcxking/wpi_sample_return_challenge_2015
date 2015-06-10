@@ -18,8 +18,8 @@ class DriveControl:
   def __init__(self):
     self.loadParams()
 
-    self.wheel_vel_proxy = rospy.ServiceProxy('wheel_vel', WheelVel)
-    self.steer_proxy = rospy.ServiceProxy('steer', Steer)
+    self.wheel_vel_proxy = rospy.ServiceProxy('wheel_vel', WheelVel, persistent = True)
+    self.steer_proxy = rospy.ServiceProxy('steer', Steer, persistent = True)
     rospy.Subscriber("cmd_vel", Twist, self.driveCommandCallback)
     rospy.Subscriber("turn_in_place_status", Bool, self.turnInPlaceStatusCallback)
 
@@ -31,9 +31,9 @@ class DriveControl:
     self.desired_linear_velocity = 0.0 # m/s
     self.actual_speeds = np.array([0.0, 0.0, 0.0, 0.0])
 
-    self.startController()
+    self.start()
 
-  def startController(self):
+  def start(self):
     rospy.Timer(rospy.Duration(self.control_rate), self.controlLoop)
 
   def loadParams(self):
@@ -66,7 +66,7 @@ class DriveControl:
       self.wheel_vel_proxy(*self.desiredWheelSpeeds())
 
   def desiredWheelSpeeds(self):
-    if rospy.Time.now() - self.last_command_time > drive_controller_timeout:
+    if (rospy.Time.now() - self.last_command_time).to_sec() > drive_controller_timeout:
       return np.zeros(4)
     elif not desired_turn_in_place == turn_in_place:
       # wheels still turning

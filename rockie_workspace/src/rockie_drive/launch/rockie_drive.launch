@@ -1,3 +1,10 @@
 <launch>
-  <node pkg="rockie_drive" type="drive_control.py" name="drive_control" output="screen"/>
+  <arg name="sim" default="true"/>
+
+  <node pkg="rockie_drive" type="drive_control.py" name="drive_control" output="screen">
+    <rosparam file="$(find rockie_drive)/config/drive.yaml" command="load"/>
+  </node>
+
+  <node if="$(arg sim)" pkg="rockie_drive" type="serial_sim.py"  name="serial_sim">
+  </node>
 </launch>
