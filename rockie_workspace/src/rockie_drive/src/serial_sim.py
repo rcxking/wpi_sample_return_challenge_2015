@@ -23,7 +23,7 @@ class SerialSim:
     self.start()
 
   def start(self):
-    rospy.Timer(rospy.Duration(self.turn_status_rate), self.turnPubCallback)
+    rospy.Timer(rospy.Duration(1.0/self.turn_status_rate), self.turnPubCallback)
 
   def loadParams(self):
     self.turn_status_rate = rospy.get_param('turn_status_rate', 5)

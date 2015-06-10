@@ -18,7 +18,9 @@ class DriveControl:
   def __init__(self):
     self.loadParams()
 
+    rospy.wait_for_service('wheel_vel')
     self.wheel_vel_proxy = rospy.ServiceProxy('wheel_vel', WheelVel, persistent = True)
+    rospy.wait_for_service('steer')
     self.steer_proxy = rospy.ServiceProxy('steer', Steer, persistent = True)
     rospy.Subscriber("cmd_vel", Twist, self.driveCommandCallback)
     rospy.Subscriber("turn_in_place_status", Bool, self.turnInPlaceStatusCallback)
@@ -34,7 +36,7 @@ class DriveControl:
     self.start()
 
   def start(self):
-    rospy.Timer(rospy.Duration(self.control_rate), self.controlLoop)
+    rospy.Timer(rospy.Duration(1.0/self.control_rate), self.controlLoop)
 
   def loadParams(self):
     self.min_radius = rospy.get_param('min_differential_steering_radius', 0.2)
@@ -55,8 +57,8 @@ class DriveControl:
     rospy.loginfo("got turn status message")
     self.turn_in_place = msg.data
 
-  def controlLoop(self):
-    if desiredTurningRadius() < self.min_radius:
+  def controlLoop(self, t):
+    if abs(self.desiredTurningRadius()) < self.min_radius:
       self.requestTurnInPlace(True)
     else:
       self.requestTurnInPlace(False)
@@ -66,7 +68,7 @@ class DriveControl:
       self.wheel_vel_proxy(*self.desiredWheelSpeeds())
 
   def desiredWheelSpeeds(self):
-    if (rospy.Time.now() - self.last_command_time).to_sec() > drive_controller_timeout:
+    if (rospy.Time.now() - self.last_command_time).to_sec() > self.drive_controller_timeout:
       return np.zeros(4)
     elif not desired_turn_in_place == turn_in_place:
       # wheels still turning
@@ -92,7 +94,10 @@ class DriveControl:
     return self.ff_gain * desired_speeds + self.p_gain * (self.desired_speeds - self.actual_speeds)
 
   def desiredTurningRadius(self):
-    return self.desired_linear_velocity / self.desired_angular_velocity
+    if self.desired_angular_velocity < 1e-2:
+      return float("inf")
+    else:
+      return self.desired_linear_velocity / self.desired_angular_velocity
 
   def requestTurnInPlace(self, turn_in_place):
     if not self.turn_in_place == turn_in_place:

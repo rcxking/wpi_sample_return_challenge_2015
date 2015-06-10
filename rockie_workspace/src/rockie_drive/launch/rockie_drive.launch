@@ -5,6 +5,6 @@
     <rosparam file="$(find rockie_drive)/config/drive.yaml" command="load"/>
   </node>
 
-  <node if="$(arg sim)" pkg="rockie_drive" type="serial_sim.py"  name="serial_sim">
+  <node if="$(arg sim)" pkg="rockie_drive" type="serial_sim.py"  name="serial_sim" output="screen">
   </node>
 </launch>
