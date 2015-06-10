@@ -57,6 +57,7 @@ class ObjectTracker:
     self.recent_next = 0
     self.all_observations = []
 
+    self.loadParams()
 
     self.tf_listener = tf.TransformListener()
     rospy.Subscriber('observation', Observation, self.observationCallback, queue_size = 20)
@@ -66,13 +67,11 @@ class ObjectTracker:
     self.viz_pub = rospy.Publisher('object_visualizations', Marker)
     #self.service = rospy.ServiceProxy('service', Steer)
 
-    self.loadParams()
-
     self.start()
 
   def start(self):
-    rospy.Timer(rospy.Duration(self.backlog_rate), self.backlogCallback)
-    rospy.Timer(rospy.Duration(self.full_search_rate), self.fullSearchCallback)
+    rospy.Timer(rospy.Duration(1.0/self.backlog_rate), self.backlogCallback)
+    rospy.Timer(rospy.Duration(1.0/self.full_search_rate), self.fullSearchCallback)
 
   def loadParams(self):
     self.base_frame = rospy.get_param('base_frame', 'map')
