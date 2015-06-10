@@ -20,7 +20,9 @@ import tf
 from object_tracker.msg import Observation
 from object_tracker.msg import Objects 
 from object_tracker.srv import Blacklist 
+from std_msgs.msg import Header
 from geometry_msgs.msg import Point
+from geometry_msgs.msg import Vector3
 from visualization_msgs.msg import Marker
 from std_msgs.msg import ColorRGBA
 
@@ -30,8 +32,8 @@ def pToIntrinsic(p):
   return P[0:3,0:3]
 
 def tuplesToArrays(tuples):
-  points = np.hstack([point for point, direction in tuples])
-  directions = np.hstack([direction for point, direction in tuples])
+  points = np.column_stack([point for point, direction in tuples])
+  directions = np.column_stack([direction for point, direction in tuples])
   return points, directions
 
 def toPoints(points):
@@ -39,10 +41,14 @@ def toPoints(points):
                 points[1,i],
                 points[2,i]) for i in range(points.shape[1])]
 
+def transformPoint(T, point):
+  tp = np.hstack((point, [1]))
+  tpp = np.dot(T,tp)
+  return tpp[0:3]
+
 class ObjectTracker:
   RECENT = 0
   ALL = 1
-
 
   def __init__(self):
 
@@ -75,14 +81,15 @@ class ObjectTracker:
     self.recent_length = rospy.get_param('recent_length', 20)
     self.sigma_observation = rospy.get_param('sigma_observation', 0.5)
     self.resolve_observation_attempts = rospy.get_param('resolve_observation_attempts', 10)
+    self.min_observations = rospy.get_param('min_observations', 10)
     self.bounds = (-100, 100, -100, 100, -20, 20)
     self.recent_color = ColorRGBA(255, 0, 0, 0.7)
     self.all_color = ColorRGBA(0, 0, 255, 0.7)
 
   def observationCallback(self, msg):
-    #try:
+    try:
       self.processObservation(msg)
-    #except:
+    except tf.Exception:
       # the transform for the given time may not have been published yet
       rospy.logwarn("could not look up transform from %s to %s", self.base_frame, msg.header.frame_id)
       self.back_log.append([msg,1])
@@ -111,13 +118,13 @@ class ObjectTracker:
 
     p = np.array([msg.point[0], msg.point[1], 1])
     point = np.array(msg.point)
-    camera = np.zeros((3,1))
+    camera = np.zeros(3)
 
     # look up transform at given time
-    T = self.tf_listener.asMatrix(self.base_frame, msg.header)
+    T = self.waitForTransform(msg.header)
     rospy.logwarn("successfully found observation")
-    point = np.dot(T, camera)
-    direction = np.dot(T, point) - point
+    point = transformPoint(T, camera)
+    direction = transformPoint(T, point) - point
     ray = (point, direction)
     self.pushRay(ray)
     rospy.logwarn("successfully inserted observation")
@@ -125,59 +132,76 @@ class ObjectTracker:
 
   def pushRay(self, line):
     self.all_observations.append(line)
-    if len(self.recent_observation >= self.recent_length):
+    if len(self.recent_observations) >= self.recent_length:
       self.recent_observations[self.recent_next] = line
       self.recent_next = (self.recent_next + 1) % self.recent_length
     else:
       self.recent_observations.append(line)
 
   def recentObservations(self):
-    if len(self.recent_observations) > 0:
+    if len(self.recent_observations) > self.min_observations:
       objects = self.getObservations(self.recent_observations)
-      self.recent_pub.publish(self.toObjects(objects))
-      self.viz_pub.publish(self.toMarker(objects, RECENT))
-      return objects
+      if objects.shape[1] > 0:
+        print objects.shape
+        self.recent_pub.publish(self.toObjects(objects))
+        self.viz_pub.publish(self.toMarker(objects, ObjectTracker.RECENT))
 
   def allObservations(self):
-    if len(self.all_observations) > 0:
+    if len(self.all_observations) > self.min_observations:
       objects = self.getObservations(self.all_observations)
-      self.all_pub.publish(self.toObjects(objects))
-      self.viz_pub.publish(self.toMarker(objects, ALL))
+      if objects.shape[1] > 0:
+        print objects.shape
+        self.recent_pub.publish(self.toObjects(objects))
+        self.all_pub.publish(self.toObjects(objects))
+        self.viz_pub.publish(self.toMarker(objects, ObjectTracker.ALL))
 
   def getObservations(self, tuples):
     points, directions = tuplesToArrays(tuples)
+    print "##############################################"
+    print "running estimator"
+    print len(tuples), points.shape, directions.shape
+    print "##############################################"
     return cu.estimatePoints(points = points,
                              directions = directions,
                              threshold = self.sigma_observation,
                              bounds = self.bounds
                             )
 
-  def toObjects(points):
+  def toObjects(self, points):
     objects = Objects
-    objects.header.stamp = rospy.Time.now()
-    objects.header.frame_id = self.base_frame
+    header = Header()
+    header.stamp = rospy.Time.now()
+    header.frame_id = self.base_frame
+    objects.header = header
     objects.objects = toPoints(points)
     return objects
 
-  def toMarker(points, observation_type):
-    marker = Marker
-    marker.header.stamp = rospy.Time.now()
-    marker.header.frame_id = self.base_frame
+  def toMarker(self, points, observation_type):
+    marker = Marker()
+    header = Header()
+    header.stamp = rospy.Time.now()
+    header.frame_id = self.base_frame
+    marker.header = header
     marker.ns = "object_tracker"
     marker.id = observation_type
     marker.type = Marker.SPHERE_LIST
     marker.action = Marker.ADD
-    marker.scale = [self.sigma_observation for i in range(3)]
+    marker.scale = Vector3(*[self.sigma_observation for i in range(3)])
     marker.points = toPoints(points)
     color = None
-    if observation_type == RECENT:
+    if observation_type == ObjectTracker.RECENT:
       color = self.recent_color
-    elif observation_type == ALL:
+    elif observation_type == ObjectTracker.ALL:
       color = self.all_color
     else:
       raise ValueError
     marker.colors = [color for i in range(len(marker.points))]
     return marker
+
+  def waitForTransform(self, header):
+    self.tf_listener.waitForTransform(self.base_frame, header.frame_id,
+      rospy.Time.now(), rospy.Duration(2.0))
+    return self.tf_listener.asMatrix(self.base_frame, header)
 
 if __name__ == "__main__":
   rospy.init_node('tracker')
