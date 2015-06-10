@@ -6,7 +6,7 @@ State machine to run for stage 1.
 RPI Rock Raiders
 5/31/15
 
-Last Updated: Bryant Pong: 6/10/15 - 10:34 AM
+Last Updated: Bryant Pong: 6/10/15 - 1:33 PM
 '''
 
 # ROS Libraries:
@@ -33,7 +33,7 @@ import warnings
 import matplotlib.pyplot as plt
 
 # Serial Messages for Services:
-from serial_node.srv import *  
+from serial_node.srv import * 
 
 '''
 Global Objects:
@@ -48,15 +48,22 @@ paused = True
 '''
 Pause State:
 '''
-class Pause(smach.State):
+class PauseState(smach.State):
 
 	def __init__(self):
 		smach.State.__init__(self, outcomes=["startupSequence"])   				
 					
 	def execute(self, userdata):
-
 		global lastState, paused
 		rospy.loginfo("Now in pause state.  Previous state is: " + str(lastState))
+
+		rospy.wait_for_service("pauseservice")
+		try:
+			pause = rospy.ServiceProxy("pauseservice", Pause)
+			x = pause(True)
+		except rospy.ServiceException, e:
+			print("Service call failed")
+
 		while True:
 			#print("Pause State: pause is: " + str(paused))
 			if paused == False:
@@ -78,6 +85,12 @@ class StartupSequence(smach.State):
 		rospy.loginfo("Executing Startup Sequence")	
 
 		print("Turning on Amber Lights")
+		rospy.wait_for_service("pauseservice")
+		try:
+			unpause = rospy.ServiceProxy("pauseservice", Pause)
+			x = unpause(False)
+		except rospy.ServiceExpression, e:
+			rospy.loginfo("Service call failed: %s" % e)
 		
 		'''	
 		rospy.loginfo("Now sending motors to home position") 
@@ -176,7 +189,7 @@ def main():
 	rospy.Subscriber("pause", String, pauseCallback)
 	sm = smach.StateMachine(outcomes=['complete'])
 	with sm:
-		smach.StateMachine.add("PAUSE", Pause(), transitions={"startupSequence":"STARTUPSEQUENCE"}) 
+		smach.StateMachine.add("PAUSE", PauseState(), transitions={"startupSequence":"STARTUPSEQUENCE"}) 
 		# For inspection only:
 		smach.StateMachine.add("STARTUPSEQUENCE", StartupSequence(), transitions={"done":"complete", "pause":"PAUSE"})   
 		'''
@@ -192,8 +205,5 @@ def main():
 	outcome = sm.execute()
 
 if __name__ == "__main__":
-	try:
-		main()
-	except rospy.ROSInterruptionException:
-		pass
+	main()
 
