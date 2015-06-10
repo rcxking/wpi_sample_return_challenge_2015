@@ -7,7 +7,7 @@ to send to the PSOC.
 RPI Rock Raiders
 6/4/15
 
-Last Updated: Bryant Pong: 6/10/15 - 10:40 AM
+Last Updated: Bryant Pong: 6/10/15 - 1:18 PM
 '''
 
 # Python Imports:
@@ -16,7 +16,7 @@ import serial
 from serial_node.srv import * 
 
 # Serial object:
-serial = serial.Serial("/dev/ttyS0", 115200, 8, 'N', 1) 
+serial = serial.Serial("/dev/ttyUSB0", 115200, 8, 'N', 1) 
 
 '''
 This is a helper function to send serial data to the PSOC:  
@@ -93,9 +93,12 @@ This service controls the pause service of the robot:
 This service uses the custom service "Pause.srv".
 '''
 def pause_service(req):
+	rospy.loginfo("req.paused: " + str(req.paused))
 	if req.paused:
-		writeData("0-0")
-		resp = writeData("13-1") 
+		writeData("13-1\n")
+	else:
+		writeData("13-0\n")	
+	return 69  
 
 
 '''
@@ -128,10 +131,11 @@ def serial_server():
 	rospy.init_node("serial_node_server")
 	# Start all services:
 	armService = rospy.Service("armservice", ArmService, arm_service) 	
-	gripperService = rospy.Service("gripperservice", GripperService, gripper_service)
+	gripperService = rospy.Service("gripperservice", Gripper, gripper_service)
 	driveService = rospy.Service("driveservice", WheelVel, drive_service)
-	steerService = rospy.Service("steerservice", SteerService, steer_service)
+	steerService = rospy.Service("steerservice", Steer, steer_service)
 	lightsService = rospy.Service("lightsservice", Lights, lights_service)
+	pauseService = rospy.Service("pauseservice", Pause, pause_service)
 
 	rospy.spin()
 	
