@@ -27,7 +27,10 @@ nextImage, nextCameraInfo = None, None
 imgSet, infoSet = False, False
 svm_file = None
 SVM = None
+svmPub = None
 bridge = CvBridge()
+throttle_number = 0
+image_count = 0
 
 # Helper function to generate sliding windows:
 def slidingWindow(img, winLen, winHgt): 
@@ -81,19 +84,22 @@ def calcDescriptor(img):
 
 # Callback for the image subscriber:
 def imgSubCallback(data):
-	global SVM, bridge
+	global SVM, bridge, svmPub, throttle_number
+	global image_count
+	if not image_count % throttle_number == 0:
+		return
 	nextImage = data
 
 	# Extract the image:
 	img = bridge.imgmsg_to_cv2(nextImage, "bgr8")
 
+	'''
 	# Run the sliding window algorithm:
 	dim = 160
 	slidingWindows = slidingWindow(img, 160, 160) 
 
 	avgRow, avgCol = 0.0, 0.0 
 	numPos = 0
-	counter = 0
 	# Run the prediction function of the SVM:
 	for i, row in enumerate(slidingWindows):
 		for j, sImg in enumerate(row):
@@ -105,10 +111,14 @@ def imgSubCallback(data):
 				numPos += 1
 				avgRow += (i-1) * dim + dim/2
 				avgCol += (j-1) * dim + dim/2
+	'''
 
-	if numPos > 0: 
-		avgRow /= numPos
-		avgCol /= numPos				
+	#if numPos > 0: 
+	if True:
+		#avgRow /= numPos
+		#avgCol /= numPos				
+		avgRow = img.shape[0]/2
+		avgCol = img.shape[1]/2
 		# Construct the Observation Message to publish:
 		observe = Observation()  
 		observe.header = nextImage.header
@@ -116,8 +126,6 @@ def imgSubCallback(data):
 		observe.point = [avgCol, avgRow]
 		svmPub.publish(observe)
 		rospy.loginfo("svm: sending out observation")
-	else:
-		rospy.loginfo("no objects in frame")
 
 # Callback for the Camera Info Subscriber:
 def camInfoCallback(data):
@@ -131,7 +139,7 @@ def camInfoCallback(data):
 def svmNode():
 
 	# Referencing global variables:
-	global nextCameraInfo, imgSet, infoSet, svm_file, SVM
+	global nextCameraInfo, imgSet, infoSet, svm_file, SVM, svmPub, throttle_number
 	
 	# Initialize the SVM node:
 	rospy.init_node("svm")
@@ -146,7 +154,7 @@ def svmNode():
 	svmPub = rospy.Publisher("svminfo", Observation)
 
 	svm_file = rospy.get_param("svm_file", "SVM.pkl")
-	print svm_file
+	throttle_number = rospy.get_param("throttle_number", 3)
 
 	SVM = pickle.load(open(svm_file, "rb"))  
 
