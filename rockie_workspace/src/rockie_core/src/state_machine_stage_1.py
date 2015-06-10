@@ -6,7 +6,7 @@ State machine to run for stage 1.
 RPI Rock Raiders
 5/31/15
 
-Last Updated: Bryant Pong: 6/9/15 - 1:00 PM 
+Last Updated: Bryant Pong: 6/10/15 - 10:34 AM
 '''
 
 # ROS Libraries:
@@ -33,7 +33,7 @@ import warnings
 import matplotlib.pyplot as plt
 
 # Serial Messages for Services:
-#from serial_node.srv import *  
+from serial_node.srv import *  
 
 '''
 Global Objects:

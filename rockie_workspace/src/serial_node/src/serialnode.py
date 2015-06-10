@@ -7,7 +7,7 @@ to send to the PSOC.
 RPI Rock Raiders
 6/4/15
 
-Last Updated: Bryant Pong: 6/8/15 - 1:30 PM
+Last Updated: Bryant Pong: 6/10/15 - 10:40 AM
 '''
 
 # Python Imports:
@@ -86,6 +86,17 @@ def steer_service(req):
 	else:
 		# TODO: Straighten the robot 					   
 		return
+
+'''
+This service controls the pause service of the robot:
+
+This service uses the custom service "Pause.srv".
+'''
+def pause_service(req):
+	if req.paused:
+		writeData("0-0")
+		resp = writeData("13-1") 
+
 
 '''
 This service turns on or off any of the 3 lights on the light beacon.

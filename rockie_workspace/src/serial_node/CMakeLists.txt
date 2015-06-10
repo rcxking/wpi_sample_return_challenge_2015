@@ -58,7 +58,7 @@ add_service_files(
   WheelVel.srv
   Steer.srv
   Lights.srv
-)
+  Pause.srv)
 
 ## Generate actions in the 'action' folder
 # add_action_files(
