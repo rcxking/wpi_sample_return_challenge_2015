@@ -6,7 +6,7 @@ State machine to run for stage 1.
 RPI Rock Raiders
 5/31/15
 
-Last Updated: Bryant Pong: 6/10/15 - 1:33 PM
+Last Updated: Bryant Pong: 6/10/15 - 2:59 PM
 '''
 
 # ROS Libraries:
@@ -38,11 +38,10 @@ from serial_node.srv import *
 '''
 Global Objects:
 '''
-lastState = ""  
+lastState = 0
 
 # Global flag for whether the sample has been found:
 sampleFound = False  
-
 paused = True
 
 '''
@@ -51,7 +50,11 @@ Pause State:
 class PauseState(smach.State):
 
 	def __init__(self):
-		smach.State.__init__(self, outcomes=["startupSequence"])   				
+		smach.State.__init__(self, outcomes=["startupSequence", "egress", "transit", \
+		"search", "searchTransit", "sampleRecog", "retSamp", "endTransit"])   				
+
+		self.states = ["startupSequence", "egress", "transit", "search", \
+		    "searchTransit", "sampleRecog", "retSamp", "endTransit"]
 					
 	def execute(self, userdata):
 		global lastState, paused
@@ -65,25 +68,20 @@ class PauseState(smach.State):
 			print("Service call failed")
 
 		while True:
-			#print("Pause State: pause is: " + str(paused))
 			if paused == False:
-				if lastState == "" or lastState == "startupSequence":
-					return "startupSequence" 
-		return "startupSequence" 
+				return self.states[lastState]
+		return "startupSequence"
 '''
 This state performs system checks on the robot before beginning the run.   
 '''
 class StartupSequence(smach.State):
 	def __init__(self):
-		#smach.State.__init__(self, outcomes=["egressEnter"])    
 		smach.State.__init__(self, outcomes=["done", "pause"])
 
 	def execute(self, userdata):
 
 		global lastState, paused
-
 		rospy.loginfo("Executing Startup Sequence")	
-
 		print("Turning on Amber Lights")
 		rospy.wait_for_service("pauseservice")
 		try:
@@ -92,36 +90,28 @@ class StartupSequence(smach.State):
 		except rospy.ServiceExpression, e:
 			rospy.loginfo("Service call failed: %s" % e)
 		
-		'''	
-		rospy.loginfo("Now sending motors to home position") 
-		rospy.wait_for_service("steerservice")
-		try:
-			steerservice = rospy.ServiceProxy('steerservice', SteerService)	 
-			steerservice(False)
-		except rospy.ServiceException, e:
-			print("Service call failed: %s" % e)
-		'''
 		while True:
 			if paused:
 				print("startupsequence: Now going to pause state")
 				lastState = "startupSequence"
 				return "pause"
-			#print("Still in startup sequence.  self.paused is: " + str(self.paused))
 		return "done"
 
 class Egress(smach.State):
 	def __init__(self):
-		smach.State.__init__(self, outcomes=["transitEnter"])
+		smach.State.__init__(self, outcomes=["transitEnter", "pause"])
 
 	def execute(self, userdata):
 		rospy.loginfo("Executing Egress")
+
+						
 
 		rospy.loginfo("Exiting off")  
 		return "transitEnter"
 
 class Transit(smach.State):
 	def __init__(self):
-		smach.State.__init__(self, outcomes=["searchEnter"])
+		smach.State.__init__(self, outcomes=["searchEnter", "pause"])
 		
 	def execute(self, userdata):
 		rospy.loginfo("Executing Transit")
@@ -131,7 +121,7 @@ class Transit(smach.State):
 		
 class Search(smach.State):
 	def __init__(self):
-		smach.State.__init__(self, outcomes=["searchTransitEnter"])
+		smach.State.__init__(self, outcomes=["searchTransitEnter", "pause"])
 
 	def execute(self, userdata):
 		rospy.loginfo("Executing Search")
@@ -139,7 +129,7 @@ class Search(smach.State):
 
 class SearchTransit(smach.State):
 	def __init__(self):
-		smach.State.__init__(self, outcomes=["sampleRecogEnter"])
+		smach.State.__init__(self, outcomes=["sampleRecogEnter", "pause"])
 	
 	def execute(self, userdata):
 		rospy.loginfo("Executing Search Transit")
@@ -147,7 +137,7 @@ class SearchTransit(smach.State):
 		
 class SampleRecognition(smach.State):
 	def __init__(self):
-		smach.State.__init__(self, outcomes=["sampleNotFound", "sampleFound"]) 			
+		smach.State.__init__(self, outcomes=["sampleNotFound", "sampleFound", "pause"]) 			
 
 	def execute(self, userdata):
 		rospy.loginfo("Executing Sample Recognition")
@@ -162,7 +152,7 @@ class SampleRecognition(smach.State):
 
 class RetrieveSample(smach.State):
 	def __init__(self):
-		smach.State.__init__(self, outcomes=["endTransitEnter"])
+		smach.State.__init__(self, outcomes=["endTransitEnter", "pause"])
 	
 	def execute(self, userdata):
 		rospy.loginfo("Executing Retrieve Sample")
@@ -170,7 +160,7 @@ class RetrieveSample(smach.State):
 
 class EndTransit(smach.State):
 	def __init__(self):
-		smach.State.__init__(self, outcomes=["end"])
+		smach.State.__init__(self, outcomes=["pause", "end"])
 	
 	def execute(self, userdata):
 		rospy.loginfo("Executing End Transit")
@@ -189,19 +179,18 @@ def main():
 	rospy.Subscriber("pause", String, pauseCallback)
 	sm = smach.StateMachine(outcomes=['complete'])
 	with sm:
-		smach.StateMachine.add("PAUSE", PauseState(), transitions={"startupSequence":"STARTUPSEQUENCE"}) 
-		# For inspection only:
+		smach.StateMachine.add("PAUSE", PauseState(), transitions={"startupSequence":"STARTUPSEQUENCE", "egress":"EGRESS", \
+		    "transit":"TRANSIT", "search":"SEARCH", "searchTransit":"SEARCHTRANSIT", "sampleRecog":"SAMPLERECOGNITION", \
+			"retSamp":"RETRIEVESAMPLE", "endTransit":"ENDTRANSIT"}) 
 		smach.StateMachine.add("STARTUPSEQUENCE", StartupSequence(), transitions={"done":"complete", "pause":"PAUSE"})   
-		'''
-		smach.StateMachine.add("STARTUPSEQUENCE", StartupSequence(), transitions={"egressEnter":"EGRESS"})
-		smach.StateMachine.add("EGRESS", Egress(), transitions={"transitEnter":"TRANSIT"})
-		smach.StateMachine.add("TRANSIT", Transit(), transitions={"searchEnter":"SEARCH"})
-		smach.StateMachine.add("SEARCH", Search(), transitions={"searchTransitEnter":"SEARCHTRANSIT"})
-		smach.StateMachine.add("SEARCHTRANSIT", SearchTransit(), transitions={"sampleRecogEnter":"SAMPLERECOGNITION"})
-		smach.StateMachine.add("SAMPLERECOGNITION", SampleRecognition(), transitions={"sampleNotFound":"SEARCH","sampleFound":"RETRIEVESAMPLE"})
-		smach.StateMachine.add("RETRIEVESAMPLE", RetrieveSample(), transitions={"endTransitEnter":"ENDTRANSIT"})
-		smach.StateMachine.add("ENDTRANSIT", EndTransit(), transitions={"end":"complete"})
-		'''
+		smach.StateMachine.add("EGRESS", Egress(), transitions={"transitEnter":"TRANSIT", "pause":"PAUSE"})
+		smach.StateMachine.add("TRANSIT", Transit(), transitions={"searchEnter":"SEARCH", "pause":"PAUSE"})
+		smach.StateMachine.add("SEARCH", Search(), transitions={"searchTransitEnter":"SEARCHTRANSIT", "pause":"PAUSE"})
+		smach.StateMachine.add("SEARCHTRANSIT", SearchTransit(), transitions={"sampleRecogEnter":"SAMPLERECOGNITION", "pause":"PAUSE"})
+		smach.StateMachine.add("SAMPLERECOGNITION", SampleRecognition(), transitions={"sampleNotFound":"SEARCH","sampleFound":"RETRIEVESAMPLE", "pause":"PAUSE"})
+		smach.StateMachine.add("RETRIEVESAMPLE", RetrieveSample(), transitions={"endTransitEnter":"ENDTRANSIT", "pause":"PAUSE"})
+		smach.StateMachine.add("ENDTRANSIT", EndTransit(), transitions={"end":"complete", "pause":"PAUSE"})
+	
 	outcome = sm.execute()
 
 if __name__ == "__main__":

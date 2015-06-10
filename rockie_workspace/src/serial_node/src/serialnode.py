@@ -7,7 +7,7 @@ to send to the PSOC.
 RPI Rock Raiders
 6/4/15
 
-Last Updated: Bryant Pong: 6/10/15 - 1:18 PM
+Last Updated: Bryant Pong: 6/10/15 - 5:00  PM
 '''
 
 # Python Imports:
@@ -16,14 +16,34 @@ import serial
 from serial_node.srv import * 
 
 # Serial object:
-serial = serial.Serial("/dev/ttyUSB0", 115200, 8, 'N', 1) 
+PORT = "/dev/ttyUSB0"
+BAUD = 9600
+
+serial = serial.Serial(PORT, BAUD, 8, 'N', 1) 
 
 '''
-This is a helper function to send serial data to the PSOC:  
+Addressing of the robot's peripherals: 
 '''
-def writeData(data):
-	serial.write(str(data))
-	resp = serial.readline()	
+addrs = [128, 129, 130, 131] 
+
+'''
+This is a helper function to send commands directly to the Sabertooth
+motor drivers:
+
+Data is in the format:
+1) address
+2) command
+3) data
+4) checksum 
+'''
+def writeData(addr, cmd, data):
+	serial.write(chr(addr))
+	serial.write(chr(cmd))
+	serial.write(chr(data))
+
+	chksum = (addr+cmd+data) & 127
+
+	serial.write(chr(chksum))
 
 '''
 This service calls the PSOC and sets the joint angles of
@@ -66,11 +86,9 @@ def drive_service(req):
 	backLeft = req.vel3
 	backRight = req.vel4
 
-	# Send the velocities:
-	writeData("1-"+str(frontLeft))
-	writeData("2-"+str(frontRight))
-	writeData("3-"+str(backLeft))
-	writeData("4-"+str(backRight))
+	# Send the velocities.  Back left motor is dead:
+	
+	
 
 '''
 This service controls the steering of the robot:
@@ -82,10 +100,10 @@ def steer_service(req):
 	# Steer the robot (true = steer):
 	if req.turned:
 		# TODO: Turn the robot
-		return
+		return True
 	else:
 		# TODO: Straighten the robot 					   
-		return
+		return True
 
 '''
 This service controls the pause service of the robot:
@@ -98,8 +116,7 @@ def pause_service(req):
 		writeData("13-1\n")
 	else:
 		writeData("13-0\n")	
-	return 69  
-
+	return True
 
 '''
 This service turns on or off any of the 3 lights on the light beacon.
