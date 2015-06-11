@@ -83,7 +83,7 @@
       <node pkg="nodelet" type="nodelet" name="disparity2cloud" args="load rtabmap_ros/point_cloud_xyz stereo_nodelet">
          <remap from="disparity/image"       to="disparity"/>
          <remap from="disparity/camera_info" to="right/camera_info"/>
-         <remap from="cloud"                to="cloudXYZ"/>
+         <remap from="cloud"                to="points2"/>
          
          <param name="voxel_size" type="double" value="0.05"/>
          <param name="decimation" type="int" value="4"/>

@@ -17,6 +17,7 @@ see: /notes/stereo_notes
     <param name="stereo_method" value="Interlaced" />
     <param name="camera_info_url_left" value="file://$(find stereo_slam)/config/cal_left.yaml" />
     <param name="camera_info_url_right" value="file://$(find stereo_slam)/config/cal_right.yaml" />
+
     <remap from="/stereo_camera/left/image_raw" to="/stereo_camera/right/image_raw"/>
     <remap from="/stereo_camera/right/image_raw" to="/stereo_camera/left/image_raw"/>
     <remap from="/stereo_camera/left/camera_info" to="/stereo_camera/right/camera_info"/>
@@ -27,21 +28,11 @@ see: /notes/stereo_notes
   <node if="$(arg bag)" name="republish_left" type="republish" pkg="image_transport" args="compressed in:=/stereo_camera/left/image_raw raw out:=/stereo_camera/left/image_raw" />
   <node if="$(arg bag)" name="republish_right" type="republish" pkg="image_transport" args="compressed in:=/stereo_camera/right/image_raw raw out:=/stereo_camera/right/image_raw" />
 
-  <!--
-  <node pkg="nodelet" type="nodelet" name="$(arg base_topic)_node" output="screen"
-      args="load camera1394stereo/driver $(arg manager)">
-    <param name="frame_id" value="stereo_camera" />
-    <param name="camera_info_url_left" value="/path/to/calibration_left.yaml" />
-    <param name="camera_info_url_right" value="/path/to/calibration_right.yaml" />
-    <remap from="stereo_camera" to="$(arg base_topic)" />
-  </node>
-  -->
-
-
   <group ns="stereo_camera">
     <node pkg="nodelet" type="nodelet" name="stereo_nodelet" args="manager"/>
 
     <!-- bayer color channel processing-->
+<!--
     <node pkg="nodelet" type="nodelet" name="image_proc_debayer_left"
         args="load image_proc/debayer stereo_nodelet">
       <remap from="image_raw" to="left/image_raw"/>
@@ -55,18 +46,46 @@ see: /notes/stereo_notes
       <remap from="image_mono" to="right/image_mono"/>
       <remap from="image_color" to="right/image_color"/>
     </node>
-  
-    <!-- image rectification -->
-    <node pkg="stereo_image_proc" type="stereo_image_proc" name="stereo_image_proc">
-      <rosparam file="$(find stereo_slam)/config/stereo_image_proc.yaml" command="load" />
-      <remap from="points2" to="cloudXYZ"/>
+-->
+
+    <!-- stereo camera driver -->
+      <!-- switching camera sides because they come in backwards -->
+    <node unless="$(arg bag)" pkg="nodelet" type="nodelet" name="stereo_throttle" output="screen"
+        args="load rtabmap_ros/stereo_throttle stereo_nodelet">
+      <param name="rate" type="double" value="5"/>
+      <param name="queue_size" type="int" value="20"/>
+
+      <remap from="left/camera_info" to="fast/left/camera_info"/>
+      <remap from="left/image" to="fast/left/image_raw"/>
+      <remap from="right/camera_info" to="fast/right/camera_info"/>
+      <remap from="right/image" to="fast/right/image_raw"/>
+
+      <remap from="fast/left/camera_info_throttle" to="left/camera_info"/>
+      <remap from="fast/left/image_raw_throttle" to="left/image_raw"/>
+      <remap from="fast/right/camera_info_throttle" to="right/camera_info"/>
+      <remap from="fast/right/image_raw_throttle" to="right/image_raw"/>
     </node>
 
+
+    <!-- image rectification -->
+    <include file="$(find stereo_image_proc)/launch/stereo_image_proc.launch">
+      <rosparam file="$(find stereo_slam)/config/stereo_image_proc.yaml" command="load" />
+      <arg name="manager" value="/stereo_camera/stereo_nodelet"/>
+      <arg name="left" value="/stereo_camera/left"/>
+      <arg name="right" value="/stereo_camera/right"/>
+    </include>
+
+
     <group ns="left">
+<!--
       <include file="$(find rockie_core)/launch/observatory_camera.launch">
         <arg name="frame_id" value="stereo_camera"/>
         <arg name="viz" value="$(arg viz)"/>
       </include>
+-->
+      <node if="$(arg viz)" pkg="image_view" type="image_view" name="image_view" output="screen">
+        <remap from="image" to="image_rect_color"/>
+      </node>
     </group>
   </group>
 </launch>
