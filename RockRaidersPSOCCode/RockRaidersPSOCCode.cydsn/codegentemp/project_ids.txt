@@ -1,0 +1,5 @@
+C:\Users\malinaT430s\Documents\NASA\wpi_sample_return_challenge_2015\RockRaidersPSOCCode\RockRaidersPSOCCode.cydsn\RockRaidersPSOCCode.cyprj|de84854e-4189-44e3-8c61-c29ebeb6f410
+C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|34ea8c80-93f6-4cea-bdd8-70f195694abc
+C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|8800a8f0-f20c-4c56-93bc-e028863cc6a5
+C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|c0afa594-480e-4b62-9999-9b52304d88ba
+C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|e27c2faa-72b3-4f64-9dc7-d01814ab0be9

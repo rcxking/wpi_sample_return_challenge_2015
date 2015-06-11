@@ -1,0 +1,2884 @@
+-- Project:   RockRaidersPSOCCode
+-- Generated: 06/10/2015 13:59:14
+-- PSoC Creator  3.2
+
+ENTITY RockRaidersPSOCCode IS
+    PORT(
+        CloseExhaust(0)_PAD : OUT std_ulogic;
+        ClosePressure(0)_PAD : OUT std_ulogic;
+        FPGA_EN(0)_PAD : OUT std_ulogic;
+        Green(0)_PAD : OUT std_ulogic;
+        Limit_LS(0)_PAD : IN std_ulogic;
+        Limit_LT(0)_PAD : IN std_ulogic;
+        Limit_RS(0)_PAD : IN std_ulogic;
+        Limit_RT(0)_PAD : IN std_ulogic;
+        MotorControl1EN(0)_PAD : OUT std_ulogic;
+        MotorControl2EN(0)_PAD : OUT std_ulogic;
+        MotorControl3EN(0)_PAD : OUT std_ulogic;
+        MotorControl4EN(0)_PAD : OUT std_ulogic;
+        MotorControl5EN(0)_PAD : OUT std_ulogic;
+        OpenExhaust(0)_PAD : OUT std_ulogic;
+        OpenPressure(0)_PAD : OUT std_ulogic;
+        Red(0)_PAD : OUT std_ulogic;
+        Yellow(0)_PAD : OUT std_ulogic;
+        \MotorComms:rx(0)_PAD\ : IN std_ulogic;
+        \MotorComms:tx(0)_PAD\ : INOUT std_ulogic;
+        \PCComms:rx(0)_PAD\ : IN std_ulogic;
+        \PCComms:tx(0)_PAD\ : INOUT std_ulogic);
+    ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 3.3e0;
+    ATTRIBUTE voltage_VDDD OF __DEFAULT__ : ENTITY IS 3.3e0;
+END RockRaidersPSOCCode;
+
+ARCHITECTURE __DEFAULT__ OF RockRaidersPSOCCode IS
+    SIGNAL ClockBlock_EXTCLK : bit;
+    SIGNAL ClockBlock_HFCLK : bit;
+    ATTRIBUTE udbclken_assigned OF ClockBlock_HFCLK : SIGNAL IS "True";
+    ATTRIBUTE global_signal OF ClockBlock_HFCLK : SIGNAL IS true;
+    SIGNAL ClockBlock_ILO : bit;
+    SIGNAL ClockBlock_IMO : bit;
+    SIGNAL ClockBlock_LFCLK : bit;
+    SIGNAL ClockBlock_Routed1 : bit;
+    SIGNAL ClockBlock_SYSCLK : bit;
+    SIGNAL CloseExhaust(0)__PA : bit;
+    SIGNAL ClosePressure(0)__PA : bit;
+    SIGNAL FPGA_EN(0)__PA : bit;
+    SIGNAL Green(0)__PA : bit;
+    SIGNAL Limit_LS(0)__PA : bit;
+    SIGNAL Limit_LT(0)__PA : bit;
+    SIGNAL Limit_RS(0)__PA : bit;
+    SIGNAL Limit_RT(0)__PA : bit;
+    SIGNAL MotorControl1EN(0)__PA : bit;
+    SIGNAL MotorControl2EN(0)__PA : bit;
+    SIGNAL MotorControl3EN(0)__PA : bit;
+    SIGNAL MotorControl4EN(0)__PA : bit;
+    SIGNAL MotorControl5EN(0)__PA : bit;
+    SIGNAL Net_115 : bit;
+    SIGNAL Net_1893 : bit;
+    SIGNAL Net_2100 : bit;
+    ATTRIBUTE placement_force OF Net_2100 : SIGNAL IS "U(0,0,A)0";
+    SIGNAL Net_2170 : bit;
+    SIGNAL Net_2214 : bit;
+    ATTRIBUTE placement_force OF Net_2214 : SIGNAL IS "U(0,0,A)2";
+    SIGNAL Net_2245 : bit;
+    SIGNAL OpenExhaust(0)__PA : bit;
+    SIGNAL OpenPressure(0)__PA : bit;
+    SIGNAL Red(0)__PA : bit;
+    SIGNAL Yellow(0)__PA : bit;
+    SIGNAL \MotorComms:Net_654\ : bit;
+    SIGNAL \MotorComms:Net_656\ : bit;
+    SIGNAL \MotorComms:Net_660\ : bit;
+    SIGNAL \MotorComms:Net_687\ : bit;
+    SIGNAL \MotorComms:Net_703\ : bit;
+    SIGNAL \MotorComms:Net_751\ : bit;
+    SIGNAL \MotorComms:Net_823\ : bit;
+    SIGNAL \MotorComms:Net_824\ : bit;
+    SIGNAL \MotorComms:Net_847_ff3\ : bit;
+    ATTRIBUTE global_signal OF \MotorComms:Net_847_ff3\ : SIGNAL IS true;
+    SIGNAL \\\MotorComms:rx(0)\\__PA\ : bit;
+    SIGNAL \MotorComms:ss_0\ : bit;
+    SIGNAL \MotorComms:ss_1\ : bit;
+    SIGNAL \MotorComms:ss_2\ : bit;
+    SIGNAL \MotorComms:ss_3\ : bit;
+    SIGNAL \\\MotorComms:tx(0)\\__PA\ : bit;
+    SIGNAL \PCComms:Net_654\ : bit;
+    SIGNAL \PCComms:Net_656\ : bit;
+    SIGNAL \PCComms:Net_660\ : bit;
+    SIGNAL \PCComms:Net_687\ : bit;
+    SIGNAL \PCComms:Net_703\ : bit;
+    SIGNAL \PCComms:Net_751\ : bit;
+    SIGNAL \PCComms:Net_823\ : bit;
+    SIGNAL \PCComms:Net_824\ : bit;
+    SIGNAL \PCComms:Net_847_ff2\ : bit;
+    ATTRIBUTE global_signal OF \PCComms:Net_847_ff2\ : SIGNAL IS true;
+    SIGNAL \\\PCComms:rx(0)\\__PA\ : bit;
+    SIGNAL \PCComms:ss_0\ : bit;
+    SIGNAL \PCComms:ss_1\ : bit;
+    SIGNAL \PCComms:ss_2\ : bit;
+    SIGNAL \PCComms:ss_3\ : bit;
+    SIGNAL \\\PCComms:tx(0)\\__PA\ : bit;
+    SIGNAL \Pause_Register:control_1\ : bit;
+    SIGNAL \Pause_Register:control_2\ : bit;
+    SIGNAL \Pause_Register:control_3\ : bit;
+    SIGNAL \Pause_Register:control_4\ : bit;
+    SIGNAL \Pause_Register:control_5\ : bit;
+    SIGNAL \Pause_Register:control_6\ : bit;
+    SIGNAL \Pause_Register:control_7\ : bit;
+    SIGNAL \Steering_Register:control_1\ : bit;
+    SIGNAL \Steering_Register:control_2\ : bit;
+    SIGNAL \Steering_Register:control_3\ : bit;
+    SIGNAL \Steering_Register:control_4\ : bit;
+    SIGNAL \Steering_Register:control_5\ : bit;
+    SIGNAL \Steering_Register:control_6\ : bit;
+    SIGNAL \Steering_Register:control_7\ : bit;
+    SIGNAL \Timer_1:TimerUDB:control_0\ : bit;
+    SIGNAL \Timer_1:TimerUDB:control_1\ : bit;
+    SIGNAL \Timer_1:TimerUDB:control_2\ : bit;
+    SIGNAL \Timer_1:TimerUDB:control_3\ : bit;
+    SIGNAL \Timer_1:TimerUDB:control_4\ : bit;
+    SIGNAL \Timer_1:TimerUDB:control_5\ : bit;
+    SIGNAL \Timer_1:TimerUDB:control_6\ : bit;
+    SIGNAL \Timer_1:TimerUDB:control_7\ : bit;
+    SIGNAL \Timer_1:TimerUDB:per_zero\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u1.ce0__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u2.ce0__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:status_2\ : bit;
+    SIGNAL \Timer_1:TimerUDB:status_3\ : bit;
+    SIGNAL \Timer_1:TimerUDB:status_tc\ : bit;
+    ATTRIBUTE placement_force OF \Timer_1:TimerUDB:status_tc\ : SIGNAL IS "U(0,0,A)1";
+    SIGNAL __ONE__ : bit;
+    ATTRIBUTE POWER OF __ONE__ : SIGNAL IS true;
+    SIGNAL __ZERO__ : bit;
+    ATTRIBUTE GROUND OF __ZERO__ : SIGNAL IS true;
+    SIGNAL cy_tff_1 : bit;
+    ATTRIBUTE placement_force OF cy_tff_1 : SIGNAL IS "U(0,0,B)0";
+    SIGNAL one : bit;
+    ATTRIBUTE POWER OF one : SIGNAL IS true;
+    SIGNAL zero : bit;
+    ATTRIBUTE GROUND OF zero : SIGNAL IS true;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u0.ce0__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u0.cl0__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u0.z0__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u0.ff0__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u0.ce1__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u0.cl1__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u0.z1__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u0.ff1__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u0.co_msb__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u0.sol_msb__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u0.cfbo__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u1.sor__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u1.cmsbo__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u1.cl0__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u1.z0__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u1.ff0__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u1.ce1__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u1.cl1__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u1.z1__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u1.ff1__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u1.co_msb__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u1.sol_msb__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u1.cfbo__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u2.sor__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u2.cmsbo__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u2.cl0__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u2.z0__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u2.ff0__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u2.ce1__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u2.cl1__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u2.z1__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u2.ff1__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u2.co_msb__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u2.sol_msb__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u2.cfbo__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u3.sor__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT32:timerdp:u3.cmsbo__sig\ : bit;
+    ATTRIBUTE Location OF ClockBlock : LABEL IS "F(Clock,0)";
+    ATTRIBUTE Location OF ClockGenBlock : LABEL IS "F(CLK_GEN,0)";
+    ATTRIBUTE lib_model OF CloseExhaust(0) : LABEL IS "iocell1";
+    ATTRIBUTE Location OF CloseExhaust(0) : LABEL IS "P3[6]";
+    ATTRIBUTE lib_model OF ClosePressure(0) : LABEL IS "iocell2";
+    ATTRIBUTE Location OF ClosePressure(0) : LABEL IS "P3[5]";
+    ATTRIBUTE lib_model OF FPGA_EN(0) : LABEL IS "iocell3";
+    ATTRIBUTE Location OF FPGA_EN(0) : LABEL IS "P1[3]";
+    ATTRIBUTE lib_model OF Green(0) : LABEL IS "iocell4";
+    ATTRIBUTE Location OF Green(0) : LABEL IS "P1[4]";
+    ATTRIBUTE lib_model OF Limit_LS(0) : LABEL IS "iocell5";
+    ATTRIBUTE Location OF Limit_LS(0) : LABEL IS "P2[2]";
+    ATTRIBUTE lib_model OF Limit_LT(0) : LABEL IS "iocell6";
+    ATTRIBUTE Location OF Limit_LT(0) : LABEL IS "P2[0]";
+    ATTRIBUTE lib_model OF Limit_RS(0) : LABEL IS "iocell7";
+    ATTRIBUTE Location OF Limit_RS(0) : LABEL IS "P2[3]";
+    ATTRIBUTE lib_model OF Limit_RT(0) : LABEL IS "iocell8";
+    ATTRIBUTE Location OF Limit_RT(0) : LABEL IS "P2[1]";
+    ATTRIBUTE lib_model OF MotorControl1EN(0) : LABEL IS "iocell9";
+    ATTRIBUTE Location OF MotorControl1EN(0) : LABEL IS "P0[6]";
+    ATTRIBUTE lib_model OF MotorControl2EN(0) : LABEL IS "iocell10";
+    ATTRIBUTE Location OF MotorControl2EN(0) : LABEL IS "P0[7]";
+    ATTRIBUTE lib_model OF MotorControl3EN(0) : LABEL IS "iocell11";
+    ATTRIBUTE Location OF MotorControl3EN(0) : LABEL IS "P1[0]";
+    ATTRIBUTE lib_model OF MotorControl4EN(0) : LABEL IS "iocell12";
+    ATTRIBUTE Location OF MotorControl4EN(0) : LABEL IS "P1[1]";
+    ATTRIBUTE lib_model OF MotorControl5EN(0) : LABEL IS "iocell13";
+    ATTRIBUTE Location OF MotorControl5EN(0) : LABEL IS "P1[2]";
+    ATTRIBUTE lib_model OF Net_2100 : LABEL IS "macrocell1";
+    ATTRIBUTE Location OF Net_2100 : LABEL IS "U(0,0)";
+    ATTRIBUTE lib_model OF Net_2214 : LABEL IS "macrocell2";
+    ATTRIBUTE Location OF Net_2214 : LABEL IS "U(0,0)";
+    ATTRIBUTE lib_model OF OpenExhaust(0) : LABEL IS "iocell14";
+    ATTRIBUTE Location OF OpenExhaust(0) : LABEL IS "P3[4]";
+    ATTRIBUTE lib_model OF OpenPressure(0) : LABEL IS "iocell15";
+    ATTRIBUTE Location OF OpenPressure(0) : LABEL IS "P3[3]";
+    ATTRIBUTE lib_model OF Red(0) : LABEL IS "iocell16";
+    ATTRIBUTE Location OF Red(0) : LABEL IS "P1[5]";
+    ATTRIBUTE lib_model OF Yellow(0) : LABEL IS "iocell17";
+    ATTRIBUTE Location OF Yellow(0) : LABEL IS "P1[6]";
+    ATTRIBUTE Location OF \MotorComms:SCB\ : LABEL IS "F(SCB,1)";
+    ATTRIBUTE lib_model OF \MotorComms:rx(0)\ : LABEL IS "iocell18";
+    ATTRIBUTE Location OF \MotorComms:rx(0)\ : LABEL IS "P0[4]";
+    ATTRIBUTE lib_model OF \MotorComms:tx(0)\ : LABEL IS "iocell19";
+    ATTRIBUTE Location OF \MotorComms:tx(0)\ : LABEL IS "P0[5]";
+    ATTRIBUTE Location OF \PCComms:SCB\ : LABEL IS "F(SCB,0)";
+    ATTRIBUTE Location OF \PCComms:SCB_IRQ\ : LABEL IS "[IntrHod=(0)][IntrId=(10)]";
+    ATTRIBUTE lib_model OF \PCComms:rx(0)\ : LABEL IS "iocell20";
+    ATTRIBUTE Location OF \PCComms:rx(0)\ : LABEL IS "P4[0]";
+    ATTRIBUTE lib_model OF \PCComms:tx(0)\ : LABEL IS "iocell21";
+    ATTRIBUTE Location OF \PCComms:tx(0)\ : LABEL IS "P4[1]";
+    ATTRIBUTE lib_model OF \Pause_Register:Sync:ctrl_reg\ : LABEL IS "controlcell1";
+    ATTRIBUTE Location OF \Pause_Register:Sync:ctrl_reg\ : LABEL IS "U(0,0)";
+    ATTRIBUTE lib_model OF \Steering_Register:Sync:ctrl_reg\ : LABEL IS "controlcell2";
+    ATTRIBUTE Location OF \Steering_Register:Sync:ctrl_reg\ : LABEL IS "U(1,0)";
+    ATTRIBUTE lib_model OF \Timer_1:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell1";
+    ATTRIBUTE Location OF \Timer_1:TimerUDB:rstSts:stsreg\ : LABEL IS "U(0,0)";
+    ATTRIBUTE lib_model OF \Timer_1:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell3";
+    ATTRIBUTE Location OF \Timer_1:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(0,1)";
+    ATTRIBUTE lib_model OF \Timer_1:TimerUDB:sT32:timerdp:u0\ : LABEL IS "datapathcell1";
+    ATTRIBUTE Location OF \Timer_1:TimerUDB:sT32:timerdp:u0\ : LABEL IS "U(0,1)";
+    ATTRIBUTE lib_model OF \Timer_1:TimerUDB:sT32:timerdp:u1\ : LABEL IS "datapathcell2";
+    ATTRIBUTE Location OF \Timer_1:TimerUDB:sT32:timerdp:u1\ : LABEL IS "U(1,1)";
+    ATTRIBUTE lib_model OF \Timer_1:TimerUDB:sT32:timerdp:u2\ : LABEL IS "datapathcell3";
+    ATTRIBUTE Location OF \Timer_1:TimerUDB:sT32:timerdp:u2\ : LABEL IS "U(1,0)";
+    ATTRIBUTE lib_model OF \Timer_1:TimerUDB:sT32:timerdp:u3\ : LABEL IS "datapathcell4";
+    ATTRIBUTE Location OF \Timer_1:TimerUDB:sT32:timerdp:u3\ : LABEL IS "U(0,0)";
+    ATTRIBUTE lib_model OF \Timer_1:TimerUDB:status_tc\ : LABEL IS "macrocell3";
+    ATTRIBUTE Location OF \Timer_1:TimerUDB:status_tc\ : LABEL IS "U(0,0)";
+    ATTRIBUTE lib_model OF cy_tff_1 : LABEL IS "macrocell4";
+    ATTRIBUTE Location OF cy_tff_1 : LABEL IS "U(0,0)";
+    COMPONENT controlcell
+        PORT (
+            control_0 : OUT std_ulogic;
+            control_1 : OUT std_ulogic;
+            control_2 : OUT std_ulogic;
+            control_3 : OUT std_ulogic;
+            control_4 : OUT std_ulogic;
+            control_5 : OUT std_ulogic;
+            control_6 : OUT std_ulogic;
+            control_7 : OUT std_ulogic;
+            clock : IN std_ulogic;
+            reset : IN std_ulogic;
+            clk_en : IN std_ulogic;
+            busclk : IN std_ulogic);
+    END COMPONENT;
+    COMPONENT datapathcell
+        PORT (
+            clock : IN std_ulogic;
+            clk_en : IN std_ulogic;
+            reset : IN std_ulogic;
+            cs_addr_0 : IN std_ulogic;
+            cs_addr_1 : IN std_ulogic;
+            cs_addr_2 : IN std_ulogic;
+            route_si : IN std_ulogic;
+            route_ci : IN std_ulogic;
+            f0_load : IN std_ulogic;
+            f1_load : IN std_ulogic;
+            d0_load : IN std_ulogic;
+            d1_load : IN std_ulogic;
+            ce0_reg : OUT std_ulogic;
+            cl0_reg : OUT std_ulogic;
+            z0_reg : OUT std_ulogic;
+            f0_reg : OUT std_ulogic;
+            ce1_reg : OUT std_ulogic;
+            cl1_reg : OUT std_ulogic;
+            z1_reg : OUT std_ulogic;
+            f1_reg : OUT std_ulogic;
+            ov_msb_reg : OUT std_ulogic;
+            co_msb_reg : OUT std_ulogic;
+            cmsb_reg : OUT std_ulogic;
+            so_reg : OUT std_ulogic;
+            f0_bus_stat_reg : OUT std_ulogic;
+            f0_blk_stat_reg : OUT std_ulogic;
+            f1_bus_stat_reg : OUT std_ulogic;
+            f1_blk_stat_reg : OUT std_ulogic;
+            ce0_comb : OUT std_ulogic;
+            cl0_comb : OUT std_ulogic;
+            z0_comb : OUT std_ulogic;
+            f0_comb : OUT std_ulogic;
+            ce1_comb : OUT std_ulogic;
+            cl1_comb : OUT std_ulogic;
+            z1_comb : OUT std_ulogic;
+            f1_comb : OUT std_ulogic;
+            ov_msb_comb : OUT std_ulogic;
+            co_msb_comb : OUT std_ulogic;
+            cmsb_comb : OUT std_ulogic;
+            so_comb : OUT std_ulogic;
+            f0_bus_stat_comb : OUT std_ulogic;
+            f0_blk_stat_comb : OUT std_ulogic;
+            f1_bus_stat_comb : OUT std_ulogic;
+            f1_blk_stat_comb : OUT std_ulogic;
+            ce0 : OUT std_ulogic;
+            ce0i : IN std_ulogic;
+            p_in_0 : IN std_ulogic;
+            p_in_1 : IN std_ulogic;
+            p_in_2 : IN std_ulogic;
+            p_in_3 : IN std_ulogic;
+            p_in_4 : IN std_ulogic;
+            p_in_5 : IN std_ulogic;
+            p_in_6 : IN std_ulogic;
+            p_in_7 : IN std_ulogic;
+            p_out_0 : OUT std_ulogic;
+            p_out_1 : OUT std_ulogic;
+            p_out_2 : OUT std_ulogic;
+            p_out_3 : OUT std_ulogic;
+            p_out_4 : OUT std_ulogic;
+            p_out_5 : OUT std_ulogic;
+            p_out_6 : OUT std_ulogic;
+            p_out_7 : OUT std_ulogic;
+            cl0i : IN std_ulogic;
+            cl0 : OUT std_ulogic;
+            z0i : IN std_ulogic;
+            z0 : OUT std_ulogic;
+            ff0i : IN std_ulogic;
+            ff0 : OUT std_ulogic;
+            ce1i : IN std_ulogic;
+            ce1 : OUT std_ulogic;
+            cl1i : IN std_ulogic;
+            cl1 : OUT std_ulogic;
+            z1i : IN std_ulogic;
+            z1 : OUT std_ulogic;
+            ff1i : IN std_ulogic;
+            ff1 : OUT std_ulogic;
+            cap0i : IN std_ulogic;
+            cap0 : OUT std_ulogic;
+            cap1i : IN std_ulogic;
+            cap1 : OUT std_ulogic;
+            ci : IN std_ulogic;
+            co_msb : OUT std_ulogic;
+            sir : IN std_ulogic;
+            sol_msb : OUT std_ulogic;
+            cfbi : IN std_ulogic;
+            cfbo : OUT std_ulogic;
+            sil : IN std_ulogic;
+            sor : OUT std_ulogic;
+            cmsbi : IN std_ulogic;
+            cmsbo : OUT std_ulogic;
+            busclk : IN std_ulogic);
+    END COMPONENT;
+    COMPONENT interrupt
+        PORT (
+            interrupt : IN std_ulogic;
+            clock : IN std_ulogic);
+    END COMPONENT;
+    COMPONENT iocell
+        PORT (
+            pin_input : IN std_ulogic;
+            oe : IN std_ulogic;
+            fb : OUT std_ulogic;
+            pad_in : IN std_ulogic;
+            pa_out : OUT std_ulogic;
+            pad_out : OUT std_ulogic;
+            oe_reg : OUT std_ulogic;
+            oe_internal : IN std_ulogic;
+            in_clock : IN std_ulogic;
+            in_clock_en : IN std_ulogic;
+            in_reset : IN std_ulogic;
+            out_clock : IN std_ulogic;
+            out_clock_en : IN std_ulogic;
+            out_reset : IN std_ulogic);
+    END COMPONENT;
+    COMPONENT logicalport
+        PORT (
+            interrupt : OUT std_ulogic;
+            precharge : IN std_ulogic;
+            in_clock : IN std_ulogic;
+            in_clock_en : IN std_ulogic;
+            in_reset : IN std_ulogic;
+            out_clock : IN std_ulogic;
+            out_clock_en : IN std_ulogic;
+            out_reset : IN std_ulogic);
+    END COMPONENT;
+    COMPONENT m0s8clockblockcell
+        PORT (
+            imo : OUT std_ulogic;
+            ext : OUT std_ulogic;
+            eco : OUT std_ulogic;
+            ilo : OUT std_ulogic;
+            wco : OUT std_ulogic;
+            dbl : OUT std_ulogic;
+            pll : OUT std_ulogic;
+            dpll : OUT std_ulogic;
+            dsi_out_0 : IN std_ulogic;
+            dsi_out_1 : IN std_ulogic;
+            dsi_out_2 : IN std_ulogic;
+            dsi_out_3 : IN std_ulogic;
+            lfclk : OUT std_ulogic;
+            hfclk : OUT std_ulogic;
+            sysclk : OUT std_ulogic;
+            halfsysclk : OUT std_ulogic;
+            udb_div_0 : OUT std_ulogic;
+            udb_div_1 : OUT std_ulogic;
+            udb_div_2 : OUT std_ulogic;
+            udb_div_3 : OUT std_ulogic;
+            udb_div_4 : OUT std_ulogic;
+            udb_div_5 : OUT std_ulogic;
+            udb_div_6 : OUT std_ulogic;
+            udb_div_7 : OUT std_ulogic;
+            udb_div_8 : OUT std_ulogic;
+            udb_div_9 : OUT std_ulogic;
+            udb_div_10 : OUT std_ulogic;
+            udb_div_11 : OUT std_ulogic;
+            udb_div_12 : OUT std_ulogic;
+            udb_div_13 : OUT std_ulogic;
+            udb_div_14 : OUT std_ulogic;
+            udb_div_15 : OUT std_ulogic;
+            uab_div_0 : OUT std_ulogic;
+            uab_div_1 : OUT std_ulogic;
+            uab_div_2 : OUT std_ulogic;
+            uab_div_3 : OUT std_ulogic;
+            ff_div_0 : OUT std_ulogic;
+            ff_div_1 : OUT std_ulogic;
+            ff_div_2 : OUT std_ulogic;
+            ff_div_3 : OUT std_ulogic;
+            ff_div_4 : OUT std_ulogic;
+            ff_div_5 : OUT std_ulogic;
+            ff_div_6 : OUT std_ulogic;
+            ff_div_7 : OUT std_ulogic;
+            ff_div_8 : OUT std_ulogic;
+            ff_div_9 : OUT std_ulogic;
+            ff_div_10 : OUT std_ulogic;
+            ff_div_11 : OUT std_ulogic;
+            ff_div_12 : OUT std_ulogic;
+            ff_div_13 : OUT std_ulogic;
+            ff_div_14 : OUT std_ulogic;
+            ff_div_15 : OUT std_ulogic;
+            ff_div_16 : OUT std_ulogic;
+            ff_div_17 : OUT std_ulogic;
+            ff_div_18 : OUT std_ulogic;
+            ff_div_19 : OUT std_ulogic;
+            ff_div_20 : OUT std_ulogic;
+            ff_div_21 : OUT std_ulogic;
+            ff_div_22 : OUT std_ulogic;
+            ff_div_23 : OUT std_ulogic;
+            ff_div_24 : OUT std_ulogic;
+            ff_div_25 : OUT std_ulogic;
+            ff_div_26 : OUT std_ulogic;
+            ff_div_27 : OUT std_ulogic;
+            ff_div_28 : OUT std_ulogic;
+            ff_div_29 : OUT std_ulogic;
+            ff_div_30 : OUT std_ulogic;
+            ff_div_31 : OUT std_ulogic;
+            ff_div_32 : OUT std_ulogic;
+            ff_div_33 : OUT std_ulogic;
+            ff_div_34 : OUT std_ulogic;
+            ff_div_35 : OUT std_ulogic;
+            ff_div_36 : OUT std_ulogic;
+            ff_div_37 : OUT std_ulogic;
+            ff_div_38 : OUT std_ulogic;
+            ff_div_39 : OUT std_ulogic;
+            ff_div_40 : OUT std_ulogic;
+            ff_div_41 : OUT std_ulogic;
+            ff_div_42 : OUT std_ulogic;
+            ff_div_43 : OUT std_ulogic;
+            ff_div_44 : OUT std_ulogic;
+            ff_div_45 : OUT std_ulogic;
+            ff_div_46 : OUT std_ulogic;
+            ff_div_47 : OUT std_ulogic;
+            ff_div_48 : OUT std_ulogic;
+            ff_div_49 : OUT std_ulogic;
+            ff_div_50 : OUT std_ulogic;
+            ff_div_51 : OUT std_ulogic;
+            ff_div_52 : OUT std_ulogic;
+            ff_div_53 : OUT std_ulogic;
+            ff_div_54 : OUT std_ulogic;
+            ff_div_55 : OUT std_ulogic;
+            ff_div_56 : OUT std_ulogic;
+            ff_div_57 : OUT std_ulogic;
+            ff_div_58 : OUT std_ulogic;
+            ff_div_59 : OUT std_ulogic;
+            ff_div_60 : OUT std_ulogic;
+            ff_div_61 : OUT std_ulogic;
+            ff_div_62 : OUT std_ulogic;
+            ff_div_63 : OUT std_ulogic;
+            dsi_in_0 : OUT std_ulogic;
+            dsi_in_1 : OUT std_ulogic;
+            dsi_in_2 : OUT std_ulogic;
+            dsi_in_3 : OUT std_ulogic);
+    END COMPONENT;
+    COMPONENT m0s8clockgenblockcell
+        PORT (
+            gen_clk_in_0 : IN std_ulogic;
+            gen_clk_in_1 : IN std_ulogic;
+            gen_clk_in_2 : IN std_ulogic;
+            gen_clk_in_3 : IN std_ulogic;
+            gen_clk_in_4 : IN std_ulogic;
+            gen_clk_in_5 : IN std_ulogic;
+            gen_clk_in_6 : IN std_ulogic;
+            gen_clk_in_7 : IN std_ulogic;
+            gen_clk_out_0 : OUT std_ulogic;
+            gen_clk_out_1 : OUT std_ulogic;
+            gen_clk_out_2 : OUT std_ulogic;
+            gen_clk_out_3 : OUT std_ulogic;
+            gen_clk_out_4 : OUT std_ulogic;
+            gen_clk_out_5 : OUT std_ulogic;
+            gen_clk_out_6 : OUT std_ulogic;
+            gen_clk_out_7 : OUT std_ulogic);
+    END COMPONENT;
+    COMPONENT m0s8scbcell
+        PORT (
+            clock : IN std_ulogic;
+            interrupt : OUT std_ulogic;
+            cts : IN std_ulogic;
+            rts : OUT std_ulogic;
+            rx : IN std_ulogic;
+            tx : OUT std_ulogic;
+            mosi_m : OUT std_ulogic;
+            miso_m : IN std_ulogic;
+            select_m_0 : OUT std_ulogic;
+            select_m_1 : OUT std_ulogic;
+            select_m_2 : OUT std_ulogic;
+            select_m_3 : OUT std_ulogic;
+            sclk_m : OUT std_ulogic;
+            mosi_s : IN std_ulogic;
+            miso_s : OUT std_ulogic;
+            select_s : IN std_ulogic;
+            sclk_s : IN std_ulogic;
+            scl : INOUT std_ulogic;
+            sda : INOUT std_ulogic;
+            rx_req : OUT std_ulogic;
+            tx_req : OUT std_ulogic);
+    END COMPONENT;
+    COMPONENT macrocell
+        PORT (
+            main_0 : IN std_ulogic;
+            main_1 : IN std_ulogic;
+            main_2 : IN std_ulogic;
+            main_3 : IN std_ulogic;
+            main_4 : IN std_ulogic;
+            main_5 : IN std_ulogic;
+            main_6 : IN std_ulogic;
+            main_7 : IN std_ulogic;
+            main_8 : IN std_ulogic;
+            main_9 : IN std_ulogic;
+            main_10 : IN std_ulogic;
+            main_11 : IN std_ulogic;
+            ar_0 : IN std_ulogic;
+            ap_0 : IN std_ulogic;
+            clock_0 : IN std_ulogic;
+            clk_en : IN std_ulogic;
+            cin : IN std_ulogic;
+            cpt0_0 : IN std_ulogic;
+            cpt0_1 : IN std_ulogic;
+            cpt0_2 : IN std_ulogic;
+            cpt0_3 : IN std_ulogic;
+            cpt0_4 : IN std_ulogic;
+            cpt0_5 : IN std_ulogic;
+            cpt0_6 : IN std_ulogic;
+            cpt0_7 : IN std_ulogic;
+            cpt0_8 : IN std_ulogic;
+            cpt0_9 : IN std_ulogic;
+            cpt0_10 : IN std_ulogic;
+            cpt0_11 : IN std_ulogic;
+            cpt1_0 : IN std_ulogic;
+            cpt1_1 : IN std_ulogic;
+            cpt1_2 : IN std_ulogic;
+            cpt1_3 : IN std_ulogic;
+            cpt1_4 : IN std_ulogic;
+            cpt1_5 : IN std_ulogic;
+            cpt1_6 : IN std_ulogic;
+            cpt1_7 : IN std_ulogic;
+            cpt1_8 : IN std_ulogic;
+            cpt1_9 : IN std_ulogic;
+            cpt1_10 : IN std_ulogic;
+            cpt1_11 : IN std_ulogic;
+            cout : OUT std_ulogic;
+            q : OUT std_ulogic;
+            q_fixed : OUT std_ulogic);
+    END COMPONENT;
+    COMPONENT statusicell
+        PORT (
+            status_0 : IN std_ulogic;
+            status_1 : IN std_ulogic;
+            status_2 : IN std_ulogic;
+            status_3 : IN std_ulogic;
+            status_4 : IN std_ulogic;
+            status_5 : IN std_ulogic;
+            status_6 : IN std_ulogic;
+            clock : IN std_ulogic;
+            reset : IN std_ulogic;
+            interrupt : OUT std_ulogic;
+            clk_en : IN std_ulogic);
+    END COMPONENT;
+BEGIN
+
+    ClockBlock:m0s8clockblockcell
+        PORT MAP(
+            hfclk => ClockBlock_HFCLK,
+            imo => ClockBlock_IMO,
+            ext => ClockBlock_EXTCLK,
+            sysclk => ClockBlock_SYSCLK,
+            ilo => ClockBlock_ILO,
+            lfclk => ClockBlock_LFCLK,
+            dsi_in_0 => ClockBlock_Routed1,
+            ff_div_2 => \PCComms:Net_847_ff2\,
+            ff_div_3 => \MotorComms:Net_847_ff3\);
+
+    ClockGenBlock:m0s8clockgenblockcell;
+
+    CloseExhaust:logicalport
+        GENERIC MAP(
+            drive_mode => "001",
+            ibuf_enabled => "1",
+            id => "933f568a-1212-4531-8a4d-3b457858f55b",
+            init_dr_st => "1",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "O",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "10",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    CloseExhaust(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "CloseExhaust",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => CloseExhaust(0)__PA,
+            oe => open,
+            pad_in => CloseExhaust(0)_PAD,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    ClosePressure:logicalport
+        GENERIC MAP(
+            drive_mode => "001",
+            ibuf_enabled => "1",
+            id => "0b0ebb5e-ca1e-4a83-80d1-6f1cf9bc23b6",
+            init_dr_st => "1",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "O",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "10",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    ClosePressure(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "ClosePressure",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => ClosePressure(0)__PA,
+            oe => open,
+            pad_in => ClosePressure(0)_PAD,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    FPGA_EN:logicalport
+        GENERIC MAP(
+            drive_mode => "001",
+            ibuf_enabled => "1",
+            id => "ef49710c-8d5b-4dde-8c3a-6e8afe455097",
+            init_dr_st => "1",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "O",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "10",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    FPGA_EN(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "FPGA_EN",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => FPGA_EN(0)__PA,
+            oe => open,
+            pad_in => FPGA_EN(0)_PAD,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    Green:logicalport
+        GENERIC MAP(
+            drive_mode => "011",
+            ibuf_enabled => "1",
+            id => "43e1dc00-9e8d-4fa4-8641-f1c6d5c64a5b",
+            init_dr_st => "1",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "1",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "O",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "10",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    Green(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "Green",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
+        PORT MAP(
+            pa_out => Green(0)__PA,
+            oe => open,
+            pin_input => Net_2245,
+            pad_out => Green(0)_PAD,
+            pad_in => Green(0)_PAD,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    Limit_LS:logicalport
+        GENERIC MAP(
+            drive_mode => "011",
+            ibuf_enabled => "1",
+            id => "38af3715-9340-4f8c-8fde-81b138189725",
+            init_dr_st => "0",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "I",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "00",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open,
+            in_clock => open);
+
+    Limit_LS(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 2,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "Limit_LS",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
+        PORT MAP(
+            pa_out => Limit_LS(0)__PA,
+            oe => open,
+            pad_in => Limit_LS(0)_PAD,
+            in_clock => ClockBlock_HFCLK,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    Limit_LT:logicalport
+        GENERIC MAP(
+            drive_mode => "011",
+            ibuf_enabled => "1",
+            id => "8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba",
+            init_dr_st => "0",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "I",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "00",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open,
+            in_clock => open);
+
+    Limit_LT(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 2,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "Limit_LT",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
+        PORT MAP(
+            pa_out => Limit_LT(0)__PA,
+            oe => open,
+            pad_in => Limit_LT(0)_PAD,
+            in_clock => ClockBlock_HFCLK,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    Limit_RS:logicalport
+        GENERIC MAP(
+            drive_mode => "011",
+            ibuf_enabled => "1",
+            id => "49746033-5ad3-4a4e-80a4-2c44ff91624b",
+            init_dr_st => "0",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "I",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "00",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open,
+            in_clock => open);
+
+    Limit_RS(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 2,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "Limit_RS",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
+        PORT MAP(
+            pa_out => Limit_RS(0)__PA,
+            oe => open,
+            pad_in => Limit_RS(0)_PAD,
+            in_clock => ClockBlock_HFCLK,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    Limit_RT:logicalport
+        GENERIC MAP(
+            drive_mode => "011",
+            ibuf_enabled => "1",
+            id => "619c2385-f30a-44ee-a77a-4b107cc65c63",
+            init_dr_st => "0",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "I",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "00",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open,
+            in_clock => open);
+
+    Limit_RT(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 2,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "Limit_RT",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
+        PORT MAP(
+            pa_out => Limit_RT(0)__PA,
+            oe => open,
+            pad_in => Limit_RT(0)_PAD,
+            in_clock => ClockBlock_HFCLK,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    MotorControl1EN:logicalport
+        GENERIC MAP(
+            drive_mode => "110",
+            ibuf_enabled => "1",
+            id => "e851a3b9-efb8-48be-bbb8-b303b216c393",
+            init_dr_st => "1",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "O",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "10",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    MotorControl1EN(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "MotorControl1EN",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => MotorControl1EN(0)__PA,
+            oe => open,
+            pad_in => MotorControl1EN(0)_PAD,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    MotorControl2EN:logicalport
+        GENERIC MAP(
+            drive_mode => "110",
+            ibuf_enabled => "1",
+            id => "def4ce9b-9c7e-47a8-b1da-06ca3efcc2a7",
+            init_dr_st => "1",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "O",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "10",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    MotorControl2EN(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "MotorControl2EN",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => MotorControl2EN(0)__PA,
+            oe => open,
+            pad_in => MotorControl2EN(0)_PAD,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    MotorControl3EN:logicalport
+        GENERIC MAP(
+            drive_mode => "110",
+            ibuf_enabled => "1",
+            id => "6579af75-2b2d-4e01-8fe5-ca74150158d5",
+            init_dr_st => "1",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "O",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "10",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    MotorControl3EN(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "MotorControl3EN",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => MotorControl3EN(0)__PA,
+            oe => open,
+            pad_in => MotorControl3EN(0)_PAD,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    MotorControl4EN:logicalport
+        GENERIC MAP(
+            drive_mode => "110",
+            ibuf_enabled => "1",
+            id => "7e2eae02-207c-4414-a8c5-51117923a8e4",
+            init_dr_st => "1",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "O",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "10",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    MotorControl4EN(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "MotorControl4EN",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => MotorControl4EN(0)__PA,
+            oe => open,
+            pad_in => MotorControl4EN(0)_PAD,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    MotorControl5EN:logicalport
+        GENERIC MAP(
+            drive_mode => "110",
+            ibuf_enabled => "1",
+            id => "b7873e30-8197-4b65-b9dd-eef416535b5f",
+            init_dr_st => "1",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "O",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "10",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    MotorControl5EN(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "MotorControl5EN",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => MotorControl5EN(0)__PA,
+            oe => open,
+            pad_in => MotorControl5EN(0)_PAD,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    Net_2100:macrocell
+        GENERIC MAP(
+            eqn_main => "(main_0 * main_1)",
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            q => Net_2100,
+            clock_0 => ClockBlock_HFCLK,
+            main_0 => \Timer_1:TimerUDB:control_7\,
+            main_1 => \Timer_1:TimerUDB:per_zero\);
+
+    Net_2214:macrocell
+        GENERIC MAP(
+            eqn_main => "(!main_0 * !main_1)",
+            clken_mode => 1)
+        PORT MAP(
+            q => Net_2214,
+            main_0 => cy_tff_1,
+            main_1 => Net_2170);
+
+    OpenExhaust:logicalport
+        GENERIC MAP(
+            drive_mode => "001",
+            ibuf_enabled => "1",
+            id => "db9cbf6c-4f19-42be-956f-4935764f530b",
+            init_dr_st => "1",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "O",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "10",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    OpenExhaust(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "OpenExhaust",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => OpenExhaust(0)__PA,
+            oe => open,
+            pad_in => OpenExhaust(0)_PAD,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    OpenPressure:logicalport
+        GENERIC MAP(
+            drive_mode => "001",
+            ibuf_enabled => "1",
+            id => "85432dbb-bede-4548-a560-b9179fdc451b",
+            init_dr_st => "1",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "O",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "10",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    OpenPressure(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "OpenPressure",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => OpenPressure(0)__PA,
+            oe => open,
+            pad_in => OpenPressure(0)_PAD,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    Red:logicalport
+        GENERIC MAP(
+            drive_mode => "110",
+            ibuf_enabled => "1",
+            id => "7a61b723-806d-4996-8259-c3024ebc8c46",
+            init_dr_st => "1",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "O",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "10",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    Red(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "Red",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => Red(0)__PA,
+            oe => open,
+            pad_in => Red(0)_PAD,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    Yellow:logicalport
+        GENERIC MAP(
+            drive_mode => "110",
+            ibuf_enabled => "1",
+            id => "782ac506-9583-4da1-b159-daad784e65b2",
+            init_dr_st => "1",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "1",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "O",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "10",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    Yellow(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "Yellow",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
+        PORT MAP(
+            pa_out => Yellow(0)__PA,
+            oe => open,
+            pin_input => Net_2214,
+            pad_out => Yellow(0)_PAD,
+            pad_in => Yellow(0)_PAD,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    \MotorComms:SCB\:m0s8scbcell
+        GENERIC MAP(
+            cy_registers => "",
+            scb_mode => 2)
+        PORT MAP(
+            clock => \MotorComms:Net_847_ff3\,
+            interrupt => Net_1893,
+            rx => \MotorComms:Net_654\,
+            tx => \MotorComms:Net_656\,
+            cts => open,
+            rts => \MotorComms:Net_751\,
+            mosi_m => \MotorComms:Net_660\,
+            miso_m => open,
+            select_m_3 => \MotorComms:ss_3\,
+            select_m_2 => \MotorComms:ss_2\,
+            select_m_1 => \MotorComms:ss_1\,
+            select_m_0 => \MotorComms:ss_0\,
+            sclk_m => \MotorComms:Net_687\,
+            mosi_s => open,
+            miso_s => \MotorComms:Net_703\,
+            select_s => open,
+            sclk_s => open,
+            tx_req => \MotorComms:Net_823\,
+            rx_req => \MotorComms:Net_824\);
+
+    \MotorComms:rx(0)\:iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "\MotorComms:rx\",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => \\\MotorComms:rx(0)\\__PA\,
+            oe => open,
+            fb => \MotorComms:Net_654\,
+            pad_in => \MotorComms:rx(0)_PAD\,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    \MotorComms:rx\:logicalport
+        GENERIC MAP(
+            drive_mode => "001",
+            ibuf_enabled => "1",
+            id => "3d65d08f-24d9-4db2-b139-535d9d297be0/78e33e5d-45ea-4b75-88d5-73274e8a7ce4",
+            init_dr_st => "0",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "0",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "I",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "00",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    \MotorComms:tx(0)\:iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "\MotorComms:tx\",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => \\\MotorComms:tx(0)\\__PA\,
+            oe => open,
+            pin_input => \MotorComms:Net_656\,
+            pad_out => \MotorComms:tx(0)_PAD\,
+            pad_in => \MotorComms:tx(0)_PAD\,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    \MotorComms:tx\:logicalport
+        GENERIC MAP(
+            drive_mode => "110",
+            ibuf_enabled => "0",
+            id => "3d65d08f-24d9-4db2-b139-535d9d297be0/23b8206d-1c77-4e61-be4a-b4037d5de5fc",
+            init_dr_st => "1",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "0",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "1",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "B",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "00",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    \PCComms:SCB\:m0s8scbcell
+        GENERIC MAP(
+            cy_registers => "",
+            scb_mode => 2)
+        PORT MAP(
+            clock => \PCComms:Net_847_ff2\,
+            interrupt => Net_115,
+            rx => \PCComms:Net_654\,
+            tx => \PCComms:Net_656\,
+            cts => open,
+            rts => \PCComms:Net_751\,
+            mosi_m => \PCComms:Net_660\,
+            miso_m => open,
+            select_m_3 => \PCComms:ss_3\,
+            select_m_2 => \PCComms:ss_2\,
+            select_m_1 => \PCComms:ss_1\,
+            select_m_0 => \PCComms:ss_0\,
+            sclk_m => \PCComms:Net_687\,
+            mosi_s => open,
+            miso_s => \PCComms:Net_703\,
+            select_s => open,
+            sclk_s => open,
+            tx_req => \PCComms:Net_823\,
+            rx_req => \PCComms:Net_824\);
+
+    \PCComms:SCB_IRQ\:interrupt
+        GENERIC MAP(
+            int_type => "10")
+        PORT MAP(
+            interrupt => Net_115,
+            clock => ClockBlock_HFCLK);
+
+    \PCComms:rx(0)\:iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "\PCComms:rx\",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => \\\PCComms:rx(0)\\__PA\,
+            oe => open,
+            fb => \PCComms:Net_654\,
+            pad_in => \PCComms:rx(0)_PAD\,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    \PCComms:rx\:logicalport
+        GENERIC MAP(
+            drive_mode => "001",
+            ibuf_enabled => "1",
+            id => "43ec2fa1-bf22-4b71-9477-b6ca7b97f0b0/78e33e5d-45ea-4b75-88d5-73274e8a7ce4",
+            init_dr_st => "0",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "0",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "I",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "00",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    \PCComms:tx(0)\:iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "\PCComms:tx\",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => \\\PCComms:tx(0)\\__PA\,
+            oe => open,
+            pin_input => \PCComms:Net_656\,
+            pad_out => \PCComms:tx(0)_PAD\,
+            pad_in => \PCComms:tx(0)_PAD\,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    \PCComms:tx\:logicalport
+        GENERIC MAP(
+            drive_mode => "110",
+            ibuf_enabled => "0",
+            id => "43ec2fa1-bf22-4b71-9477-b6ca7b97f0b0/23b8206d-1c77-4e61-be4a-b4037d5de5fc",
+            init_dr_st => "1",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "0",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "1",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "B",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "00",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    \Pause_Register:Sync:ctrl_reg\:controlcell
+        GENERIC MAP(
+            cy_ctrl_mode_0 => "00000000",
+            cy_ctrl_mode_1 => "00000000",
+            cy_ext_reset => 0,
+            cy_force_order => 1,
+            cy_init_value => "00000001",
+            clken_mode => 1)
+        PORT MAP(
+            control_7 => \Pause_Register:control_7\,
+            control_6 => \Pause_Register:control_6\,
+            control_5 => \Pause_Register:control_5\,
+            control_4 => \Pause_Register:control_4\,
+            control_3 => \Pause_Register:control_3\,
+            control_2 => \Pause_Register:control_2\,
+            control_1 => \Pause_Register:control_1\,
+            control_0 => Net_2170,
+            busclk => ClockBlock_HFCLK);
+
+    \Steering_Register:Sync:ctrl_reg\:controlcell
+        GENERIC MAP(
+            cy_ctrl_mode_0 => "00000000",
+            cy_ctrl_mode_1 => "00000000",
+            cy_ext_reset => 0,
+            cy_force_order => 1,
+            cy_init_value => "00000000",
+            clken_mode => 1)
+        PORT MAP(
+            control_7 => \Steering_Register:control_7\,
+            control_6 => \Steering_Register:control_6\,
+            control_5 => \Steering_Register:control_5\,
+            control_4 => \Steering_Register:control_4\,
+            control_3 => \Steering_Register:control_3\,
+            control_2 => \Steering_Register:control_2\,
+            control_1 => \Steering_Register:control_1\,
+            control_0 => Net_2245,
+            busclk => ClockBlock_HFCLK);
+
+    \Timer_1:TimerUDB:rstSts:stsreg\:statusicell
+        GENERIC MAP(
+            cy_force_order => 1,
+            cy_int_mask => "1111111",
+            cy_md_select => "0000011",
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            clock => ClockBlock_HFCLK,
+            status_6 => open,
+            status_5 => open,
+            status_4 => open,
+            status_3 => \Timer_1:TimerUDB:status_3\,
+            status_2 => \Timer_1:TimerUDB:status_2\,
+            status_1 => open,
+            status_0 => \Timer_1:TimerUDB:status_tc\);
+
+    \Timer_1:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\:controlcell
+        GENERIC MAP(
+            cy_ctrl_mode_0 => "11111111",
+            cy_ctrl_mode_1 => "00000000",
+            cy_ext_reset => 0,
+            cy_force_order => 1,
+            cy_init_value => "00000000",
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            clock => ClockBlock_HFCLK,
+            control_7 => \Timer_1:TimerUDB:control_7\,
+            control_6 => \Timer_1:TimerUDB:control_6\,
+            control_5 => \Timer_1:TimerUDB:control_5\,
+            control_4 => \Timer_1:TimerUDB:control_4\,
+            control_3 => \Timer_1:TimerUDB:control_3\,
+            control_2 => \Timer_1:TimerUDB:control_2\,
+            control_1 => \Timer_1:TimerUDB:control_1\,
+            control_0 => \Timer_1:TimerUDB:control_0\,
+            busclk => ClockBlock_HFCLK);
+
+    \Timer_1:TimerUDB:sT32:timerdp:u0\:datapathcell
+        GENERIC MAP(
+            a0_init => "00000000",
+            a1_init => "00000000",
+            ce0_sync => 1,
+            ce1_sync => 1,
+            cl0_sync => 1,
+            cl1_sync => 1,
+            cmsb_sync => 1,
+            co_msb_sync => 1,
+            cy_dpconfig => "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000",
+            d0_init => "00000000",
+            d1_init => "00000000",
+            f0_blk_sync => 1,
+            f0_bus_sync => 1,
+            f1_blk_sync => 1,
+            f1_bus_sync => 1,
+            ff0_sync => 1,
+            ff1_sync => 1,
+            ov_msb_sync => 1,
+            so_sync => 1,
+            z0_sync => 1,
+            z1_sync => 1,
+            uses_p_in => '0',
+            uses_p_out => '0',
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            clock => ClockBlock_HFCLK,
+            cs_addr_1 => \Timer_1:TimerUDB:control_7\,
+            cs_addr_0 => \Timer_1:TimerUDB:per_zero\,
+            busclk => ClockBlock_HFCLK,
+            ce0 => \Timer_1:TimerUDB:sT32:timerdp:u0.ce0__sig\,
+            cl0 => \Timer_1:TimerUDB:sT32:timerdp:u0.cl0__sig\,
+            z0 => \Timer_1:TimerUDB:sT32:timerdp:u0.z0__sig\,
+            ff0 => \Timer_1:TimerUDB:sT32:timerdp:u0.ff0__sig\,
+            ce1 => \Timer_1:TimerUDB:sT32:timerdp:u0.ce1__sig\,
+            cl1 => \Timer_1:TimerUDB:sT32:timerdp:u0.cl1__sig\,
+            z1 => \Timer_1:TimerUDB:sT32:timerdp:u0.z1__sig\,
+            ff1 => \Timer_1:TimerUDB:sT32:timerdp:u0.ff1__sig\,
+            co_msb => \Timer_1:TimerUDB:sT32:timerdp:u0.co_msb__sig\,
+            sol_msb => \Timer_1:TimerUDB:sT32:timerdp:u0.sol_msb__sig\,
+            cfbo => \Timer_1:TimerUDB:sT32:timerdp:u0.cfbo__sig\,
+            sil => \Timer_1:TimerUDB:sT32:timerdp:u1.sor__sig\,
+            cmsbi => \Timer_1:TimerUDB:sT32:timerdp:u1.cmsbo__sig\);
+
+    \Timer_1:TimerUDB:sT32:timerdp:u1\:datapathcell
+        GENERIC MAP(
+            a0_init => "00000000",
+            a1_init => "00000000",
+            ce0_sync => 1,
+            ce1_sync => 1,
+            cl0_sync => 1,
+            cl1_sync => 1,
+            cmsb_sync => 1,
+            co_msb_sync => 1,
+            cy_dpconfig => "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000",
+            d0_init => "00000000",
+            d1_init => "00000000",
+            f0_blk_sync => 1,
+            f0_bus_sync => 1,
+            f1_blk_sync => 1,
+            f1_bus_sync => 1,
+            ff0_sync => 1,
+            ff1_sync => 1,
+            ov_msb_sync => 1,
+            so_sync => 1,
+            z0_sync => 1,
+            z1_sync => 1,
+            uses_p_in => '0',
+            uses_p_out => '0',
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            clock => ClockBlock_HFCLK,
+            cs_addr_1 => \Timer_1:TimerUDB:control_7\,
+            cs_addr_0 => \Timer_1:TimerUDB:per_zero\,
+            busclk => ClockBlock_HFCLK,
+            ce0i => \Timer_1:TimerUDB:sT32:timerdp:u0.ce0__sig\,
+            cl0i => \Timer_1:TimerUDB:sT32:timerdp:u0.cl0__sig\,
+            z0i => \Timer_1:TimerUDB:sT32:timerdp:u0.z0__sig\,
+            ff0i => \Timer_1:TimerUDB:sT32:timerdp:u0.ff0__sig\,
+            ce1i => \Timer_1:TimerUDB:sT32:timerdp:u0.ce1__sig\,
+            cl1i => \Timer_1:TimerUDB:sT32:timerdp:u0.cl1__sig\,
+            z1i => \Timer_1:TimerUDB:sT32:timerdp:u0.z1__sig\,
+            ff1i => \Timer_1:TimerUDB:sT32:timerdp:u0.ff1__sig\,
+            ci => \Timer_1:TimerUDB:sT32:timerdp:u0.co_msb__sig\,
+            sir => \Timer_1:TimerUDB:sT32:timerdp:u0.sol_msb__sig\,
+            cfbi => \Timer_1:TimerUDB:sT32:timerdp:u0.cfbo__sig\,
+            sor => \Timer_1:TimerUDB:sT32:timerdp:u1.sor__sig\,
+            cmsbo => \Timer_1:TimerUDB:sT32:timerdp:u1.cmsbo__sig\,
+            ce0 => \Timer_1:TimerUDB:sT32:timerdp:u1.ce0__sig\,
+            cl0 => \Timer_1:TimerUDB:sT32:timerdp:u1.cl0__sig\,
+            z0 => \Timer_1:TimerUDB:sT32:timerdp:u1.z0__sig\,
+            ff0 => \Timer_1:TimerUDB:sT32:timerdp:u1.ff0__sig\,
+            ce1 => \Timer_1:TimerUDB:sT32:timerdp:u1.ce1__sig\,
+            cl1 => \Timer_1:TimerUDB:sT32:timerdp:u1.cl1__sig\,
+            z1 => \Timer_1:TimerUDB:sT32:timerdp:u1.z1__sig\,
+            ff1 => \Timer_1:TimerUDB:sT32:timerdp:u1.ff1__sig\,
+            co_msb => \Timer_1:TimerUDB:sT32:timerdp:u1.co_msb__sig\,
+            sol_msb => \Timer_1:TimerUDB:sT32:timerdp:u1.sol_msb__sig\,
+            cfbo => \Timer_1:TimerUDB:sT32:timerdp:u1.cfbo__sig\,
+            sil => \Timer_1:TimerUDB:sT32:timerdp:u2.sor__sig\,
+            cmsbi => \Timer_1:TimerUDB:sT32:timerdp:u2.cmsbo__sig\);
+
+    \Timer_1:TimerUDB:sT32:timerdp:u2\:datapathcell
+        GENERIC MAP(
+            a0_init => "00000000",
+            a1_init => "00000000",
+            ce0_sync => 1,
+            ce1_sync => 1,
+            cl0_sync => 1,
+            cl1_sync => 1,
+            cmsb_sync => 1,
+            co_msb_sync => 1,
+            cy_dpconfig => "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000",
+            d0_init => "00000000",
+            d1_init => "00000000",
+            f0_blk_sync => 1,
+            f0_bus_sync => 1,
+            f1_blk_sync => 1,
+            f1_bus_sync => 1,
+            ff0_sync => 1,
+            ff1_sync => 1,
+            ov_msb_sync => 1,
+            so_sync => 1,
+            z0_sync => 1,
+            z1_sync => 1,
+            uses_p_in => '0',
+            uses_p_out => '0',
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            clock => ClockBlock_HFCLK,
+            cs_addr_1 => \Timer_1:TimerUDB:control_7\,
+            cs_addr_0 => \Timer_1:TimerUDB:per_zero\,
+            busclk => ClockBlock_HFCLK,
+            ce0i => \Timer_1:TimerUDB:sT32:timerdp:u1.ce0__sig\,
+            cl0i => \Timer_1:TimerUDB:sT32:timerdp:u1.cl0__sig\,
+            z0i => \Timer_1:TimerUDB:sT32:timerdp:u1.z0__sig\,
+            ff0i => \Timer_1:TimerUDB:sT32:timerdp:u1.ff0__sig\,
+            ce1i => \Timer_1:TimerUDB:sT32:timerdp:u1.ce1__sig\,
+            cl1i => \Timer_1:TimerUDB:sT32:timerdp:u1.cl1__sig\,
+            z1i => \Timer_1:TimerUDB:sT32:timerdp:u1.z1__sig\,
+            ff1i => \Timer_1:TimerUDB:sT32:timerdp:u1.ff1__sig\,
+            ci => \Timer_1:TimerUDB:sT32:timerdp:u1.co_msb__sig\,
+            sir => \Timer_1:TimerUDB:sT32:timerdp:u1.sol_msb__sig\,
+            cfbi => \Timer_1:TimerUDB:sT32:timerdp:u1.cfbo__sig\,
+            sor => \Timer_1:TimerUDB:sT32:timerdp:u2.sor__sig\,
+            cmsbo => \Timer_1:TimerUDB:sT32:timerdp:u2.cmsbo__sig\,
+            ce0 => \Timer_1:TimerUDB:sT32:timerdp:u2.ce0__sig\,
+            cl0 => \Timer_1:TimerUDB:sT32:timerdp:u2.cl0__sig\,
+            z0 => \Timer_1:TimerUDB:sT32:timerdp:u2.z0__sig\,
+            ff0 => \Timer_1:TimerUDB:sT32:timerdp:u2.ff0__sig\,
+            ce1 => \Timer_1:TimerUDB:sT32:timerdp:u2.ce1__sig\,
+            cl1 => \Timer_1:TimerUDB:sT32:timerdp:u2.cl1__sig\,
+            z1 => \Timer_1:TimerUDB:sT32:timerdp:u2.z1__sig\,
+            ff1 => \Timer_1:TimerUDB:sT32:timerdp:u2.ff1__sig\,
+            co_msb => \Timer_1:TimerUDB:sT32:timerdp:u2.co_msb__sig\,
+            sol_msb => \Timer_1:TimerUDB:sT32:timerdp:u2.sol_msb__sig\,
+            cfbo => \Timer_1:TimerUDB:sT32:timerdp:u2.cfbo__sig\,
+            sil => \Timer_1:TimerUDB:sT32:timerdp:u3.sor__sig\,
+            cmsbi => \Timer_1:TimerUDB:sT32:timerdp:u3.cmsbo__sig\);
+
+    \Timer_1:TimerUDB:sT32:timerdp:u3\:datapathcell
+        GENERIC MAP(
+            a0_init => "00000000",
+            a1_init => "00000000",
+            ce0_sync => 1,
+            ce1_sync => 1,
+            cl0_sync => 1,
+            cl1_sync => 1,
+            cmsb_sync => 1,
+            co_msb_sync => 1,
+            cy_dpconfig => "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000",
+            d0_init => "00000000",
+            d1_init => "00000000",
+            f0_blk_sync => 1,
+            f0_bus_sync => 1,
+            f1_blk_sync => 1,
+            f1_bus_sync => 1,
+            ff0_sync => 1,
+            ff1_sync => 1,
+            ov_msb_sync => 1,
+            so_sync => 1,
+            z0_sync => 1,
+            z1_sync => 1,
+            uses_p_in => '0',
+            uses_p_out => '0',
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            clock => ClockBlock_HFCLK,
+            cs_addr_1 => \Timer_1:TimerUDB:control_7\,
+            cs_addr_0 => \Timer_1:TimerUDB:per_zero\,
+            z0_comb => \Timer_1:TimerUDB:per_zero\,
+            f0_bus_stat_comb => \Timer_1:TimerUDB:status_3\,
+            f0_blk_stat_comb => \Timer_1:TimerUDB:status_2\,
+            busclk => ClockBlock_HFCLK,
+            ce0i => \Timer_1:TimerUDB:sT32:timerdp:u2.ce0__sig\,
+            cl0i => \Timer_1:TimerUDB:sT32:timerdp:u2.cl0__sig\,
+            z0i => \Timer_1:TimerUDB:sT32:timerdp:u2.z0__sig\,
+            ff0i => \Timer_1:TimerUDB:sT32:timerdp:u2.ff0__sig\,
+            ce1i => \Timer_1:TimerUDB:sT32:timerdp:u2.ce1__sig\,
+            cl1i => \Timer_1:TimerUDB:sT32:timerdp:u2.cl1__sig\,
+            z1i => \Timer_1:TimerUDB:sT32:timerdp:u2.z1__sig\,
+            ff1i => \Timer_1:TimerUDB:sT32:timerdp:u2.ff1__sig\,
+            ci => \Timer_1:TimerUDB:sT32:timerdp:u2.co_msb__sig\,
+            sir => \Timer_1:TimerUDB:sT32:timerdp:u2.sol_msb__sig\,
+            cfbi => \Timer_1:TimerUDB:sT32:timerdp:u2.cfbo__sig\,
+            sor => \Timer_1:TimerUDB:sT32:timerdp:u3.sor__sig\,
+            cmsbo => \Timer_1:TimerUDB:sT32:timerdp:u3.cmsbo__sig\);
+
+    \Timer_1:TimerUDB:status_tc\:macrocell
+        GENERIC MAP(
+            eqn_main => "(main_0 * main_1)",
+            clken_mode => 1)
+        PORT MAP(
+            q => \Timer_1:TimerUDB:status_tc\,
+            main_0 => \Timer_1:TimerUDB:control_7\,
+            main_1 => \Timer_1:TimerUDB:per_zero\);
+
+    cy_tff_1:macrocell
+        GENERIC MAP(
+            eqn_main => "1'b0",
+            clk_inv => '0',
+            clken_inv => '0',
+            clken_mode => 2)
+        PORT MAP(
+            q => cy_tff_1,
+            clk_en => Net_2100,
+            clock_0 => ClockBlock_HFCLK);
+
+END __DEFAULT__;
