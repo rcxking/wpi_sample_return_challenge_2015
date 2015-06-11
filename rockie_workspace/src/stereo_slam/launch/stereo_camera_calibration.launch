@@ -6,7 +6,7 @@
   size: measured in number of corners not squares
   square: dimension of squares in meters
   -->
-  <node name="calibrator" pkg="camera_calibration" type="cameracalibrator.py" args="--size 7x6 --square 0.02609" >
+  <node name="calibrator" pkg="camera_calibration" type="cameracalibrator.py" args="--size 7x6 --square 0.02609" output="screen">
       <remap from="right"       to="/stereo_camera/right/image_raw"/>
       <remap from="left"       to="/stereo_camera/left/image_raw"/>
   </node>
