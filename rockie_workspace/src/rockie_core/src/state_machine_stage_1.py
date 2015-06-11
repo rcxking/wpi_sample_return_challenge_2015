@@ -6,19 +6,23 @@ State machine to run for stage 1.
 RPI Rock Raiders
 5/31/15
 
-Last Updated: Bryant Pong: 6/10/15 - 5:24 PM
+Last Updated: Bryant Pong: 6/11/15 - 2:03 PM
 '''
 
 # ROS Libraries:
 import roslib
 import rospy
+import actionlib
 from std_msgs.msg import String
+from tf.transformations import quaternion_from_euler
+from geometry_msgs.msg import Quaternion
+from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal, MoveBaseFeedback
 
 # Finite State Machine Libraries
 import smach
 import smach_ros
 from smach import StateMachine
-from smach_ros import ActionServerWrapper 
+from smach_ros import SimpleActionState
 
 # For OpenCV:
 import cv2
@@ -37,7 +41,7 @@ lastState = 0
 
 # Global flag for whether the sample has been found:
 sampleFound = False  
-paused = True
+paused = True    
 
 '''
 Pause State:
@@ -82,13 +86,13 @@ class StartupSequence(smach.State):
 		try:
 			unpause = rospy.ServiceProxy("pauseservice", Pause)
 			x = unpause(False)
-		except rospy.ServiceExpression, e:
+		except rospy.ServiceException, e:
 			rospy.loginfo("Service call failed: %s" % e)
 		
 		while True:
 			if paused:
 				print("startupsequence: Now going to pause state")
-				lastState = "startupSequence"
+				lastState = 0
 				return "pause"
 		return "done"
 
@@ -99,8 +103,15 @@ class Egress(smach.State):
 	def execute(self, userdata):
 		rospy.loginfo("Executing Egress")
 
+		# Drive the robot off the starting platform:
+		try:
+			drive = rospy.ServiceProxy("driveservice", WheelVel) 
+			x = drive(0.5, 0.5, 0.5)
+			time.sleep(3)
+			x = drive(0.0, 0.0, 0.0)			
+		except rospy.ServiceException, e:
+			rospy.loginfo("Service call failed: %s" % e)
 						
-
 		rospy.loginfo("Exiting off")  
 		return "transitEnter"
 
@@ -162,7 +173,7 @@ class EndTransit(smach.State):
 		return "end" 
 
 def pauseCallback(data):
-	print("data.data: " + str(data.data))
+	rospy.loginfo("data.data: " + str(data.data))
 	global paused
 	if data.data == "yes":
 		paused = True
