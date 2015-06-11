@@ -7,7 +7,7 @@ to send to the PSOC.
 RPI Rock Raiders
 6/4/15
 
-Last Updated: Bryant Pong: 6/11/15 - 1:42 PM
+Last Updated: Bryant Pong: 6/11/15 - 2:20 PM
 '''
 
 # Python Imports:
@@ -61,12 +61,15 @@ This service expects the custom service "wheelvel.srv".
 '''
 def drive_service(req):
 	# Get the target velocities of the motors:
-	frontLeft = req.vel1
-	frontRight = req.vel2
-	backLeft = req.vel3
-	backRight = req.vel4
+	vels = [req.vel1*127, req.vel2*127, req.vel4*127]
+	dirs = [4 if vel >=0 else 5 for vel in vels]
+	motors = [128, 129, 130]
 
 	# Send the velocities.  Back left motor is dead:
+	for i in xrange(3):
+		writeData(motors[i], dirs[i], abs(vels[i])) 
+
+	return True
 	
 '''
 This service controls the steering of the robot:
@@ -100,12 +103,34 @@ def pause_service(req):
 			return False 
 	return True
 
+'''
+This service controls the red and green lights.
+
+This service uses the custom service "Lights.srv"  
+'''
+def lights_service(req);
+	if req.light == 0:
+		# Green light:
+		if req.on:
+			writeArduinoData(45)
+		else:
+			writeArduinoData(46)
+	else:
+		# Red Light
+		if req.on:
+			writeArduinoData(47)
+		else:
+			writeArduinoData(48)
+
+	return True
+
 def serial_server():
 	rospy.init_node("serial_node_server")
 	# Start all services:
 	driveService = rospy.Service("driveservice", WheelVel, drive_service)
 	steerService = rospy.Service("steerservice", Steer, steer_service)
 	pauseService = rospy.Service("pauseservice", Pause, pause_service)
+	lightsService = rospy.Service("lightsservice", Lights, lights_service) 
 
 	rospy.spin()
 	

@@ -6,7 +6,7 @@ State machine to run for stage 1.
 RPI Rock Raiders
 5/31/15
 
-Last Updated: Bryant Pong: 6/11/15 - 1:39 PM
+Last Updated: Bryant Pong: 6/11/15 - 2:03 PM
 '''
 
 # ROS Libraries:
@@ -103,6 +103,14 @@ class Egress(smach.State):
 	def execute(self, userdata):
 		rospy.loginfo("Executing Egress")
 
+		# Drive the robot off the starting platform:
+		try:
+			drive = rospy.ServiceProxy("driveservice", WheelVel) 
+			x = drive(0.5, 0.5, 0.5)
+			time.sleep(3)
+			x = drive(0.0, 0.0, 0.0)			
+		except rospy.ServiceException, e:
+			rospy.loginfo("Service call failed: %s" % e)
 						
 		rospy.loginfo("Exiting off")  
 		return "transitEnter"
