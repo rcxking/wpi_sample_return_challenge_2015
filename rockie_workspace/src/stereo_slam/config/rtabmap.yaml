@@ -1,0 +1,30 @@
+frame_id: "base_link"
+subscribe_stereo: true
+subscribe_depth: false
+queue_size: 5
+
+publish_tf: false
+
+Rtabmap:
+  TimeThr: "700"
+  DetectionRate: "1"
+Kp:
+  WordsPerImage: "200"
+  RoiRatios: "0.03 0.03 0.04 0.04"
+  DetectorStrategy: "0" # SURF
+  NNStrategy: "1" # kdTree
+
+SURF:
+  HessianThreshold: "1000"
+
+LccBow:
+  MaxDepth: "5"
+  MinInliers: "10"
+  InlierDistance: "0.02"
+
+LccReextract:
+  Activated: "true"
+  MaxWords: "500"
+
+RGBD:
+  ToroIterations: "0"
