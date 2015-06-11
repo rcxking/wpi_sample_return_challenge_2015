@@ -1,8 +1,10 @@
+#include "TimerOne.h"
+
 // Define limit switch pins
-#define  RF  2
-#define  RR  3
-#define  LF  4
-#define  LR  5
+#define  RF  8
+#define  RR  9
+#define  LF  10
+#define  LR  11
 
 // Define light pins
 #define  APIN  3
@@ -20,6 +22,8 @@
 #define REDH   47
 #define REDL   48
 
+#define RESPONSE (char)100
+
 char request = NONE;
 char state = 0;
 
@@ -31,10 +35,10 @@ void setup()
   Serial.begin(9600);
   
   // Set limit switch inputs to pullup
-  pinMode(RF, INPUT_PULLUP);
-  pinMode(RR, INPUT_PULLUP);
-  pinMode(LF, INPUT_PULLUP);
-  pinMode(LR, INPUT_PULLUP);
+  pinMode(RF, INPUT);
+  pinMode(RR, INPUT);
+  pinMode(LF, INPUT);
+  pinMode(LR, INPUT);
   
   // Set light outputs
   pinMode(APIN, OUTPUT);
@@ -43,6 +47,9 @@ void setup()
   
   // Start in paused state
   digitalWrite(APIN, HIGH);
+  
+  Timer1.initialize(1000000);         // initialize timer1, and set a 1 second period
+  Timer1.attachInterrupt(amberBlink);  // attaches callback() as a timer overflow interrupt
 }
 
 void loop() 
@@ -59,20 +66,41 @@ void loop()
       Serial.print(state);
       break;
       
-      case AMBERR:
+      case AMBERP:
       // Set pause to true
+      paused = true;
+      digitalWrite(APIN, HIGH);
+      Serial.print(RESPONSE);
+      break;
+      
+      case AMBERR:
+      // Set pause to false
+      paused = false;
+      Serial.print(RESPONSE);
       break;
       
       case GREENH:
+      // Turn on green light
+      digitalWrite(GPIN, HIGH);
+      Serial.print(RESPONSE);
       break;
       
       case GREENL:
+      // Turn off green light
+      digitalWrite(GPIN, LOW);
+      Serial.print(RESPONSE);
       break;
       
       case REDH:
+      // Turn on red light
+      digitalWrite(RPIN, HIGH);
+      Serial.print(RESPONSE);
       break;
       
       case REDL:
+      // Turn off green light
+      digitalWrite(RPIN, LOW);
+      Serial.print(RESPONSE);
       break;
     }
     
@@ -88,12 +116,15 @@ void serialEvent()
   while (Serial.available()) 
   {
     // Store incoming data
-    char request = (char)Serial.read();
+    request = (char)Serial.read();
   }
 }
 
 void amberBlink()
 {
-  // Toggle the amber light
-  digitalWrite(APIN, !digitalRead(APIN));
+  if(!paused)
+  {
+    // Toggle the amber light
+    digitalWrite(APIN, !digitalRead(APIN));
+  }
 }
