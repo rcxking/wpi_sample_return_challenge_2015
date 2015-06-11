@@ -77,8 +77,8 @@
   <joint name="corner_to_stereo_camera_platform" type="fixed">
     <parent link="corner"/>
     <child link="stereo_camera_platform"/>
-    <!-- 30 degree rotation of the stereo camera platform -->
-    <origin xyz="0.9017 0 0.6985" rpy="0.0 0.205949 0.0"/>
+    <!-- angle of rotation of the stereo camera platform -->
+    <origin xyz="0.9017 0 0.6985" rpy="0.0 0.523599 0.0"/>
   </joint>
 
   <!--
@@ -95,14 +95,14 @@
   </joint>
 
   <joint name="/left_camera_joint" type="fixed">
-     <origin rpy="-1.97047 0.0736801 -0.602207" xyz="0.438921 0.388299 0.553465"/>
+     <origin rpy="-1.99231 0.0288284 -1.23172" xyz="0.497246 0.414693 0.599057"/>
      <parent link="base_link"/>
      <child link="/left_camera"/>
   </joint>
   <link name="/left_camera" type="camera"/>
   <!-- added after running camera_pose_calibration -->
   <joint name="/right_camera_joint" type="fixed">
-     <origin rpy="-1.98201 -0.0148254 -1.97746" xyz="0.503612 -0.431403 0.582553"/>
+     <origin rpy="-1.92163 -0.0719595 -1.82614" xyz="0.424668 -0.614335 0.586433"/>
      <parent link="base_link"/>
      <child link="/right_camera"/>
   </joint>
