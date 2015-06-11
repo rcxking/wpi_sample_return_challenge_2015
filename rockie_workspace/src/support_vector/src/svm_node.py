@@ -58,26 +58,14 @@ def slidingWindow(img, winLen, winHgt):
 This function generates an 8x8x8 color histogram-based descriptor to run the
 SVM on. 
 '''
-def calcDescriptor(img):
+def calcDescriptor(img, dim):
 	flattenedImg = img.flatten()
 	
 	numElements = 0
 	nextPixel = []
 	nextPos = 0
 
-	# Images received are 160 x 160 px
-	convertedImg = np.zeros((160**2,3))
-
-	for val in np.nditer(flattenedImg):
-		numElements += 1
-		nextPixel.append(val)
-
-		if numElements >= 3:
-			convertedImg[nextPos] = nextPixel
-			nextPos += 1
-
-			numElements = 0
-			nextPixel = []
+	convertedImg = np.reshape(img, (dim**2, 3))
 	histogram, _ = np.histogramdd(convertedImg, bins=[8,8,8])
 
 	return histogram.flatten()
@@ -86,6 +74,7 @@ def calcDescriptor(img):
 def imgSubCallback(data):
 	global SVM, bridge, svmPub, throttle_number
 	global image_count
+	image_count += 1
 	if not image_count % throttle_number == 0:
 		return
 	nextImage = data
@@ -103,13 +92,13 @@ def imgSubCallback(data):
 	for i, row in enumerate(slidingWindows):
 		for j, sImg in enumerate(row):
 			# Get the prediction for this image:
-			descriptor = calcDescriptor(sImg)
+			descriptor = calcDescriptor(sImg, dim)
 			pred = SVM.predict(descriptor)[0]
 			
 			if pred == 1:
 				numPos += 1
-				avgRow += (i-1) * dim + dim/2
-				avgCol += (j-1) * dim + dim/2
+				avgRow += (i) * dim + dim/2
+				avgCol += (j) * dim + dim/2
 
 	if numPos > 0: 
 		avgRow /= numPos
@@ -120,7 +109,7 @@ def imgSubCallback(data):
 		observe.P = nextCameraInfo.P
 		observe.point = [avgCol, avgRow]
 		svmPub.publish(observe)
-		rospy.loginfo("svm: sending out observation")
+		rospy.loginfo("svm: sending out observation %d %d from %s", avgCol, avgRow, observe.header.frame_id)
 
 # Callback for the Camera Info Subscriber:
 def camInfoCallback(data):
@@ -143,13 +132,13 @@ def svmNode():
 	Create two subscribers to acquire the camera images and transformational
 	matrices:      
 	'''
-	imgSub = rospy.Subscriber("image_rect_color", Image, imgSubCallback)
-	matSub = rospy.Subscriber("camera_info", CameraInfo, camInfoCallback)
+	imgSub = rospy.Subscriber("image_rect_color", Image, imgSubCallback, queue_size=1)
+	matSub = rospy.Subscriber("camera_info", CameraInfo, camInfoCallback, queue_size=1)
 
 	svmPub = rospy.Publisher("svminfo", Observation)
 
 	svm_file = rospy.get_param("svm_file", "SVM.pkl")
-	throttle_number = rospy.get_param("throttle_number", 3)
+	throttle_number = rospy.get_param("throttle_number", 20)
 
 	SVM = pickle.load(open(svm_file, "rb"))  
 
