@@ -93,7 +93,6 @@ def imgSubCallback(data):
 	# Extract the image:
 	img = bridge.imgmsg_to_cv2(nextImage, "bgr8")
 
-	'''
 	# Run the sliding window algorithm:
 	dim = 160
 	slidingWindows = slidingWindow(img, 160, 160) 
@@ -111,14 +110,10 @@ def imgSubCallback(data):
 				numPos += 1
 				avgRow += (i-1) * dim + dim/2
 				avgCol += (j-1) * dim + dim/2
-	'''
 
-	#if numPos > 0: 
-	if True:
-		#avgRow /= numPos
-		#avgCol /= numPos				
-		avgRow = img.shape[0]/2
-		avgCol = img.shape[1]/2
+	if numPos > 0: 
+		avgRow /= numPos
+		avgCol /= numPos				
 		# Construct the Observation Message to publish:
 		observe = Observation()  
 		observe.header = nextImage.header
