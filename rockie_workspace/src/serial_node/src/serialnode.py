@@ -7,7 +7,7 @@ to send to the PSOC.
 RPI Rock Raiders
 6/4/15
 
-Last Updated: Bryant Pong: 6/11/15 - 11:15 AM
+Last Updated: Bryant Pong: 6/11/15 - 12:44 PM
 '''
 
 # Python Imports:
@@ -42,27 +42,16 @@ Data is in the format:
 '''
 def writeData(addr, cmd, data):
 	chksum = (addr+cmd+data) & 127
-	serial.write(chr(addr))
-	serial.write(chr(cmd))
-	serial.write(chr(data))
-	serial.write(chr(chksum))
+	motorserial.write(chr(addr))
+	motorserial.write(chr(cmd))
+	motorserial.write(chr(data))
+	motorserial.write(chr(chksum))
 
-def readReq(
-
-'''
-This service sends the PSOC an open/close gripper command.
-
-This service expects the custom service "gripper.srv" 
-'''
-def gripper_service(req):
-	
-	# Open the gripper:
-	if req.close:
-		# TODO: close the gripper
-		return
-	else:
-		# TODO: Open the gripper
-		return 
+# cmd is an INTEGER 
+def writeArduinoData(cmd):
+	arduinoserial.write(chr(cmd))
+	# Get the response back:
+	return arduinoserial.readline()
 
 '''
 This service sends motor velocity commands to all four motors of the chassis.
@@ -77,7 +66,6 @@ def drive_service(req):
 	backRight = req.vel4
 
 	# Send the velocities.  Back left motor is dead:
-	
 	
 '''
 This service controls the steering of the robot:
@@ -102,43 +90,20 @@ This service uses the custom service "Pause.srv".
 def pause_service(req):
 	rospy.loginfo("req.paused: " + str(req.paused))
 	if req.paused:
-		writeData("13-1\n")
+		resp = writeArduinoData(43)
+		if resp != 100:
+			return False
 	else:
-		writeData("13-0\n")	
+		resp = writeArduinoData(44)	
+		if resp != 100:
+			return False 
 	return True
-
-'''
-This service turns on or off any of the 3 lights on the light beacon.
-
-This service uses the custom service "Lights.srv"      
-'''
-def lights_service(req):
-	
-	'''
-	Lights mapping:
-	5 - Red - Send 0
-	6 - Greeh - Send 1
-	'''	
-
-	if req.light == 0:
-		# Red Light:
-		if req.on:
-			writeData("5-127")
-		else:
-			writeData("5-0")
-	else:
-		# Green Light:
-		if req.on:
-			writeData("7-127")
-		else:
-			writeData("7-0")
 
 def serial_server():
 	rospy.init_node("serial_node_server")
 	# Start all services:
 	driveService = rospy.Service("driveservice", WheelVel, drive_service)
 	steerService = rospy.Service("steerservice", Steer, steer_service)
-	lightsService = rospy.Service("lightsservice", Lights, lights_service)
 	pauseService = rospy.Service("pauseservice", Pause, pause_service)
 
 	rospy.spin()

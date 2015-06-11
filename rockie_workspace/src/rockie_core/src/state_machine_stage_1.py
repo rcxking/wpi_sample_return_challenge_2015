@@ -99,8 +99,13 @@ class Egress(smach.State):
 	def execute(self, userdata):
 		rospy.loginfo("Executing Egress")
 
+		# Exit off the platform:
+		rospy.wait_for_service("driveservice", WheelVel)
+		try:
+				
+		except rospy.ServiceExpression, e:
+			rospy.loginfo("Service call failed: %s" % e)
 						
-
 		rospy.loginfo("Exiting off")  
 		return "transitEnter"
 
