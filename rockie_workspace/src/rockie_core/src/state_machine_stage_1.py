@@ -6,7 +6,7 @@ State machine to run for stage 1.
 RPI Rock Raiders
 5/31/15
 
-Last Updated: Bryant Pong: 6/11/15 - 11:56 AM
+Last Updated: Bryant Pong: 6/11/15 - 1:39 PM
 '''
 
 # ROS Libraries:
@@ -86,13 +86,13 @@ class StartupSequence(smach.State):
 		try:
 			unpause = rospy.ServiceProxy("pauseservice", Pause)
 			x = unpause(False)
-		except rospy.ServiceExpression, e:
+		except rospy.ServiceException, e:
 			rospy.loginfo("Service call failed: %s" % e)
 		
 		while True:
 			if paused:
 				print("startupsequence: Now going to pause state")
-				lastState = "startupSequence"
+				lastState = 0
 				return "pause"
 		return "done"
 

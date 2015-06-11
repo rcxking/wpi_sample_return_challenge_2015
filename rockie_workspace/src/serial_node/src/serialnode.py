@@ -7,7 +7,7 @@ to send to the PSOC.
 RPI Rock Raiders
 6/4/15
 
-Last Updated: Bryant Pong: 6/11/15 - 12:44 PM
+Last Updated: Bryant Pong: 6/11/15 - 1:42 PM
 '''
 
 # Python Imports:
@@ -51,7 +51,8 @@ def writeData(addr, cmd, data):
 def writeArduinoData(cmd):
 	arduinoserial.write(chr(cmd))
 	# Get the response back:
-	return arduinoserial.readline()
+	#return arduinoserial.readline()
+	return 100
 
 '''
 This service sends motor velocity commands to all four motors of the chassis.
