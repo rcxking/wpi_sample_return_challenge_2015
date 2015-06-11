@@ -12,7 +12,6 @@ import numpy as np
 from geometry_msgs.msg import Twist
 from serial_node.srv import WheelVel
 from serial_node.srv import Steer
-from std_msgs.msg import Bool
 
 class DriveControl:
   def __init__(self):
@@ -23,10 +22,10 @@ class DriveControl:
     rospy.wait_for_service('steer')
     self.steer_proxy = rospy.ServiceProxy('steer', Steer, persistent = True)
     rospy.Subscriber("cmd_vel", Twist, self.driveCommandCallback)
-    rospy.Subscriber("turn_in_place_status", Bool, self.turnInPlaceStatusCallback)
+    rospy.Subscriber("turn_in_place_status", Int8, self.turnInPlaceStatusCallback)
 
-    self.turn_in_place = False
-    self.desired_turn_in_place = False
+    self.turn_in_place = -1
+    self.desired_turn_in_place = 0
     self.last_command_time = rospy.Time(0)
 
     self.desired_angular_velocity = 0.0 # m/s
@@ -102,8 +101,13 @@ class DriveControl:
   def requestTurnInPlace(self, turn_in_place):
     if not self.turn_in_place == turn_in_place:
       try:
-        self.steer_proxy(turn_in_place)
+        self.turn_in_place = -1
         self.desired_turn_in_place = turn_in_place
+        ret = self.steer_proxy(turn_in_place)
+        if ret == True:
+          self.turn_in_place = 1
+        else:
+          self.turn_in_place = 0
       except:
         rospy.logwarn("Tried to turn in place and failed")
   

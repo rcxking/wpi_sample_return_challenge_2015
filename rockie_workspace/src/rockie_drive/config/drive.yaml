@@ -1,2 +1,3 @@
 proportional_gain: 0.0
+feed_forward_gain: 0.6
 control_rate: 10.0
