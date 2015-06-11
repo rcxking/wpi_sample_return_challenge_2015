@@ -6,19 +6,23 @@ State machine to run for stage 1.
 RPI Rock Raiders
 5/31/15
 
-Last Updated: Bryant Pong: 6/10/15 - 5:24 PM
+Last Updated: Bryant Pong: 6/11/15 - 11:56 AM
 '''
 
 # ROS Libraries:
 import roslib
 import rospy
+import actionlib
 from std_msgs.msg import String
+from tf.transformations import quaternion_from_euler
+from geometry_msgs.msg import Quaternion
+from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal, MoveBaseFEedback
 
 # Finite State Machine Libraries
 import smach
 import smach_ros
 from smach import StateMachine
-from smach_ros import ActionServerWrapper 
+from smach_ros import SimpleActionState
 
 # For OpenCV:
 import cv2
@@ -37,7 +41,7 @@ lastState = 0
 
 # Global flag for whether the sample has been found:
 sampleFound = False  
-paused = True
+paused = True    
 
 '''
 Pause State:
@@ -98,6 +102,7 @@ class Egress(smach.State):
 
 	def execute(self, userdata):
 		rospy.loginfo("Executing Egress")
+
 
 						
 
@@ -162,7 +167,7 @@ class EndTransit(smach.State):
 		return "end" 
 
 def pauseCallback(data):
-	print("data.data: " + str(data.data))
+	rospy.loginfo("data.data: " + str(data.data))
 	global paused
 	if data.data == "yes":
 		paused = True
