@@ -9,6 +9,8 @@ RPI Rock Raiders
 
 Last Updated: Bryant Pong: 6/10/15 - 4:20 PM     
 '''
+import serial
+ser = serial.Serial("/dev/ttyUSB0", 9600)
 
 while True:
 	nextCmd = str(raw_input("Please enter your next command.  Commands are in <addr> <cmd> <data>: ")).split()
@@ -18,3 +20,8 @@ while True:
 	
 	print("Your command is: " + str(nextCmd[0]) + " " + str(nextCmd[1]) + \
 	    " " + str(nextCmd[2]) + " " + str(chksum))	 
+
+	ser.write(chr(int(nextCmd[0])))
+	ser.write(chr(int(nextCmd[1])))
+	ser.write(chr(int(nextCmd[2])))
+	ser.write(chr(int(chksum)))

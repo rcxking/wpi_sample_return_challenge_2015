@@ -12,11 +12,12 @@ Last Updated: Bryant Pong: 6/11/15 - 2:20 PM
 
 # Python Imports:
 import rospy
+import time
 import serial 
 from serial_node.srv import * 
 
 # Serial objects:
-ARDUINOPORT = "/dev/ttyACM0"
+ARDUINOPORT = "/dev/ttyACM1"
 ARDUINOBAUD = 9600
 
 MOTORPORT = "/dev/ttyUSB0"
@@ -26,11 +27,6 @@ arduinoserial = serial.Serial(ARDUINOPORT, ARDUINOBAUD, 8, 'N', 1)
 motorserial = serial.Serial(MOTORPORT, MOTORBAUD, 8, 'N', 1)
 
 '''
-Addressing of the robot's peripherals: 
-'''
-addrs = [128, 129, 130, 131] 
-
-'''
 This is a helper function to send commands directly to the Sabertooth
 motor drivers:
 
@@ -38,7 +34,7 @@ Data is in the format:
 1) address
 2) command
 3) data
-4) checksum 
+
 '''
 def writeData(addr, cmd, data):
 	chksum = (addr+cmd+data) & 127
@@ -51,8 +47,7 @@ def writeData(addr, cmd, data):
 def writeArduinoData(cmd):
 	arduinoserial.write(chr(cmd))
 	# Get the response back:
-	#return arduinoserial.readline()
-	return 100
+	return arduinoserial.readline()
 
 '''
 This service sends motor velocity commands to all four motors of the chassis.
@@ -61,7 +56,7 @@ This service expects the custom service "wheelvel.srv".
 '''
 def drive_service(req):
 	# Get the target velocities of the motors:
-	vels = [req.vel1*127, req.vel2*127, req.vel4*127]
+	vels = [int(req.front_left*127), int(req.front_right*127), int(req.rear_right*127)]
 	dirs = [4 if vel >=0 else 5 for vel in vels]
 	motors = [128, 129, 130]
 
@@ -80,11 +75,40 @@ def steer_service(req):
 
 	# Steer the robot (true = steer):
 	if req.turned:
-		# TODO: Turn the robot
-		return True
+		# Turn Left
+		writeData(135, 0, 100)
+		writeData(135, 4, 100)
+
+		leftMoving, rightMoving = True, True
+		while leftMoving or rightMoving:
+			time.sleep(0.0001)
+			# Left and Right Limit Switches:
+			limitSwitches = int(writeArduinoData(42)[0].encode('hex'), 16)
+			if limitSwitches & 0x08 == 8 and limitSwitches & 0x04 == 0 and rightMoving == True:
+				writeData(135, 4, 0)
+				rightMoving = False
+			
+			if limitSwitches & 0x02 == 2 and limitSwitches & 0x01 == 0 and leftMoving == True:
+				writeData(135, 0, 0)
+				leftMoving = False			
 	else:
-		# TODO: Straighten the robot 					   
-		return True
+		# TODO: Straighten the robot 	
+		writeData(135, 1, 100)
+		writeData(135, 5, 100)
+
+		leftMoving, rightMoving = True, True
+		while leftMoving or rightMoving:
+			time.sleep(0.0001)
+			limitSwitches = int(writeArduinoData(42)[0].encode('hex'), 16)
+			if limitSwitches & 0x08 == 0 and limitSwitches & 0x04 == 4 and rightMoving == True:
+                                writeData(135, 5, 0)
+                                rightMoving = False
+
+                        if limitSwitches & 0x02 == 0 and limitSwitches & 0x01 == 1 and leftMoving == True:
+                                writeData(135, 1, 0)
+                                leftMoving = False
+		   
+	return True
 
 '''
 This service controls the pause service of the robot:
@@ -108,19 +132,19 @@ This service controls the red and green lights.
 
 This service uses the custom service "Lights.srv"  
 '''
-def lights_service(req);
+def lights_service(req):
 	if req.light == 0:
 		# Green light:
 		if req.on:
-			writeArduinoData(45)
+			x = writeArduinoData(45)
 		else:
-			writeArduinoData(46)
+			x = writeArduinoData(46)
 	else:
 		# Red Light
 		if req.on:
-			writeArduinoData(47)
+			x = writeArduinoData(47)
 		else:
-			writeArduinoData(48)
+			x = writeArduinoData(48)
 
 	return True
 

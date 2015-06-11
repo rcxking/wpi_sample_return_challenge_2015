@@ -16,7 +16,7 @@ import rospy
 from std_msgs.msg import String
 
 # Globals:
-PORT = "/dev/ttyUSB2"
+PORT = "/dev/ttyUSB0"
 BAUD = 9600
 TIMEOUT = 0.25
 

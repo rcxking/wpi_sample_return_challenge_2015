@@ -16,7 +16,7 @@ import actionlib
 from std_msgs.msg import String
 from tf.transformations import quaternion_from_euler
 from geometry_msgs.msg import Quaternion
-from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal, MoveBaseFEedback
+from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal, MoveBaseFeedback
 
 # Finite State Machine Libraries
 import smach
