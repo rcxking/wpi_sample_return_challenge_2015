@@ -7,7 +7,7 @@ to send to the PSOC.
 RPI Rock Raiders
 6/4/15
 
-Last Updated: Bryant Pong: 6/11/15 - 10:51 AM
+Last Updated: Bryant Pong: 6/11/15 - 11:15 AM
 '''
 
 # Python Imports:
@@ -41,27 +41,13 @@ Data is in the format:
 4) checksum 
 '''
 def writeData(addr, cmd, data):
+	chksum = (addr+cmd+data) & 127
 	serial.write(chr(addr))
 	serial.write(chr(cmd))
 	serial.write(chr(data))
-
-	chksum = (addr+cmd+data) & 127
-
 	serial.write(chr(chksum))
 
-'''
-This service calls the PSOC and sets the joint angles of
-the arm.      
-
-This service expects the custom service "armservice.srv" 
-'''
-def arm_service(req):
-	# Extract the desired joint angles:
-	armRevolute = req.revolute
-	armPrismatic = req.prismatic
-	armGripper = req.gripper 	 
-
-	# TODO: Send the serial requests to the PSOC   
+def readReq(
 
 '''
 This service sends the PSOC an open/close gripper command.
@@ -150,8 +136,6 @@ def lights_service(req):
 def serial_server():
 	rospy.init_node("serial_node_server")
 	# Start all services:
-	armService = rospy.Service("armservice", ArmService, arm_service) 	
-	gripperService = rospy.Service("gripperservice", Gripper, gripper_service)
 	driveService = rospy.Service("driveservice", WheelVel, drive_service)
 	steerService = rospy.Service("steerservice", Steer, steer_service)
 	lightsService = rospy.Service("lightsservice", Lights, lights_service)
