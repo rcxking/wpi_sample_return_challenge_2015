@@ -116,6 +116,7 @@
       -->
 
       <!-- Generate a point cloud from the disparity image -->
+      <!--
       <node pkg="nodelet" type="nodelet" name="disparity2cloud" args="load rtabmap_ros/point_cloud_xyz stereo_nodelet">
          <remap from="disparity/image"       to="disparity"/>
          <remap from="disparity/camera_info" to="right/camera_info"/>
@@ -125,6 +126,7 @@
          <param name="decimation" type="int" value="4"/>
          <param name="max_depth" type="double" value="4"/>
       </node>
+      -->
 
       <!-- Create point cloud for the local planner -->
       <node pkg="nodelet" type="nodelet" name="obstacles_detection" args="load rtabmap_ros/obstacles_detection stereo_nodelet">

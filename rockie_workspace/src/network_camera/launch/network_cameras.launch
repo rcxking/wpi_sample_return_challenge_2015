@@ -19,12 +19,14 @@
     <arg name="viz" value="$(arg viz)"/>
   </include>
 
-  <include file="$(find network_camera)/launch/axis.launch">
     <!-- update names after adding to robot -->
+<!--
+  <include file="$(find network_camera)/launch/axis.launch">
     <arg name="name" value="gripper_camera"/>
     <arg name="hostname" value="169.254.22.102"/>
     <arg name="password" value="docs"/>
     <arg name="manipulator_camera" value="true"/>
     <arg name="viz" value="$(arg viz)"/>
   </include>
+-->
 </launch>
