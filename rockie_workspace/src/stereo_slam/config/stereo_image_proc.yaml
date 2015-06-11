@@ -1,1 +1,4 @@
+prefilter_size: 9
 disparity_range: 128
+correlation_window_size: 15
+prefilter_cap: 31
