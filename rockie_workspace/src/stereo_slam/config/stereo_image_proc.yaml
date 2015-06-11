@@ -1,4 +1,8 @@
-prefilter_size: 9
-disparity_range: 128
-correlation_window_size: 15
+prefilter_size: 5
+min_disparity: 16
+disparity_range: 32
+correlation_window_size: 6
 prefilter_cap: 31
+speckle_size: 200
+speckle_range: 4
+texture_threshold: 10
