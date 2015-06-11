@@ -7,7 +7,7 @@ to send to the PSOC.
 RPI Rock Raiders
 6/4/15
 
-Last Updated: Bryant Pong: 6/11/15 - 2:20 PM
+Last Updated: Bryant Pong: 6/11/15 - 5:05 PM
 '''
 
 # Python Imports:
@@ -91,6 +91,7 @@ def steer_service(req):
 			if limitSwitches & 0x02 == 2 and limitSwitches & 0x01 == 0 and leftMoving == True:
 				writeData(135, 0, 0)
 				leftMoving = False			
+		return True
 	else:
 		# TODO: Straighten the robot 	
 		writeData(135, 1, 100)
@@ -101,14 +102,12 @@ def steer_service(req):
 			time.sleep(0.0001)
 			limitSwitches = int(writeArduinoData(42)[0].encode('hex'), 16)
 			if limitSwitches & 0x08 == 0 and limitSwitches & 0x04 == 4 and rightMoving == True:
-                                writeData(135, 5, 0)
-                                rightMoving = False
-
-                        if limitSwitches & 0x02 == 0 and limitSwitches & 0x01 == 1 and leftMoving == True:
-                                writeData(135, 1, 0)
-                                leftMoving = False
-		   
-	return True
+				writeData(135, 5, 0)
+				rightMoving = False
+			if limitSwitches & 0x02 == 0 and limitSwitches & 0x01 == 1 and leftMoving == True:
+				writeData(135, 1, 0)
+				leftMoving = False
+		return False
 
 '''
 This service controls the pause service of the robot:
