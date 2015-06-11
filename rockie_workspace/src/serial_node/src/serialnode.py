@@ -7,7 +7,7 @@ to send to the PSOC.
 RPI Rock Raiders
 6/4/15
 
-Last Updated: Bryant Pong: 6/10/15 - 5:00  PM
+Last Updated: Bryant Pong: 6/11/15 - 10:51 AM
 '''
 
 # Python Imports:
@@ -15,11 +15,15 @@ import rospy
 import serial 
 from serial_node.srv import * 
 
-# Serial object:
-PORT = "/dev/ttyUSB0"
-BAUD = 9600
+# Serial objects:
+ARDUINOPORT = "/dev/ttyACM0"
+ARDUINOBAUD = 9600
 
-serial = serial.Serial(PORT, BAUD, 8, 'N', 1) 
+MOTORPORT = "/dev/ttyUSB0"
+MOTORBAUD = 9600 
+
+arduinoserial = serial.Serial(ARDUINOPORT, ARDUINOBAUD, 8, 'N', 1) 
+motorserial = serial.Serial(MOTORPORT, MOTORBAUD, 8, 'N', 1)
 
 '''
 Addressing of the robot's peripherals: 
@@ -89,7 +93,6 @@ def drive_service(req):
 	# Send the velocities.  Back left motor is dead:
 	
 	
-
 '''
 This service controls the steering of the robot:
 
