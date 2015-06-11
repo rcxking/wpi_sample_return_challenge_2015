@@ -1,6 +1,9 @@
 <launch>
   <arg name="viz" default="false"/>
 
+  <!-- are we loading existing data from a bag file? -->
+  <arg name="bag" default="false"/>
+
   <include file="$(find network_camera)/launch/axis.launch">
     <!-- update names after adding to robot -->
     <arg name="name" value="left_camera"/>
@@ -8,6 +11,7 @@
     <arg name="password" value="sparks"/>
     <arg name="observatory_camera" value="true"/>
     <arg name="viz" value="$(arg viz)"/>
+    <arg name="bag" value="$(arg bag)"/>
   </include>
 
   <include file="$(find network_camera)/launch/axis.launch">
@@ -17,6 +21,7 @@
     <arg name="password" value="axle"/>
     <arg name="observatory_camera" value="true"/>
     <arg name="viz" value="$(arg viz)"/>
+    <arg name="bag" value="$(arg bag)"/>
   </include>
 
     <!-- update names after adding to robot -->
@@ -27,6 +32,7 @@
     <arg name="password" value="docs"/>
     <arg name="manipulator_camera" value="true"/>
     <arg name="viz" value="$(arg viz)"/>
+    <arg name="bag" value="$(arg bag)"/>
   </include>
 -->
 </launch>

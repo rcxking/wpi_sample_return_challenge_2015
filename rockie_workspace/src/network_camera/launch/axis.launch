@@ -1,5 +1,8 @@
 <!--xml-->
 <launch>
+  <!-- are we loading existing data from a bag file? -->
+  <arg name="bag" default="false"/>
+
   <arg name="name" default="camera" />
   <arg name="hostname" default="169.254.22.102" />
   <arg name="password" default="docs" />
@@ -8,7 +11,7 @@
   <arg name="viz" default="false"/>
 
   <group ns="$(arg name)">
-    <node pkg="axis_camera" type="axis.py" name="axis" output="screen">
+    <node unless="$(arg bag)" pkg="axis_camera" type="axis.py" name="axis" output="screen">
       <param name="frame_id" value="$(arg name)" />
       <param name="hostname" value="$(arg hostname)" />
       <param name="password" value="$(arg password)" />

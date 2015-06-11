@@ -5,8 +5,11 @@ see: /notes/stereo_notes
 -->
   <arg name="viz" default="false"/>
 
+  <!-- are we loading existing data from a bag file? -->
+  <arg name="bag" default="false"/>
+
   <!-- stereo camera driver -->
-  <node pkg="camera1394stereo" type="camera1394stereo_node" name="camera1394stereo_node" output="screen" >
+  <node unless="$(arg bag)" pkg="camera1394stereo" type="camera1394stereo_node" name="camera1394stereo_node" output="screen" >
     <param name="video_mode" value="1024x768_mono16" />
     <param name="format7_color_coding" value="raw16" />
     <param name="bayer_pattern" value="bggr" />
@@ -19,6 +22,10 @@ see: /notes/stereo_notes
     <remap from="/stereo_camera/left/camera_info" to="/stereo_camera/right/camera_info"/>
     <remap from="/stereo_camera/right/camera_info" to="/stereo_camera/left/camera_info"/>
   </node>
+
+  <!-- Just to uncompress images for stereo_image_rect -->
+  <node if="$(arg bag)" name="republish_left" type="republish" pkg="image_transport" args="compressed in:=/stereo_camera/left/image_raw raw out:=/stereo_camera/left/image_raw" />
+  <node if="$(arg bag)" name="republish_right" type="republish" pkg="image_transport" args="compressed in:=/stereo_camera/right/image_raw raw out:=/stereo_camera/right/image_raw" />
 
   <!--
   <node pkg="nodelet" type="nodelet" name="$(arg base_topic)_node" output="screen"

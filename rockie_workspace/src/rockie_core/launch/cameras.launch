@@ -1,0 +1,18 @@
+<launch>
+  <arg name="viz" default="false"/>
+
+  <!-- are we loading existing data from a bag file? -->
+  <arg name="bag" default="false"/>
+
+  <param if="$(arg bag)" name="use_sim_time" type="bool" value="True"/>
+
+  <include file="$(find stereo_slam)/launch/stereo_camera.launch">
+    <arg name="viz" value="$(arg viz)"/>
+    <arg name="bag" value="$(arg bag)"/>
+  </include>
+
+  <include file="$(find network_camera)/launch/network_cameras.launch">
+    <arg name="viz" value="$(arg viz)"/>
+    <arg name="bag" value="$(arg bag)"/>
+  </include>
+</launch>
