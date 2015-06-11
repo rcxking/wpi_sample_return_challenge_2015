@@ -8,7 +8,6 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
-  stereo_slam
 )
 
 ## System dependencies are found with CMake's conventions
