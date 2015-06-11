@@ -1,0 +1,16 @@
+frame_id: base_link
+odom_frame_id: odom
+
+Odom:
+  InlierDistance: "0.1"
+  MinInliers: "8"
+  RoiRatios: "0.03 0.03 0.04 0.04"
+  MaxDepth: "10"
+  FillInfoData: "true"
+
+OdomBow:
+  NNDR: "0.8"
+
+GFTT:
+  MaxCorners: "500"
+  MinDistance: "5"
