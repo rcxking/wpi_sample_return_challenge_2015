@@ -46,6 +46,7 @@ def transformPoint(T, point):
   tpp = np.dot(T,tp)
   return tpp[0:3]
 
+
 class ObjectTracker:
   RECENT = 0
   ALL = 1
@@ -116,20 +117,28 @@ class ObjectTracker:
     frame_id = msg.header.frame_id
 
     p = np.array([msg.point[0], msg.point[1], 1])
-    point = np.array(msg.point)
+    print "I:"
+    print I
+    point = np.dot(np.linalg.inv(I), np.array(p))
+    point /= point[2]
+    print "point:", point
     camera = np.zeros(3)
 
     # look up transform at given time
     T = self.waitForTransform(msg.header)
+    print "T:"
+    print T
     rospy.logwarn("successfully found observation")
-    point = transformPoint(T, camera)
+    camera_point = transformPoint(T, camera)
     direction = transformPoint(T, point) - point
-    ray = (point, direction)
+    ray = (camera_point, direction)
     self.pushRay(ray)
     rospy.logwarn("successfully inserted observation")
     self.recentObservations()
 
   def pushRay(self, line):
+    marker = self.lineMarker(*line)
+    self.viz_pub.publish(marker)
     self.all_observations.append(line)
     if len(self.recent_observations) >= self.recent_length:
       self.recent_observations[self.recent_next] = line
@@ -140,7 +149,7 @@ class ObjectTracker:
   def recentObservations(self):
     if len(self.recent_observations) > self.min_observations:
       objects = self.getObservations(self.recent_observations)
-      if objects.shape[1] > 0:
+      if (not objects is None) and objects.shape[1] > 0:
         print objects.shape
         self.recent_pub.publish(self.toObjects(objects))
         self.viz_pub.publish(self.toMarker(objects, ObjectTracker.RECENT))
@@ -148,7 +157,7 @@ class ObjectTracker:
   def allObservations(self):
     if len(self.all_observations) > self.min_observations:
       objects = self.getObservations(self.all_observations)
-      if objects.shape[1] > 0:
+      if (not objects is None) and objects.shape[1] > 0:
         print objects.shape
         self.recent_pub.publish(self.toObjects(objects))
         self.all_pub.publish(self.toObjects(objects))
@@ -194,6 +203,7 @@ class ObjectTracker:
       color = self.all_color
     else:
       raise ValueError
+    marker.color = color
     marker.colors = [color for i in range(len(marker.points))]
     return marker
 
@@ -201,6 +211,23 @@ class ObjectTracker:
     self.tf_listener.waitForTransform(self.base_frame, header.frame_id,
       rospy.Time.now(), rospy.Duration(2.0))
     return self.tf_listener.asMatrix(self.base_frame, header)
+
+  def lineMarker(self, p, d):
+    marker = Marker()
+    header = Header()
+    header.stamp = rospy.Time.now()
+    header.frame_id = self.base_frame
+    marker.header = header
+    marker.ns = "rays"
+    marker.id = self.recent_next
+    marker.type = Marker.LINE_LIST
+    marker.action = Marker.ADD
+    marker.scale = Vector3(*[0.02 for i in range(3)])
+    marker.points = toPoints(np.column_stack([p, (p+2*d/np.linalg.norm(d))]))
+    color = self.recent_color
+    marker.color = color
+    marker.colors = [color for i in range(len(marker.points))]
+    return marker
 
 if __name__ == "__main__":
   rospy.init_node('tracker')

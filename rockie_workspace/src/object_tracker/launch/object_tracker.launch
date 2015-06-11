@@ -1,5 +1,6 @@
 <launch>
   <node pkg="object_tracker" type="tracker.py" name="object_tracker" output="screen">
     <remap from="object_visualizations" to="/marker"/>
+    <param name="full_search_rate" type="double" value="0.00000000000000000000000001"/>
   </node>
 </launch>

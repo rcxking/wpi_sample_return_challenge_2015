@@ -33,6 +33,10 @@ def nearestPoint(p1, d1, p2, d2):
   n1 = p1 + ss[0] * d1
   n2 = p2 + ss[1] * d2
 
+  # only accept points in the positive direction
+  if ss[0] < 0 or ss[1] < 0:
+    return 1e6
+
   # nearest point is average
   return (n1 + n2) / 2
 
@@ -61,7 +65,8 @@ def lineDistance(p1, d1, p2, d2):
   np.dot(p1 - p2, n) / np.linalg.norm(n)
 
 def inBounds(p, bounds):
-  return p[0] > bounds[0] and p[0] < bounds[1] \
+  length = np.linalg.norm(p)
+  return length > 2 and length < 1e4 and p[0] > bounds[0] and p[0] < bounds[1] \
          and p[1] > bounds[2] and p[1] < bounds[3] \
          and p[2] > bounds[4] and p[2] < bounds[5]
          
@@ -163,6 +168,8 @@ def projectPoints(p1, d1, points):
   return np.dot(d1p.T, vs)
 
 def bestIntersection(p1, d1, intersections, threshold):
+  if intersections.size == 0:
+    return None, None
   d1p = unit(d1)
   dists = projectPoints(p1, d1p, intersections)
   assert(dists.size ==  intersections.shape[1])
@@ -210,10 +217,15 @@ def interSectionPerLine(points,
           intersections.append(intersection)
     intersections = np.array(intersections).T
     intersection, count = bestIntersection(p1, d1, intersections, threshold)
+    if intersection == None:
+      continue
     #assert(inBounds(intersection, bounds))
     intersections_by_line.append(intersection)
     counts_by_line.append(count)
   intersections_by_line = np.array(intersections_by_line).T
+
+  if len(counts_by_line) == 0:
+    return None, None
 
   max_count = max(counts_by_line)
   if plot_data:
@@ -365,6 +377,8 @@ def estimatePoints(
         ground_truth = ground_truth, threshold = threshold,
         plot_data = plot_data, bounds = bounds
         )
+  if intersections == None:
+    return None
 
   if filter_distance:
     intersections = filterDistance(intersections, threshold,
