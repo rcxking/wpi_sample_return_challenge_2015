@@ -3,9 +3,11 @@
   <arg name="viz" default="false"/>
 
   <!-- launch this in the namespace of any camera -->
+  <!--
   <include file="$(find ar_tags)/launch/track_calibration_tags.launch">
     <arg name="frame_id" value="$(arg frame_id)"/>
   </include>
+  -->
 
   <include file="$(find support_vector)/launch/support_vector.launch"/>
 
