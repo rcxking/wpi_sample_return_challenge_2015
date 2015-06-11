@@ -6,7 +6,7 @@ State machine to run for stage 1.
 RPI Rock Raiders
 5/31/15
 
-Last Updated: Bryant Pong: 6/10/15 - 2:59 PM
+Last Updated: Bryant Pong: 6/10/15 - 5:24 PM
 '''
 
 # ROS Libraries:
@@ -17,20 +17,15 @@ from std_msgs.msg import String
 # Finite State Machine Libraries
 import smach
 import smach_ros
+from smach import StateMachine
+from smach_ros import ActionServerWrapper 
 
 # For OpenCV:
 import cv2
 import numpy as np
 
 # Operating System / Data Libraries:
-import os
-import threading
 import time
-import cPickle as pickle
-
-# Miscellaneous Libraries:
-import warnings
-import matplotlib.pyplot as plt
 
 # Serial Messages for Services:
 from serial_node.srv import * 

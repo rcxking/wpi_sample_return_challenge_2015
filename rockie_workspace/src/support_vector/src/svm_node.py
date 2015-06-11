@@ -6,7 +6,7 @@ svm_node.py - This node uses the support vector machine for Phase 1.
 RPI Rock Raiders
 6/7/15
 
-Last Updated: Bryant Pong: 6/7/15 - 9:16 PM
+Last Updated: Bryant Pong: 6/10/15 - 7:48 PM
 '''
 
 # Python Imports
@@ -117,8 +117,8 @@ def imgSubCallback(data):
 	if True:
 		#avgRow /= numPos
 		#avgCol /= numPos				
-		avgRow = img.shape[0]/2
-		avgCol = img.shape[1]/2
+		avgRow = int(img.shape[0]/2)
+		avgCol = int(img.shape[1]/2)
 		# Construct the Observation Message to publish:
 		observe = Observation()  
 		observe.header = nextImage.header
