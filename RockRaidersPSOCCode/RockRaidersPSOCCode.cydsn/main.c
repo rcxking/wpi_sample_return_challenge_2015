@@ -27,9 +27,11 @@ int main()
     DisableAll();
     PCComms_Start();
     MotorComms_Start();
+    Timer_1_Start();
     CyGlobalIntEnable;
     OpenExhaust_Write(1);
     CloseExhaust_Write(1);
+    
     for(;;)
     {
         CyDelay(10);
@@ -44,6 +46,8 @@ int main()
                 linesz=0;                
             } 
         }
+        else
+       MotorComms_UartPutString("Boop");
     }
 }
 
@@ -66,7 +70,7 @@ void parseSerial(uint8 *data,uint8 datasz)
     {
         if(value==1) //OPEN
         {
-            PCComms_UartPutString("OPENING CLAW \r\n");
+            PCComms_UartPutString("OPENING CLAW\r\n");
             CloseExhaust_Write(0);
             ClosePressure_Write(0);
             OpenExhaust_Write(1);
@@ -74,7 +78,7 @@ void parseSerial(uint8 *data,uint8 datasz)
         }
         else if(value==-1) //CLOSE
         {
-            PCComms_UartPutString("CLOSING CLAW \r\n");
+            PCComms_UartPutString("CLOSING CLAW\r\n");
             CloseExhaust_Write(1);
             ClosePressure_Write(1);
             OpenExhaust_Write(0);
@@ -82,7 +86,7 @@ void parseSerial(uint8 *data,uint8 datasz)
         }
         return;   
     }
-    if(motor ==11 || motor ==12)//Red or Green light
+    if(motor ==11 || motor ==12 || motor ==13)//Red or Green light
     {
         if(motor==11)
         {
@@ -93,6 +97,11 @@ void parseSerial(uint8 *data,uint8 datasz)
         {
             PCComms_UartPutString("GREEN LIGHT\r\n");
             Green_Write(value);
+        }
+        else
+        {
+            PCComms_UartPutString("AMBER LIGHT\r\n");
+            Pause_Register_Write(value);
         }
         return;
     }
@@ -132,59 +141,34 @@ void SetMotor(int motor, int value) //Sets the speed on the motors. TODO: Remove
     PCComms_UartPutString(buff);
     switch(motor)
     {
-        case 1: //Rear Right motor, MC1-1
-            DisableAll();
-            MotorControl1EN_Write(1);
-            CyDelay(10);
-            MotorComms_UartPutChar(value);
-        break;
-        case 2: //Front Right motor, MC1-2
+        case 1: //Drive front right, MC2-2 (Sabertooth 11)
             DisableAll();
             MotorControl1EN_Write(1);
             CyDelay(10);
             MotorComms_UartPutChar(value+127);
         break;
-        case 3: //Rear Left motor, MC2-1
-            DisableAll();
-            MotorControl2EN_Write(1);
-            CyDelay(10);
-            MotorComms_UartPutChar(value);
-        break;
-        case 4: //Front Left motor, MC2-2
+        case 2: //Drive rear X, MC2-2 (Sabertooth 13)
             DisableAll();
             MotorControl2EN_Write(1);
             CyDelay(10);
             MotorComms_UartPutChar(value+127);
         break;
-        case 5: //Arm Rotation motor, MC3-1
-            DisableAll();
-            MotorControl3EN_Write(1);
-            CyDelay(10);
-            MotorComms_UartPutChar(value);
-        break;
-        case 6: //Hand Rotation motor, MC3-2
+        case 3: //Drive front left, MC3-2 (Sabertooth 12)
             DisableAll();
             MotorControl3EN_Write(1);
             CyDelay(10);
             MotorComms_UartPutChar(value+127);
         break;
-        case 7: //Arm Z Axis motor, MC4-1
+        case 4: //Drive rear X, MC4-2 (Sabertooth 14)
             DisableAll();
             MotorControl4EN_Write(1);
             CyDelay(10);
-            MotorComms_UartPutChar(value);
-        break;
-        case 8: //Right Actuator motor, MC5-1
-            DisableAll();
-            MotorControl5EN_Write(1);
-            CyDelay(10);
-            MotorComms_UartPutChar(value);
-        break;
-        case 9: //Left Actuator motor, MC5-2
-            DisableAll();
-            MotorControl5EN_Write(1);
-            CyDelay(10);
             MotorComms_UartPutChar(value+127);
+        break;
+        case 5: //Steering state control
+            DisableAll();
+            Steering_Register_Write(value);
+        break;
     }
 }
 int ScaleVal(int val)

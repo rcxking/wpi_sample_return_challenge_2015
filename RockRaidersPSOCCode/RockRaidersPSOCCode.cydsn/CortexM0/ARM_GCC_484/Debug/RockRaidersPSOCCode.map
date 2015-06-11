@@ -1,0 +1,1585 @@
+Archive member included because of file (symbol)
+
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o)
+                              .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o (cyfitter_cfg)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (PCComms_Start)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o)
+                              .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o) (PCComms_UartInit)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl2EN.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (MotorControl2EN_Write)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl4EN.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (MotorControl4EN_Write)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl3EN.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (MotorControl3EN_Write)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (MotorComms_Start)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (MotorComms_SpiUartWriteTxData)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_UART.o)
+                              .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o) (MotorComms_UartInit)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl1EN.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (MotorControl1EN_Write)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl5EN.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (MotorControl5EN_Write)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(FPGA_EN.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (FPGA_EN_Write)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Red.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (Red_Write)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Green.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (Green_Write)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (Timer_1_Start)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(OpenExhaust.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (OpenExhaust_Write)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(ClosePressure.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (ClosePressure_Write)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CloseExhaust.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (CloseExhaust_Write)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyBootAsmGnu.o)
+                              .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o) (CyEnterCriticalSection)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+                              .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o) (CySysClkWriteImoFreq)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Pause_Register.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (Pause_Register_Write)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Steering_Register.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (Steering_Register_Write)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+                              .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o) (PCComms_SpiUartReadRxData)
+.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART_INT.o)
+                              .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o) (PCComms_SPI_UART_ISR)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_udivsi3.o)
+                              .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o) (__aeabi_uidiv)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_divsi3.o)
+                              .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o (__aeabi_idiv)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_dvmd_tls.o)
+                              c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-atoi.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (atoi)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-errno.o)
+                              .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o (__errno)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-exit.o)
+                              c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m/crt0.o (exit)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
+                              c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-exit.o) (_global_impure_ptr)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-init.o)
+                              c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m/crt0.o (__libc_init_array)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memcpy-stub.o)
+                              .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o) (memcpy)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memset.o)
+                              c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m/crt0.o (memset)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-snprintf.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (snprintf)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strtok_r.o)
+                              .\CortexM0\ARM_GCC_484\Debug\main.o (strtok_r)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strtol.o)
+                              c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-atoi.o) (_strtol_r)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-svfprintf.o)
+                              c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-snprintf.o) (_svfprintf_r)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-vfprintf_i.o)
+                              c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-svfprintf.o) (_printf_i)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-ctype_.o)
+                              c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strtol.o) (__ctype_ptr__)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memchr-stub.o)
+                              c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-svfprintf.o) (memchr)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memmove.o)
+                              c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-svfprintf.o) (memmove)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-freer.o)
+                              c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-svfprintf.o) (_free_r)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-mallocr.o)
+                              c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-svfprintf.o) (_malloc_r)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-reallocr.o)
+                              c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-svfprintf.o) (_realloc_r)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-sbrkr.o)
+                              c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-mallocr.o) (_sbrk_r)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strlen.o)
+                              c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-vfprintf_i.o) (strlen)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-msizer.o)
+                              c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-reallocr.o) (_malloc_usable_size_r)
+c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-reent.o)
+                              c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-sbrkr.o) (errno)
+
+Allocating common symbols
+Common symbol       size              file
+
+errno               0x4               c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-reent.o)
+line                0x80              .\CortexM0\ARM_GCC_484\Debug\main.o
+motors              0x30              .\CortexM0\ARM_GCC_484\Debug\main.o
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crti.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crti.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crti.o
+ .data          0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+ .text          0x00000000       0x78 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.extab     0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.exidx     0x00000000        0x8 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+ .text._exit    0x00000000       0x28 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\main.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\main.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o)
+ .text.CYCONFIGCPY
+                0x00000000       0x24 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o)
+ .text.CYCONFIGCPYCODE
+                0x00000000       0x24 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+ .text.PCComms_Stop
+                0x00000000       0x28 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+ .text.PCComms_SetRxFifoLevel
+                0x00000000       0x34 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+ .text.PCComms_SetTxFifoLevel
+                0x00000000       0x34 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+ .text.PCComms_ScbModeStop
+                0x00000000        0x8 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+ .text.PCComms_I2CSlaveNackGeneration
+                0x00000000       0x50 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o)
+ .text.PCComms_UartSetRxAddress
+                0x00000000       0x34 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o)
+ .text.PCComms_UartSetRxAddressMask
+                0x00000000       0x34 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o)
+ .text.PCComms_UartGetByte
+                0x00000000       0x68 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o)
+ .text.PCComms_UartPutCRLF
+                0x00000000       0x24 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl2EN.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl2EN.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl2EN.o)
+ .text.MotorControl2EN_SetDriveMode
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl2EN.o)
+ .text.MotorControl2EN_Read
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl2EN.o)
+ .text.MotorControl2EN_ReadDataReg
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl2EN.o)
+ .text.MotorControl2EN_ClearInterrupt
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl2EN.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl4EN.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl4EN.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl4EN.o)
+ .text.MotorControl4EN_SetDriveMode
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl4EN.o)
+ .text.MotorControl4EN_Read
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl4EN.o)
+ .text.MotorControl4EN_ReadDataReg
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl4EN.o)
+ .text.MotorControl4EN_ClearInterrupt
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl4EN.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl3EN.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl3EN.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl3EN.o)
+ .text.MotorControl3EN_SetDriveMode
+                0x00000000       0x2c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl3EN.o)
+ .text.MotorControl3EN_Read
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl3EN.o)
+ .text.MotorControl3EN_ReadDataReg
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl3EN.o)
+ .text.MotorControl3EN_ClearInterrupt
+                0x00000000       0x2c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl3EN.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+ .text.MotorComms_Stop
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+ .text.MotorComms_SetRxFifoLevel
+                0x00000000       0x34 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+ .text.MotorComms_SetTxFifoLevel
+                0x00000000       0x34 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+ .text.MotorComms_SetCustomInterruptHandler
+                0x00000000       0x18 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+ .text.MotorComms_ScbModeStop
+                0x00000000        0x8 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+ .text.MotorComms_I2CSlaveNackGeneration
+                0x00000000       0x50 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+ .text.MotorComms_SpiUartReadRxData
+                0x00000000       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+ .text.MotorComms_SpiUartGetRxBufferSize
+                0x00000000       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+ .text.MotorComms_SpiUartClearRxBuffer
+                0x00000000       0x2c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+ .text.MotorComms_SpiUartPutArray
+                0x00000000       0x34 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+ .text.MotorComms_SpiUartGetTxBufferSize
+                0x00000000       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+ .text.MotorComms_SpiUartClearTxBuffer
+                0x00000000       0x2c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+ .text.MotorComms_SpiUartDisableIntRx
+                0x00000000       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+ .text.MotorComms_SpiUartDisableIntTx
+                0x00000000       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_UART.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_UART.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_UART.o)
+ .text.MotorComms_UartSetRxAddress
+                0x00000000       0x34 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_UART.o)
+ .text.MotorComms_UartSetRxAddressMask
+                0x00000000       0x34 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_UART.o)
+ .text.MotorComms_UartGetChar
+                0x00000000       0x44 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_UART.o)
+ .text.MotorComms_UartGetByte
+                0x00000000       0x68 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_UART.o)
+ .text.MotorComms_UartPutCRLF
+                0x00000000       0x24 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_UART.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl1EN.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl1EN.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl1EN.o)
+ .text.MotorControl1EN_SetDriveMode
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl1EN.o)
+ .text.MotorControl1EN_Read
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl1EN.o)
+ .text.MotorControl1EN_ReadDataReg
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl1EN.o)
+ .text.MotorControl1EN_ClearInterrupt
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl1EN.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl5EN.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl5EN.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl5EN.o)
+ .text.MotorControl5EN_SetDriveMode
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl5EN.o)
+ .text.MotorControl5EN_Read
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl5EN.o)
+ .text.MotorControl5EN_ReadDataReg
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl5EN.o)
+ .text.MotorControl5EN_ClearInterrupt
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl5EN.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(FPGA_EN.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(FPGA_EN.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(FPGA_EN.o)
+ .text.FPGA_EN_SetDriveMode
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(FPGA_EN.o)
+ .text.FPGA_EN_Read
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(FPGA_EN.o)
+ .text.FPGA_EN_ReadDataReg
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(FPGA_EN.o)
+ .text.FPGA_EN_ClearInterrupt
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(FPGA_EN.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Red.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Red.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Red.o)
+ .text.Red_SetDriveMode
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Red.o)
+ .text.Red_Read
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Red.o)
+ .text.Red_ReadDataReg
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Red.o)
+ .text.Red_ClearInterrupt
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Red.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Green.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Green.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Green.o)
+ .text.Green_SetDriveMode
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Green.o)
+ .text.Green_Read
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Green.o)
+ .text.Green_ReadDataReg
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Green.o)
+ .text.Green_ClearInterrupt
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Green.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+ .text.Timer_1_Stop
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+ .text.Timer_1_SoftwareCapture
+                0x00000000       0x10 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+ .text.Timer_1_ReadControlRegister
+                0x00000000       0x14 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+ .text.Timer_1_WriteControlRegister
+                0x00000000       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+ .text.Timer_1_ReadPeriod
+                0x00000000       0x14 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+ .text.Timer_1_ReadCounter
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(OpenExhaust.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(OpenExhaust.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(OpenExhaust.o)
+ .text.OpenExhaust_SetDriveMode
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(OpenExhaust.o)
+ .text.OpenExhaust_Read
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(OpenExhaust.o)
+ .text.OpenExhaust_ReadDataReg
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(OpenExhaust.o)
+ .text.OpenExhaust_ClearInterrupt
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(OpenExhaust.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(ClosePressure.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(ClosePressure.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(ClosePressure.o)
+ .text.ClosePressure_SetDriveMode
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(ClosePressure.o)
+ .text.ClosePressure_Read
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(ClosePressure.o)
+ .text.ClosePressure_ReadDataReg
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(ClosePressure.o)
+ .text.ClosePressure_ClearInterrupt
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(ClosePressure.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CloseExhaust.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CloseExhaust.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CloseExhaust.o)
+ .text.CloseExhaust_SetDriveMode
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CloseExhaust.o)
+ .text.CloseExhaust_Read
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CloseExhaust.o)
+ .text.CloseExhaust_ReadDataReg
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CloseExhaust.o)
+ .text.CloseExhaust_ClearInterrupt
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CloseExhaust.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyBootAsmGnu.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyBootAsmGnu.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .bss           0x00000000       0x24 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysClkImoStart
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysClkImoStop
+                0x00000000       0x18 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysClkIloStart
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysClkIloStop
+                0x00000000       0x4c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysClkIloEnabled
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysClkWriteHfclkDirect
+                0x00000000       0x44 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysClkWriteSysclkDiv
+                0x00000000       0x44 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysWdtLock
+                0x00000000       0x34 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysWdtLocked
+                0x00000000       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysWdtUnlock
+                0x00000000       0x4c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysWdtReadEnabledStatus
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysWdtWriteMode
+                0x00000000       0x60 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysWdtReadMode
+                0x00000000       0x24 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysWdtWriteClearOnMatch
+                0x00000000       0x70 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysWdtReadClearOnMatch
+                0x00000000       0x40 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysWdtEnable
+                0x00000000       0x68 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysWdtDisable
+                0x00000000       0x68 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysWdtWriteCascade
+                0x00000000       0x58 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysWdtReadCascade
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysWdtWriteMatch
+                0x00000000       0x6c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysWdtWriteToggleBit
+                0x00000000       0x44 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysWdtReadToggleBit
+                0x00000000       0x18 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysWdtReadMatch
+                0x00000000       0x44 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysWdtReadCount
+                0x00000000       0x54 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysWdtGetInterruptSource
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysWdtClearInterrupt
+                0x00000000       0x6c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysWdtResetCounters
+                0x00000000       0x28 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysClkLfclkPosedgeCatch
+                0x00000000       0x9c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysClkLfclkPosedgeRestore
+                0x00000000       0x3c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysLvdEnable
+                0x00000000       0x48 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysLvdDisable
+                0x00000000       0x28 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysLvdGetInterruptSource
+                0x00000000       0x18 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysLvdClearInterrupt
+                0x00000000       0x14 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysGetResetReason
+                0x00000000       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CyDisableInts
+                0x00000000       0x24 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CyEnableInts
+                0x00000000       0x18 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CyIntSetSysVector
+                0x00000000       0x48 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CyIntGetSysVector
+                0x00000000       0x34 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CyIntGetVector
+                0x00000000       0x38 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CyIntGetPriority
+                0x00000000       0x58 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CyIntGetState
+                0x00000000       0x34 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CyIntSetPending
+                0x00000000       0x2c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CyIntClearPending
+                0x00000000       0x2c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySoftwareReset
+                0x00000000       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CyDelayFreq
+                0x00000000       0x80 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysTickStart
+                0x00000000       0x24 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysTickInit
+                0x00000000       0x60 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysTickEnable
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysTickStop
+                0x00000000       0x18 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysTickEnableInterrupt
+                0x00000000       0x18 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysTickDisableInterrupt
+                0x00000000       0x18 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysTickSetReload
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysTickGetReload
+                0x00000000       0x18 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysTickGetValue
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysTickGetCountFlag
+                0x00000000       0x18 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysTickClear
+                0x00000000       0x14 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysTickSetCallback
+                0x00000000       0x2c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysTickGetCallback
+                0x00000000       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text.CySysTickServiceCallbacks
+                0x00000000       0x44 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Pause_Register.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Pause_Register.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Pause_Register.o)
+ .text.Pause_Register_Read
+                0x00000000       0x14 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Pause_Register.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Steering_Register.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Steering_Register.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Steering_Register.o)
+ .text.Steering_Register_Read
+                0x00000000       0x14 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Steering_Register.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+ .text.PCComms_SpiUartClearRxBuffer
+                0x00000000       0x2c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+ .text.PCComms_SpiUartPutArray
+                0x00000000       0x34 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+ .text.PCComms_SpiUartGetTxBufferSize
+                0x00000000       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+ .text.PCComms_SpiUartClearTxBuffer
+                0x00000000       0x2c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+ .text.PCComms_SpiUartDisableIntRx
+                0x00000000       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+ .text.PCComms_SpiUartDisableIntTx
+                0x00000000       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART_INT.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART_INT.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART_INT.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_udivsi3.o)
+ .text          0x00000000       0xc0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_divsi3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_dvmd_tls.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-atoi.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-atoi.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-atoi.o)
+ .text._atoi_r  0x00000000        0xc c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-atoi.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-errno.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-errno.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-init.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memcpy-stub.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memcpy-stub.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memcpy-stub.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-snprintf.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-snprintf.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-snprintf.o)
+ .text._snprintf_r
+                0x00000000       0x5e c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-snprintf.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strtok_r.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strtok_r.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strtok_r.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strtol.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strtol.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strtol.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-svfprintf.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-svfprintf.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-svfprintf.o)
+ .text.__ssprint_r
+                0x00000000      0x114 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-svfprintf.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-vfprintf_i.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-vfprintf_i.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-vfprintf_i.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-ctype_.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-ctype_.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-ctype_.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memchr-stub.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memchr-stub.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memchr-stub.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memmove.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memmove.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memmove.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-freer.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-freer.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-freer.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-mallocr.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-mallocr.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-mallocr.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-reallocr.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-reallocr.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-reallocr.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-sbrkr.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-sbrkr.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-sbrkr.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strlen.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strlen.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strlen.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-msizer.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-msizer.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-msizer.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-reent.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-reent.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-reent.o)
+ .text.cleanup_glue
+                0x00000000       0x1a c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-reent.o)
+ .text._reclaim_reent
+                0x00000000       0xcc c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-reent.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtend.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtend.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtend.o
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtn.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtn.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00000000         0x00008000         xr
+ram              0x20000000         0x00001000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crti.o
+LOAD c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+LOAD c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+START GROUP
+LOAD .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
+LOAD .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+LOAD .\CortexM0\ARM_GCC_484\Debug\main.o
+LOAD .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a
+LOAD C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM0\ARM_GCC_484\Debug\CyComponentLibrary.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libc_s.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libc_s.a
+END GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtend.o
+LOAD c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtn.o
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libc.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libnosys.a
+END GROUP
+                0x00000000                CY_APPL_ORIGIN = 0x0
+                0x00000080                CY_FLASH_ROW_SIZE = 0x80
+                0x00000001                CY_APPL_NUM = 0x1
+                0x00000040                CY_METADATA_SIZE = 0x40
+                0x20000238                PROVIDE (__cy_heap_start, _end)
+                0x00000001                PROVIDE (__cy_region_num, ((__cy_regions_end - __cy_regions) / 0x10))
+                0x20001000                PROVIDE (__cy_stack, (ORIGIN (ram) + 0x1000))
+                0x20000c00                PROVIDE (__cy_heap_end, (__cy_stack - 0x400))
+
+.cybootloader   0x00000000        0x0
+ *(.cybootloader)
+                0x00000000                appl1_start = CY_APPL_ORIGIN?CY_APPL_ORIGIN:ALIGN (CY_FLASH_ROW_SIZE)
+                0x00003f80                appl2_start = (appl1_start + ALIGN ((((0x8000 - appl1_start) - (0x2 * CY_FLASH_ROW_SIZE)) / 0x2), CY_FLASH_ROW_SIZE))
+                0x00000000                appl_start = (CY_APPL_NUM == 0x1)?appl1_start:appl2_start
+
+.text           0x00000000     0x2110
+ CREATE_OBJECT_SYMBOLS
+                0x00000000                PROVIDE (__cy_interrupt_vector, RomVectors)
+ *(.romvectors)
+ .romvectors    0x00000000       0x10 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+                0x00000000                RomVectors
+                0x00000001                ASSERT ((. != __cy_interrupt_vector), No interrupt vector)
+                0x00000001                ASSERT (CY_APPL_ORIGIN?(SIZEOF (.cybootloader) <= CY_APPL_ORIGIN):0x1, Wrong image location)
+                0x00000010                PROVIDE (__cy_reset, Reset)
+ *(.text.Reset)
+ .text.Reset    0x00000010        0x8 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+                0x00000010                Reset
+                0x00000001                ASSERT ((. != __cy_reset), No reset code)
+ *(.psocinit)
+ .psocinit      0x00000018      0x23c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o)
+                0x0000009c                cyfitter_cfg
+                0x00000254                . = MAX (., 0x100)
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x00000254       0x60 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+ .text.IntDefaultHandler
+                0x000002b4        0x8 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+                0x000002b4                IntDefaultHandler
+ .text._sbrk    0x000002bc       0x50 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+                0x000002bc                _sbrk
+ .text.Start_c  0x0000030c       0x98 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+                0x0000030c                Start_c
+ .text.initialize_psoc
+                0x000003a4       0x64 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+                0x000003a4                initialize_psoc
+ .text.SerialCB
+                0x00000408       0x54 .\CortexM0\ARM_GCC_484\Debug\main.o
+                0x00000408                SerialCB
+ .text.main     0x0000045c       0x90 .\CortexM0\ARM_GCC_484\Debug\main.o
+                0x0000045c                main
+ .text.parseSerial
+                0x000004ec      0x2d0 .\CortexM0\ARM_GCC_484\Debug\main.o
+                0x000004ec                parseSerial
+ .text.DisableAll
+                0x000007bc       0x2c .\CortexM0\ARM_GCC_484\Debug\main.o
+                0x000007bc                DisableAll
+ .text.SetMotor
+                0x000007e8       0xc8 .\CortexM0\ARM_GCC_484\Debug\main.o
+                0x000007e8                SetMotor
+ .text.ScaleVal
+                0x000008b0       0x2c .\CortexM0\ARM_GCC_484\Debug\main.o
+                0x000008b0                ScaleVal
+ .text.ReallyDisableEverything
+                0x000008dc       0x84 .\CortexM0\ARM_GCC_484\Debug\main.o
+                0x000008dc                ReallyDisableEverything
+ .text.CYMEMZERO
+                0x00000960       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o)
+ .text.cfg_write_bytes32
+                0x00000980       0x80 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o)
+ .text.AnalogSetDefault
+                0x00000a00        0x8 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o)
+ .text.PCComms_Init
+                0x00000a08        0xc .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+                0x00000a08                PCComms_Init
+ .text.PCComms_Enable
+                0x00000a14       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+                0x00000a14                PCComms_Enable
+ .text.PCComms_Start
+                0x00000a34       0x24 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+                0x00000a34                PCComms_Start
+ .text.PCComms_SetCustomInterruptHandler
+                0x00000a58       0x18 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+                0x00000a58                PCComms_SetCustomInterruptHandler
+ .text.PCComms_ScbEnableIntr
+                0x00000a70       0x10 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+ .text.PCComms_UartInit
+                0x00000a80       0xc4 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o)
+                0x00000a80                PCComms_UartInit
+ .text.PCComms_UartGetChar
+                0x00000b44       0x44 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o)
+                0x00000b44                PCComms_UartGetChar
+ .text.PCComms_UartPutString
+                0x00000b88       0x34 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o)
+                0x00000b88                PCComms_UartPutString
+ .text.MotorControl2EN_Write
+                0x00000bbc       0x48 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl2EN.o)
+                0x00000bbc                MotorControl2EN_Write
+ .text.MotorControl4EN_Write
+                0x00000c04       0x4c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl4EN.o)
+                0x00000c04                MotorControl4EN_Write
+ .text.MotorControl3EN_Write
+                0x00000c50       0x48 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl3EN.o)
+                0x00000c50                MotorControl3EN_Write
+ .text.MotorComms_Init
+                0x00000c98        0xc .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+                0x00000c98                MotorComms_Init
+ .text.MotorComms_Enable
+                0x00000ca4       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+                0x00000ca4                MotorComms_Enable
+ .text.MotorComms_Start
+                0x00000cc4       0x24 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+                0x00000cc4                MotorComms_Start
+ .text.MotorComms_ScbEnableIntr
+                0x00000ce8        0x8 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+ .text.MotorComms_SpiUartWriteTxData
+                0x00000cf0       0x2c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+                0x00000cf0                MotorComms_SpiUartWriteTxData
+ .text.MotorComms_UartInit
+                0x00000d1c       0xa8 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_UART.o)
+                0x00000d1c                MotorComms_UartInit
+ .text.MotorComms_UartPutString
+                0x00000dc4       0x34 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_UART.o)
+                0x00000dc4                MotorComms_UartPutString
+ .text.MotorControl1EN_Write
+                0x00000df8       0x4c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl1EN.o)
+                0x00000df8                MotorControl1EN_Write
+ .text.MotorControl5EN_Write
+                0x00000e44       0x4c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl5EN.o)
+                0x00000e44                MotorControl5EN_Write
+ .text.FPGA_EN_Write
+                0x00000e90       0x4c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(FPGA_EN.o)
+                0x00000e90                FPGA_EN_Write
+ .text.Red_Write
+                0x00000edc       0x4c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Red.o)
+                0x00000edc                Red_Write
+ .text.Green_Write
+                0x00000f28       0x4c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Green.o)
+                0x00000f28                Green_Write
+ .text.Timer_1_Init
+                0x00000f74       0x54 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+                0x00000f74                Timer_1_Init
+ .text.Timer_1_Enable
+                0x00000fc8       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+                0x00000fc8                Timer_1_Enable
+ .text.Timer_1_Start
+                0x00000fe8       0x24 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+                0x00000fe8                Timer_1_Start
+ .text.Timer_1_SetInterruptMode
+                0x0000100c       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+                0x0000100c                Timer_1_SetInterruptMode
+ .text.Timer_1_ReadStatusRegister
+                0x0000102c       0x14 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+                0x0000102c                Timer_1_ReadStatusRegister
+ .text.Timer_1_WritePeriod
+                0x00001040       0x18 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+                0x00001040                Timer_1_WritePeriod
+ .text.Timer_1_ReadCapture
+                0x00001058       0x14 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+                0x00001058                Timer_1_ReadCapture
+ .text.Timer_1_WriteCounter
+                0x0000106c       0x18 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+                0x0000106c                Timer_1_WriteCounter
+ .text.Timer_1_ClearFIFO
+                0x00001084       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+                0x00001084                Timer_1_ClearFIFO
+ .text.OpenExhaust_Write
+                0x000010a0       0x4c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(OpenExhaust.o)
+                0x000010a0                OpenExhaust_Write
+ .text.ClosePressure_Write
+                0x000010ec       0x4c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(ClosePressure.o)
+                0x000010ec                ClosePressure_Write
+ .text.CloseExhaust_Write
+                0x00001138       0x4c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CloseExhaust.o)
+                0x00001138                CloseExhaust_Write
+ *fill*         0x00001184        0x4 
+ .text          0x00001188       0x28 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyBootAsmGnu.o)
+                0x00001188                CyDelayCycles
+                0x0000119c                CyEnterCriticalSection
+                0x000011a4                CyExitCriticalSection
+ .text.CySysClkWriteImoFreq
+                0x000011b0      0x1e0 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+                0x000011b0                CySysClkWriteImoFreq
+ .text.CyIntSetVector
+                0x00001390       0x4c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+                0x00001390                CyIntSetVector
+ .text.CyIntSetPriority
+                0x000013dc       0xa8 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+                0x000013dc                CyIntSetPriority
+ .text.CyIntEnable
+                0x00001484       0x2c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+                0x00001484                CyIntEnable
+ .text.CyIntDisable
+                0x000014b0       0x2c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+                0x000014b0                CyIntDisable
+ .text.CyHalt   0x000014dc       0x14 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+                0x000014dc                CyHalt
+ .text.CyDelay  0x000014f0       0x48 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+                0x000014f0                CyDelay
+ .text.CyDelayUs
+                0x00001538       0x28 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+                0x00001538                CyDelayUs
+ .text.Pause_Register_Write
+                0x00001560       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Pause_Register.o)
+                0x00001560                Pause_Register_Write
+ .text.Steering_Register_Write
+                0x00001580       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Steering_Register.o)
+                0x00001580                Steering_Register_Write
+ .text.PCComms_SpiUartReadRxData
+                0x000015a0       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+                0x000015a0                PCComms_SpiUartReadRxData
+ .text.PCComms_SpiUartGetRxBufferSize
+                0x000015c0       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+                0x000015c0                PCComms_SpiUartGetRxBufferSize
+ .text.PCComms_SpiUartWriteTxData
+                0x000015e0       0x2c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+                0x000015e0                PCComms_SpiUartWriteTxData
+ .text.PCComms_SPI_UART_ISR
+                0x0000160c       0x1c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART_INT.o)
+                0x0000160c                PCComms_SPI_UART_ISR
+ .text          0x00001628       0x9c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_udivsi3.o)
+                0x00001628                __aeabi_uidiv
+                0x00001628                __udivsi3
+                0x000016b0                __aeabi_uidivmod
+ .text          0x000016c4        0x4 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_dvmd_tls.o)
+                0x000016c4                __aeabi_idiv0
+                0x000016c4                __aeabi_ldiv0
+ .text.atoi     0x000016c8        0xc c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-atoi.o)
+                0x000016c8                atoi
+ .text.__errno  0x000016d4        0xc c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-errno.o)
+                0x000016d4                __errno
+ .text.__libc_init_array
+                0x000016e0       0x4c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-init.o)
+                0x000016e0                __libc_init_array
+ .text.memcpy   0x0000172c       0x12 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memcpy-stub.o)
+                0x0000172c                memcpy
+ .text.memset   0x0000173e       0x10 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memset.o)
+                0x0000173e                memset
+ *fill*         0x0000174e        0x2 
+ .text.snprintf
+                0x00001750       0x64 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-snprintf.o)
+                0x00001750                sniprintf
+                0x00001750                snprintf
+ .text.__strtok_r
+                0x000017b4       0x5c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strtok_r.o)
+                0x000017b4                __strtok_r
+ .text.strtok_r
+                0x00001810        0xa c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strtok_r.o)
+                0x00001810                strtok_r
+ *fill*         0x0000181a        0x2 
+ .text._strtol_r
+                0x0000181c      0x114 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strtol.o)
+                0x0000181c                _strtol_r
+ .text.strtol   0x00001930       0x1c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strtol.o)
+                0x00001930                strtol
+ .text.__ssputs_r
+                0x0000194c       0xc0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-svfprintf.o)
+                0x0000194c                __ssputs_r
+ .text._svfprintf_r
+                0x00001a0c      0x1e0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-svfprintf.o)
+                0x00001a0c                _svfiprintf_r
+                0x00001a0c                _svfprintf_r
+ .text._printf_common
+                0x00001bec       0xe8 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-vfprintf_i.o)
+                0x00001bec                _printf_common
+ .text._printf_i
+                0x00001cd4      0x22c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-vfprintf_i.o)
+                0x00001cd4                _printf_i
+ .text.memchr   0x00001f00       0x16 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memchr-stub.o)
+                0x00001f00                memchr
+ .text.memmove  0x00001f16       0x32 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memmove.o)
+                0x00001f16                memmove
+ .text._free_r  0x00001f48       0x90 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-freer.o)
+                0x00001f48                _free_r
+ .text._malloc_r
+                0x00001fd8       0xa8 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-mallocr.o)
+                0x00001fd8                _malloc_r
+ .text._realloc_r
+                0x00002080       0x4c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-reallocr.o)
+                0x00002080                _realloc_r
+ .text._sbrk_r  0x000020cc       0x24 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-sbrkr.o)
+                0x000020cc                _sbrk_r
+ .text.strlen   0x000020f0        0xe c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strlen.o)
+                0x000020f0                strlen
+ .text._malloc_usable_size_r
+                0x000020fe       0x12 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-msizer.o)
+                0x000020fe                _malloc_usable_size_r
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.bootloader)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.gcc_except_table)
+
+.v4_bx          0x00002110        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x00002110        0x0
+ .iplt          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x00002110        0x4
+ *(.eh_frame)
+ .eh_frame      0x00002110        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+ .eh_frame      0x00002110        0x4 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtend.o
+                0x00002114                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00002114                __exidx_end = .
+
+.rodata         0x00002114      0x40c
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00002114      0x118 .\CortexM0\ARM_GCC_484\Debug\main.o
+ .rodata        0x0000222c      0x154 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o)
+ .rodata        0x00002380       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+                0x00002380                cyImoFreqMhz2Reg
+ .rodata.str1.1
+                0x000023b0        0x2 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
+ .rodata.str1.1
+                0x000023b2       0x11 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-svfprintf.o)
+ .rodata.str1.1
+                0x000023c3       0x22 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-vfprintf_i.o)
+ .rodata._ctype_
+                0x000023e5      0x101 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-ctype_.o)
+                0x000023e5                _ctype_
+                0x000024e8                . = ALIGN (0x4)
+ *fill*         0x000024e6        0x2 
+ *(.init)
+ .init          0x000024e8        0x4 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crti.o
+                0x000024e8                _init
+ .init          0x000024ec        0x8 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtn.o
+                0x000024f4                . = ALIGN (0x4)
+                0x000024f4                __preinit_array_start = .
+ *(.preinit_array)
+                0x000024f4                __preinit_array_end = .
+                0x000024f4                . = ALIGN (0x4)
+                0x000024f4                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x000024f4        0x4 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+ .init_array    0x000024f8        0x4 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+                0x000024fc                __init_array_end = .
+                0x000024fc                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x000024fc        0x4 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crti.o
+                0x000024fc                _fini
+ .fini          0x00002500        0x8 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtn.o
+                0x00002508                . = ALIGN (0x4)
+                0x00002508                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x00002508        0x4 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x0000250c                __fini_array_end = .
+                0x0000250c                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+                0x0000250c                . = ALIGN (0x4)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+                0x0000250c                . = ALIGN (0x4)
+                0x0000250c                __cy_regions = .
+                0x0000250c        0x4 LONG 0x2520 __cy_region_init_ram
+                0x00002510        0x4 LONG 0x200000c8 __cy_region_start_data
+                0x00002514        0x4 LONG 0x80 __cy_region_init_size_ram
+                0x00002518        0x4 LONG 0xf0 __cy_region_zero_size_ram
+                0x0000251c                __cy_regions_end = .
+                0x00002520                . = ALIGN (0x8)
+ *fill*         0x0000251c        0x4 
+                0x00002520                _etext = .
+
+.ramvectors     0x20000000       0xc0
+                0x20000000                __cy_region_start_ram = .
+ *(.ramvectors)
+ .ramvectors    0x20000000       0xc0 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+                0x20000000                CyRamVectors
+
+.noinit         0x200000c0        0x4
+ *(.noinit)
+ .noinit        0x200000c0        0x4 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+
+.data           0x200000c8       0x80 load address 0x00002520
+                0x200000c8                __cy_region_start_data = .
+ *(.jcr)
+ .jcr           0x200000c8        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+ .jcr           0x200000c8        0x4 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtend.o
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x200000cc        0x4 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+ .data          0x200000d0       0x10 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+                0x200000d0                cydelayFreqHz
+                0x200000d4                cydelayFreqKhz
+                0x200000d8                cydelayFreqMhz
+                0x200000dc                cydelay32kMs
+ .data.impure_data
+                0x200000e0       0x60 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x20000140        0x4 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
+                0x20000140                _impure_ptr
+ .data.__ctype_ptr__
+                0x20000144        0x4 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-ctype_.o)
+                0x20000144                __ctype_ptr__
+                0x20000148                . = ALIGN (0x8)
+ *(.ram)
+                0x20000148                _edata = .
+
+.igot.plt       0x20000148        0x0 load address 0x000025a0
+ .igot.plt      0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+
+.bss            0x20000148       0xf0 load address 0x000025a0
+                0x20000148                PROVIDE (__bss_start__, .)
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x20000148       0x1c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+ .bss           0x20000164        0x1 .\CortexM0\ARM_GCC_484\Debug\main.o
+                0x20000164                linesz
+ *fill*         0x20000165        0x3 
+ .bss           0x20000168        0x8 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+                0x20000168                PCComms_initVar
+                0x2000016c                PCComms_customIntrHandler
+ .bss           0x20000170        0x8 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+                0x20000170                MotorComms_initVar
+                0x20000174                MotorComms_customIntrHandler
+ .bss           0x20000178        0x1 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+                0x20000178                Timer_1_initVar
+ *fill*         0x20000179        0x3 
+ .bss.__malloc_sbrk_start
+                0x2000017c        0x4 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-mallocr.o)
+                0x2000017c                __malloc_sbrk_start
+ .bss.__malloc_free_list
+                0x20000180        0x4 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-mallocr.o)
+                0x20000180                __malloc_free_list
+ *(COMMON)
+ COMMON         0x20000184       0xb0 .\CortexM0\ARM_GCC_484\Debug\main.o
+                0x20000184                line
+                0x20000204                motors
+ COMMON         0x20000234        0x4 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-reent.o)
+                0x20000234                errno
+                0x20000238                . = ALIGN (0x8)
+ *(.ram.b)
+                0x20000238                _end = .
+                0x20000238                __end = .
+                0x20000238                PROVIDE (end, .)
+                0x20000238                PROVIDE (__bss_end__, .)
+                0x00002520                __cy_region_init_ram = LOADADDR (.data)
+                0x00000080                __cy_region_init_size_ram = (_edata - ADDR (.data))
+                0x000000f0                __cy_region_zero_size_ram = (_end - _edata)
+
+.heap           0x20000238       0x80 load address 0x000025a0
+                0x20000238                . = _end
+                0x200002b8                . = (. + 0x80)
+ *fill*         0x20000238       0x80 
+                0x200002b8                __cy_heap_limit = .
+
+.stack          0x20000c00      0x400
+                0x20000c00                __cy_stack_limit = .
+                0x20001000                . = (. + 0x400)
+ *fill*         0x20000c00      0x400 
+                0x00000001                ASSERT ((__cy_stack_limit >= __cy_heap_limit), region RAM overflowed with stack)
+
+.cyloadermeta
+ *(.cyloadermeta)
+
+.cyloadablemeta
+ *(.cyloadablemeta)
+
+.cyflashprotect
+                0x90400000       0x20
+ *(.cyflashprotect)
+ .cyflashprotect
+                0x90400000       0x20 .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
+                0x90400000                cy_meta_flashprotect
+
+.cymeta         0x90500000        0xc
+ *(.cymeta)
+ .cymeta        0x90500000        0xc .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
+                0x90500000                cy_metadata
+
+.cychipprotect  0x90600000        0x4
+ *(.cychipprotect)
+ .cychipprotect
+                0x90600000        0x4 .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
+                0x90600000                cy_meta_chipprotect
+
+.rel.dyn        0x000025a0        0x0 load address 0x90600004
+ .rel.iplt      0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x940
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x18 .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
+ .debug_aranges
+                0x00000018       0x48 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+ .debug_aranges
+                0x00000060       0x50 .\CortexM0\ARM_GCC_484\Debug\main.o
+ .debug_aranges
+                0x000000b0       0x50 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o)
+ .debug_aranges
+                0x00000100       0x68 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+ .debug_aranges
+                0x00000168       0x50 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o)
+ .debug_aranges
+                0x000001b8       0x40 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl2EN.o)
+ .debug_aranges
+                0x000001f8       0x40 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl4EN.o)
+ .debug_aranges
+                0x00000238       0x40 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl3EN.o)
+ .debug_aranges
+                0x00000278       0x68 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+ .debug_aranges
+                0x000002e0       0x60 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+ .debug_aranges
+                0x00000340       0x50 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_UART.o)
+ .debug_aranges
+                0x00000390       0x40 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl1EN.o)
+ .debug_aranges
+                0x000003d0       0x40 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl5EN.o)
+ .debug_aranges
+                0x00000410       0x40 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(FPGA_EN.o)
+ .debug_aranges
+                0x00000450       0x40 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Red.o)
+ .debug_aranges
+                0x00000490       0x40 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Green.o)
+ .debug_aranges
+                0x000004d0       0x90 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+ .debug_aranges
+                0x00000560       0x40 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(OpenExhaust.o)
+ .debug_aranges
+                0x000005a0       0x40 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(ClosePressure.o)
+ .debug_aranges
+                0x000005e0       0x40 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CloseExhaust.o)
+ .debug_aranges
+                0x00000620       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyBootAsmGnu.o)
+ .debug_aranges
+                0x00000640      0x230 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .debug_aranges
+                0x00000870       0x28 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Pause_Register.o)
+ .debug_aranges
+                0x00000898       0x28 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Steering_Register.o)
+ .debug_aranges
+                0x000008c0       0x60 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+ .debug_aranges
+                0x00000920       0x20 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART_INT.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x35c8
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0xfd .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
+ .debug_info    0x000000fd      0x2ff .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+ .debug_info    0x000003fc      0x26b .\CortexM0\ARM_GCC_484\Debug\main.o
+ .debug_info    0x00000667      0x353 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o)
+ .debug_info    0x000009ba      0x1eb .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+ .debug_info    0x00000ba5      0x209 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o)
+ .debug_info    0x00000dae      0x14c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl2EN.o)
+ .debug_info    0x00000efa      0x14c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl4EN.o)
+ .debug_info    0x00001046      0x14c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl3EN.o)
+ .debug_info    0x00001192      0x1eb .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+ .debug_info    0x0000137d      0x20d .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+ .debug_info    0x0000158a      0x1fe .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_UART.o)
+ .debug_info    0x00001788      0x14c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl1EN.o)
+ .debug_info    0x000018d4      0x14c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl5EN.o)
+ .debug_info    0x00001a20      0x14c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(FPGA_EN.o)
+ .debug_info    0x00001b6c      0x14c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Red.o)
+ .debug_info    0x00001cb8      0x14c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Green.o)
+ .debug_info    0x00001e04      0x252 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+ .debug_info    0x00002056      0x14c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(OpenExhaust.o)
+ .debug_info    0x000021a2      0x14c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(ClosePressure.o)
+ .debug_info    0x000022ee      0x14c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CloseExhaust.o)
+ .debug_info    0x0000243a       0xc3 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyBootAsmGnu.o)
+ .debug_info    0x000024fd      0xc5b .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .debug_info    0x00003158       0xd6 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Pause_Register.o)
+ .debug_info    0x0000322e       0xd6 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Steering_Register.o)
+ .debug_info    0x00003304      0x20d .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+ .debug_info    0x00003511       0xb7 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART_INT.o)
+
+.debug_abbrev   0x00000000     0x187a
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x5d .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
+ .debug_abbrev  0x0000005d      0x1b4 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+ .debug_abbrev  0x00000211      0x12f .\CortexM0\ARM_GCC_484\Debug\main.o
+ .debug_abbrev  0x00000340      0x18a .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o)
+ .debug_abbrev  0x000004ca      0x138 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+ .debug_abbrev  0x00000602       0xf9 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o)
+ .debug_abbrev  0x000006fb       0xb7 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl2EN.o)
+ .debug_abbrev  0x000007b2       0xb7 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl4EN.o)
+ .debug_abbrev  0x00000869       0xb7 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl3EN.o)
+ .debug_abbrev  0x00000920      0x122 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+ .debug_abbrev  0x00000a42      0x15c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+ .debug_abbrev  0x00000b9e       0xf9 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_UART.o)
+ .debug_abbrev  0x00000c97       0xb7 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl1EN.o)
+ .debug_abbrev  0x00000d4e       0xb7 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl5EN.o)
+ .debug_abbrev  0x00000e05       0xb7 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(FPGA_EN.o)
+ .debug_abbrev  0x00000ebc       0xb7 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Red.o)
+ .debug_abbrev  0x00000f73       0xb7 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Green.o)
+ .debug_abbrev  0x0000102a      0x128 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+ .debug_abbrev  0x00001152       0xb7 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(OpenExhaust.o)
+ .debug_abbrev  0x00001209       0xb7 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(ClosePressure.o)
+ .debug_abbrev  0x000012c0       0xb7 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CloseExhaust.o)
+ .debug_abbrev  0x00001377       0x14 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x0000138b      0x207 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .debug_abbrev  0x00001592       0x8e .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Pause_Register.o)
+ .debug_abbrev  0x00001620       0x8e .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Steering_Register.o)
+ .debug_abbrev  0x000016ae      0x15c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+ .debug_abbrev  0x0000180a       0x70 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART_INT.o)
+
+.debug_line     0x00000000     0x1e59
+ *(.debug_line)
+ .debug_line    0x00000000       0x53 .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
+ .debug_line    0x00000053      0x1b8 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+ .debug_line    0x0000020b      0x169 .\CortexM0\ARM_GCC_484\Debug\main.o
+ .debug_line    0x00000374      0x19d .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o)
+ .debug_line    0x00000511      0x13c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+ .debug_line    0x0000064d      0x11e .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o)
+ .debug_line    0x0000076b       0xb5 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl2EN.o)
+ .debug_line    0x00000820       0xb5 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl4EN.o)
+ .debug_line    0x000008d5       0xb5 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl3EN.o)
+ .debug_line    0x0000098a      0x13c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+ .debug_line    0x00000ac6      0x142 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+ .debug_line    0x00000c08      0x11e .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_UART.o)
+ .debug_line    0x00000d26       0xb5 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl1EN.o)
+ .debug_line    0x00000ddb       0xb5 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl5EN.o)
+ .debug_line    0x00000e90       0xad .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(FPGA_EN.o)
+ .debug_line    0x00000f3d       0xa9 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Red.o)
+ .debug_line    0x00000fe6       0xab .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Green.o)
+ .debug_line    0x00001091      0x176 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+ .debug_line    0x00001207       0xb1 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(OpenExhaust.o)
+ .debug_line    0x000012b8       0xb3 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(ClosePressure.o)
+ .debug_line    0x0000136b       0xb2 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CloseExhaust.o)
+ .debug_line    0x0000141d       0x69 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyBootAsmGnu.o)
+ .debug_line    0x00001486      0x703 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .debug_line    0x00001b89       0x79 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Pause_Register.o)
+ .debug_line    0x00001c02       0x7c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Steering_Register.o)
+ .debug_line    0x00001c7e      0x13f .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+ .debug_line    0x00001dbd       0x9c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART_INT.o)
+
+.debug_frame    0x00000000     0x1fa8
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xc8 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+ .debug_frame   0x000000c8       0xf0 .\CortexM0\ARM_GCC_484\Debug\main.o
+ .debug_frame   0x000001b8       0xe8 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o)
+ .debug_frame   0x000002a0      0x134 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+ .debug_frame   0x000003d4       0xec .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o)
+ .debug_frame   0x000004c0       0xa8 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl2EN.o)
+ .debug_frame   0x00000568       0xa8 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl4EN.o)
+ .debug_frame   0x00000610       0xa8 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl3EN.o)
+ .debug_frame   0x000006b8      0x134 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+ .debug_frame   0x000007ec      0x128 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+ .debug_frame   0x00000914       0xec .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_UART.o)
+ .debug_frame   0x00000a00       0xa8 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl1EN.o)
+ .debug_frame   0x00000aa8       0xa8 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl5EN.o)
+ .debug_frame   0x00000b50       0xa8 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(FPGA_EN.o)
+ .debug_frame   0x00000bf8       0xa8 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Red.o)
+ .debug_frame   0x00000ca0       0xa8 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Green.o)
+ .debug_frame   0x00000d48      0x1cc .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+ .debug_frame   0x00000f14       0xa8 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(OpenExhaust.o)
+ .debug_frame   0x00000fbc       0xa8 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(ClosePressure.o)
+ .debug_frame   0x00001064       0xa8 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CloseExhaust.o)
+ .debug_frame   0x0000110c      0x83c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .debug_frame   0x00001948       0x4c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Pause_Register.o)
+ .debug_frame   0x00001994       0x4c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Steering_Register.o)
+ .debug_frame   0x000019e0      0x128 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+ .debug_frame   0x00001b08       0x2c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART_INT.o)
+ .debug_frame   0x00001b34       0x20 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00001b54       0x20 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_divsi3.o)
+ .debug_frame   0x00001b74       0x40 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-atoi.o)
+ .debug_frame   0x00001bb4       0x20 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-errno.o)
+ .debug_frame   0x00001bd4       0x28 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-exit.o)
+ .debug_frame   0x00001bfc       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-init.o)
+ .debug_frame   0x00001c28       0x28 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00001c50       0x20 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memset.o)
+ .debug_frame   0x00001c70       0x54 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-snprintf.o)
+ .debug_frame   0x00001cc4       0x48 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strtok_r.o)
+ .debug_frame   0x00001d0c       0x4c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strtol.o)
+ .debug_frame   0x00001d58       0x74 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-svfprintf.o)
+ .debug_frame   0x00001dcc       0x54 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-vfprintf_i.o)
+ .debug_frame   0x00001e20       0x20 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memchr-stub.o)
+ .debug_frame   0x00001e40       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memmove.o)
+ .debug_frame   0x00001e6c       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-freer.o)
+ .debug_frame   0x00001e98       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x00001ec4       0x30 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x00001ef4       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-sbrkr.o)
+ .debug_frame   0x00001f20       0x20 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strlen.o)
+ .debug_frame   0x00001f40       0x20 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-msizer.o)
+ .debug_frame   0x00001f60       0x48 c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-reent.o)
+
+.debug_str      0x00000000     0x1bc0
+ *(.debug_str)
+ .debug_str     0x00000000      0x1b6 .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
+                                0x1ef (size before relaxing)
+ .debug_str     0x000001b6      0x13c .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+                                0x2dd (size before relaxing)
+ .debug_str     0x000002f2       0x88 .\CortexM0\ARM_GCC_484\Debug\main.o
+                                0x22e (size before relaxing)
+ .debug_str     0x0000037a       0xfe .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o)
+                                0x2d5 (size before relaxing)
+ .debug_str     0x00000478      0x13e .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+                                0x2ec (size before relaxing)
+ .debug_str     0x000005b6      0x116 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o)
+                                0x2bf (size before relaxing)
+ .debug_str     0x000006cc       0xc6 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl2EN.o)
+                                0x264 (size before relaxing)
+ .debug_str     0x00000792       0xae .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl4EN.o)
+                                0x264 (size before relaxing)
+ .debug_str     0x00000840       0xae .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl3EN.o)
+                                0x264 (size before relaxing)
+ .debug_str     0x000008ee      0x144 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+                                0x313 (size before relaxing)
+ .debug_str     0x00000a32      0x15e .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+                                0x31f (size before relaxing)
+ .debug_str     0x00000b90       0xd9 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_UART.o)
+                                0x2d1 (size before relaxing)
+ .debug_str     0x00000c69       0xae .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl1EN.o)
+                                0x264 (size before relaxing)
+ .debug_str     0x00000d17       0xae .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl5EN.o)
+                                0x264 (size before relaxing)
+ .debug_str     0x00000dc5       0x7e .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(FPGA_EN.o)
+                                0x234 (size before relaxing)
+ .debug_str     0x00000e43       0x66 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Red.o)
+                                0x21c (size before relaxing)
+ .debug_str     0x00000ea9       0x72 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Green.o)
+                                0x228 (size before relaxing)
+ .debug_str     0x00000f1b      0x1a1 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+                                0x347 (size before relaxing)
+ .debug_str     0x000010bc       0x96 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(OpenExhaust.o)
+                                0x24c (size before relaxing)
+ .debug_str     0x00001152       0xa2 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(ClosePressure.o)
+                                0x258 (size before relaxing)
+ .debug_str     0x000011f4       0x9c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CloseExhaust.o)
+                                0x252 (size before relaxing)
+ .debug_str     0x00001290      0x713 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+                                0x8f6 (size before relaxing)
+ .debug_str     0x000019a3       0x53 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Pause_Register.o)
+                                0x1eb (size before relaxing)
+ .debug_str     0x000019f6       0x5c .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Steering_Register.o)
+                                0x1f4 (size before relaxing)
+ .debug_str     0x00001a52      0x129 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+                                0x301 (size before relaxing)
+ .debug_str     0x00001b7b       0x45 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART_INT.o)
+                                0x1fa (size before relaxing)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_ranges   0x00000000      0x778
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x38 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+ .debug_ranges  0x00000038       0x40 .\CortexM0\ARM_GCC_484\Debug\main.o
+ .debug_ranges  0x00000078       0x40 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o)
+ .debug_ranges  0x000000b8       0x58 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+ .debug_ranges  0x00000110       0x40 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o)
+ .debug_ranges  0x00000150       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl2EN.o)
+ .debug_ranges  0x00000180       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl4EN.o)
+ .debug_ranges  0x000001b0       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl3EN.o)
+ .debug_ranges  0x000001e0       0x58 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+ .debug_ranges  0x00000238       0x50 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+ .debug_ranges  0x00000288       0x40 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_UART.o)
+ .debug_ranges  0x000002c8       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl1EN.o)
+ .debug_ranges  0x000002f8       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl5EN.o)
+ .debug_ranges  0x00000328       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(FPGA_EN.o)
+ .debug_ranges  0x00000358       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Red.o)
+ .debug_ranges  0x00000388       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Green.o)
+ .debug_ranges  0x000003b8       0x80 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+ .debug_ranges  0x00000438       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(OpenExhaust.o)
+ .debug_ranges  0x00000468       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(ClosePressure.o)
+ .debug_ranges  0x00000498       0x30 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CloseExhaust.o)
+ .debug_ranges  0x000004c8      0x220 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .debug_ranges  0x000006e8       0x18 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Pause_Register.o)
+ .debug_ranges  0x00000700       0x18 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Steering_Register.o)
+ .debug_ranges  0x00000718       0x50 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+ .debug_ranges  0x00000768       0x10 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART_INT.o)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\main.o
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl2EN.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl4EN.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl3EN.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_UART.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl1EN.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl5EN.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(FPGA_EN.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Red.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Green.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(OpenExhaust.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(ClosePressure.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CloseExhaust.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Pause_Register.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Steering_Register.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART_INT.o)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x28
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x1e c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crti.o
+ .ARM.attributes
+                0x0000001e       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+ .ARM.attributes
+                0x0000004a       0x1b c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.attributes
+                0x00000065       0x31 .\CortexM0\ARM_GCC_484\Debug\cymetadata.o
+ .ARM.attributes
+                0x00000096       0x31 .\CortexM0\ARM_GCC_484\Debug\Cm0Start.o
+ .ARM.attributes
+                0x000000c7       0x31 .\CortexM0\ARM_GCC_484\Debug\main.o
+ .ARM.attributes
+                0x000000f8       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(cyfitter_cfg.o)
+ .ARM.attributes
+                0x00000129       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms.o)
+ .ARM.attributes
+                0x0000015a       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_UART.o)
+ .ARM.attributes
+                0x0000018b       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl2EN.o)
+ .ARM.attributes
+                0x000001bc       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl4EN.o)
+ .ARM.attributes
+                0x000001ed       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl3EN.o)
+ .ARM.attributes
+                0x0000021e       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms.o)
+ .ARM.attributes
+                0x0000024f       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_SPI_UART.o)
+ .ARM.attributes
+                0x00000280       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorComms_UART.o)
+ .ARM.attributes
+                0x000002b1       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl1EN.o)
+ .ARM.attributes
+                0x000002e2       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(MotorControl5EN.o)
+ .ARM.attributes
+                0x00000313       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(FPGA_EN.o)
+ .ARM.attributes
+                0x00000344       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Red.o)
+ .ARM.attributes
+                0x00000375       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Green.o)
+ .ARM.attributes
+                0x000003a6       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Timer_1.o)
+ .ARM.attributes
+                0x000003d7       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(OpenExhaust.o)
+ .ARM.attributes
+                0x00000408       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(ClosePressure.o)
+ .ARM.attributes
+                0x00000439       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CloseExhaust.o)
+ .ARM.attributes
+                0x0000046a       0x21 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyBootAsmGnu.o)
+ .ARM.attributes
+                0x0000048b       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(CyLib.o)
+ .ARM.attributes
+                0x000004bc       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Pause_Register.o)
+ .ARM.attributes
+                0x000004ed       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(Steering_Register.o)
+ .ARM.attributes
+                0x0000051e       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART.o)
+ .ARM.attributes
+                0x0000054f       0x31 .\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.a(PCComms_SPI_UART_INT.o)
+ .ARM.attributes
+                0x00000580       0x1e c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x0000059e       0x1e c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x000005bc       0x1e c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x000005da       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-atoi.o)
+ .ARM.attributes
+                0x00000606       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-errno.o)
+ .ARM.attributes
+                0x00000632       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000065e       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000068a       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-init.o)
+ .ARM.attributes
+                0x000006b6       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x000006e2       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000070e       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-snprintf.o)
+ .ARM.attributes
+                0x0000073a       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strtok_r.o)
+ .ARM.attributes
+                0x00000766       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strtol.o)
+ .ARM.attributes
+                0x00000792       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-svfprintf.o)
+ .ARM.attributes
+                0x000007be       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-vfprintf_i.o)
+ .ARM.attributes
+                0x000007ea       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-ctype_.o)
+ .ARM.attributes
+                0x00000816       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memchr-stub.o)
+ .ARM.attributes
+                0x00000842       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x0000086e       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-freer.o)
+ .ARM.attributes
+                0x0000089a       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-mallocr.o)
+ .ARM.attributes
+                0x000008c6       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-reallocr.o)
+ .ARM.attributes
+                0x000008f2       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x0000091e       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x0000094a       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-nano-msizer.o)
+ .ARM.attributes
+                0x00000976       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-reent.o)
+ .ARM.attributes
+                0x000009a2       0x2c c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtend.o
+ .ARM.attributes
+                0x000009ce       0x1e c:/program files (x86)/cypress/psoc creator/3.2/psoc creator/import/gnu/arm/4.8.4/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtn.o
+
+/DISCARD/
+ *(.note.GNU-stack)
+OUTPUT(.\CortexM0\ARM_GCC_484\Debug\RockRaidersPSOCCode.elf elf32-littlearm)

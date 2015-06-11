@@ -6,7 +6,7 @@ svm_node.py - This node uses the support vector machine for Phase 1.
 RPI Rock Raiders
 6/7/15
 
-Last Updated: Bryant Pong: 6/7/15 - 9:16 PM
+Last Updated: Bryant Pong: 6/10/15 - 7:48 PM
 '''
 
 # Python Imports

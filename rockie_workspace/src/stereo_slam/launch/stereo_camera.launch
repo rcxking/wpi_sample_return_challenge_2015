@@ -58,7 +58,7 @@ see: /notes/stereo_notes
   
     <!-- image rectification -->
     <node pkg="stereo_image_proc" type="stereo_image_proc" name="stereo_image_proc">
-      <param name="disparity_range" value="128"/>
+      <rosparam file="$(find stereo_slam)/config/stereo_image_proc.yaml" command="load" />
       <remap from="points2" to="cloudXYZ"/>
     </node>
 
