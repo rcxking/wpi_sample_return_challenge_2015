@@ -103,9 +103,7 @@ class Egress(smach.State):
 	def execute(self, userdata):
 		rospy.loginfo("Executing Egress")
 
-
 						
-
 		rospy.loginfo("Exiting off")  
 		return "transitEnter"
 
