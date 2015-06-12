@@ -17,7 +17,7 @@ import serial
 from serial_node.srv import * 
 
 # Serial objects:
-ARDUINOPORT = "/dev/ttyACM1"
+ARDUINOPORT = "/dev/ttyACM0"
 ARDUINOBAUD = 9600
 
 MOTORPORT = "/dev/ttyUSB0"
@@ -150,8 +150,8 @@ def lights_service(req):
 def serial_server():
 	rospy.init_node("serial_node_server")
 	# Start all services:
-	driveService = rospy.Service("driveservice", WheelVel, drive_service)
-	steerService = rospy.Service("steerservice", Steer, steer_service)
+	driveService = rospy.Service("wheel_vel", WheelVel, drive_service)
+	steerService = rospy.Service("steer", Steer, steer_service)
 	pauseService = rospy.Service("pauseservice", Pause, pause_service)
 	lightsService = rospy.Service("lightsservice", Lights, lights_service) 
 
