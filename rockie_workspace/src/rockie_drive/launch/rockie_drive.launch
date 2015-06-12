@@ -1,5 +1,5 @@
 <launch>
-  <arg name="sim" default="true"/>
+  <arg name="sim" default="false"/>
 
   <node pkg="rockie_drive" type="drive_control.py" name="drive_control" output="screen">
     <rosparam file="$(find rockie_drive)/config/drive.yaml" command="load"/>

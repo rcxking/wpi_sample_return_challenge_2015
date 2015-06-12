@@ -22,7 +22,7 @@ class DriveControl:
     rospy.wait_for_service('steer')
     self.steer_proxy = rospy.ServiceProxy('steer', Steer, persistent = True)
     rospy.Subscriber("cmd_vel", Twist, self.driveCommandCallback)
-    rospy.Subscriber("turn_in_place_status", Int8, self.turnInPlaceStatusCallback)
+    #rospy.Subscriber("turn_in_place_status", Int8, self.turnInPlaceStatusCallback)
 
     self.turn_in_place = -1
     self.desired_turn_in_place = 0
