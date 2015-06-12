@@ -6,4 +6,4 @@ observation_sources: point_cloud_sensor
 
 # not sure if this is right
 point_cloud_sensor: {sensor_frame: base_link, data_type: PointCloud2, topic: /planner_cloud, marking: true, clearing: true}
-transform_tolerance: 2
+transform_tolerance: 5
